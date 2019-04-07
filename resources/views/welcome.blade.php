@@ -201,7 +201,7 @@
                         Children are the future leaders of tomorrow. Courtesy visit from the Governor
                     </h3>
                 </div>
-                <img class="centeredImg" src=".//assets/img/platStet.png" alt="">
+                <img class="centeredImg" src="./assets/img/platStet.png" alt="">
             </div>
             <div class="uk-width-2-3@m news uk-padding">
                 <h2 class="n--title uk-margin-remove">News & Events</h2>
