@@ -1,10 +1,10 @@
-
 <!doctype html>
 <html class="no-js" lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" href="./assets/favicon.ico" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome! Home| Plateau State Government Website</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/app.css">
@@ -14,13 +14,13 @@
     <div class="uk-background-secondary uk-height-viewport uk-width-1-1@l uk-position-absolute"></div>
     <div class="headBG"></div>
     <header>
-        <div class="wrapper uk-flex" uk-sticky="show-on-up: true; animation: uk-animation-slide-top;">
+        <div class="wrapper uk-flex" style="z-index: 12000;" uk-sticky="show-on-up: true; animation: uk-animation-slide-top;">
             <div class="logo mt:40px">
                 <img src="./assets/img/platStet.png" alt="">
                 <a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav-primary" href="#"></a>
             </div>
             <div id="nav">
-            <nav id="top" class="uk-navbar-container mt:40px" uk-navbar style="position: relative; z-index: 980;">
+            <nav id="top" class="uk-navbar-container mt:40px" style="position: relative; z-index: 980;">
                 <div class="main-container">
                     <div class="uk-navbar-right">
                         <ul class="uk-navbar-nav uk-iconnav">
@@ -33,16 +33,113 @@
                 </div>
             </nav>
             <div id="main">
-                <nav class="uk-navbar-container" uk-navbar style="position: relative; z-index: 980;">
+                <nav class="uk-navbar-container"  uk-navbar style="position: relative; z-index: 980;">
                     <div class="main-container">
                         <div class="uk-navbar-left">
                             <ul class="uk-navbar-nav">
-                                <li><a href="#">PLATEAU STATE <span>HISTORY & PEOPLE</span></a></li>
-                                <li><a href="#">Government <span>Seats & Positions</span></a></li>
-                                <li><a href="#">MDAs <span>Ministries & dept</span></a></li>
-                                <li><a href="#">Projects <span>Status & more</span></a></li>
-                                <li><a href="#">Commerce <span>Investments & more</span></a></li>
-                                <li><a href="#">Contact Us <span>How to reach us</span></a></li>
+                                <li>
+                                    <a href="#">PLATEAU STATE <span>HISTORY & PEOPLE</span></a>
+                                    <div class="uk-navbar-dropdown">
+                                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                                            <li class="uk-active"><a href="#">Active</a></li>
+                                            <li><a href="#">Item</a></li>
+                                            <li class="uk-nav-header">Header</li>
+                                            <li><a href="#">Item</a></li>
+                                            <li><a href="#">Item</a></li>
+                                            <li class="uk-nav-divider"></li>
+                                            <li><a href="#">Item</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">Government <span>Seats & Positions</span></a>
+                                    <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
+                                        <div class="uk-navbar-dropdown-grid uk-child-width-1-2" uk-grid>
+                                            <div>
+                                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                    <li class="uk-active"><a href="#">Active</a></li>
+                                                    <li><a href="#">Item</a></li>
+                                                    <li class="uk-nav-header">Header</li>
+                                                    <li><a href="#">Item</a></li>
+                                                    <li><a href="#">Item</a></li>
+                                                    <li class="uk-nav-divider"></li>
+                                                    <li><a href="#">Item</a></li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                    <li class="uk-active"><a href="#">Active</a></li>
+                                                    <li><a href="#">Item</a></li>
+                                                    <li class="uk-nav-header">Header</li>
+                                                    <li><a href="#">Item</a></li>
+                                                    <li><a href="#">Item</a></li>
+                                                    <li class="uk-nav-divider"></li>
+                                                    <li><a href="#">Item</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">MDAs <span>Ministries & dept</span></a>
+                                    <div class="uk-navbar-dropdown">
+                                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                                            <li class="uk-active"><a href="#">Active</a></li>
+                                            <li><a href="#">Item</a></li>
+                                            <li class="uk-nav-header">Header</li>
+                                            <li><a href="#">Item</a></li>
+                                            <li><a href="#">Item</a></li>
+                                            <li class="uk-nav-divider"></li>
+                                            <li><a href="#">Item</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">Projects <span>Status & more</span></a>
+                                    <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
+                                        <div class="uk-navbar-dropdown-grid uk-child-width-1-2" uk-grid>
+                                            <div>
+                                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                    <li class="uk-active"><a href="#">Active</a></li>
+                                                    <li><a href="#">Item</a></li>
+                                                    <li class="uk-nav-header">Header</li>
+                                                    <li><a href="#">Item</a></li>
+                                                    <li><a href="#">Item</a></li>
+                                                    <li class="uk-nav-divider"></li>
+                                                    <li><a href="#">Item</a></li>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                    <li class="uk-active"><a href="#">Active</a></li>
+                                                    <li><a href="#">Item</a></li>
+                                                    <li class="uk-nav-header">Header</li>
+                                                    <li><a href="#">Item</a></li>
+                                                    <li><a href="#">Item</a></li>
+                                                    <li class="uk-nav-divider"></li>
+                                                    <li><a href="#">Item</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">Commerce <span>Investments & more</span></a>
+                                    <div class="uk-navbar-dropdown">
+                                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                                            <li class="uk-active"><a href="#">Active</a></li>
+                                            <li><a href="#">Item</a></li>
+                                            <li class="uk-nav-header">Header</li>
+                                            <li><a href="#">Item</a></li>
+                                            <li><a href="#">Item</a></li>
+                                            <li class="uk-nav-divider"></li>
+                                            <li><a href="#">Item</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">Contact Us <span>How to reach us</span></a>
+                                </li>
                             </ul>
                             <a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav-primary" href="#"></a>
                         </div>
@@ -147,7 +244,7 @@
             </div>
         </div>
     </section>
-    <section class="policy">
+    <section class="policy" uk-toggle="cls: hide-pointIMG; mode: hover;">
         <div class="pointIMG uk-text-center">
             <img src="./assets/img/fiveStar.png" alt="">
             <div class="uk-padding-small uk-background-secondary uk-light">
@@ -156,41 +253,51 @@
         </div>
         <div class="uk-grid-collapse policy---cards uk-child-width-1-5@m" uk-grid
              uk-height-match="target: > div > div">
-                <div class="uk-inline">
+                <a class="uk-inline active" uk-toggle="cls: active; mode: hover;">
+                    <div>
                     <img src="./assets/img/pol-1.jpg" alt="">
                     <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-flex uk-flex-middle">
                         <h1>1</h1>
                         <p>Human Capital Development & Social Welfare </p>
                     </div>
-                </div>
-                <div class="uk-inline">
+                    </div>
+                </a>
+                <a class="uk-inline" uk-toggle="cls: active; mode: hover;">
+                    <div>
                     <img src="./assets/img/pol-2.jpg" alt="">
                     <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-flex uk-flex-middle">
                         <h1>2</h1>
                         <p>Peace, Security &  Good Governance</p>
                     </div>
-                </div>
-                <div class="uk-inline">
+                    </div>
+                </a>
+                <a class="uk-inline" uk-toggle="cls: active; mode: hover;">
+                    <div>
                     <img src="./assets/img/pol-3.jpg" alt="">
                     <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-flex uk-flex-middle">
                         <h1>3</h1>
                         <p>Physical Infrastructure &  Environment </p>
                     </div>
-                </div>
-                <div class="uk-inline">
+                    </div>
+                </a>
+                <a class="uk-inline" uk-toggle="cls: active; mode: hover;">
+                    <div>
                     <img src="./assets/img/pol-4.jpg" alt="">
                     <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-flex uk-flex-middle">
                         <h1>4</h1>
                         <p>Agriculture &  Rural Development </p>
                     </div>
-                </div>
-                <div class="uk-inline">
+                    </div>
+                </a>
+                <a class="uk-inline" uk-toggle="cls: active; mode: hover;">
+                    <div>
                     <img src="./assets/img/pol-5.jpg" alt="">
                     <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-flex uk-flex-middle">
                         <h1>5</h1>
                         <p>Entrepreneurship &  Industralization </p>
                     </div>
-                </div>
+                    </div>
+                </a>
         </div>
     </section>
     <section class="news--n--events uk-grid-collapse uk-child-width-1-3@m" uk-grid>
@@ -241,7 +348,7 @@
     </section>
     <footer>
         <div class="footer-nav">
-            <img src="/assets/img/map.jpg" alt="">
+            <img src="./assets/img/map.jpg" alt="">
         </div>
         <div class="footer-nav">
             <h5 class="footer-title">Jos City</h5>
