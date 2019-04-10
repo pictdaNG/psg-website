@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-      <link rel="shortcut icon" href="./assets/favicon.ico" />
+      <link rel="shortcut icon" href=".//assets/favicon.ico" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome! Home| Plateau State Government Website</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
@@ -14,7 +14,8 @@
     <div class="uk-background-secondary uk-height-viewport uk-width-1-1@l uk-position-absolute"></div>
     <div class="headBG"></div>
     <header>
-        <div class="wrapper uk-flex" style="z-index: 12000;" uk-sticky="show-on-up: true; animation: uk-animation-slide-top;">
+        <div class="uk-width-1-1@m" uk-sticky="show-on-up: true; animation: uk-animation-slide-top;">
+        <div class="wrapper uk-flex" style="z-index: 12000;">
             <div class="logo mt:40px">
                 <img src="./assets/img/platStet.png" alt="">
                 <a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav-primary" href="#"></a>
@@ -147,6 +148,7 @@
                 </nav>
             </div>
             </div>
+        </div>
         </div>    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
              uk-slideshow="min-height: 300; max-height: 300">
             <div class="wrapper">
@@ -237,12 +239,6 @@
                 </div>
             </div>
         </div>
-        <div class="policy-mob">
-            <img src="./assets/img/fiveStar.png" alt="">
-            <div class="uk-padding-small uk-background-secondary uk-light">
-                <h2 class="uk-margin-remove">FIVE POINT POLICY</h2>
-            </div>
-        </div>
     </section>
     <section class="policy" uk-toggle="cls: hide-pointIMG; mode: hover;">
         <div class="pointIMG uk-text-center">
@@ -282,7 +278,7 @@
                 </a>
                 <a class="uk-inline" uk-toggle="cls: active; mode: hover;">
                     <div>
-                    <img src="./assets/img/pol-4.jpg" alt="">
+                    <img src=".//assets/img/pol-4.jpg" alt="">
                     <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-flex uk-flex-middle">
                         <h1>4</h1>
                         <p>Agriculture &  Rural Development </p>
