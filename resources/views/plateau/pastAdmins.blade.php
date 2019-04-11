@@ -5,7 +5,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
       <link rel="shortcut icon" href="./assets/favicon.ico" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome! Home| Plateau State Government Website</title>
+    <title>Welcome! History| Plateau State Government Website</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/app.css">
   </head>
@@ -35,16 +35,16 @@
                 <div class="main-container">
                     <div class="uk-navbar-left">
                         <ul class="uk-navbar-nav">
-                            <li>
+                            <li class="uk-active">
                                 <a href="#">PLATEAU STATE <span>HISTORY & PEOPLE</span></a>
                                 <div class="uk-navbar-dropdown">
                                     <ul class="uk-nav uk-navbar-dropdown-nav">
-                                    <li class="uk-active"><a href="{{ route('home') }}">Home</a></li>
-                                        <li><a href="{{ route('glance') }}">At a Glance</a></li>
-                                        <li><a href="{{ route('people') }}">The People</a></li>
-                                        <li><a href="{{ route('history') }}">History</a></li>
-                                        <li><a href="{{ route('endowment') }}">Endowments</a></li>
-                                        <li><a href="{{ route('past-admins') }}">Past Administrators</a></li>
+                                        <li class="uk-active"><a href="./index.html">Home</a></li>
+                                        <li><a href="./glance.html">At a Glance</a></li>
+                                        <li><a href="./people.html">The People</a></li>
+                                        <li><a href="./history.html">History</a></li>
+                                        <li><a href="./endowments.html">Endowments</a></li>
+                                        <li><a href="./past.html">Past Administrators</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -145,13 +145,13 @@
         </div>
         </div>
     </div>
-    </div>    <div class="headBG glance"></div>
+    </div>    <div class="headBG past"></div>
     <header class="hero">
         <div class="wrapper">
             <div>
                 <div class="uk-light">
-                    <h1 class="uk-text-bold">At a Glance</h1>
-                    <p class="lined--p">About Plateau State</p>
+                    <h1 class="uk-text-bold">Past Administrators</h1>
+                    <p class="lined--p">Past Rulers of Plateaus State</p>
                 </div>
             </div>
         </div>
@@ -183,28 +183,175 @@
                 </ul>
             </div>
         </div>    <div class="content uk-width-1-2@m">
-            <h2 class="bold">PLATEAU STATE</h2>
-            <p>Plateau State is the twelfth largest state of Nigeria, and is roughly located in the center of the country. It is geographically unique in Nigeria because its boundaries totally surround the Jos Plateau, having the Jos Plateau totally in its central and northern part. Its capital is Jos. Plateau State is celebrated as "The Home of Peace and Tourism". Plateau State gets its name from the Jos Plateau. It has a population of around 3.5 million people.</p>
-            <div class="uk-flex uk-flex-middle">
-                <img class="uk-margin-right" src="./assets/img/sign.png" alt="">
-                <h2 class="uk-margin-remove bold">Adjacent States</h2>
+            <div class="uk-flex uk-child-width-1-1@m">
+                <div class="uk-overflow-auto">
+                    <table class="uk-table past-table">
+                        <caption>Past Administrators</caption>
+                        <tbody>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                        <tr>
+                            <td>Joseph Gomwalk</td>
+                            <td>Governor</td>
+                            <td>1966</td>
+                            <td>July 1975 </td>
+                            <td>Military</td>
+                        </tr>
+                        <tr>
+                            <td>Dan Suleiman</td>
+                            <td>Governor</td>
+                            <td>March 1976</td>
+                            <td>July 1978</td>
+                            <td>(Military)</td>
+                        </tr>
+                        <tr>
+                            <td>Joshua Anaja</td>
+                            <td>Governor</td>
+                            <td>July 1978</td>
+                            <td>October 1979</td>
+                            <td>(Military)</td>
+                        </tr>
+                        <tr>
+                            <td>Solomon Lar</td>
+                            <td>Governor</td>
+                            <td>October 1979</td>
+                            <td>December 1983</td>
+                            <td>NPP</td>
+                        </tr>
+                        <tr>
+                            <td>Samuel Atukum</td>
+                            <td>Governor</td>
+                            <td>January 1984</td>
+                            <td>August 1985</td>
+                            <td>(Military)</td>
+                        </tr>
+                        <tr>
+                            <td>Chris Alli</td>
+                            <td>Governor </td>
+                            <td>August 1985</td>
+                            <td>1986</td>
+                            <td>(Military)</td>
+                        </tr>
+                        <tr>
+                            <td>Lawrence Onoja</td>
+                            <td>Governor</td>
+                            <td>1986 </td>
+                            <td>July 1988</td>
+                            <td>(Military)</td>
+                        </tr>
+                        <tr>
+                            <td>Aliyu Kama</td>
+                            <td>Governor</td>
+                            <td>July 1988</td>
+                            <td>August 1990</td>
+                            <td>(Military)</td>
+                        </tr>
+                        <tr>
+                            <td>Joshua Madaki</td>
+                            <td>Governor</td>
+                            <td>August 1990</td>
+                            <td>January 1992</td>
+                            <td>(Military)</td>
+                        </tr>
+                        <tr>
+                            <td>Fidelis Tapgun</td>
+                            <td>Governor</td>
+                            <td>January 1992</td>
+                            <td>November 1993</td>
+                            <td>SDP</td>
+                        </tr>
+                        <tr>
+                            <td>Mohammed Mana</td>
+                            <td>Administrator</td>
+                            <td>9 December 1993 </td>
+                            <td>22 August 1996</td>
+                            <td>(Military)</td>
+                        </tr>
+                        <tr>
+                            <td>Habibu Shuaibu</td>
+                            <td>Administrator</td>
+                            <td>22 August 1996</td>
+                            <td>August 1998</td>
+                            <td>(Military)</td>
+                        </tr>
+                        <tr>
+                            <td>Musa Shehu</td>
+                            <td>Administrator</td>
+                            <td>August 1998 </td>
+                            <td>May 1999 </td>
+                            <td>(Military)</td>
+                        </tr>
+                        <tr>
+                            <td>Joshua Dariye</td>
+                            <td>Governor</td>
+                            <td>29 May 1999</td>
+                            <td>18 May 2004</td>
+                            <td>PDP</td>
+                        </tr>
+                        <tr>
+                            <td>Chris Alli</td>
+                            <td>Interim Administrator</td>
+                            <td>18 May 2004</td>
+                            <td>18 November 2004</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Joshua Dariye</td>
+                            <td>Governor</td>
+                            <td>18 November 2004 </td>
+                            <td>13 November 2006</td>
+                            <td>PDP</td>
+                        </tr>
+                        <tr>
+                            <td>Michael Botmang</td>
+                            <td>Governor</td>
+                            <td>13 November 2006</td>
+                            <td>27 April 2007 </td>
+                            <td>PDP</td>
+                        </tr>
+                        <tr>
+                            <td>Joshua Dariye </td>
+                            <td>Governor </td>
+                            <td>27 April 2007</td>
+                            <td>29 May 2007 </td>
+                            <td>PDP</td>
+                        </tr>
+                        <tr>
+                            <td>Jonah David Jang</td>
+                            <td>Governor</td>
+                            <td>29 May 2007</td>
+                            <td>29 May 2015 </td>
+                            <td>PDP</td>
+                        </tr>
+                        <tr>
+                            <td>Simon Bako Lalong</td>
+                            <td>Governor </td>
+                            <td>29 May 2015 </td>
+                            <td>      </td>
+                            <td>APC</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-            <ul class="uk-list">
-                <li><span class="bold-green">Bauchi</span>: to the North-East</li>
-                <li><span class="bold-green">Kaduna</span>: to the North-West</li>
-                <li><span class="bold-green">Nasarawa</span>: to the South-West</li>
-                <li><span class="bold-green">Taraba</span>: to the South-East</li>
-            </ul>
-            <div class="uk-flex uk-flex-middle">
-                <img class="uk-margin-right" src="./assets/img/route.png" alt="">
-                <h2 class="uk-margin-remove bold">Boundaries</h2>
-            </div>
-            <p>Plateau State is located in Nigeria’s middle belt. With an area of 26,899 square kilometres, the State has an estimated population of about three million people. It is located between latitude 80°24'N and longitude 80°32' and 100°38' east. The state is named after the picturesque Jos Plateau, a mountainous area in the north of the state with captivating rock formations. Bare rocks are scattered across the grasslands, which cover the plateau. The altitude ranges from around 1,200 meters (about 4000 feet) to a peak of 1,829 metres above sea level in the Shere Hills range near Jos. Years of tin mining have also left the area strewn with deep gorges and lakes. </p>
-            <div class="uk-flex uk-flex-middle">
-                <img class="uk-margin-right" src="./assets/img/sun.png" alt="">
-                <h2 class="uk-margin-remove bold">Climate</h2>
-            </div>
-            <p>Though situated in the tropical zone, a higher altitude means that Plateau State has a near temperate climate with an average temperature of between 18 and 22°C. Harmattan winds cause the coldest weather between December and February. The warmest temperatures usually occur in the dry season months of March and April. The mean annual rainfall varies from 131.75 cm (52 in) in the southern part to 146 cm (57 in) on the Plateau. The highest rainfall is recorded during the wet season months of July and August. The average lower temperatures Plateau State has led to a reduced incidence of some tropical diseases such as malaria. The Jos Plateau, makes it the source of many rivers in northern Nigeria including the Kaduna, Gongola, Hadejia and Yobe rivers.</p>
         </div>
         <div class="side--left uk-width-1-4@m">
             <div>

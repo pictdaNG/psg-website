@@ -47,7 +47,7 @@
                                             <li><a href="{{ route('people') }}">The People</a></li>
                                             <li><a href="{{ route('history') }}">History</a></li>
                                             <li><a href="{{ route('endowment') }}">Endowments</a></li>
-                                            <li><a href="#">Past Administrators</a></li>
+                                            <li><a href="{{ route('past-admins') }}">Past Administrators</a></li>
                                         </ul>
                                     </div>
                                 </li>

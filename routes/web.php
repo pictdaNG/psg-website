@@ -19,16 +19,20 @@ Route::get('/history', function () {
   return view('plateau.history');
 })->name('history');
 
-Route::get('/people', function () {
+Route::get('/the-people', function () {
   return view('plateau.people');
 })->name('people');
 
 
-Route::get('glance', function () {
+Route::get('at-a-glance', function () {
   return view('plateau.glance');
 })->name('glance');
 
-Route::get('/endowment', function () {
+Route::get('/endowments', function () {
   return view('plateau.endowment');
 })->name('endowment');
 
+
+Route::get('/past-administrators', function () {
+  return view('plateau.pastAdmins');
+})->name('past-admins');
