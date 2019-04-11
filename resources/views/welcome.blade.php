@@ -388,17 +388,73 @@
                     </div>
                 </div>
             </div>
-    </footer>    <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
-        <div class="uk-offcanvas-bar uk-flex uk-flex-column">
-            <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
-                <li><a href="#">PLATEAU STATE</a></li>
-                <li><a href="#">Government</a></li>
-                <li><a href="#">MDAs</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Commerce</a></li>
-                <li><a href="#">Contact Us</a></li>
+    </footer>    
+    <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
+        <div class="uk-offcanvas-bar uk-flex uk-flex-center uk-flex-column">
+            <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+                <li class="uk-parent">
+                    <a href="#">Plateau State</a>
+                    <ul class="uk-nav-sub">
+                        <li class="uk-active"><a href="{{ route('home') }}">Home</a></li>
+                        <li><a href="{{ route('glance') }}">At a Glance</a></li>
+                        <li><a href="{{ route('people') }}">The People</a></li>
+                        <li><a href="{{ route('history') }}">History</a></li>
+                        <li><a href="{{ route('endowment') }}">Endowments</a></li>
+                        <li><a href="{{ route('endowment') }}">Endowments</a></li>
+                        <li><a href="{{ route('past-admins') }}">Past Administrators</a></li>
+                    </ul>
+                </li>
+                <li class="uk-parent">
+                    <a href="#">Government</a>
+                    <ul class="uk-nav-sub">
+                        <li class="uk-active"><a href="{{ route('home') }}">Home</a></li>
+                        <li><a href="{{ route('glance') }}">At a Glance</a></li>
+                        <li><a href="{{ route('people') }}">The People</a></li>
+                        <li><a href="{{ route('history') }}">History</a></li>
+                        <li><a href="{{ route('endowment') }}">Endowments</a></li>
+                        <li><a href="{{ route('endowment') }}">Endowments</a></li>
+                        <li><a href="{{ route('past-admins') }}">Past Administrators</a></li>
+                    </ul>
+                </li>
+                <li class="uk-parent">
+                    <a href="#">MDAs</a>
+                    <ul class="uk-nav-sub">
+                        <li class="uk-active"><a href="{{ route('home') }}">Home</a></li>
+                        <li><a href="{{ route('glance') }}">At a Glance</a></li>
+                        <li><a href="{{ route('people') }}">The People</a></li>
+                        <li><a href="{{ route('history') }}">History</a></li>
+                        <li><a href="{{ route('endowment') }}">Endowments</a></li>
+                        <li><a href="{{ route('endowment') }}">Endowments</a></li>
+                        <li><a href="{{ route('past-admins') }}">Past Administrators</a></li>
+                    </ul>
+                </li>
+                <li class="uk-parent">
+                    <a href="#">Projects</a>
+                    <ul class="uk-nav-sub">
+                        <li class="uk-active"><a href="{{ route('home') }}">Home</a></li>
+                        <li><a href="{{ route('glance') }}">At a Glance</a></li>
+                        <li><a href="{{ route('people') }}">The People</a></li>
+                        <li><a href="{{ route('history') }}">History</a></li>
+                        <li><a href="{{ route('endowment') }}">Endowments</a></li>
+                        <li><a href="{{ route('endowment') }}">Endowments</a></li>
+                        <li><a href="{{ route('past-admins') }}">Past Administrators</a></li>
+                    </ul>
+                </li>
+                <li class="uk-parent">
+                    <a href="#">Commerce</a>
+                    <ul class="uk-nav-sub">
+                        <li class="uk-active"><a href="{{ route('home') }}">Home</a></li>
+                        <li><a href="{{ route('glance') }}">At a Glance</a></li>
+                        <li><a href="{{ route('people') }}">The People</a></li>
+                        <li><a href="{{ route('history') }}">History</a></li>
+                        <li><a href="{{ route('endowment') }}">Endowments</a></li>
+                        <li><a href="{{ route('endowment') }}">Endowments</a></li>
+                        <li><a href="{{ route('past-admins') }}">Past Administrators</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
-    </div><script src="assets/js/app.js"></script>
+    </div>
+    <script src="assets/js/app.js"></script>
 </body>
 </html>
