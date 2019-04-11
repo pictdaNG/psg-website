@@ -13,4 +13,18 @@
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('home');
+
+Route::get('/history', function () {
+  return view('plateau.history');
+})->name('history');
+
+Route::get('/people', function () {
+  return view('plateau.people');
+})->name('people');
+
+
+Route::get('glance', function () {
+  return view('plateau.glance');
+})->name('glance');
+

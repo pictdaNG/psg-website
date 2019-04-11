@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-      <link rel="shortcut icon" href=".//assets/favicon.ico" />
+      <link rel="shortcut icon" href="./assets/favicon.ico" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome! Home| Plateau State Government Website</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
@@ -42,13 +42,12 @@
                                     <a href="#">PLATEAU STATE <span>HISTORY & PEOPLE</span></a>
                                     <div class="uk-navbar-dropdown">
                                         <ul class="uk-nav uk-navbar-dropdown-nav">
-                                            <li class="uk-active"><a href="#">Active</a></li>
-                                            <li><a href="#">Item</a></li>
-                                            <li class="uk-nav-header">Header</li>
-                                            <li><a href="#">Item</a></li>
-                                            <li><a href="#">Item</a></li>
-                                            <li class="uk-nav-divider"></li>
-                                            <li><a href="#">Item</a></li>
+                                            <li class="uk-active"><a href="{{ route('home') }}">Home</a></li>
+                                            <li><a href="{{ route('glance') }}">At a Glance</a></li>
+                                            <li><a href="{{ route('people') }}">The People</a></li>
+                                            <li><a href="{{ route('history') }}">History</a></li>
+                                            <li><a href="#">Endowments</a></li>
+                                            <li><a href="#">Past Administrators</a></li>
                                         </ul>
                                     </div>
                                 </li>
@@ -155,7 +154,7 @@
             <ul class="uk-slideshow-items">
                 <li>
                     <div>
-                   <h1 class="uk-text-bold">Plateau State <br> Government House</h1>
+                        <h1 class="uk-text-bold">Plateau State <br> Government House</h1>
                         <p class="lined--p">The Governor's Office, Rayfield</p>
                     </div>
                 </li>
@@ -240,6 +239,7 @@
             </div>
         </div>
     </section>
+    
     <section class="policy" uk-toggle="cls: hide-pointIMG; mode: hover;">
         <div class="pointIMG uk-text-center">
             <img src="./assets/img/fiveStar.png" alt="">
@@ -249,54 +249,53 @@
         </div>
         <div class="uk-grid-collapse policy---cards uk-child-width-1-5@m" uk-grid
              uk-height-match="target: > div > div">
-                <a class="uk-inline active" uk-toggle="cls: active; mode: hover;">
-                    <div>
+            <a class="uk-inline active" uk-toggle="cls: active; mode: hover;">
+                <div>
                     <img src="./assets/img/pol-1.jpg" alt="">
                     <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-flex uk-flex-middle">
                         <h1>1</h1>
                         <p>Human Capital Development & Social Welfare </p>
                     </div>
-                    </div>
-                </a>
-                <a class="uk-inline" uk-toggle="cls: active; mode: hover;">
-                    <div>
+                </div>
+            </a>
+            <a class="uk-inline" uk-toggle="cls: active; mode: hover;">
+                <div>
                     <img src="./assets/img/pol-2.jpg" alt="">
                     <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-flex uk-flex-middle">
                         <h1>2</h1>
                         <p>Peace, Security &  Good Governance</p>
                     </div>
-                    </div>
-                </a>
-                <a class="uk-inline" uk-toggle="cls: active; mode: hover;">
-                    <div>
+                </div>
+            </a>
+            <a class="uk-inline" uk-toggle="cls: active; mode: hover;">
+                <div>
                     <img src="./assets/img/pol-3.jpg" alt="">
                     <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-flex uk-flex-middle">
                         <h1>3</h1>
                         <p>Physical Infrastructure &  Environment </p>
                     </div>
-                    </div>
-                </a>
-                <a class="uk-inline" uk-toggle="cls: active; mode: hover;">
-                    <div>
-                    <img src=".//assets/img/pol-4.jpg" alt="">
+                </div>
+            </a>
+            <a class="uk-inline" uk-toggle="cls: active; mode: hover;">
+                <div>
+                    <img src="./assets/img/pol-4.jpg" alt="">
                     <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-flex uk-flex-middle">
                         <h1>4</h1>
                         <p>Agriculture &  Rural Development </p>
                     </div>
-                    </div>
-                </a>
-                <a class="uk-inline" uk-toggle="cls: active; mode: hover;">
-                    <div>
+                </div>
+            </a>
+            <a class="uk-inline" uk-toggle="cls: active; mode: hover;">
+                <div>
                     <img src="./assets/img/pol-5.jpg" alt="">
                     <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-flex uk-flex-middle">
                         <h1>5</h1>
                         <p>Entrepreneurship &  Industralization </p>
                     </div>
-                    </div>
-                </a>
+                </div>
+            </a>
         </div>
-    </section>
-    <section class="news--n--events uk-grid-collapse uk-child-width-1-3@m" uk-grid>
+    </section><section class="news--n--events uk-grid-collapse uk-child-width-1-3@m" uk-grid>
             <div class="img--holder">
                 <img src="./assets/img/kids.jpg" alt="">
                 <div class="uk-position-center bordered">
@@ -391,7 +390,6 @@
             </div>
     </footer>    <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
         <div class="uk-offcanvas-bar uk-flex uk-flex-column">
-    
             <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
                 <li><a href="#">PLATEAU STATE</a></li>
                 <li><a href="#">Government</a></li>
@@ -400,7 +398,6 @@
                 <li><a href="#">Commerce</a></li>
                 <li><a href="#">Contact Us</a></li>
             </ul>
-    
         </div>
     </div><script src="assets/js/app.js"></script>
 </body>
