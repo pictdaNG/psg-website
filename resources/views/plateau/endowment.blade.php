@@ -5,7 +5,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
       <link rel="shortcut icon" href="./assets/favicon.ico" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome! Home| Plateau State Government Website</title>
+    <title>Welcome! History| Plateau State Government Website</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/app.css">
   </head>
@@ -43,6 +43,7 @@
                                         <li><a href="{{ route('glance') }}">At a Glance</a></li>
                                         <li><a href="{{ route('people') }}">The People</a></li>
                                         <li><a href="{{ route('history') }}">History</a></li>
+                                        <li><a href="{{ route('endowment') }}">Endowments</a></li>
                                         <li><a href="{{ route('endowment') }}">Endowments</a></li>
                                         <li><a href="#">Past Administrators</a></li>
                                     </ul>
@@ -145,13 +146,13 @@
         </div>
         </div>
     </div>
-    </div>    <div class="headBG history history"></div>
+    </div>    <div class="headBG endowments"></div>
     <header class="hero">
         <div class="wrapper">
             <div>
                 <div class="uk-light">
-                    <h1 class="uk-text-bold">History</h1>
-                    <p class="lined--p">History of Plateau State</p>
+                    <h1 class="uk-text-bold">Natural Endowments</h1>
+                    <p class="lined--p">Endowments of Plateau State</p>
                 </div>
             </div>
         </div>
@@ -183,18 +184,15 @@
                 </ul>
             </div>
         </div>    <div class="content uk-width-1-2@m">
-            <h2 class="bold">OUR HISTORY</h2>
-            <p>Plateau state has been adjusted to its present borders many times. Colonial manipulation was from a desire to protect the railway construction and guarantee a safe passage of mined tin to the coast. The British began to exert colonial control of Nigeria in the early 20th century.
+            <h2 class="bold">NATURAL ENDOWMENTS</h2>
+            <p>Jos is the cradle of Tin mining operations on the Jos Plateau.  The State  has unique and beautiful climate that is conducive for the production  of  cotton, groundnuts, rice, Irish potatoes, maize, soyabean.
             </p>
-            <p>In 1926, Plateau Province, made up of Jos and Pankshin Divisions. The border changed several times in subsequent years as the government sought not to split ethnic groups. In May 1967, Benue and Plateau Provinces were merged to form the large Benue-Plateau State.he railway construction and guarantee a safe passage of mined tin to the coast. The British began to exert colonial control of Nigeria in the early 20th century.
-            </p>
-            <div class="uk-child-width-1-2@m uk-grid-small" uk-grid>
-                <img class="object-fit" src="./assets/img/hist-1.jpg" alt="">
-                <img class="object-fit" src="./assets/img/hist-2.jpg" alt="">
+            <div class="uk-child-width-1-1@m uk-grid-small" uk-grid>
+                <img class="object-fit" src="./assets/img/endowments-bg.jpg" alt="">
             </div>
-            <p>At this time Nigeria had twelve states. Following the civil war, Benue-Plateau State was one of several large states which were further split up following pressure on the Federal Government. Under the military administration of General Yakubu Gowon, the country was further divided into nineteen states in 1976 and Plateau State was created from Benue-Plateau covering the area of the original Plateau Province. In 1996, Plateau State was further subdivided to create Nasarawa State which was carved out of the western half of Plateau State by Sani Abacha's military regime.
-    
-                Tin mining activities began in 1902 under the British and continue to the present day.</p>
+            <p>Plateau state has a very rich cultural heritage.  The Nok culture one of the earliest iron smelting cultures dating between 500 BC and AD 200 is associated with the area.
+            </p>
+            <p>The National Museum at Jos, the oldest in the country.  Museum of Traditional Nigerian Architecture, containing various architectural designs of major Nigerian ethnic groups.  Jos wildlife Safari Park, Zoological Gardens.  Asop Falls, Kura falls, Wase Rock & Kerang volcanic Mountain where the population Swan brand spring water is produced in Shere Hills.</p>
         </div>
         <div class="side--left uk-width-1-4@m">
             <div>

@@ -28,3 +28,7 @@ Route::get('glance', function () {
   return view('plateau.glance');
 })->name('glance');
 
+Route::get('/endowment', function () {
+  return view('plateau.endowment');
+})->name('endowment');
+

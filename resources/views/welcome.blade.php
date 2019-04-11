@@ -46,7 +46,7 @@
                                             <li><a href="{{ route('glance') }}">At a Glance</a></li>
                                             <li><a href="{{ route('people') }}">The People</a></li>
                                             <li><a href="{{ route('history') }}">History</a></li>
-                                            <li><a href="#">Endowments</a></li>
+                                            <li><a href="{{ route('endowment') }}">Endowments</a></li>
                                             <li><a href="#">Past Administrators</a></li>
                                         </ul>
                                     </div>
