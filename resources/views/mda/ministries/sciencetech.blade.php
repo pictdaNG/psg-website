@@ -28,7 +28,7 @@
             <img class="object-fit" src="{{ URL::asset('/assets/img/image_03.png') }}" alt="">
         </div>
 
-        <h4>MISSION</h>
+        <h4>MISSION</h4>
         <ol type="i">
             <li>To make Plateau State a role model in the use of knowledge, principle, tools, tips and techniques of science and technology in converting poverty to wealth and raising the socio-economic status of state to enviable heights and to enhance government service delivery to the citizens.</li>
             <li>

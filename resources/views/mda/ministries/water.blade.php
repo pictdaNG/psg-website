@@ -22,7 +22,7 @@
             <img class="object-fit" src="{{ URL::asset('/assets/img/image_03.png') }}" alt="">
         </div>
 
-        <h4>VISION</h>
+        <h4>VISION</h4>
         <p>
             To provide sustainable access to safe and sufficient water and Rural Energy to meet the cultural, social and economic development needs of all Plateau people.
         </p>
@@ -72,50 +72,78 @@
             Accordingly, the achievements of the Ministry in the Water and Rural Electrification sectors in the state are asfollows: 
         </p>
         <h4>ACHIEVEMENTS IN THE WATER SECTOR</h4>
-        <ol type="i">
-            <li>Inauguration of a Tourism Master Plan (TMP) steering committee</li>
-            <li>Hosting of the 2007 national celebration of World Tourism Day in the state</li>
-            <li>The hosting of a stake-holders meeting on the development of a Film City project in the state to be sited at Kwal, Miango, in Bassa Local Government Area</li>
-            <li>The tourism corporation acquired a digital video camera for coverage of tourism events within and outside the state for the purpose of documentation and publicity and information. </li>
-            <li>
-                The tourism corporation acquired the following animals for the Wildlife Park.
-                <ol type="a">
-                    <li>A pair of porcupine</li>
-                    <li>A stripped hyena </li>
-                    <li>A male Grimm (grey) Duiker</li>
-                </ol>
-            </li>
-            <li>Attended the Abuja Carnival Stakeholders meeting held in 2008</li>
-            <li>Won a silver medal in competitive event in the area of ceremonial costumes and 4th position in food fair competition at the 22nd National Festival of Arts and Culture held in Enugu, Enugu State in 2008</li>
-            <li>The tourism corporation cultural troupe took part in RATTA-FEST as Plateau came 1st position in indigenous music, 2nd position in music and 3rh position in drama presentation</li>
-        </ol>
+        <p>
+            Despite numerous challenges, Plateau state Government through the Ministry has done quite a lot in terms of water supply since inception. Some of these achievements include: 
 
-        <h4>Ongoing Projects </h4>
-        <ol>
-            <li>Prof. Luka Bentur Indoor Theatre - Government has approved the remodeling of this theatre within the city centre, which is a deliberate effort of this administration to boost cultural tourism and an avenue for other forms of entertainment with modern facilities. </li>
-            <li>Arts and Crafts centre - It is considered in the2006 budget for the establishment of 3 craft centers. The three (3) craft centers are as follows: - 
-                <ol type="-">
-                    <li>Naraguta Leather Works in Jos Local Government Areas</li>
-                    <li>Mat wearing in Mangu Local Government Areas, </li>
-                    <li>Zwalcip (a traditional Ngas bag) weaving in Kanke Local Government Areas (These are yet to take-off).</li>
-                </ol>
-            </li>
-        </ol>
-
-        <h4>Ministry's future (initiatives) </h4>
-        <ol type="a">
-            <li>Further acquisition of material culture to enrich our present collections</li>
-            <li>Construction of more show cases and Exhibition stands</li>
-            <li>Establishment of workshops for ceramics, crafts, batik, tie and dye etc.</li>
-            <li>Video Recording Equipment </li>
-            <li>Audio Recording Equipment</li>
-            <li>Film projection Equipment</li>
-            <li>Photographic Equipment</li>
-            <li>Replacement of our modem Band instruments most of which are obsolete. </li>
-            <li>Acquisition of new costumes for the Band & Troupe </li>
-            <li>Construction of mobile performing stafe/set design </li>
-            <li>Acquisition of state lightening equipments among others. </li>
-        </ol>
+            <ol>
+                <li>Rehabilitation of 3No. water Treatment Plants within .ios/sukuru. namely: vakubu cowen, Yelwa- Dorowa and Laminga water Treatment Plants.</li>
+                <li>Purchase of 2MVA Transformer to improve water supply at Yakubu Gowon dam Water Treatment Plant. </li>
+                <li>Purchase of assorted water treatment chemicals</li>
+                <li>Provision of Rural Water (notable among them is at Rafiki Foundation, Rukuba Barracks and part of vom areasr.sarutatlon and hygiene promotion, and purchase of equlpments like Drilling Rig, 2 NO.Hillux vans, 2 No. Terameters, water tanker etc. for Plateau state Rural Water Supply and Sanitation Agency.</li>
+                <li>Extension of water supply to new areas i.e ECWA seminary JOS, Zawan/Du Fwavwei, Rayfield, Angwan Clinic Tundun wada, etc. </li>
+                <li>Extension of water supply to Gwarandok and Longwa communities in Jos South Local Government areas under the UN-Habitat water for African Cities Phase ii (WAClI)</li>
+                <li>Collaboration with the Federal Ministry of Water Resources towards the completion of the Mangu Regional water Supply project.</li>
+                <li>Design of the Pipelines Distribution Network for Mangu Regional Water project to convey potable drinking water to sixteen communities has been completed.</li>
+                <li>Rehabilitation of water Treatment plants in Shendam, Langtang and Pankshin Water Works (partnering with the Federal Government) </li>
+                <li>Detailed Engineering Design of Riyom Regional water Supply project has been awarded.</li>
+                <li>Survey of existing abandoned mining ponds towards converting them for both irrigation and water supply purposes have began by the Ministry.</li>
+                <li>Rehabilitation of water Supply facilities in Government Science School Kuru.</li>
+                <li>Construction Commissioning of two (2) Boreholes in partnership with BATN at Du,Jos.</li>
+                <li>Construction of six (6) boreholes (2) each in B/Ladi, Mikang and wase Local government Areas.</li>
+                <li>Laying of water pipes and tap points for water extension to Miango Town in Bassa Local Government. </li>
+                <li>Repairs and replacement of damaged water facilities of BEPCO Building (Ministry of Justice ouarters. </li>
+                <li>Strengthening and improvement of embankment of Dengi earth Dam. </li>
+                <li>Hosting of National council on Water Resources, JOS 2010. </li>
+                <li>Construction of Plateau state Integrated water Management Coalition project Office. </li>
+                <li>Construction of Timbol Earth Dam </li>
+                <li>Expansion of Water Pipeline Distribution Network within Jos/Bukuru metropolis. </li>
+                <li>Dredging of velwa and Rabin-du ponds awarded project is still on-going.</li>
+                <li>Procurement and installation of Ten Thousand units of prepaid Meters, awarded to APT IDEAS LTD, project is still on-going. </li>
+                <li>Validation workshop for the formulation of water, Sanitation and Hygiene policy, in partnership with Water Aid Nigeria. It is the first policy to be formulated in the history of our dear state. </li>
+                <li> Additional work on the dredging and expansion of Yelwa and Rabin Du ponds, project is still on-going </li>
+                <li>Consultancy services in respect of Dredging/Expansion of Yelwa and Rabin-Du ponds which is still on-going. </li>
+                <li>Feasibility study and Detailed Engineering Design for Riyom Regional Water Supply project was awarded to Bee Tropical Nigeria Ltd On going. </li>
+                <li>2012 Constituency Development Services, which has been completed. </li>
+                <li>2013 Constituency Development Services project is still on-going. </li>
+            </ol>
+        </p>
         
+        <h4>FUTURE DIRECTION OF THE DEPARTMENT</h4>
+        <ul>
+            <li>To provide assistance to communities for the Rehabilitation of existing facilities. </li>
+            <li>To develop new water schemes to meet up the water needs of Plateau people. </li>
+            <li>To finalize the development of Plateau State Water and Sanitation policy. </li>
+            <li>Rehabilitation of Mangu water works at the cost of over N6.m by Direct Labour </li>
+        </ul>
+
+        <h4>ACHIEVEMENTS IN THE SPHERE OF ENERGY</h4>
+        <p>
+            The following are some of the achievements that are in respect of Rural Electrification within the period under review;
+
+            <ol>
+                <li>Upgrading 33/11 KV-500KVA 11/415KVD/S/Station at zawan/Du </li>
+                <li>Upgrading 100KVA-500KVA11/0415KVD/s/station at Rabin-Du</li>
+                <li>Extension of Lt Lines at Rabin-Du.</li>
+                <li>Request for 3No. of D Transformer at DU, Gurara Top and Dilimi.</li>
+                <li>Purchase of 2No of 200KVA 11/10 415KV Transformer at Guratop and Ladura.</li>
+                <li>Electrification of Foron Junction and Environ at Foron Junction.</li>
+                <li>Completion of ongoing Electrification at Kissaloi. </li>
+                <li>Procurement of 4 No of Assorted Distribution Transformers at Dilmi, Bokkos, K.Janta, and Kuba. </li>
+                <li>Replacement of vandalized PHCN transformer at Pankshin General Hospital.</li>
+                <li>Electrification/installation of 300KVA/33/0 415KV transformers of Garkawa School of Agric.</li>
+                <li>Reconstruction of 33KV of Langtang, Wase Line and Rehabilitation Wase Town at Lantang to Wase.</li>
+                <li>I Electrification and Installation of Transformer at Fwati.</li>
+                <li>Purchase of transformers at Mado and Tahie. </li>
+                <li>Electrification and Installation of Transformer at Dantontona Koronfang.</li>
+                <li>Survey of Towns/Villages for Electrification in Plateau state, state Wide. </li>
+                <li>The State Government is presently in partnership with Ukrainian Consortium (strov Alyans Construction Co. Ltd) to establish five Hydro power Generating Centers in different locations in the state. Already this partnership has reached advanced stage with the signing of an M 0 U between the state Government and the said company. It is expected that when this project is completed, the electricity needs of the state will be adequately addressed and the site will become a net exporter of electricity to other neighboring states. </li>
+                <li>Also, another Hydro Power Station is to be established at the Mangu Regional water Dam. This is an added advantage as the dam was initially made to provide water and irrigation facilities only. The State Government is undertaking this in conjunction with the Federal Government. Already an Environmental Impact Assessment Consultant has been contracted to carry out feasibilities on the project and had since commenced work. </li>
+                <li>Discussion has reached advanced level between the State Government and Nassarawa State Government with a view to establishing another Hydro Power Station at Sha Falls. </li>
+                <li>In its deliberate effort towards ensuring that every nook and cranny of the state enjoys electricity, the state Government had paid the sum of Forty Two Million Naira (N42m) as compensation to land owners to enable the Federal Government expedite action on the 132Kv panksnln line and the vyra (MakerD 132 Injection Substation. When completed, the project, in addition to six other substations at M/Junction, B/Ladi, pankshin, langtang, wase and Shendam will open way for the State to embark on massive rural electrification drive in the state. </li>
+                <li>Frantic efforts are also afoot by the state Government to put finishing touches on the abandoned electrification projects at Shiwer, Dabwak, Kuru and Gwash II. Already a letter has been raised and delivered to the Rural Electrification Agency, Abula for permission to enable the State Government commence work on the abandoned projects.</li>
+                <li>Replacement of 32KV lines destroyed by flood and Rainstorm along wase- Langtang road and Nban village of Langtang North LGA.</li>
+                <li>Extension of 0.415kv line in Rabin-du village of Jos South.</li>
+            </ol>
+        </p>    
     </div>
 @endsection

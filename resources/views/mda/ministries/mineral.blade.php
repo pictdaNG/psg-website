@@ -22,7 +22,7 @@
             <img class="object-fit" src="{{ URL::asset('/assets/img/image_03.png') }}" alt="">
         </div>
 
-        <h4>VISION</h>
+        <h4>VISION</h4>
         <p>To create the enabling environment that can attract both local and foreign investors in the Mineral sector on the Plateau and return the State to its rightful position as the cradle of Mining activities in Nigeria.</p>
 
         

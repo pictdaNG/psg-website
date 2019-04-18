@@ -14,7 +14,7 @@
 
 @section('content')
     <div class="content uk-width-1-2@m">
-        <h4>VISION</h>
+        <h4>VISION</h4>
         <p>The emergence of a more enlightened, educated, and informed citizenry that will work consciously and actively for the good of Plateau, and contribute positively, towards building a virile nation.</p>
 
         <div class="uk-child-width-1-1@m uk-grid-small" uk-grid>

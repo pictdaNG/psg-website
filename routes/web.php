@@ -208,5 +208,68 @@ Route::group(['prefix' => 'ministries'], function() {
   Route::get('/min-tourism-&-culture', function() {
     return view('mda.ministries.tourism');
   })->name('min.tourism');
+
+  Route::get('/min-of-water-resources', function() {
+    return view('mda.ministries.water');
+  })->name('min.water');
+
+
+  Route::get('/min-of-works', function() {
+    return view('mda.ministries.works');
+  })->name('min.works');
+
+  Route::get('/min-housing-and-urban-dev', function() {
+    return view('mda.ministries.housing');
+  })->name('min.housing');
   
+  Route::get('/min-of-youth-development', function() {
+    return view('mda.ministries.youth');
+  })->name('min.youth');
+});
+
+Route::group(['prefix' => 'departments'], function() {
+
+  Route::get('/office-of-the-auditor-general', function() {
+    return view('mda.departments.auditor');
+  })->name('departments.auditor');
+
+  Route::get('/plateau-printing-press', function() {
+    return view('mda.departments.printing');
+  })->name('departments.printing');
+
+  Route::get('/plateau-agric-mech-services-corp', function() {
+    return view('mda.departments.agricmechanic');
+  })->name('departments.agricmechanic');  
+
+  Route::get('/min-of-mineral-development', function() {
+    return view('mda.departments.mineraldev');
+  })->name('departments.mineraldev');   
+
+  Route::get('/plateau-state-afforestation-programme', function() {
+    return view('mda.departments.afforestation');
+  })->name('departments.afforestation');
+});
+
+// AGENCIES ROUTE
+Route::group(['prefix' => 'agencies'], function() {
+
+  Route::get('/office-of-the-auditor-general', function() {
+    return view('mda.departments.auditor');
+  })->name('departments.auditor');
+
+  Route::get('/plateau-printing-press', function() {
+    return view('mda.departments.printing');
+  })->name('departments.printing');
+
+  Route::get('/plateau-agric-mech-services-corp', function() {
+    return view('mda.departments.agricmechanic');
+  })->name('departments.agricmechanic');  
+
+  Route::get('/min-of-mineral-development', function() {
+    return view('mda.departments.mineraldev');
+  })->name('departments.mineraldev');   
+
+  Route::get('/plateau-state-afforestation-programme', function() {
+    return view('mda.departments.afforestation');
+  })->name('departments.afforestation');
 });

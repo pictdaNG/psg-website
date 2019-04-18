@@ -41,7 +41,7 @@
                                 <a href="#">PLATEAU STATE <span>HISTORY & PEOPLE</span></a>
                                 <div class="uk-navbar-dropdown">
                                     <ul class="uk-nav uk-navbar-dropdown-nav">
-                                    <li class="uk-active"><a href="{{ route('home') }}">Home</a></li>
+                                        <li class="uk-active"><a href="{{ route('home') }}">Home</a></li>
                                         <li><a href="{{ route('glance') }}">At a Glance</a></li>
                                         <li><a href="{{ route('people') }}">The People</a></li>
                                         <li><a href="{{ route('history') }}">History</a></li>
@@ -108,12 +108,10 @@
                                         <div>
                                             <ul class="uk-nav uk-navbar-dropdown-nav">
                                                 <li class="uk-active"><a href="{{ route('min.tourism') }}">Tourism, Culture &amp; Hospitality</a></li>
-                                                <li><a href="#">Item</a></li>
-                                                <li class="uk-nav-header">Header</li>
-                                                <li><a href="#">Item</a></li>
-                                                <li><a href="#">Item</a></li>
-                                                <li class="uk-nav-divider"></li>
-                                                <li><a href="#">Item</a></li>
+                                                <li><a href="{{ route('min.water') }}">Water Resources &amp; Energy</a></li>
+                                                <li><a href="{{ route('min.works') }}">Works</a></li>
+                                                <li><a href="{{ route('min.housing') }}">Housing &amp; Urban Dev</a></li>
+                                                <li><a href="{{ route('min.youth') }}">Youth Development</a></li>
                                             </ul>
                                         </div>
                                         
