@@ -15,6 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
+// PLATEAU ROUTE GROUP
 Route::group(['prefix' => 'plateau'], function() {
 
   Route::get('/history', function () {
@@ -25,7 +26,6 @@ Route::group(['prefix' => 'plateau'], function() {
     return view('plateau.people');
   })->name('people');
 
-
   Route::get('/at-a-glance', function () {
     return view('plateau.glance');
   })->name('glance');
@@ -34,13 +34,13 @@ Route::group(['prefix' => 'plateau'], function() {
     return view('plateau.endowment');
   })->name('endowment');
 
-
   Route::get('/past-administrators', function () {
     return view('plateau.pastAdmins');
   })->name('past-admins');
   
 });
 
+// GOVERNMENT ROUTE GROUP
 Route::group(['prefix' => 'government'], function() {
   
   Route::get('/the-governor', function () {
@@ -67,7 +67,7 @@ Route::group(['prefix' => 'government'], function() {
     return view('government.judiciary');
   })->name('judiciary');
 
-  // LGAs Route
+  // LGAs Route GROUP
   Route::group(['prefix' => 'lga'], function() {
     Route::get('/bassa', function() {
       return view('government.lga.bassa');
@@ -140,6 +140,7 @@ Route::group(['prefix' => 'government'], function() {
   });
 });
 
+// COMMERCE ROUTE GROUP
 Route::group(['prefix' => 'commerce'], function() {
   
   Route::get('/trade-and-investment', function () {
@@ -159,6 +160,7 @@ Route::group(['prefix' => 'commerce'], function() {
   })->name('resources');
 });
 
+// PROJECTS ROUTE GROUP
 Route::group(['prefix' => 'projects'], function() {
 
   Route::get('/assisted-projects', function() {
@@ -179,6 +181,7 @@ Route::group(['prefix' => 'projects'], function() {
   
 });
 
+// MINISTRIES ROUTE GROUP
 Route::group(['prefix' => 'ministries'], function() {
 
   Route::get('min-commerce-&-industries', function() {
@@ -213,7 +216,6 @@ Route::group(['prefix' => 'ministries'], function() {
     return view('mda.ministries.water');
   })->name('min.water');
 
-
   Route::get('/min-of-works', function() {
     return view('mda.ministries.works');
   })->name('min.works');
@@ -227,6 +229,7 @@ Route::group(['prefix' => 'ministries'], function() {
   })->name('min.youth');
 });
 
+// DEPARTMENTS ROUTE
 Route::group(['prefix' => 'departments'], function() {
 
   Route::get('/office-of-the-auditor-general', function() {
@@ -253,23 +256,89 @@ Route::group(['prefix' => 'departments'], function() {
 // AGENCIES ROUTE
 Route::group(['prefix' => 'agencies'], function() {
 
-  Route::get('/office-of-the-auditor-general', function() {
-    return view('mda.departments.auditor');
-  })->name('departments.auditor');
+  Route::get('/adult-and-non-formal-education-directorate', function() {
+    return view('mda.agencies.adulteducation');
+  })->name('agencies.adulteducation');
 
-  Route::get('/plateau-printing-press', function() {
-    return view('mda.departments.printing');
-  })->name('departments.printing');
+  Route::get('/adult-and-non-formal-education-directorate', function() {
+    return view('mda.agencies.adulteducation');
+  })->name('agencies.adulteducation');
 
-  Route::get('/plateau-agric-mech-services-corp', function() {
-    return view('mda.departments.agricmechanic');
-  })->name('departments.agricmechanic');  
+  Route::get('/plateau-radio-television-corporation', function() {
+    return view('mda.agencies.prtv');
+  })->name('agencies.prtv');
 
-  Route::get('/min-of-mineral-development', function() {
-    return view('mda.departments.mineraldev');
-  })->name('departments.mineraldev');   
+  Route::get('/plateau-state-water-and-sanitation-agency', function() {
+    return view('mda.agencies.sanitation');
+  })->name('agencies.sanitation');
 
-  Route::get('/plateau-state-afforestation-programme', function() {
-    return view('mda.departments.afforestation');
-  })->name('departments.afforestation');
+  Route::get('/state-emergency-management-agency', function() {
+    return view('mda.agencies.emergency');
+  })->name('agencies.emergency');
+
+  Route::get('/plateau-environmental-protection-and-sanitation-agency', function() {
+    return view('mda.agencies.pepsa');
+  })->name('agencies.pepsa');
+
+  Route::get('/min-tourism-&-culture', function() {
+    return view('mda.agencies.tourism');
+  })->name('agencies.tourism');
+
+  Route::get('/plateau-state-community-and-social-development-agency', function() {
+    return view('mda.agencies.socialdev');
+  })->name('agencies.socialdev');
+
+});
+
+// BOARD ROUTE GROUP
+Route::group(['prefix' => 'boards'], function() {
+  Route::get('/plateau-state-water-board', function() {
+    return view('mda.boards.waterboard');
+  })->name('boards.waterboard');
+
+  Route::get('/plateau-state-internal-revenue-service', function() {
+    return view('mda.boards.psirs');
+  })->name('boards.psirs');
+
+  Route::get('muslim-pilgrim-welfare-board', function() {
+    return view('mda.boards.muslimpilgrim');
+  })->name('boards.muslimpilgrim');
+
+  Route::get('plateau-local-gov-staff-pension-board', function() {
+    return view('mda.boards.penshion');
+  })->name('boards.pension');
+
+
+});
+
+// COMMISSION GROUP
+Route::group(['prefix' => 'commissions'], function() {
+  
+  Route::get('/plateau-boundary-commission', function() {
+    return view('mda.commission.boundary');
+  })->name('commission.boundary');
+
+  Route::get('civil-service-commission', function() {
+    return view('mda.commission.civilservice');
+  })->name('commission.civilservice');
+
+  Route::get('plateau-state-independent-electoral-commission', function() {
+    return view('mda.commission.plasiec');
+  })->name('commission.plasiec');
+
+  Route::get('plateau-state-teachers-council', function() {
+    return view('mda.commission.teachers');
+  })->name('commission.teachers');
+});
+
+// OTHERS GROUP
+Route::group(['prefix' => 'others'], function() {
+  
+  Route::get('/plateau-state-specialist-hospital', function() {
+    return view('mda.others.pssh');
+  })->name('others.pssh');
+
+  Route::get('plateau-united-football-club', function() {
+    return view('mda.others.plateaufc');
+  })->name('others.plateaufc');
 });
