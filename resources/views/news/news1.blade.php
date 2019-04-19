@@ -19,7 +19,7 @@
         The Plateau state government has established an ICT development agency with the mandate to develop ICT, as well as using it as a tool for social mobility in solving youth unemployment in the state.
     </p>
     <div class="uk-child-width-1-1@m uk-grid-small" uk-grid>
-        <img class="object-fit" src="{{ URL::asset('./assets/img/endowments-bg.jpg') }}" alt="">
+        <img class="object-fit" src="{{ URL::asset('./assets/img/agency.jpg') }}" alt="">
     </div>
     <p>
         Mr Daser David, director general, Plateau State Information Technology Development Agency (PICTDA) disclosed this recently at the 10th West Africa Convergence Conference WACC 2019 which was held at Ikeja, Lagos.

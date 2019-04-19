@@ -19,7 +19,7 @@
         Incumbent Gov. Simon Lalong of Plateau, the gubernatorial candidate of the All Progressives Congress (APC) in Plateau, has been declared the winner of the rerun gubernatorial election in the state.
     </p>
     <div class="uk-child-width-1-1@m uk-grid-small" uk-grid>
-        <img class="object-fit" src="{{ URL::asset('./assets/img/endowments-bg.jpg') }}" alt="">
+        <img class="object-fit" src="{{ URL::asset('./assets/img/lalong-banner.jpg') }}" alt="">
     </div>
     <p>
         Lalong gathered 595,582 votes to win, with his closest rival, Jeremiah Useni, a retired Army General who was the candidate of the People’s Democratic Party (PDP), polling 546,813 votes.

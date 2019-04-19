@@ -18,9 +18,9 @@
         <p>
             Tudun Wada polling unit 027, in Jos North Local Government of Plateau, has witnessed a large turnout of voters in the on-going rerun election to determine the state’s governor.
         </p>
-        <div class="uk-child-width-1-1@m uk-grid-small" uk-grid>
+       <!--  <div class="uk-child-width-1-1@m uk-grid-small" uk-grid>
             <img class="object-fit" src="{{ URL::asset('./assets/img/endowments-bg.jpg') }}" alt="">
-        </div>
+        </div> -->
         <p>
             A correspondent of the News Agency of Nigeria (NAN), who visited the polling point, reports that accreditation and voting started early, while the officials arrived the area before 7 a.m.
         </p>
