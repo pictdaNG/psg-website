@@ -338,7 +338,32 @@ Route::group(['prefix' => 'others'], function() {
     return view('mda.others.pssh');
   })->name('others.pssh');
 
-  Route::get('plateau-united-football-club', function() {
+  Route::get('/plateau-united-football-club', function() {
     return view('mda.others.plateaufc');
   })->name('others.plateaufc');
+});
+
+
+// FIVE POINTS GROUP
+Route::group(['prefix' => 'five-points-policy'], function() {
+  
+  Route::get('/human-capital-development-social-welfare', function() {
+    return view('fivepoints.humancapital');
+  })->name('fivepoints.humancapital');
+
+  Route::get('/peace-security-good-governance', function() {
+    return view('fivepoints.peacesecurity');
+  })->name('fivepoints.peacesecurity');
+
+  Route::get('/physical-infrastructure-environment', function() {
+    return view('fivepoints.physical');
+  })->name('fivepoints.physical');
+
+  Route::get('/agriculture-rural-development', function() {
+    return view('fivepoints.agric');
+  })->name('fivepoints.agriculture');
+
+  Route::get('/entrepreneurship-&-industralization', function() {
+    return view('fivepoints.entrepreneur');
+  })->name('fivepoints.entrepreneur');
 });
