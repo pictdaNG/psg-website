@@ -12,6 +12,10 @@
     About AGRICULTURE AND RURAL DEVELOPMENT
 @endsection
 
+@section('agric')
+    agric
+@ensection
+
 @section('content')
     <div class="content uk-width-1-2@m">        
         <p>

@@ -79,7 +79,7 @@
                     <div class="uk-background-secondary uk-light">
                         <img src="./assets/img/interest.png" alt="">
                         <div class="uk-text-left">
-                            <h3>Tax &  Taxation </h3>
+                            <h3>Tax & Taxation </h3>
                             <p>Geared towards enhancing tax collection and administration with minimal enforcement cost. </p>
                         </div>
                     </div>
@@ -200,32 +200,45 @@
                 <p class="title--base uk-margin-remove">Find out what's going on & stay up to date</p>
                 <div class="uk-flex-middle" uk-grid>
                     <div class="uk-width-2-3@m">
-                        <h3 class="uk-card-title uk-margin-remove-bottom">Some Title</h3>
-                        <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                        <a href="{{ route('news.news1') }}">
+                            <h3 class="uk-card-title uk-margin-remove-bottom">Plateau State establishes agency for ICT development</h3>
+                        </a>                        
+                        <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 05, 2019</time></p>
+                        <p>
+                            The Plateau state government has established an ICT development agency with the mandate to develop ICT, as well as using it as a tool for social mobility in solving youth unemployment in the state.
+                        </p>
                     </div>
                     <div class="uk-width-1-3@m uk-flex-first">
-                        <img src="./assets/img/eve-1.jpg" alt="">
+                        <img src="./assets/img/lally.png" alt="">
                     </div>
                 </div>
                 <div class="uk-flex-middle" uk-grid>
                     <div class="uk-width-2-3@m">
-                        <h3 class="uk-card-title uk-margin-remove-bottom">Some Title</h3>
-                        <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                        <a href="{{ route('news.news2') }}">
+                            <h3 class="uk-card-title uk-margin-remove-bottom">APC’s Simon Lalong retains seat as Plateau governor</h3>
+                        </a>
+                        
+                        <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">March 24, 2019</time></p>
+                        <p>
+                            Incumbent Gov. Simon Lalong of Plateau, the gubernatorial candidate of the All Progressives Congress (APC) in Plateau, has been declared the winner of the rerun gubernatorial election in the state.
+                        </p>
                     </div>
                     <div class="uk-width-1-3@m uk-flex-first">
-                        <img src="./assets/img/eve-1.jpg" alt="">
+                        <img src="./assets/img/lalong-2.jpeg" alt="">
                     </div>
                 </div>
                 <div class="uk-flex-middle" uk-grid>
                     <div class="uk-width-2-3@m">
-                        <h3 class="uk-card-title uk-margin-remove-bottom">Some Title</h3>
-                        <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                        <a href="{{ route('news.news3') }}">
+                            <h3 class="uk-card-title uk-margin-remove-bottom">Massive turnout in Tudun Wada as Plateau votes to determine governor</h3>
+                        </a>                        
+                        <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">March 26, 2019</time></p>
+                        <p>
+                            Tudun Wada polling unit 027, in Jos North Local Government of Plateau, has witnessed a large turnout of voters in the on-going rerun election to determine the state’s governor.
+                        </p>
                     </div>
                     <div class="uk-width-1-3@m uk-flex-first">
-                        <img src="./assets/img/eve-1.jpg" alt="">
+                        <img src="./assets/img/election.jpg" alt="">
                     </div>
                 </div>
             </div>

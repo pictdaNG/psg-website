@@ -367,3 +367,21 @@ Route::group(['prefix' => 'five-points-policy'], function() {
     return view('fivepoints.entrepreneur');
   })->name('fivepoints.entrepreneur');
 });
+
+// NEWS GROUP ROUTE
+Route::group(['prefix' => 'news-&-events'], function() {
+  
+  Route::get('/plateau-state-establishes-agency-for-ict-development', function() {
+    return view('news.news1');
+  })->name('news.news1');
+
+  Route::get('/apcs-simon-lalong-retains-seat-a-plateau-governor', function() {
+    return view('news.news2');
+  })->name('news.news2');
+
+  Route::get('/massive-turnout-in-tudun-wada-as-plateau-votes-to-determine-governor', function() {
+    return view('news.news3');
+  })->name('news.news3');
+
+  
+});

@@ -14789,13 +14789,26 @@ header .uk-slideshow-items {
   width: 100%;
   position: fixed;
   z-index: 0;
-  top: 0; }
+  top: 0; 
+}
+
+.headBG.agric {
+  background-image: url(../../assets/img/agric.jpg);
+  background-size: cover;
+  background-position: center top;
+  height: 60vh;
+  width: 100%;
+  position: fixed;
+  z-index: 0;
+  top: 0; 
+}
 
 .headBG div {
   background: #000;
   height: 100vh;
   width: 100%;
-  z-index: -2; }
+  z-index: -2; 
+}
 
 header.hero {
   min-height: calc((60vh) - (170px)); }
