@@ -19,7 +19,7 @@
         </p>
 
         <div class="uk-child-width-1-1@m uk-grid-small" uk-grid>
-            <img class="object-fit" src="{{ URL::asset('/assets/img/investment.jpg') }}" alt="" />
+            <img class="object-fit" src="{{ URL::asset('/assets/img/pol-2.jpg') }}" alt="" />
         </div>
         <h4>Plateau Peace Building Agency (PPBA)</h4>
         <p>

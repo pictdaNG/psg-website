@@ -4,10 +4,11 @@
         </div>
         <div class="footer-nav">
             <h5 class="footer-title">Jos City</h5>
-            <p>Jos is a city in the Middle Belt of Nigeria. The city has a population of about 900,000 residents based on the 2006 census.</p>
+            <p>
+              Jos is a city in the Middle Belt of Nigeria. The city has a population of about 900,000 residents based on the 2006 census.
+            </p>
     
-               <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+               
         </div>
         <div class="footer-nav">
             <h5 class="footer-title">Quick Links</h5>

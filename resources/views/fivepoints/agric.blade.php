@@ -12,10 +12,6 @@
     About AGRICULTURE AND RURAL DEVELOPMENT
 @endsection
 
-@section('agric')
-    agric
-@ensection
-
 @section('content')
     <div class="content uk-width-1-2@m">        
         <p>
@@ -23,7 +19,7 @@
         </p>
 
         <div class="uk-child-width-1-1@m uk-grid-small" uk-grid>
-            <img class="object-fit" src="{{ URL::asset('/assets/img/investment.jpg') }}" alt="" />
+            <img class="object-fit" src="{{ URL::asset('/assets/img/agric.jpg') }}" alt="" />
         </div>
         
         <p>
