@@ -82,27 +82,52 @@
                 <img src="{{ URL::asset('./assets/img/sidebar-img.png') }}" alt="">
             </div>
             <div class="list uk-margin-top">
-                <h4>Local Government Area</h4>
-                <ul class="uk-list uk-list-bullet">
-                    <li>Barkin Ladi</li>
-                    <li>Bassa</li>
-                    <li>Bokkos</li>
-                    <li>Jos-East</li>
-                    <li>Jos-North</li>
-                    <li>Jos-South</li>
-                    <li>Kanam</li>
-                    <li>Langtang-North</li>
-                    <li>Langtang-South</li>
-                    <li>Mangu</li>
-                    <li>Mikang</li>
-                    <li>Pankshin</li>
-                    <li>Qua'an Pan</li>
-                    <li>Riyom</li>
-                    <li>Shendam</li>
-                    <li>Wase</li>
-                </ul>
+                <h4>Photostream</h4>
+                <div class="uk-child-width-1-2@m uk-grid-small" uk-grid uk-lightbox="animation: fade">
+                    <div>
+                        <a class="uk-inline" href="{{ URL::asset('./assets/img/pstr1.jpg') }}" >
+                            <img src="{{ URL::asset('./assets/img/pstr1.jpg') }}" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a class="uk-inline" href="{{ URL::asset('./assets/img/pstr2.jpg') }}" >
+                            <img src="{{ URL::asset('./assets/img/pstr2.jpg') }}" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a class="uk-inline" href="{{ URL::asset('./assets/img/pstr3.jpg') }}" >
+                            <img src="{{ URL::asset('./assets/img/pstr3.jpg') }}" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a class="uk-inline" href="{{ URL::asset('./assets/img/pstr4.jpg') }}" >
+                            <img src="{{ URL::asset('./assets/img/pstr4.jpg') }}" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a class="uk-inline" href="{{ URL::asset('./assets/img/pstr5.jpg') }}" >
+                            <img src="{{ URL::asset('./assets/img/pstr5.jpg') }}" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a class="uk-inline" href="{{ URL::asset('./assets/img/pstr6.jpg') }}">
+                            <img src="{{ URL::asset('./assets/img/pstr6.jpg') }}" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a class="uk-inline" href="{{ URL::asset('./assets/img/pstr7.jpg') }}" >
+                            <img src="{{ URL::asset('./assets/img/pstr7.jpg') }}" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a class="uk-inline" href="{{ URL::asset('./assets/img/pstr8.jpg') }}">
+                            <img src="{{ URL::asset('./assets/img/pstr8.jpg') }}" alt="">
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div></div>
+        </div>
+    </div>
     
     <section class="policy" uk-toggle="cls: hide-pointIMG; mode: hover;">
         <div class="pointIMG uk-text-center">

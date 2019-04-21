@@ -15769,11 +15769,11 @@ a:hover {
 
 @media (min-width: 1200px) {
   .container, .wrapper {
-    max-width: 80%; } }
+    max-width: 90%; } }
 
 @media (min-width: 1320px) {
   .container, .wrapper {
-    max-width: 70%; } }
+    max-width: 80%; } }
 
 .cf:before,
 .cf:after {
@@ -15839,3 +15839,6 @@ ul.navbar li:hover > ul { opacity: 1; visibility: visible; left: 100%;
 ul.navbar li > ul  ul { top: 0; left: 90%; box-shadow: 0 5px 10px rgba(0,0,0,.6);}
 ul.navbar li > ul li:hover ul { left: 100%; }
 ul.navbar li > ul {padding: 25px}
+.uk-lightbox-items > .uk-active{
+    height: 100vh;
+}
