@@ -15800,22 +15800,22 @@ body {
 ul.navbar li {
     float: left;
     margin: 0;
+    width: 100%;
     position: relative;
 }
 
 ul.navbar li a {
     display: block;
-    padding: 13px 15px;
-    color: #333 !important;
+    padding: 5px;
+    color: #999!important;
     text-decoration: none;
-    text-transform: uppercase;
+    text-transform: capitalize;
     transition: all .1s ease-in-out;
 }
 
 ul.navbar li a:hover,
 ul.navbar li:hover > a {
-    background: #333;
-    color: #ffffff !important;
+    color: #333!important;
 }
 
 ul.navbar li ul {
@@ -15831,10 +15831,11 @@ ul.navbar li ul {
     transition: all .1s ease-in-out;
 }
 
-ul.navbar li ul li { border-top: 1px solid #2a2a2a; }
+/*ul.navbar li ul li { border-top: 1px solid #2a2a2a; }*/
 ul.navbar li ul li:first-child { border: 0;}
 ul.navbar ul li { float: none; }
 ul.navbar li:hover > ul { opacity: 1; visibility: visible; left: 100%;
     top: 0; }
 ul.navbar li > ul  ul { top: 0; left: 90%; box-shadow: 0 5px 10px rgba(0,0,0,.6);}
 ul.navbar li > ul li:hover ul { left: 100%; }
+ul.navbar li > ul {padding: 25px}
