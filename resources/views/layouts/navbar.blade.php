@@ -267,7 +267,7 @@
             </div>
           </li>
           <li>
-            <a href="#">Contact Us <span>How to reach us</span></a>
+            <a href="{{ route('contact') }}">Contact Us <span>How to reach us</span></a>
           </li>
         </ul>
         <a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav-primary" href="#"></a>

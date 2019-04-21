@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
+Route::get('/contact', function() {
+  return view('contact.contact');
+})->name('contact');
+
 // PLATEAU ROUTE GROUP
 Route::group(['prefix' => 'plateau'], function() {
 
