@@ -70,7 +70,7 @@
                 </div>
                 <div>
                     <div class="uk-background-primary uk-light">
-                        <a href="">
+                        <a href="{{ route('quaterlyreport') }}">
                             <img src="./assets/img/newspaper.png" alt="">
                             <div class="uk-text-left">
                                 <h3>Quarterly  Reports</h3>
@@ -81,7 +81,7 @@
                 </div>
                 <div>
                     <div class="uk-background-secondary uk-light">
-                        <a href="">
+                        <a href="{{ route('taxation') }}">
                             <img src="./assets/img/interest.png" alt="">
                             <div class="uk-text-left">
                                 <h3>Tax & Taxation </h3>

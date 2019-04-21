@@ -16,28 +16,53 @@
     <div class="content uk-width-1-2@m">
         <h2 class="bold">Download Quarterly Reports</h2>
         <p>
-            Download Reports 
-            Accountant General Report 2015
-            Auditor General Report 2015
-
-            First Quarter 2016
-            Second Quarter 2016
-            Third Quarter 2016
-            Fourth Quarter 2016
-            Accountant General Report 2016
-            Auditor General Report 2016
-
-            First Quarter 2017
-            Second Quarter 2017
-            Budget 2017
-
-            Accountant General Report With Financial Statements 2017
-
+            <a href="../assets/documents/accountant_general_report_2015.pdf">
+                Accountant General Report 2015
+            </a>
+        </p>
+        <p>
+            <a href="">
+                First Quarter 2016
+            </a>
+        </p>
+        <p>
+            <a href="">
+                Second Quarter 2016
+            </a>
+        </p>
+            
+        <p>
+            <a href="">Third Quarter 2016</a>
+        </p>            
+            
+        <p>
+            <a href="">Fourth Quarter 2016</a>
         </p>
 
-        <div class="uk-child-width-1-1@m uk-grid-small" uk-grid>
-            <img class="object-fit" src="{{ URL::asset('/assets/img/chiefofstaff.jpg') }}" alt="">
-        </div>
+        <p>
+            <a href="">Accountant General Report 2016</a>
+        </p>
+
+        <p>
+            <a href="">Auditor General Report 2016</a>
+        </p>
+            
+        <p>
+            <a href="">First Quarter 2017</a>
+        </p>    
+            
+
+        <p>
+            <a href="">Second Quarter 2017</a>
+        </p>
+            
+        <p>
+            <a href="">Budget 2017</a>
+        </p>
+
+        <p>
+            <a href="">Accountant General Report With Financial Statements 2017</a>
+        </p>
         
     </div>
 @endsection

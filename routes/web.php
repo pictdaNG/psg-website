@@ -19,6 +19,11 @@ Route::get('/contact', function() {
   return view('contact.contact');
 })->name('contact');
 
+
+Route::get('/download-quarterly-reports', function() {
+  return view('pages.quaterlyreport');
+})->name('quaterlyreport');
+
 // PLATEAU ROUTE GROUP
 Route::group(['prefix' => 'plateau'], function() {
 
