@@ -92,7 +92,7 @@
                 </div>
                 <div>
                     <div class="uk-background-muted uk-light">
-                        <a href="">
+                        <a href="{{ URL::asset('assets/documents/PLATEAU-STATE-2018-APPROVED-BUDGET-VERSION-1.pdf') }}">
                             <img src="./assets/img/analysis.png" alt="">
                             <div class="uk-text-left">
                                 <h3>2018  Budget </h3>
@@ -250,9 +250,9 @@
                     </div>
                 </div>
             </div>
-        <img class="mobile-centered-img" src="./assets/img/platStet.png" alt="">
-    </section>
-    @include('layouts.footer')
-    <script src="assets/js/app.js"></script>
-</body>
+            <img class="mobile-centered-img" src="./assets/img/platStet.png" alt="">
+        </section>
+        @include('layouts.footer')
+        <script src="assets/js/app.js"></script>
+    </body>
 </html>
