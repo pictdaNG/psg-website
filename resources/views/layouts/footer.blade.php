@@ -16,9 +16,9 @@
                 <li><a href="{{ route('governor') }}">The Governor</a></li>
                 <li><a href="{{ route('executive') }}">The Executive</a></li>
                 <li><a href="#">Ministries, Departments & Agencies</a></li>
-                <li><a href="#">Local Government Areas</a></li>
+                <li><a href="{{ route('all_lga') }}">Local Government Areas</a></li>
                 <li><a href="{{ route('investment') }}">Trade and Investments</a></li>
-                <li><a href="#">Citizen Services</a></li>
+                <li><a href="{{ route('citizen.services') }}">Citizen Services</a></li>
             </ul>
         </div>
         <div class="subfooter">
@@ -27,8 +27,8 @@
                 <div class="uk-navbar-right">
                     <ul class="uk-navbar-nav uk-iconnav uk-light">
                         <li><a href="#" uk-icon="icon: google-plus"></a></li>
-                        <li><a href="#" uk-icon="icon: facebook"></a></li>
-                        <li><a href="#" uk-icon="icon: twitter"></a></li>
+                        <li><a href="https://www.facebook.com/PlateauStateGov" uk-icon="icon: facebook"></a></li>
+                        <li><a href="https://twitter.com/PLSGovt" uk-icon="icon: twitter"></a></li>
                         <li><a href="#" uk-icon="icon: instagram"></a></li>
                     </ul>
                 </div>

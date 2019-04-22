@@ -76,8 +76,17 @@ Route::group(['prefix' => 'government'], function() {
     return view('government.judiciary');
   })->name('judiciary');
 
+  Route::get('citizen-services', function() {
+    return view('government.citizens');
+  })->name('citizen.services');
+
   // LGAs Route GROUP
-  Route::group(['prefix' => 'lga'], function() {
+  Route::group(['prefix' => 'lgas'], function() {
+
+    Route::get('/', function() {
+      return view('government.lga.index');
+    })->name('all_lga');
+
     Route::get('/bassa', function() {
       return view('government.lga.bassa');
     })->name('bassa');
@@ -391,6 +400,5 @@ Route::group(['prefix' => 'news-&-events'], function() {
   Route::get('/massive-turnout-in-tudun-wada-as-plateau-votes-to-determine-governor', function() {
     return view('news.news3');
   })->name('news.news3');
-
   
 });
