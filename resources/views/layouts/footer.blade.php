@@ -5,7 +5,8 @@
         <div class="footer-nav">
             <h5 class="footer-title">Jos City</h5>
             <p>
-              Jos is a city in the Middle Belt of Nigeria. The city has a population of about 900,000 residents based on the 2006 census.
+              Jos is a city in the Middle Belt of Nigeria. The city has a population of about 900,000 residents based
+                on the 2006 census. Popularly called "J-town"
             </p>
     
                
@@ -19,6 +20,7 @@
                 <li><a href="{{ route('all_lga') }}">Local Government Areas</a></li>
                 <li><a href="{{ route('investment') }}">Trade and Investments</a></li>
                 <li><a href="{{ route('citizen.services') }}">Citizen Services</a></li>
+                <li><a href="http://webmail.plateaustate.gov.ng/login.php" target="_blank">Webmail</a></li>
             </ul>
         </div>
         <div class="subfooter">
@@ -45,7 +47,6 @@
                         <li><a href="{{ route('glance') }}">At a Glance</a></li>
                         <li><a href="{{ route('people') }}">The People</a></li>
                         <li><a href="{{ route('history') }}">History</a></li>
-                        <li><a href="{{ route('endowment') }}">Endowments</a></li>
                         <li><a href="{{ route('endowment') }}">Endowments</a></li>
                         <li><a href="{{ route('past-admins') }}">Past Administrators</a></li>
                     </ul>
