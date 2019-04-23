@@ -19,6 +19,10 @@ Route::get('/contact', function() {
   return view('contact.contact');
 })->name('contact');
 
+Route::get('/budget', function() {
+  return view('pages.budget');
+})->name('budget');
+
 
 Route::get('/download-quarterly-reports', function() {
   return view('pages.quaterlyreport');
