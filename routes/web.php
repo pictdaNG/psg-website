@@ -24,6 +24,16 @@ Route::get('/budget', function() {
 })->name('budget');
 
 
+
+Route::group(['prefix' => 'budget'], function() {
+    Route::get('/', function() {
+        return view('budget.index');
+    })->name('budget');
+
+    Route::get('2019-approved', function() {
+        return view('budget.2019');
+    })->name('2019approved');
+});
 Route::get('/download-quarterly-reports', function() {
   return view('pages.quaterlyreport');
 })->name('quaterlyreport');
