@@ -94,11 +94,11 @@
                 </div>
                 <div>
                     <div class="uk-background-muted uk-light">
-                        <a href="">
+                        <a href="{{ route('budget') }}">
                             <img src="./assets/img/analysis.png" alt="">
                             <div class="uk-text-left">
-                                <h3>2018  Budget </h3>
-                                <p>Download the Approved 2018 Budget of the Rescue Administration. </p>
+                                <h3>2019  Budget </h3>
+                                <p>The Approved 2019 Budget of the Rescue Administration. </p>
                             </div>
                         </a>
                     </div>
