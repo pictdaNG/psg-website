@@ -17,7 +17,7 @@
         <h2 class="bold">HON. SIMON BAKO LALONG</h2>
         <p>Rt. Hon. Simon Lalong (born May 5, 1963) was elected Governor of Plateau State, Nigeria in April 2015. He has held various offices and can be described as a veteran in Plateau politics.</p>
 
-        <div class="uk-child-width-1-1@m uk-grid-small" uk-grid>
+        <div class="uk-child-width-1-1@m govImg uk-grid-small" uk-grid>
             <img class="object-fit" src="{{ URL::asset('/assets/img/lalong-banner.jpg') }}" alt="">
         </div>
 

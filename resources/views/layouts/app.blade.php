@@ -16,7 +16,9 @@
     <div class="uk-width-1-1@m" uk-sticky="show-on-up: true; animation: uk-animation-slide-top;">
     <div class="wrapper uk-flex" style="z-index: 12000;">
         <div class="logo mt:40px">
-            <img src="{{ URL::asset('./assets/img/platStet.png') }}" alt="">
+            <a class="logoLink uk-display-block" href="{{ route('home') }}">
+                <img src="{{ URL::asset('./assets/img/platStet.png') }}" alt="">
+            </a>
             <a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav-primary" href="#"></a>
         </div>
         <div id="nav">
