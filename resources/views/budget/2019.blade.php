@@ -38,9 +38,9 @@
             <tbody>
                 <tr>
                     <td>2019 Approved Budget</td>
-                    
+
                     <td>
-                        <a href="{{ URL::asset('assets/documents/PLATEAU-STATE-2019-APPROVED-BUDGET.pdf') }}">Download Budget</a>
+                        <a href="{{ URL::asset('assets/documents/PLATEAU-STATE-2019-APPROVED-BUDGET.pdf') }}" download>Download Budget</a>
                     </td>
                 </tr>
             </tbody>
