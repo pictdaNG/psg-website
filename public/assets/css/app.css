@@ -14992,7 +14992,11 @@ header.hero {
     .logo {
       margin-top: 0 !important; } }
   .logo img {
-    height: 80%; }
+    height: 100%;
+  }
+  .logo .logoLink {
+    height: 80%;
+  }
 
 #nav {
   -webkit-flex-basis: calc((100% - (150px)));
@@ -15841,4 +15845,13 @@ ul.navbar li > ul li:hover ul { left: 100%; }
 ul.navbar li > ul {padding: 25px}
 .uk-lightbox-items > .uk-active{
     height: 100vh;
+}
+
+.govImg{
+  height: 600px
+}
+
+.govImg img{
+  width: 100%;
+  height: 100%;
 }
