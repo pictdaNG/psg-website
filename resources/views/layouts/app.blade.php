@@ -1,6 +1,19 @@
 <!doctype html>
 <html class="no-js" lang="en">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-65978169-6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-65978169-6');
+    </script>
+
+    $yield('gtag')
+
+    
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="shortcut icon" href="{{ URL::asset('./assets/favicon.ico') }}" />
