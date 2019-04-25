@@ -10,6 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::post('sendemail', 'ContactController@sendEmail')->name('sendemail');
 
 Route::get('/', function () {
     return view('welcome');
@@ -19,11 +20,7 @@ Route::get('/contact', function() {
   return view('contact.contact');
 })->name('contact');
 
-Route::get('/budget', function() {
-  return view('pages.budget');
-})->name('budget');
-
-
+Route::post('/contactus', 'ContactController@postContactForm')->name('contact.post');
 
 Route::group(['prefix' => 'budget'], function() {
     Route::get('/', function() {
