@@ -11,7 +11,7 @@
       gtag('config', 'UA-65978169-6');
     </script>
 
-    $yield('gtag')
+    
 
     
     <meta charset="utf-8" />

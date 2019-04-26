@@ -30,6 +30,10 @@ Route::group(['prefix' => 'budget'], function() {
     Route::get('2019-approved', function() {
         return view('budget.2019');
     })->name('2019approved');
+
+    Route::get('/PLATEAU-STATE-CITIZENS-BUDGET-2019', function() {
+      return view('budget.citizens2019');
+    })->name('citizens2019approved');
 });
 Route::get('/download-quarterly-reports', function() {
   return view('pages.quaterlyreport');
