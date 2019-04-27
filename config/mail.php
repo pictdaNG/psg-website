@@ -56,8 +56,8 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
-        'name' => env('MAIL_FROM_NAME', 'Example'),
+        'address' => env('MAIL_FROM_ADDRESS', 'no_reply@plateaustate.gov.ng'),
+        'name' => env('MAIL_FROM_NAME', 'Plateau State Government'),
     ],
 
     /*
@@ -86,7 +86,7 @@ return [
 
     'username' => env('MAIL_USERNAME', 'apikey'),
 
-    'password' => env('MAIL_PASSWORD', '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'),
+    'password' => env('MAIL_PASSWORD', 'SG.YO9yJgl6ROOhpPNXKOgPTA.KaRBtU9VBBJyyppapv_hJkgroMdKN-PypfLiBpxa-l8'),
 
     /*
     |--------------------------------------------------------------------------

@@ -11,8 +11,6 @@
       gtag('config', 'UA-65978169-6');
     </script>
 
-    $yield('gtag')
-
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="shortcut icon" href="./assets/favicon.ico" />
