@@ -19,16 +19,29 @@
                 <img src="./assets/img/Riyom-Rock.jpg" alt="">
             </div>
             <div class="uk-width-1-1@m">
-                <form method="POST" action="{{ url('sendemail') }}">
+                <form method="post" action="{{ route('send_contact_us') }}">
 
                     {{ csrf_field() }}
+                    @if(session('error'))
+                        <div class="uk-alert-danger" uk-alert>
+                            <a class="uk-alert-close" uk-close></a>
+                            <p>{{ session('error') }}</p>
+                        </div>
+                    @endif
+                    
+                    @if(session('success'))
+                        <div class="uk-alert-success" uk-alert>
+                            <a class="uk-alert-close" uk-close></a>
+                            <p>{{ session('success') }}</p>
+                        </div>
+                    @endif
 
                     <fieldset class="uk-fieldset">
 
                         <legend class="uk-legend">Fill in your Information below</legend>
 
                         <div class="uk-margin">
-                            <input class="uk-input {{ $errors->has('name') ? 'uk-form-danger' : '' }}" type="text" placeholder="Full name" name="name">
+                            <input class="uk-input {{ $errors->has('username') ? 'uk-form-danger' : '' }}" type="text" placeholder="Full name" name="username">
                         </div>
 
                         <div class="uk-margin">
@@ -46,7 +59,7 @@
                         <div class="uk-margin">
                             <textarea class="uk-textarea {{ $errors->has('bodyMessage') ? 'uk-form-danger' : '' }}" rows="5" placeholder="Message" name="bodyMessage"></textarea>
                         </div>
-                        <button class="uk-button uk-button-secondary uk-width-1-1">Send Message</button>
+                        <button type="submit" class="uk-button uk-button-secondary uk-width-1-1">Send Message</button>
                     </fieldset>
                 </form>
             </div>
