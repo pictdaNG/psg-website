@@ -55,9 +55,6 @@
                                 <li><a href="{{ route('judiciary') }}">Judiciary</a></li>
                             </ul>
                         </li>
-                       
-
-                        
                     </ul>
                 </div>
             </li>
