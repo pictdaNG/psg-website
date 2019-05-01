@@ -14,10 +14,8 @@
 
 @section('content')
     <div class="content uk-width-1-2@m">
-        <h2 class="bold">Download Quarterly Reports</h2>
-        
-        <hr>
-        
+        <h2 class="bold">Download Quarterly Reports</h2>        
+        <hr />        
         <p>
             <a href="{{ URL::asset('assets/documents/CITIZENS-PARTICIPATION-IN-BUDGET-PROCESS-2019-PLATEAU-CENTRAL.pdf') }}">
                 Plateau Central Senatorial: Report of Stackholder's Town Hall Meeting on Citizens Engagement on the State Bugeting Process.
@@ -41,8 +39,7 @@
             <a href="{{ URL::asset('assets/documents/first_qtr_2017.pdf') }}">
                 First Quarter 2017
             </a>
-        </p>    
-            
+        </p>            
 
         <p>
             <a href="{{ URL::asset('assets/documents/second_qtr_2017.pdf') }}">
