@@ -34,9 +34,14 @@ Route::group(['prefix' => 'budget'], function() {
     return view('budget.citizens2019');
   })->name('citizens2019approved');
 });
-Route::get('/download-quarterly-reports', function() {
-  return view('pages.quaterlyreport');
-})->name('quaterlyreport');
+
+Route::group(['prefix' => 'download'], function() {
+  Route::get('/download-quarterly-reports', function() {
+    return view('pages.quaterlyreport');
+  })->name('quaterlyreport');
+});
+
+
 
 // PLATEAU ROUTE GROUP
 Route::group(['prefix' => 'plateau'], function() {
