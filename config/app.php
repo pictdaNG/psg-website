@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'Plateau State Government'),
 
     /*
     |--------------------------------------------------------------------------
@@ -174,6 +174,9 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        Davmixcool\MetaManager\MetaServiceProvider::class,
+        UxWeb\SweetAlert\SweetAlertServiceProvider::class,
+        
 
     ],
 
@@ -225,6 +228,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        'Alert' => UxWeb\SweetAlert\SweetAlert::class,
 
     ],
 

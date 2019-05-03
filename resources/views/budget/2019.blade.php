@@ -38,17 +38,19 @@
             <tbody>
                 <tr>
                     <td>2019 Approved Budget</td>
+
                     <td>
-                        <a href="">Download Budget</a>
+                        <a href="{{ URL::asset('assets/documents/PLATEAU-STATE-2019-APPROVED-BUDGET.pdf') }}" target="_blank">Download Budget</a>
                     </td>
                 </tr>
             </tbody>
         </table>
         <div id="disqus_thread"></div>
-        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
-                pictda.</a></noscript>
-        <p>
-        </p>
-
+        <noscript>
+          Please enable JavaScript to view the 
+          <a href="https://disqus.com/?ref_noscript">
+            comments powered by pictda.
+          </a>
+        </noscript>
     </div>
 @endsection
