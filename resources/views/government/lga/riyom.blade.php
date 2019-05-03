@@ -15,10 +15,10 @@
 @section('content')
     <div class="content uk-width-1-2@m">
         <h2 class="bold">Riyom</h2>
-        <p>Riyom is a Local Government Area in Plateau State, Nigeria. Its headquarters are in the town of Riyom to the north of the Area at9°38′00″N 8°46′00″E.</p>        
+        <p>Riyom is a Local Government Area in Plateau State, Nigeria. Its headquarters are in the town of Riyom to the north of the Area at 9°38′00″N 8°46′00″E.</p>        
 
         <div class="uk-child-width-1-1@m uk-grid-small" uk-grid>
-            <img class="object-fit" src="{{ URL::asset('/assets/img/image_03.png') }}" alt="" />
+            <img src="{{ URL::asset('/assets/img/LGAS-riyom.jpg') }}" alt="" style="height: 60%">
         </div>
         
         <p>
