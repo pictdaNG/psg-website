@@ -12,14 +12,28 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+  return view('welcome');
 })->name('home');
 
-Route::get('/contact', function() {
+Route::get('/contact-us', function() {
   return view('contact.contact');
 })->name('contact');
 
+Route::post('/contact-us', 'ContactController@postContactUs')->name('send_contact_us');
 
+Route::group(['prefix' => 'budget'], function() {
+  Route::get('/', function() {
+    return view('budget.index');
+  })->name('budget');
+
+  Route::get('2019-approved', function() {
+    return view('budget.2019');
+  })->name('2019approved');
+
+  Route::get('/PLATEAU-STATE-CITIZENS-BUDGET-2019', function() {
+    return view('budget.citizens2019');
+  })->name('citizens2019approved');
+});
 Route::get('/download-quarterly-reports', function() {
   return view('pages.quaterlyreport');
 })->name('quaterlyreport');
@@ -76,8 +90,17 @@ Route::group(['prefix' => 'government'], function() {
     return view('government.judiciary');
   })->name('judiciary');
 
+  Route::get('citizen-services', function() {
+    return view('government.citizens');
+  })->name('citizen.services');
+
   // LGAs Route GROUP
-  Route::group(['prefix' => 'lga'], function() {
+  Route::group(['prefix' => 'lgas'], function() {
+
+    Route::get('/', function() {
+      return view('government.lga.index');
+    })->name('all_lga');
+
     Route::get('/bassa', function() {
       return view('government.lga.bassa');
     })->name('bassa');
@@ -391,6 +414,5 @@ Route::group(['prefix' => 'news-&-events'], function() {
   Route::get('/massive-turnout-in-tudun-wada-as-plateau-votes-to-determine-governor', function() {
     return view('news.news3');
   })->name('news.news3');
-
   
 });

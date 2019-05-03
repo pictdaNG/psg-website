@@ -1,10 +1,44 @@
 <!doctype html>
 <html class="no-js" lang="en">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-65978169-6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-65978169-6');
+    </script>
+
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-      <link rel="shortcut icon" href="./assets/favicon.ico" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/favicon.ico" />
+    
+    <!-- Twitter Meta -->
+    <meta name="twitter:site" content="@PLSGovt">
+    <meta name="twitter:creator" content="@PLSGovt">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Plateau State Government">
+    <meta name="twitter:description" content="Official Plateau State Government Page">
+    <meta name="twitter:image" content="{{ URL::asset('./assets/img/platStet.png') }}">
+
+    <meta name="google-site-verification" content="UAD6KPgApxuFKVgBYXwnUpZuM79LNYROXw0n4YI53_A" />
+
+    <meta property="og:url" content="https://plateaustate.gov.ng" />
+    <!-- Facebook Meta -->
+    <meta property="og:title" content="Plateau State Government">
+    <meta property="og:description" content="Official Plateau State Government Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="{{ URL::asset('./assets/img/platStet.png') }}">
+    <meta property="og:image:secure_url" content="{{ URL::asset('./assets/img/platStet.png') }}">
+    <meta property="og:image:type" content="image/jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    @include('meta::manager')
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome! Home| Plateau State Government Website</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/app.css">
@@ -17,7 +51,9 @@
         <div class="uk-width-1-1@m" uk-sticky="show-on-up: true; animation: uk-animation-slide-top;">
             <div class="wrapper uk-flex" style="z-index: 12000;">
                 <div class="logo mt:40px">
-                    <img src="./assets/img/platStet.png" alt="">
+                    <a class="logoLink uk-display-block" href="{{ route('home') }}">
+                        <img src="{{ URL::asset('./assets/img/platStet.png') }}" alt="">
+                    </a>
                     <a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav-primary" href="#"></a>
                 </div>
                 <div id="nav">
@@ -92,11 +128,11 @@
                 </div>
                 <div>
                     <div class="uk-background-muted uk-light">
-                        <a href="">
+                        <a href="{{ route('budget') }}">
                             <img src="./assets/img/analysis.png" alt="">
                             <div class="uk-text-left">
-                                <h3>2018  Budget </h3>
-                                <p>Download the Approved 2018 Budget of the Rescue Administration. </p>
+                                <h3>2019  Budget </h3>
+                                <p>The Approved 2019 Budget of the Rescue Administration. </p>
                             </div>
                         </a>
                     </div>
@@ -250,9 +286,9 @@
                     </div>
                 </div>
             </div>
-        <img class="mobile-centered-img" src="./assets/img/platStet.png" alt="">
-    </section>
-    @include('layouts.footer')
-    <script src="assets/js/app.js"></script>
-</body>
+            <img class="mobile-centered-img" src="./assets/img/platStet.png" alt="">
+        </section>
+        @include('layouts.footer')
+        <script src="assets/js/app.js"></script>
+    </body>
 </html>

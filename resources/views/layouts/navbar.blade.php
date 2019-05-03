@@ -55,9 +55,6 @@
                                 <li><a href="{{ route('judiciary') }}">Judiciary</a></li>
                             </ul>
                         </li>
-                       
-
-                        
                     </ul>
                 </div>
             </li>
@@ -268,9 +265,6 @@
           </li>
           <li>
             <a href="{{ route('contact') }}">Contact Us <span>How to reach us</span></a>
-          </li>
-          <li>
-            <a href="http://webmail.plateaustate.gov.ng/login.php" target="_blank">Webmail</a>
           </li>
         </ul>
         <a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav-primary" href="#"></a>
