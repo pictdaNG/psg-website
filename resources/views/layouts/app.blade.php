@@ -102,6 +102,7 @@
                     <li>Jos-North</li>
                     <li>Jos-South</li>
                     <li>Kanam</li>
+                    <li>Kanke</li>
                     <li>Langtang-North</li>
                     <li>Langtang-South</li>
                     <li>Mangu</li>
