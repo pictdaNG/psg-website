@@ -18,7 +18,7 @@
         <p>Wase is a town and Local Government Area (LGA) of Plateau State, Nigeria. Situated some 216 km south east of Jos, the Plateau State capital, Wase State is a traditional state founded in the area in 1820; this became part of the British Royal Niger Company protectorate (later Northern Nigeria) in 1898.</p>        
 
         <div class="uk-child-width-1-1@m uk-grid-small" uk-grid>
-            <img class="object-fit" src="{{ URL::asset('/assets/img/image_03.png') }}" alt="" />
+            <img src="{{ URL::asset('/assets/img/LGAS-waseArtboard.jpg') }}" alt="" style="height: 60%">
         </div>
         
         <p>

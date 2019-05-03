@@ -18,7 +18,7 @@
         <p>Langtang South is a Local Government Area in Plateau State, Nigeria. Its headquarters are in the town of Mabudi.</p>        
 
         <div class="uk-child-width-1-1@m uk-grid-small" uk-grid>
-            <img class="object-fit" src="{{ URL::asset('/assets/img/image_03.png') }}" alt="" />
+            <img src="{{ URL::asset('/assets/img/LGAS-langtansouth.jpg') }}" alt="" style="height: 60%">
         </div>
         
         <p>
