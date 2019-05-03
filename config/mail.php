@@ -86,7 +86,7 @@ return [
 
     'username' => env('MAIL_USERNAME', 'apikey'),
 
-    'password' => env('MAIL_PASSWORD', 'SG.YO9yJgl6ROOhpPNXKOgPTA.KaRBtU9VBBJyyppapv_hJkgroMdKN-PypfLiBpxa-l8'),
+    'password' => env('MAIL_PASSWORD'),
 
     /*
     |--------------------------------------------------------------------------
