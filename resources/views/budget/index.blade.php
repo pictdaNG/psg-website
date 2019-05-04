@@ -26,15 +26,30 @@
             <li>
                 <a href="{{ URL::asset('assets/documents/2019/CITIZENS-PARTICIPATION-IN-BUDGET-PROCESS 2019-PLATEAU-SOUTH.pdf') }}">CITIZENS PARTICIPATION IN BUDGET PROCESS 2019 PLATEAU SOUTH</a>
             </li>
-             <li>
+            <li>
                 <a href="{{ URL::asset('assets/documents/2019/CITIZENS- PARTICIPATION IN-BUDGET-PROCESS-2019-PLATEAU-NORTH.pdf') }}">CITIZENS PARTICIPATION IN BUDGET PROCESS 2019 PLATEAU NORTH</a>
             </li>
+
+            
+            
             <li>
+                PLATEAU STATE 2019 CITIZENS ENGAGEMENT IN THE STATE BUDGETING PROCESS RADIO ADVERTISEMENT <br />
                 <audio controls>
                   <source src="{{ URL::asset('assets/documents/2019/Advertisement-for-Citizens-Budget.mpeg') }}" type="audio/mpeg">
                   <p>Your browser doesn't support audio. Here is
                      a <a href="{{ URL::asset('assets/documents/2019/Advertisement-for-Citizens-Budget.mpeg') }}" download>link to the audio</a> instead.</p>
                 </audio>
+            </li>
+
+            <li>
+                <a href="{{ URL::asset('assets/documents/2019/2019-PLATEAU-STATE-BUDGET-BREAKDOWN.pdf') }}">
+                    PLATEAU STATE 2019 BUDGET BREAKDOWN
+                </a>
+            </li>
+            <li>
+                <a href="{{ URL::asset('assets/documents/2019/PLATEAU-STATE-APPROPRIATION-BILL-2019.pdf') }}">
+                    PLATEAU STATE APPROPRIATION BILL
+                </a>
             </li>
         </ul>
 
