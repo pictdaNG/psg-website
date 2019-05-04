@@ -55,10 +55,7 @@
 
         <ul class="uk-list uk-list-striped">
             <li>
-                <a href="">Advertisement for Citizens Budget</a>
-            </li>
-            <li>
-                <a href="{{ route('2019approved') }}">2019 Approved Budget</a>
+                <a href="{{ route('2019approved') }}">2019 APPROVED BUDGET</a>
             </li>
             <li>
                 <a href="{{ route('citizens2019approved') }}">PLATEAU STATE CITIZENS’BUDGET 2019</a>
