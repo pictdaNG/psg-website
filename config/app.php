@@ -174,9 +174,14 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+ 		App\Providers\BlogServiceProvider::class,
+ 		App\Providers\DocumentServiceProvider::class,
+        App\Providers\DashboardServiceProvider::class,
+ 		App\Providers\LoginServiceProvider::class,
         Davmixcool\MetaManager\MetaServiceProvider::class,
         UxWeb\SweetAlert\SweetAlertServiceProvider::class,
-        
+        'JD\Cloudder\CloudderServiceProvider', 
+        Cartalyst\Sentinel\Laravel\SentinelServiceProvider::class,       
 
     ],
 
@@ -229,6 +234,10 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'Alert' => UxWeb\SweetAlert\SweetAlert::class,
+        'Cloudder' => 'JD\Cloudder\Facades\Cloudder',
+        'Activation' => Cartalyst\Sentinel\Laravel\Facades\Activation::class,
+        'Reminder'   => Cartalyst\Sentinel\Laravel\Facades\Reminder::class,
+        'Sentinel'   => Cartalyst\Sentinel\Laravel\Facades\Sentinel::class,
 
     ],
 

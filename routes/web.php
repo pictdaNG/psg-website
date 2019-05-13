@@ -421,3 +421,23 @@ Route::group(['prefix' => 'news-&-events'], function() {
   })->name('news.news3');
   
 });
+
+Route::group(['prefix' => 'admin'], function() {
+  Route::get('/auth/login', 'LoginController@index')->name('get_login');
+  Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
+
+  Route::group(['prefix' => 'documents'], function() {
+    Route::get('/', 'DocumentController@index')->name('doccument.index');
+    Route::get('/uploads/budget', 'DocumentController@create')->name('document.upload');
+    Route::post('/uploads/budget', 'DocumentController@store')->name('document.budget.store');
+
+    Route::get('/uploads/quarterly-report', 'DocumentController@quarterlyReport')->name('document.quarterly.report');
+    Route::post('/uploads/quarterly-report', 'DocumentController@storeQuarterlyReport')->name('document.quarterly.store');
+  });
+
+  Route::group(['prefix' => 'news-events'], function() {
+    Route::get('/', 'BlogController@index')->name('blog.index');
+    Route::get('/create', 'BlogController@create')->name('blog.create');
+    Route::post('/create', 'BlogController@store')->name('blog.store');
+  });
+});

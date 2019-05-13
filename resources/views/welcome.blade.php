@@ -120,7 +120,7 @@
                         <a href="{{ route('taxation') }}">
                             <img src="./assets/img/interest.png" alt="">
                             <div class="uk-text-left">
-                                <h3>Tax & Taxation </h3>
+                                <h3>Treasury Report </h3>
                                 <p>Geared towards enhancing tax collection and administration with minimal enforcement cost. </p>
                             </div>
                         </a>
@@ -131,7 +131,7 @@
                         <a href="{{ route('budget') }}">
                             <img src="./assets/img/analysis.png" alt="">
                             <div class="uk-text-left">
-                                <h3>2019  Budget </h3>
+                                <h3>Budget Report</h3>
                                 <p>The Approved 2019 Budget of the Rescue Administration. </p>
                             </div>
                         </a>
