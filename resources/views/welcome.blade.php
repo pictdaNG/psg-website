@@ -244,6 +244,22 @@
                 <p class="title--base uk-margin-remove">Find out what's going on & stay up to date</p>
                 <div class="uk-flex-middle" uk-grid>
                     <div class="uk-width-2-3@m">
+                        <a href="{{ route('news.news4') }}">
+                            <h3 class="uk-card-title uk-margin-remove-bottom">Press briefing by the chairman of the committee for the inauguration of ...</h3>
+                        </a>                        
+                        <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">May 24, 2019</time></p>
+                        <p>
+                            I Welcome you all to this Press briefing by the government to unveil the lineup of activities for the forthcoming Inauguration/swearing-in of the second term in office of Governor Simon Bako Lalong led administration.
+
+                        </p>
+                    </div>
+                    <div class="uk-width-1-3@m uk-flex-first">
+                        <img src="./assets/img/press.jpeg" alt="">
+                    </div>
+                </div>
+
+                <div class="uk-flex-middle" uk-grid>
+                    <div class="uk-width-2-3@m">
                         <a href="{{ route('news.news1') }}">
                             <h3 class="uk-card-title uk-margin-remove-bottom">Plateau State establishes agency for ICT development</h3>
                         </a>                        
@@ -271,7 +287,7 @@
                         <img src="./assets/img/lalong-2.jpeg" alt="">
                     </div>
                 </div>
-                <div class="uk-flex-middle" uk-grid>
+                <!-- <div class="uk-flex-middle" uk-grid>
                     <div class="uk-width-2-3@m">
                         <a href="{{ route('news.news3') }}">
                             <h3 class="uk-card-title uk-margin-remove-bottom">Massive turnout in Tudun Wada as Plateau votes to determine governor</h3>
@@ -285,6 +301,8 @@
                         <img src="./assets/img/election.jpg" alt="">
                     </div>
                 </div>
+ -->
+                
             </div>
             <img class="mobile-centered-img" src="./assets/img/platStet.png" alt="">
         </section>

@@ -419,6 +419,10 @@ Route::group(['prefix' => 'news-&-events'], function() {
   Route::get('/massive-turnout-in-tudun-wada-as-plateau-votes-to-determine-governor', function() {
     return view('news.news3');
   })->name('news.news3');
+
+  Route::get('/press-briefing-by-the-chairman-of-the-committee-for-the-inauguration-of-the-second-term-in-office-of-the-lalong-adminstration', function() {
+    return view('news.news4');
+  })->name('news.news4');
   
 });
 
