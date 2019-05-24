@@ -254,7 +254,7 @@
                         </p>
                     </div>
                     <div class="uk-width-1-3@m uk-flex-first">
-                        <img src="./assets/img/press.jpeg" alt="">
+                        <img src="./assets/img/Tyoden.png" alt="">
                     </div>
                 </div>
 
