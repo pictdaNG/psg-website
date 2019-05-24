@@ -99,7 +99,7 @@
                             <img src="./assets/img/government.png" alt="">
                             <div class="uk-text-left">
                                 <h3>The Arms of Government</h3>
-                                <p>Meet the Arms of Government of the Rescue Administration</p>
+                                <p>Meet the Arms of Government.</p>
                             </div>    
                         </a>                        
                     </div>
@@ -110,7 +110,7 @@
                             <img src="./assets/img/newspaper.png" alt="">
                             <div class="uk-text-left">
                                 <h3>Quarterly  Reports</h3>
-                                <p>Download the comprehensive quarterly reports of the rescue administration. </p>
+                                <p>Download the comprehensive quarterly reports. </p>
                             </div>
                         </a>
                     </div>
@@ -120,8 +120,8 @@
                         <a href="{{ route('taxation') }}">
                             <img src="./assets/img/interest.png" alt="">
                             <div class="uk-text-left">
-                                <h3>Treasury Report </h3>
-                                <p>Geared towards enhancing tax collection and administration with minimal enforcement cost. </p>
+                                <h3>Treasury Reports </h3>
+                                <p>Download the comprehensive treasury reports. </p>
                             </div>
                         </a>
                     </div>
@@ -132,7 +132,7 @@
                             <img src="./assets/img/analysis.png" alt="">
                             <div class="uk-text-left">
                                 <h3>Budget Report</h3>
-                                <p>The Approved 2019 Budget of the Rescue Administration. </p>
+                                <p>The Approved 2019 Budget. </p>
                             </div>
                         </a>
                     </div>
