@@ -228,7 +228,7 @@
     </section>    
     @include('layouts.footer')
     <script src="{{ URL::asset('assets/js/app.js') }}"></script>
-    
+    <script src="{{ asset('js/share.js') }}"></script>
     @yield('scripts')
 </body>
 </html>
