@@ -22,7 +22,7 @@
     <meta name="twitter:site" content="@PLSGovt">
     <meta name="twitter:creator" content="@PLSGovt">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Plateau State Government">
+    <meta name="twitter:title" content="@yield('title')">
     <meta name="twitter:description" content="Official Plateau State Government Page">
     <meta name="twitter:image" content="{{ URL::asset('./assets/img/platStet.png') }}">
 
@@ -30,7 +30,7 @@
 
     <meta property="og:url" content="https://plateaustate.gov.ng" />
     <!-- Facebook Meta -->
-    <meta property="og:title" content="Plateau State Government">
+    <meta property="og:title" content="@yield('title')">
     <meta property="og:description" content="Official Plateau State Government Page">
     <meta property="og:type" content="website">
     <meta property="og:image" content="{{ URL::asset('./assets/img/platStet.png') }}">
