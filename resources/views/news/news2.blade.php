@@ -15,6 +15,7 @@
 @section('content')
 <div class="content uk-width-1-2@m">
     <!-- <h2 class="bold">NATURAL ENDOWMENTS</h2> -->
+    <div class="sharethis-inline-share-buttons"></div>
     <p>
         Incumbent Gov. Simon Lalong of Plateau, the gubernatorial candidate of the All Progressives Congress (APC) in Plateau, has been declared the winner of the rerun gubernatorial election in the state.
     </p>
@@ -42,6 +43,8 @@
     <p>
         This had led to a rerun election in 40 polling units in nine Local Government Areas (LGAs) of the state.
     </p>
+    <div class="sharethis-inline-share-buttons"></div>
+                        
     
 </div>
 @endsection

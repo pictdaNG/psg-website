@@ -11,7 +11,7 @@
       gtag('config', 'UA-65978169-6');
     </script>
 
-    
+    <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5cecd95a5676af001119e9ee&product=inline-share-buttons" async="async"></script>
 
     
     <meta charset="utf-8" />
@@ -228,6 +228,7 @@
     </section>    
     @include('layouts.footer')
     <script src="{{ URL::asset('assets/js/app.js') }}"></script>
+    
     @yield('scripts')
 </body>
 </html>

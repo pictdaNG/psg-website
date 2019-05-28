@@ -15,6 +15,7 @@
 @section('content')
 <div class="content uk-width-1-2@m">
     <!-- <h2 class="bold">NATURAL ENDOWMENTS</h2> -->
+    <div class="sharethis-inline-share-buttons"></div>
     <p>
         The Plateau state government has established an ICT development agency with the mandate to develop ICT, as well as using it as a tool for social mobility in solving youth unemployment in the state.
     </p>
@@ -55,5 +56,7 @@
     <p>
         To achieve this, he revealed that they are taking with the Local Government Chairmen across the state to establish 17 innovation hubs in the 17 local government area to ensure job creation for the youth.
     </p>
+    <div class="sharethis-inline-share-buttons"></div>
+                        
 </div>
 @endsection

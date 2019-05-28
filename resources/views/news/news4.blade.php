@@ -15,6 +15,7 @@
 @section('content')
     <div class="content uk-width-1-2@m">
         <h2 class="bold">PRESS BRIEFING BY THE CHAIRMAN OF THE COMMITTEE FOR THE INAUGURATION OF THE SECOND TERM IN OFFICE OF THE LALONG'S ADMINSTRATION.</h2>
+        <div class="sharethis-inline-share-buttons"></div>
         <p>
             Gentlemen of the Press
         </p>
@@ -256,6 +257,7 @@
             </strong>
         </p>
 
-
+        <div class="sharethis-inline-share-buttons"></div>
+                        
     </div>
 @endsection

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome! Home| Plateau State Government Website</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/app.css">
+
   </head>
 <body>
 
@@ -404,5 +404,7 @@
         </div>
     </div>
     <script src="assets/js/app.js"></script>
+    <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5cecd95a5676af001119e9ee&product=inline-share-buttons" async="async"></script>
+    <link rel="stylesheet" href="assets/css/app.css">
 </body>
 </html>
