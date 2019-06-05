@@ -426,9 +426,13 @@ Route::group(['prefix' => 'news-&-events'], function() {
   
 });
 
+Route::get('/auth/login', 'LoginController@index')->name('get_login');
+Route::post('/auth/login', 'LoginController@doLogin')->name('do_login');
+Route::get('/logout', 'LoginController@logout')->name('logout');
+
 Route::group(['prefix' => 'admin'], function() {
-  Route::get('/auth/login', 'LoginController@index')->name('get_login');
-  Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
+  
+  Route::get('/', 'DashboardController@index')->name('admin_dash');
 
   Route::group(['prefix' => 'documents'], function() {
     Route::get('/', 'DocumentController@index')->name('doccument.index');

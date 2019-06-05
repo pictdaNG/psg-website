@@ -19,32 +19,29 @@ class ContactController extends Controller {
 
         // dd($request->all());
 
-        $data = array(
-          'username' => $request->username,
-          'email' => $request->email,
-          'subject' => $request->subject,
-          'phone' => $request->phone,
-          'bodyMessage' => $request->bodyMessage,
-        );
+    $data = array(
+      'username' => $request->username,
+      'email' => $request->email,
+      'subject' => $request->subject,
+      'phone' => $request->phone,
+      'bodyMessage' => $request->bodyMessage,
+    );
 
-        // dd($data);
+    // dd($data);
 
-        Mail::send('emails.contact', $data, function($message) use ($data) {
-          $message->from($data['email']);
-          $message->to('info@plateaustate.gov.ng');
-          $message->subject($data['subject']);
-        });
+    Mail::send('emails.contact', $data, function($message) use ($data) {
+      $message->from($data['email']);
+      $message->to('info@plateaustate.gov.ng');
+      $message->subject($data['subject']);
+    });
 
-        $notification = array(
-          'message' => 'Message Sent successfully',
-          'alert-type' => 'success'
-        );
-        
-        Session::flash('success', 'Message Sent Successfully. Someone will contact you soon via Email.');
+    $notification = array(
+      'message' => 'Message Sent successfully',
+      'alert-type' => 'success'
+    );
+    
+    Session::flash('success', 'Message Sent Successfully. Someone will contact you soon via Email.');
 
-        return redirect()->back()->with($notification);
-      }
-
-
-
+    return redirect()->back()->with($notification);
+  }
 }

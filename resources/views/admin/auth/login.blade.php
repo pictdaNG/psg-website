@@ -23,7 +23,21 @@
         <h4 class="auth-header">
           Login Form
         </h4>
-        <form action="#" method="post">
+        <form action="{{ route('do_login') }}" method="post">
+          
+          @if(session('error'))
+            <div class="alert alert-danger" alert-dismissable role="alert">
+              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+              <strong>Oh snap! </strong> {{ session('error') }}.
+            </div>
+          @endif
+
+          @if(session('success'))
+            <div class="alert alert-success alert-dismissable"> 
+              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+              {{ session('success') }}
+            </div>
+          @endif
           {{ csrf_field() }}
           <div class="form-group">
             <label for="">Username</label>

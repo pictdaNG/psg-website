@@ -19,131 +19,6 @@
   </head>
   <body class="menu-position-side menu-side-left full-screen with-content-panel">
     <div class="all-wrapper with-side-panel solid-bg-all">
-      
-      <div class="search-with-suggestions-w">
-        <div class="search-with-suggestions-modal">
-          <div class="element-search">
-            <input class="search-suggest-input" placeholder="Start typing to search..." type="text">
-              <div class="close-search-suggestions">
-                <i class="os-icon os-icon-x"></i>
-              </div>
-            </input>
-          </div>
-          <div class="search-suggestions-group">
-            <div class="ssg-header">
-              <div class="ssg-icon">
-                <div class="os-icon os-icon-box"></div>
-              </div>
-              <div class="ssg-name">
-                Projects
-              </div>
-              <div class="ssg-info">
-                24 Total
-              </div>
-            </div>
-            <div class="ssg-content">
-              <div class="ssg-items ssg-items-boxed">
-                <a class="ssg-item" href="users_profile_big.html">
-                  <div class="item-media" style="background-image: url(img/company6.png)"></div>
-                  <div class="item-name">
-                    Integ<span>ration</span> with API
-                  </div>
-                </a><a class="ssg-item" href="users_profile_big.html">
-                  <div class="item-media" style="background-image: url(img/company7.png)"></div>
-                  <div class="item-name">
-                    Deve<span>lopm</span>ent Project
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="search-suggestions-group">
-            <div class="ssg-header">
-              <div class="ssg-icon">
-                <div class="os-icon os-icon-users"></div>
-              </div>
-              <div class="ssg-name">
-                Customers
-              </div>
-              <div class="ssg-info">
-                12 Total
-              </div>
-            </div>
-            <div class="ssg-content">
-              <div class="ssg-items ssg-items-list">
-                <a class="ssg-item" href="users_profile_big.html">
-                  <div class="item-media" style="background-image: url(img/avatar1.jpg)"></div>
-                  <div class="item-name">
-                    John Ma<span>yer</span>s
-                  </div>
-                </a><a class="ssg-item" href="users_profile_big.html">
-                  <div class="item-media" style="background-image: url(img/avatar2.jpg)"></div>
-                  <div class="item-name">
-                    Th<span>omas</span> Mullier
-                  </div>
-                </a><a class="ssg-item" href="users_profile_big.html">
-                  <div class="item-media" style="background-image: url(img/avatar3.jpg)"></div>
-                  <div class="item-name">
-                    Kim C<span>olli</span>ns
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="search-suggestions-group">
-            <div class="ssg-header">
-              <div class="ssg-icon">
-                <div class="os-icon os-icon-folder"></div>
-              </div>
-              <div class="ssg-name">
-                Files
-              </div>
-              <div class="ssg-info">
-                17 Total
-              </div>
-            </div>
-            <div class="ssg-content">
-              <div class="ssg-items ssg-items-blocks">
-                <a class="ssg-item" href="#">
-                  <div class="item-icon">
-                    <i class="os-icon os-icon-file-text"></i>
-                  </div>
-                  <div class="item-name">
-                    Work<span>Not</span>e.txt
-                  </div>
-                </a><a class="ssg-item" href="#">
-                  <div class="item-icon">
-                    <i class="os-icon os-icon-film"></i>
-                  </div>
-                  <div class="item-name">
-                    V<span>ideo</span>.avi
-                  </div>
-                </a><a class="ssg-item" href="#">
-                  <div class="item-icon">
-                    <i class="os-icon os-icon-database"></i>
-                  </div>
-                  <div class="item-name">
-                    User<span>Tabl</span>e.sql
-                  </div>
-                </a><a class="ssg-item" href="#">
-                  <div class="item-icon">
-                    <i class="os-icon os-icon-image"></i>
-                  </div>
-                  <div class="item-name">
-                    wed<span>din</span>g.jpg
-                  </div>
-                </a>
-              </div>
-              <div class="ssg-nothing-found">
-                <div class="icon-w">
-                  <i class="os-icon os-icon-eye-off"></i>
-                </div>
-                <span>No files were found. Try changing your query...</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="layout-w">
         <!--------------------
         START - Mobile Menu
@@ -170,7 +45,7 @@
               </div>
               <div class="logged-user-info-w">
                 <div class="logged-user-name">
-                  Maria Gomez
+                  {{ Sentinel::getUser()->first_name }} {{Sentinel::getUser()->last_name}}
                 </div>
                 <div class="logged-user-role">
                   Administrator
@@ -180,7 +55,7 @@
             <!--------------------
             START - Mobile Menu List
             -------------------->
-            <ul class="main-menu">
+            <!-- <ul class="main-menu">
               <li class="has-sub-menu">
                 <a href="index.html">
                   <div class="icon-w">
@@ -522,27 +397,17 @@
                     <a href="icon_fonts_light_admin.html">Light Admin</a>
                   </li>
                 </ul>
-              </li>
+              </li> -->
             </ul>
             <!--------------------
             END - Mobile Menu List
             -------------------->
-            <div class="mobile-menu-magic">
-              <h4>
-                Light Admin
-              </h4>
-              <p>
-                Clean Bootstrap 4 Template
-              </p>
-              <div class="btn-w">
-                <a class="btn btn-white btn-rounded" href="https://themeforest.net/item/light-admin-clean-bootstrap-dashboard-html-template/19760124?ref=Osetin" target="_blank">Purchase Now</a>
-              </div>
-            </div>
           </div>
         </div>
         <!--------------------
         END - Mobile Menu
-        --------------------><!--------------------
+        -------------------->
+        <!--------------------
         START - Main Menu
         -------------------->
         <div class="menu-w color-scheme-light color-style-transparent menu-position-side menu-side-left menu-layout-compact sub-menu-style-over sub-menu-color-bright selected-menu-color-light menu-activated-on-hover menu-has-selected-link">
@@ -561,7 +426,7 @@
               </div>
               <div class="logged-user-info-w">
                 <div class="logged-user-name">
-                  Maria Gomez
+                  {{ Sentinel::getUser()->first_name }} {{Sentinel::getUser()->last_name}}
                 </div>
                 <div class="logged-user-role">
                   Administrator
@@ -577,7 +442,7 @@
                   </div>
                   <div class="logged-user-info-w">
                     <div class="logged-user-name">
-                      Maria Gomez
+                      {{ Sentinel::getUser()->first_name }} {{Sentinel::getUser()->last_name}}
                     </div>
                     <div class="logged-user-role">
                       Administrator
@@ -589,210 +454,16 @@
                 </div>
                 <ul>
                   <li>
-                    <a href="apps_email.html"><i class="os-icon os-icon-mail-01"></i><span>Incoming Mail</span></a>
-                  </li>
-                  <li>
-                    <a href="users_profile_big.html"><i class="os-icon os-icon-user-male-circle2"></i><span>Profile Details</span></a>
-                  </li>
-                  <li>
-                    <a href="users_profile_small.html"><i class="os-icon os-icon-coins-4"></i><span>Billing Details</span></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="os-icon os-icon-others-43"></i><span>Notifications</span></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="os-icon os-icon-signs-11"></i><span>Logout</span></a>
+                    <a href="{{ route('logout') }}"><i class="os-icon os-icon-signs-11"></i><span>Logout</span></a>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
-          <div class="menu-actions">
-            <!--------------------
-            START - Messages Link in secondary top menu
-            -------------------->
-            <div class="messages-notifications os-dropdown-trigger os-dropdown-position-right">
-              <i class="os-icon os-icon-mail-14"></i>
-              <div class="new-messages-count">
-                12
-              </div>
-              <div class="os-dropdown light message-list">
-                <ul>
-                  <li>
-                    <a href="#">
-                      <div class="user-avatar-w">
-                        <img alt="" src="{{ URL::asset('./assets/admin/img/avatar1.jpg') }}">
-                      </div>
-                      <div class="message-content">
-                        <h6 class="message-from">
-                          John Mayers
-                        </h6>
-                        <h6 class="message-title">
-                          Account Update
-                        </h6>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="user-avatar-w">
-                        <img alt="" src="{{ URL::asset('./assets/admin/img/avatar2.jpg') }}">
-                      </div>
-                      <div class="message-content">
-                        <h6 class="message-from">
-                          Phil Jones
-                        </h6>
-                        <h6 class="message-title">
-                          Secutiry Updates
-                        </h6>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="user-avatar-w">
-                        <img alt="" src="{{ URL::asset('./assets/admin/img/avatar3.jpg') }}">
-                      </div>
-                      <div class="message-content">
-                        <h6 class="message-from">
-                          Bekky Simpson
-                        </h6>
-                        <h6 class="message-title">
-                          Vacation Rentals
-                        </h6>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="user-avatar-w">
-                        <img alt="" src="{{ URL::asset('./assets/admin/img/avatar4.jpg') }}">
-                      </div>
-                      <div class="message-content">
-                        <h6 class="message-from">
-                          Alice Priskon
-                        </h6>
-                        <h6 class="message-title">
-                          Payment Confirmation
-                        </h6>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <!--------------------
-            END - Messages Link in secondary top menu
-            --------------------><!--------------------
-            START - Settings Link in secondary top menu
-            -------------------->
-            <div class="top-icon top-settings os-dropdown-trigger os-dropdown-position-right">
-              <i class="os-icon os-icon-ui-46"></i>
-              <div class="os-dropdown">
-                <div class="icon-w">
-                  <i class="os-icon os-icon-ui-46"></i>
-                </div>
-                <ul>
-                  <li>
-                    <a href="users_profile_small.html"><i class="os-icon os-icon-ui-49"></i><span>Profile Settings</span></a>
-                  </li>
-                  <li>
-                    <a href="users_profile_small.html"><i class="os-icon os-icon-grid-10"></i><span>Billing Info</span></a>
-                  </li>
-                  <li>
-                    <a href="users_profile_small.html"><i class="os-icon os-icon-ui-44"></i><span>My Invoices</span></a>
-                  </li>
-                  <li>
-                    <a href="users_profile_small.html"><i class="os-icon os-icon-ui-15"></i><span>Cancel Account</span></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <!--------------------
-            END - Settings Link in secondary top menu
-            --------------------><!--------------------
-            START - Messages Link in secondary top menu
-            -------------------->
-            <div class="messages-notifications os-dropdown-trigger os-dropdown-position-right">
-              <i class="os-icon os-icon-zap"></i>
-              <div class="new-messages-count">
-                4
-              </div>
-              <div class="os-dropdown light message-list">
-                <div class="icon-w">
-                  <i class="os-icon os-icon-zap"></i>
-                </div>
-                <ul>
-                  <li>
-                    <a href="#">
-                      <div class="user-avatar-w">
-                        <img alt="" src="{{ URL::asset('./assets/admin/img/avatar1.jpg') }}">
-                      </div>
-                      <div class="message-content">
-                        <h6 class="message-from">
-                          John Mayers
-                        </h6>
-                        <h6 class="message-title">
-                          Account Update
-                        </h6>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="user-avatar-w">
-                        <img alt="" src="{{ URL::asset('./assets/admin/img/avatar2.jpg') }}">
-                      </div>
-                      <div class="message-content">
-                        <h6 class="message-from">
-                          Phil Jones
-                        </h6>
-                        <h6 class="message-title">
-                          Secutiry Updates
-                        </h6>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="user-avatar-w">
-                        <img alt="" src="{{ URL::asset('./assets/admin/img/avatar3.jpg') }}">
-                      </div>
-                      <div class="message-content">
-                        <h6 class="message-from">
-                          Bekky Simpson
-                        </h6>
-                        <h6 class="message-title">
-                          Vacation Rentals
-                        </h6>
-                      </div>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <div class="user-avatar-w">
-                        <img alt="" src="{{ URL::asset('./assets/admin/img/avatar4.jpg') }}">
-                      </div>
-                      <div class="message-content">
-                        <h6 class="message-from">
-                          Alice Priskon
-                        </h6>
-                        <h6 class="message-title">
-                          Payment Confirmation
-                        </h6>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <!--------------------
-            END - Messages Link in secondary top menu
-            -------------------->
-          </div>
-          <div class="element-search autosuggest-search-activator">
+          
+          <!-- <div class="element-search autosuggest-search-activator">
             <input placeholder="Start typing to search..." type="text">
-          </div>
+          </div> -->
           <h1 class="menu-page-header">
             Page Header
           </h1>
@@ -801,7 +472,7 @@
               <span>Management</span>
             </li>
             <li class="selected">
-              <a href="">
+              <a href="{{ route('admin_dash') }}">
                 <div class="icon-w">
                   <div class="os-icon os-icon-layout"></div>
                 </div>
@@ -809,7 +480,7 @@
               </a>
             </li>
             <li class=" has-sub-menu">
-              <a href="layouts_menu_top_image.html">
+              <a href="#">
                 <div class="icon-w">
                   <div class="os-icon os-icon-file-text"></div>
                 </div>
@@ -1091,7 +762,7 @@
                       </div>
                       <div class="logged-user-info-w">
                         <div class="logged-user-name">
-                          Maria Gomez
+                          {{ Sentinel::getUser()->first_name }} {{Sentinel::getUser()->last_name}}
                         </div>
                         <div class="logged-user-role">
                           Administrator
