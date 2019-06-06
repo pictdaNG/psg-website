@@ -1,26 +1,8 @@
 @extends('layouts.admin')
 
 @section('scripts')
-  <script type="text/javascript">
-    Dropzone.options.dropzone =
-     {
-        maxFilesize: 1024,
-        renameFile: function(file) {
-          var dt = new Date();
-          var time = dt.getTime();
-          return time+file.name;
-        },
-        acceptedFiles: ".jpeg,.jpg,.png,.gif",
-        addRemoveLinks: true,
-        timeout: 5000,
-        success: function(file, response) {
-          console.log(response);
-        },
-        error: function(file, response) {
-          return false;
-        }
-    };
-  </script>
+  <script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>
+  <script type="text/javascript"></script>
 @endsection
 
 @section('content')
@@ -47,6 +29,8 @@
             <label>Document Title</label>
             <input class="form-control" placeholder="Enter Document Title" type="text" name="title" >
           </div>
+          
+          <input type="hidden" name="type" value="budget">
 
           <div class="form-group">
             <label>Select File</label>

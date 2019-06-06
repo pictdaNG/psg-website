@@ -537,7 +537,7 @@
               </div>
             </li>
             
-            <li class="sub-header">
+            <!-- <li class="sub-header">
               <span>User Management</span>
             </li>
             <li class=" has-sub-menu">
@@ -570,8 +570,8 @@
                   </ul>
                 </div>
               </div>
-            </li>
-            <li class=" has-sub-menu">
+            </li> -->
+            <!-- <li class=" has-sub-menu">
               <a href="#">
                 <div class="icon-w">
                   <div class="os-icon os-icon-edit-32"></div>
@@ -604,8 +604,8 @@
                   </ul>
                 </div>
               </div>
-            </li>
-            <li class=" has-sub-menu">
+            </li> -->
+            <!-- <li class=" has-sub-menu">
               <a href="#">
                 <div class="icon-w">
                   <div class="os-icon os-icon-grid"></div>
@@ -632,8 +632,8 @@
                   </ul>
                 </div>
               </div>
-            </li>
-            <li class=" has-sub-menu">
+            </li> -->
+            <!-- <li class=" has-sub-menu">
               <a href="#">
                 <div class="icon-w">
                   <div class="os-icon os-icon-zap"></div>
@@ -701,7 +701,7 @@
                   </ul>
                 </div>
               </div>
-            </li>
+            </li> -->
           </ul>
           
         </div>
@@ -721,33 +721,6 @@
                 <input placeholder="Start typing to search..." type="text">
               </div>
               <!--------------------
-              START - Settings Link in secondary top menu
-              -------------------->
-              <div class="top-icon top-settings os-dropdown-trigger os-dropdown-position-left">
-                <i class="os-icon os-icon-ui-46"></i>
-                <div class="os-dropdown">
-                  <div class="icon-w">
-                    <i class="os-icon os-icon-ui-46"></i>
-                  </div>
-                  <ul>
-                    <li>
-                      <a href="users_profile_small.html"><i class="os-icon os-icon-ui-49"></i><span>Profile Settings</span></a>
-                    </li>
-                    <li>
-                      <a href="users_profile_small.html"><i class="os-icon os-icon-grid-10"></i><span>Billing Info</span></a>
-                    </li>
-                    <li>
-                      <a href="users_profile_small.html"><i class="os-icon os-icon-ui-44"></i><span>My Invoices</span></a>
-                    </li>
-                    <li>
-                      <a href="users_profile_small.html"><i class="os-icon os-icon-ui-15"></i><span>Cancel Account</span></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <!--------------------
-              END - Settings Link in secondary top menu
-              --------------------><!--------------------
               START - User avatar and menu in secondary top menu
               -------------------->
               <div class="logged-user-w">
@@ -774,13 +747,13 @@
                     </div>
                     <ul>
                       <li>
-                        <a href="#"><i class="os-icon os-icon-mail-01"></i><span>Profile Settings</span></a>
+                        <!-- <a href="#"><i class="os-icon os-icon-mail-01"></i><span>Profile Settings</span></a> -->
                       </li>
                       <li>
-                        <a href="#"><i class="os-icon os-icon-user-male-circle2"></i><span>Profile Details</span></a>
+                        <!-- <a href="#"><i class="os-icon os-icon-user-male-circle2"></i><span>Profile Details</span></a> -->
                       </li>
                       <li>
-                        <a href="#"><i class="os-icon os-icon-signs-11"></i><span>Logout</span></a>
+                        <a href="{{ route('logout') }}"><i class="os-icon os-icon-signs-11"></i><span>Logout</span></a>
                       </li>
                     </ul>
                   </div>
@@ -801,10 +774,10 @@
           -------------------->
           <ul class="breadcrumb">
             <li class="breadcrumb-item">
-              <a href="index.html">Home</a>
+              <a href="">Home</a>
             </li>
             <li class="breadcrumb-item">
-              <a href="index.html">Admin</a>
+              <a href="">Admin</a>
             </li>
             <li class="breadcrumb-item">
               <span>Dashboard</span>
@@ -838,17 +811,17 @@
                 </h6>
                 <div class="element-box-tp">
                   <div class="el-buttons-list full-width">
-                    <a class="btn btn-white btn-sm" href="#">
+                    <a class="btn btn-white btn-sm" href="{{ route('document.quarterly.report') }}">
                       <i class="os-icon os-icon-delivery-box-2"></i>
-                      <span>Create New Product</span>
+                      <span>Create New Quaterly Report</span>
                     </a>
-                    <a class="btn btn-white btn-sm" href="#">
+                    <a class="btn btn-white btn-sm" href="{{ route('document.upload') }}">
                       <i class="os-icon os-icon-window-content"></i>
-                      <span>Customer Comments</span>
+                      <span>Create New Budget Report</span>
                     </a>
-                    <a class="btn btn-white btn-sm" href="#">
+                    <a class="btn btn-white btn-sm" href="{{ route('blog.create') }}">
                       <i class="os-icon os-icon-wallet-loaded"></i>
-                      <span>Store Settings</span>
+                      <span>Create News/Event</span>
                     </a>
                   </div>
                 </div>

@@ -22,9 +22,7 @@ Route::get('/contact-us', function() {
 Route::post('/contact-us', 'ContactController@postContactUs')->name('send_contact_us');
 
 Route::group(['prefix' => 'budget'], function() {
-  Route::get('/', function() {
-    return view('budget.index');
-  })->name('budget');
+  Route::get('/', 'DocumentController@budgetReport')->name('budget');
 
   Route::get('2019-approved', function() {
     return view('budget.2019');
@@ -36,9 +34,7 @@ Route::group(['prefix' => 'budget'], function() {
 });
 
 Route::group(['prefix' => 'download'], function() {
-  Route::get('/download-quarterly-reports', function() {
-    return view('pages.quaterlyreport');
-  })->name('quaterlyreport');
+  Route::get('/download-quarterly-reports', 'DocumentController@allQuaterlyReports')->name('quaterlyreport');
 });
 
 

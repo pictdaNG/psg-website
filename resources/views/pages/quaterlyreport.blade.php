@@ -18,9 +18,16 @@
 
         <h4> 2019 Quarterly Reports </h4>
         <ul class="uk-list uk-list-striped">
+            @foreach($documents as $document)
+                <li>
+                    <a href="{{ $document->name }}">
+                        <span style="text-transform: uppercase;"> {{ $document->title }} </span>
+                    </a>
+                </li>
+            @endforeach
             <li>
                 <a href="{{ URL::asset('assets/documents/2019/QUARTERLY-REPORT-CAPITAL-EXPENDITURE-JANUARY-TO-MARCH-2019-1.pdf') }}">
-                    QUARTERLY REPORT CAPITAL EXPENDITURE JANUARY TO MARCH 2019
+                    <span style="text-transform: uppercase;"></span>QUARTERLY REPORT CAPITAL EXPENDITURE JANUARY TO MARCH 2019
                 </a>
             </li>
             <li>

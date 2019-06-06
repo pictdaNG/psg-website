@@ -47,6 +47,7 @@
             <label>Document Title</label>
             <input class="form-control" placeholder="Enter Document Title" type="text" name="title" >
           </div>
+          <input type="hidden" name="type" value="quarterly">
 
           <div class="form-group">
             <label>Select File</label>

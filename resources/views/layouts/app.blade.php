@@ -127,12 +127,12 @@
                 <div class="uk-child-width-1-2@m uk-grid-small" uk-grid uk-lightbox="animation: fade">
                     <div>
                         <a class="uk-inline" href="{{ URL::asset('./assets/img/pstr1.jpg') }}" >
-                            <img src="{{ URL::asset('./assets/img/pstr1.jpg') }}" alt="">
+                            <img src="{{ URL::asset('./assets/img/pstr1.jpg') }}" alt="ddf" width="800" height="600">
                         </a>
                     </div>
                     <div>
                         <a class="uk-inline" href="{{ URL::asset('./assets/img/pstr2.jpg') }}" >
-                            <img src="{{ URL::asset('./assets/img/pstr2.jpg') }}" alt="">
+                            <img src="{{ URL::asset('./assets/img/pstr2.jpg') }}" alt="dfd" width="800" height="600">
                         </a>
                     </div>
                     <div>
@@ -228,7 +228,7 @@
     </section>    
     @include('layouts.footer')
     <script src="{{ URL::asset('assets/js/app.js') }}"></script>
-    <script src="{{ asset('js/share.js') }}"></script>
+    <!-- <script src="{{ asset('js/share.js') }}"></script> -->
     @yield('scripts')
 </body>
 </html>

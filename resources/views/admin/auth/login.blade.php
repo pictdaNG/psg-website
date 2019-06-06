@@ -35,27 +35,27 @@
           @if(session('success'))
             <div class="alert alert-success alert-dismissable"> 
               <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-              {{ session('success') }}
+              <strong>Well done! </strong> {{ session('success') }}
             </div>
           @endif
           {{ csrf_field() }}
           <div class="form-group">
             <label for="">Username</label>
-            <input class="form-control" placeholder="Enter your username" type="text" name="email">
+            <input class="form-control" placeholder="Enter your username" type="text" name="email" required>
             <div class="pre-icon os-icon os-icon-user-male-circle"></div>
           </div>
           <div class="form-group">
             <label for="">Password</label>
-            <input class="form-control" placeholder="Enter your password" type="password" name="password">
+            <input class="form-control" placeholder="Enter your password" type="password" name="password" required>
             <div class="pre-icon os-icon os-icon-fingerprint"></div>
           </div>
           <div class="buttons-w">
             <button class="btn btn-primary" type="submit">Log me in</button>
-            <div class="form-check-inline">
+            <!-- <div class="form-check-inline">
               <label class="form-check-label">
                 <input class="form-check-input" type="checkbox">Remember Me
               </label>
-            </div>
+            </div> -->
           </div>
         </form>
       </div>

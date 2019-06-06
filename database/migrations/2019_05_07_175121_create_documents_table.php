@@ -17,6 +17,7 @@ class CreateDocumentsTable extends Migration
             $table->bigIncrements('id');
             $table->string('title');
             $table->string('name');
+            $table->string('type');
             $table->string('slug');
             $table->softDeletes();
             $table->timestamps();

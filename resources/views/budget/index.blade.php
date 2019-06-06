@@ -17,6 +17,13 @@
         <h4>2019 Budget</h4>
         
         <ul class="uk-list uk-list-striped">
+            @foreach($documents as $document)
+                <li>
+                    <a href="{{ $document->name }}">
+                        <span style="text-transform: uppercase;"> {{ $document->title }} </span>
+                    </a>
+                </li>
+            @endforeach
             <li>
                 <a href="{{ URL::asset('assets/documents/2019/2019-PLATEAU-STATE-APPROVED-BUDGET-1.pdf') }}">2019 PLATEAU STATE APPROVED BUDGET</a>
             </li>

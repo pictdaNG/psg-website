@@ -22,10 +22,12 @@ class EloquentDocumentRepository implements DocumentContract {
       $doc_to_upload = $request->file('name')->getRealPath();
 
       \Cloudder::upload($doc_to_upload, null);
+      // \Cloudder::upload_large($doc_to_upload, null);
 
       $uploaded = \Cloudder::getResult();  
       $document->name = $uploaded['secure_url'];
     }
+    $document->type = $request->type;
 
     $document->slug = preg_replace('/\s+/', '-', $str);
     $document->save();

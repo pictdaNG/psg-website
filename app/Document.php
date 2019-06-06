@@ -8,6 +8,6 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Document extends Model
 {
   use SoftDeletes;
-  protected $fillable = ['title', 'name'];
+  protected $fillable = ['title', 'name', 'type'];
   protected $dates = ['deleted_at'];
 }
