@@ -21,7 +21,7 @@
       <div class="auth-box-w" style="padding-top: 30px; margin-top: 70px;">
         
         <h4 class="auth-header">
-          Login Form
+          Plateau State Government
         </h4>
         <form action="{{ route('do_login') }}" method="post">
           

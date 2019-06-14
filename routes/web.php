@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-  return view('welcome');
-})->name('home');
+Route::get('/', 'HomeController@index')->name('home');
 
 Route::get('/contact-us', function() {
   return view('contact.contact');
@@ -419,6 +417,10 @@ Route::group(['prefix' => 'news-&-events'], function() {
   Route::get('/press-briefing-by-the-chairman-of-the-committee-for-the-inauguration-of-the-second-term-in-office-of-the-lalong-adminstration', function() {
     return view('news.news4');
   })->name('news.news4');
+
+  Route::get('/SPEECH-BY-HIS-EXCELLENCY-RT-HON-SIMON-BAKO-LALONG-THE-EXECUTIVE-GOVERNOR-OF-PLATEAU-STATE-ON-THE-OCCASION-OF-DEMOCRACY-DAY-AND-UNVEILING-OF-THE-VISION-PLATEAU-STATE-IN-THE-NEXT-LEVEL-POLICIES-AND-PROGRAMMES-OF-THE-RESCUE-TEAM-PHAS-2-AT-THE-BANQUET-HALL-NEW-GOVERNMENT-HOUSE-LITTLE-RAYFIELD-JOS-WEDNESDAY-12TH-JUNE-2019', function() {
+    return view('news.news5');
+  })->name('news.news5');
   
 });
 

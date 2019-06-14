@@ -244,6 +244,26 @@
                 <p class="title--base uk-margin-remove">Find out what's going on & stay up to date</p>
                 <div class="uk-flex-middle" uk-grid>
                     <div class="uk-width-2-3@m">
+                        <a href="{{ route('news.news5') }}">
+                            <h3 class="uk-card-title uk-margin-remove-bottom">Speech by his Excellency, RT. HON. (DR) SIMON BAKO LALONG,...</h3>
+                        </a>                        
+                        <p class="uk-text-meta uk-margin-remove-top">
+                            <time datetime="2016-04-01T19:00">
+                                June 12, 2019.
+                            </time>
+                        </p>
+                        <p>
+                            Today, marks another memorable beginning in our Democratic Governance as a State and the Nation in general. We thank Almighty God that we are witnesses to the resuscitation of the June 12 Democracy ideals that had been in limbo for over 20 years.
+
+                        </p>
+                    </div>
+                    <div class="uk-width-1-3@m uk-flex-first">
+                        <img src="./assets/img/speech.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="uk-flex-middle" uk-grid>
+                    <div class="uk-width-2-3@m">
                         <a href="{{ route('news.news4') }}">
                             <h3 class="uk-card-title uk-margin-remove-bottom">Press briefing by the chairman of the committee for the inauguration of ...</h3>
                         </a>                        
@@ -272,7 +292,7 @@
                         <img src="./assets/img/lally.png" alt="">
                     </div>
                 </div>
-                <div class="uk-flex-middle" uk-grid>
+                <!-- <div class="uk-flex-middle" uk-grid>
                     <div class="uk-width-2-3@m">
                         <a href="{{ route('news.news2') }}">
                             <h3 class="uk-card-title uk-margin-remove-bottom">APC’s Simon Lalong retains seat as Plateau governor</h3>
@@ -286,7 +306,7 @@
                     <div class="uk-width-1-3@m uk-flex-first">
                         <img src="./assets/img/lalong-2.jpeg" alt="">
                     </div>
-                </div>
+                </div> -->
                 <!-- <div class="uk-flex-middle" uk-grid>
                     <div class="uk-width-2-3@m">
                         <a href="{{ route('news.news3') }}">
