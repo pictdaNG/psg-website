@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title')
-    PRESS BRIEFING BY THE CHAIRMAN OF THE COMMITTEE FOR THE INAUGURATION OF THE SECOND TERM IN OFFICE OF THE LALONG'S ADMINSTRATION.
+    SPEECH BY HIS EXCELLENCY, RT. HON. (DR) SIMON BAKO LALONG, THE EXECUTIVE GOVERNOR OF PLATEAU STATE, ON THE OCCASION OF DEMOCRACY DAY AND UNVEILING OF THE VISION: “PLATEAU STATE IN THE NEXT LEVEL: POLICIES AND PROGRAMMES OF THE RESCUE TEAM, PHASE 2” AT THE BANQUET HALL, NEW GOVERNMENT HOUSE, LITTLE RAYFIELD, JOS. WEDNESDAY 12TH JUNE 2019.
 @endsection
 
 @section('header')
@@ -16,12 +16,15 @@
     <div class="content uk-width-1-2@m">
         <h2 class="bold">SPEECH BY HIS EXCELLENCY, RT. HON. (DR) SIMON BAKO LALONG, THE EXECUTIVE GOVERNOR OF PLATEAU STATE, ON THE OCCASION OF DEMOCRACY DAY AND UNVEILING OF THE VISION: “PLATEAU STATE IN THE NEXT LEVEL: POLICIES AND PROGRAMMES OF THE RESCUE TEAM, PHASE 2” AT THE BANQUET HALL, NEW GOVERNMENT HOUSE, LITTLE RAYFIELD, JOS. WEDNESDAY 12TH JUNE 2019.</h2>
         <div class="sharethis-inline-share-buttons"></div>
+        
+        <div class="uk-child-width-1-1@m uk-grid-small" uk-grid>
+            <img class="object-fit" src="{{ URL::asset('./assets/img/speech.jpg') }}" width="200px" alt="">
+        </div>
+
         <h4>
             PROTOCOL
         </h4>
-        <!-- <div class="uk-child-width-1-1@m uk-grid-small" uk-grid>
-            <img class="object-fit" src="{{ URL::asset('./assets/img/press.jpeg') }}" width="200px" alt="">
-        </div> -->
+        
         <p>
             Today, marks another memorable beginning in our Democratic Governance as a State and the Nation in general. We thank Almighty God that we are witnesses to the resuscitation of the June 12 Democracy ideals that had been in limbo for over 20 years. I congratulate all Citizens for this auspicious day and occasion.
         </p>
