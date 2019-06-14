@@ -11,6 +11,10 @@
 |
 */
 
+if (env('APP_ENV') === 'production') {
+  \URL::forceScheme('https');
+}
+
 Route::get('/', 'HomeController@index')->name('home');
 
 Route::get('/contact-us', function() {
