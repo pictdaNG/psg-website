@@ -39,8 +39,6 @@ Route::group(['prefix' => 'download'], function() {
   Route::get('/download-quarterly-reports', 'DocumentController@allQuaterlyReports')->name('quaterlyreport');
 });
 
-
-
 // PLATEAU ROUTE GROUP
 Route::group(['prefix' => 'plateau'], function() {
 
@@ -425,6 +423,10 @@ Route::group(['prefix' => 'news-&-events'], function() {
   Route::get('/SPEECH-BY-HIS-EXCELLENCY-RT-HON-SIMON-BAKO-LALONG-THE-EXECUTIVE-GOVERNOR-OF-PLATEAU-STATE-ON-THE-OCCASION-OF-DEMOCRACY-DAY-AND-UNVEILING-OF-THE-VISION-PLATEAU-STATE-IN-THE-NEXT-LEVEL-POLICIES-AND-PROGRAMMES-OF-THE-RESCUE-TEAM-PHAS-2-AT-THE-BANQUET-HALL-NEW-GOVERNMENT-HOUSE-LITTLE-RAYFIELD-JOS-WEDNESDAY-12TH-JUNE-2019', function() {
     return view('news.news5');
   })->name('news.news5');
+
+  Route::get('/SPEECH-BY-THE-EXECUTIVE-GOVERNOR-OF-PLATEAU-STATE-RT-HON-DR-SIMON-BAKO-LALONG-ON-THE-OCCASION-OF-A-ONE-DAY-STATE-LEVEL-ACTIVITY-BY-THE-PRESIDENTIAL-ADVISORY-COMMITTEE-AGAINST-CORRUPTION-IN-NIGERIA-ON-WEDNESDAY-19TH-JUNE-2019-AT-THE-BANQUETTE-HALL-HILL-STATION-HOTEL-JOS', function() {
+    return view('news.news6');
+  })->name('news.news6');
   
 });
 

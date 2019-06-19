@@ -244,6 +244,26 @@
                 <p class="title--base uk-margin-remove">Find out what's going on & stay up to date</p>
                 <div class="uk-flex-middle" uk-grid>
                     <div class="uk-width-2-3@m">
+                        <a href="{{ route('news.news6') }}">
+                            <h3 class="uk-card-title uk-margin-remove-bottom">Speech by his Excellency, RT. HON. (DR) SIMON BAKO LALONG,...</h3>
+                        </a>                        
+                        <p class="uk-text-meta uk-margin-remove-top">
+                            <time datetime="2016-04-01T19:00">
+                                June 12, 2019.
+                            </time>
+                        </p>
+                        <p>
+                            It is indeed my pleasure to address you this morning and to welcome the Presidential Advisory Committee Against Corruption to Plateau State on the occasion of her state level activity against corruption in Nigeria.
+
+                        </p>
+                    </div>
+                    <div class="uk-width-1-3@m uk-flex-first">
+                        <img src="./assets/img/news6.jpeg" alt="">
+                    </div>
+                </div>
+
+                <div class="uk-flex-middle" uk-grid>
+                    <div class="uk-width-2-3@m">
                         <a href="{{ route('news.news5') }}">
                             <h3 class="uk-card-title uk-margin-remove-bottom">Speech by his Excellency, RT. HON. (DR) SIMON BAKO LALONG,...</h3>
                         </a>                        
@@ -278,7 +298,7 @@
                     </div>
                 </div>
 
-                <div class="uk-flex-middle" uk-grid>
+                <!-- <div class="uk-flex-middle" uk-grid>
                     <div class="uk-width-2-3@m">
                         <a href="{{ route('news.news1') }}">
                             <h3 class="uk-card-title uk-margin-remove-bottom">Plateau State establishes agency for ICT development</h3>
@@ -291,7 +311,7 @@
                     <div class="uk-width-1-3@m uk-flex-first">
                         <img src="./assets/img/lally.png" alt="">
                     </div>
-                </div>
+                </div> -->
                 <!-- <div class="uk-flex-middle" uk-grid>
                     <div class="uk-width-2-3@m">
                         <a href="{{ route('news.news2') }}">
