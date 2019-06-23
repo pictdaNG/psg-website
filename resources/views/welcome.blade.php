@@ -205,7 +205,7 @@
                     <img src="./assets/img/pol-3.jpg" alt="">
                     <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-flex uk-flex-middle">
                         <h1>2</h1>
-                        <p>Physical Infrastructure &  Environment </p>
+                        <p>Physical Infrastructural  Development </p>
                     </div>
                 </div>
             </a>
