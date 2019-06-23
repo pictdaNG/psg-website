@@ -172,7 +172,7 @@
     
     <section class="policy" uk-toggle="cls: hide-pointIMG; mode: hover;">
         <div class="pointIMG uk-text-center">
-            <!-- <img src="./assets/img/fiveStar.png" alt=""> -->
+            <!-- <img src="./assets/img/fiveStar.png" alt=""> --> 
             <div class="uk-padding-small uk-background-secondary uk-light">
                 <h3 class="uk-margin-remove">THREE POINT POLICY</h3>
             </div>
