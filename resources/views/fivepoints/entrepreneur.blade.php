@@ -1,15 +1,15 @@
 @extends('layouts.app')  
 
 @section('title')
-    ENTREPRENUERSHIP AND INDUSTRIALIZATION | Plateau State Government Website
+    SUSTAINABLE ECONOMIC REBIRTH | Plateau State Government Website
 @endsection
 
 @section('header')
-    ENTREPRENUERSHIP AND INDUSTRIALIZATION
+    SUSTAINABLE ECONOMIC REBIRTH
 @endsection
 
 @section('subheader')
-    About ENTREPRENUERSHIP AND INDUSTRIALIZATION
+    About SUSTAINABLE ECONOMIC REBIRTH
 @endsection
 
 @section('content')
