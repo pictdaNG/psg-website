@@ -388,7 +388,7 @@ Route::group(['prefix' => 'five-points-policy'], function() {
     return view('fivepoints.peacesecurity');
   })->name('fivepoints.peacesecurity');
 
-  Route::get('/physical-infrastructure-environment', function() {
+  Route::get('/physical-infrastructural-development', function() {
     return view('fivepoints.physical');
   })->name('fivepoints.physical');
 
