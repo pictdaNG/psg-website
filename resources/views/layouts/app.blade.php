@@ -172,55 +172,55 @@
     
     <section class="policy" uk-toggle="cls: hide-pointIMG; mode: hover;">
         <div class="pointIMG uk-text-center">
-            <img src="{{ URL::asset('./assets/img/fiveStar.png') }}" alt="">
+            <img src="./assets/img/fiveStar.png" alt="">
             <div class="uk-padding-small uk-background-secondary uk-light">
-                <h3 class="uk-margin-remove">FIVE POINT POLICY</h3>
+                <h3 class="uk-margin-remove">THREE POINT POLICY</h3>
             </div>
         </div>
-        <div class="uk-grid-collapse policy---cards uk-child-width-1-5@m" uk-grid
+        <div class="uk-grid-collapse policy---cards uk-child-width-1-3@m" uk-grid
              uk-height-match="target: > div > div">
-            <a class="uk-inline active" uk-toggle="cls: active; mode: hover;" href="{{ route('fivepoints.humancapital') }}">
+            <!-- <a class="uk-inline active" uk-toggle="cls: active; mode: hover;" href="{{ route('fivepoints.humancapital') }}">
                 <div>
-                    <img src="{{ URL::asset('./assets/img/pol-1.jpg') }}" alt="">
+                    <img src="./assets/img/pol-1.jpg" alt="">
                     <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-flex uk-flex-middle">
                         <h1>1</h1>
                         <p>Human Capital Development & Social Welfare </p>
                     </div>
                 </div>
-            </a>
+            </a> -->
             <a class="uk-inline" uk-toggle="cls: active; mode: hover;" href="{{ route('fivepoints.peacesecurity') }}">
                 <div>
-                    <img src="{{ URL::asset('./assets/img/pol-2.jpg') }}" alt="">
+                    <img src="./assets/img/pol-2.jpg" alt="">
                     <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-flex uk-flex-middle">
-                        <h1>2</h1>
+                        <h1>1</h1>
                         <p>Peace, Security &  Good Governance</p>
                     </div>
                 </div>
             </a>
             <a class="uk-inline" uk-toggle="cls: active; mode: hover;" href="{{ route('fivepoints.physical') }}">
                 <div>
-                    <img src="{{ URL::asset('./assets/img/pol-3.jpg') }}" alt="">
+                    <img src="./assets/img/pol-3.jpg" alt="">
                     <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-flex uk-flex-middle">
-                        <h1>3</h1>
+                        <h1>2</h1>
                         <p>Physical Infrastructure &  Environment </p>
                     </div>
                 </div>
             </a>
-            <a class="uk-inline" uk-toggle="cls: active; mode: hover;" href="{{ route('fivepoints.agriculture') }}">
+            <!-- <a class="uk-inline" uk-toggle="cls: active; mode: hover;" href="{{ route('fivepoints.agriculture') }}">
                 <div>
-                    <img src="{{ URL::asset('./assets/img/pol-4.jpg') }}" alt="">
+                    <img src="./assets/img/pol-4.jpg" alt="">
                     <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-flex uk-flex-middle">
                         <h1>4</h1>
                         <p>Agriculture &  Rural Development </p>
                     </div>
                 </div>
-            </a>
+            </a> -->
             <a class="uk-inline" uk-toggle="cls: active; mode: hover;" href="{{ route('fivepoints.entrepreneur') }}">
                 <div>
-                    <img src="{{ URL::asset('./assets/img/pol-5.jpg') }}" alt="">
+                    <img src="./assets/img/pol-4.jpg" alt="">
                     <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-flex uk-flex-middle">
-                        <h1>5</h1>
-                        <p>Entrepreneurship &  Industralization </p>
+                        <h1>3</h1>
+                        <p>Sustainable Economic Rebirth </p>
                     </div>
                 </div>
             </a>
