@@ -244,6 +244,26 @@
                 <p class="title--base uk-margin-remove">Find out what's going on & stay up to date</p>
                 <div class="uk-flex-middle" uk-grid>
                     <div class="uk-width-2-3@m">
+                        <a href="{{ route('news.news7') }}">
+                            <h3 class="uk-card-title uk-margin-remove-bottom">SPEECH BY THE EXECUTIVE GOVERNOR OF PLATEAU STATE, RT. HON. (DR) SIMON BAKO LALONG, AT THE 2019 NIGERIAN INSTITUTE OF PUBLIC RELATIONS...</h3>
+                        </a>                        
+                        <p class="uk-text-meta uk-margin-remove-top">
+                            <time datetime="2016-04-01T19:00">
+                                June 12, 2019.
+                            </time>
+                        </p>
+                        <p>
+                            I am very delighted and honoured to host the 2019 NIPR Governing Council Retreat in Jos, the Plateau State capital. Indeed, hosting a professional group like the NIPR is not an easy task because each and every action you take in trying to be a good host would be put to test.
+
+                        </p>
+                    </div>
+                    <div class="uk-width-1-3@m uk-flex-first">
+                        <img src="./assets/img/news7.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="uk-flex-middle" uk-grid>
+                    <div class="uk-width-2-3@m">
                         <a href="{{ route('news.news6') }}">
                             <h3 class="uk-card-title uk-margin-remove-bottom">Speech by his Excellency, RT. HON. (DR) SIMON BAKO LALONG,...</h3>
                         </a>                        
