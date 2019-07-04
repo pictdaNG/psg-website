@@ -249,7 +249,7 @@
                         </a>                        
                         <p class="uk-text-meta uk-margin-remove-top">
                             <time datetime="2016-04-01T19:00">
-                                June 12, 2019.
+                                July 3, 2019.
                             </time>
                         </p>
                         <p>
