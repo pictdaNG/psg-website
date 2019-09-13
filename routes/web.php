@@ -431,6 +431,10 @@ Route::group(['prefix' => 'news-&-events'], function() {
   Route::get('/SPEECH-BY-THE-EXECUTIVE-GOVERNOR-OF-PLATEAU-STATE-AT-THE-2019-NIGERIAN-INSTITUTE-OF-PUBLIC-RELATIONS-(NIPR)-GOVERNING-COUNCIL-RETREAT', function() {
     return view('news.news7');
   })->name('news.news7');
+
+  Route::get('/news/emergency-meeting-of-the-northern-governors-forum', function() {
+    return view('news.news8');
+  })->name('news.news8');
   
 });
 

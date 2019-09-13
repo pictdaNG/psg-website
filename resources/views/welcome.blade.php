@@ -244,6 +244,26 @@
                 <p class="title--base uk-margin-remove">Find out what's going on & stay up to date</p>
                 <div class="uk-flex-middle" uk-grid>
                     <div class="uk-width-2-3@m">
+                        <a href="{{ route('news.news8') }}">
+                            <h3 class="uk-card-title uk-margin-remove-bottom">EMMERGENCY METTING OF THE NORTHERN GOVERNORS FORUM HOLDS IN SIR KASHIM...</h3>
+                        </a>                        
+                        <p class="uk-text-meta uk-margin-remove-top">
+                            <time datetime="2016-04-01T19:00">
+                                July 3, 2019.
+                            </time>
+                        </p>
+                        <p>
+                            Emergency meeting of the Northern Governors Forum holds in Sir Kashim Ibrahim house Kaduna with Plateau State Governor and Chairman of the forum Rt. Hon. Simon Bako Lalong Presiding...
+
+                        </p>
+                    </div>
+                    <div class="uk-width-1-3@m uk-flex-first">
+                        <img src="./assets/img/news8/1.jpeg" alt="">
+                    </div>
+                </div>
+
+                <div class="uk-flex-middle" uk-grid>
+                    <div class="uk-width-2-3@m">
                         <a href="{{ route('news.news7') }}">
                             <h3 class="uk-card-title uk-margin-remove-bottom">SPEECH BY THE EXECUTIVE GOVERNOR OF PLATEAU STATE, RT. HON. (DR) SIMON BAKO LALONG, AT THE 2019 NIGERIAN INSTITUTE OF PUBLIC RELATIONS...</h3>
                         </a>                        
@@ -282,7 +302,7 @@
                     </div>
                 </div>
 
-                <div class="uk-flex-middle" uk-grid>
+               {{--  <div class="uk-flex-middle" uk-grid>
                     <div class="uk-width-2-3@m">
                         <a href="{{ route('news.news5') }}">
                             <h3 class="uk-card-title uk-margin-remove-bottom">Speech by his Excellency, RT. HON. (DR) SIMON BAKO LALONG,...</h3>
@@ -300,9 +320,9 @@
                     <div class="uk-width-1-3@m uk-flex-first">
                         <img src="./assets/img/speech.jpg" alt="">
                     </div>
-                </div>
+                </div> --}}
 
-                <div class="uk-flex-middle" uk-grid>
+                {{-- <div class="uk-flex-middle" uk-grid>
                     <div class="uk-width-2-3@m">
                         <a href="{{ route('news.news4') }}">
                             <h3 class="uk-card-title uk-margin-remove-bottom">Press briefing by the chairman of the committee for the inauguration of ...</h3>
@@ -316,7 +336,7 @@
                     <div class="uk-width-1-3@m uk-flex-first">
                         <img src="./assets/img/Tyoden.png" alt="">
                     </div>
-                </div>
+                </div> --}}
 
                 <!-- <div class="uk-flex-middle" uk-grid>
                     <div class="uk-width-2-3@m">
