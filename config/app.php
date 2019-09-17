@@ -161,6 +161,14 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        Intervention\Image\ImageServiceProvider::class,
+        Collective\Html\HtmlServiceProvider::class,
+        
+        // providers
+        App\Providers\NewsCategoryServiceProvider::class,
+        App\Providers\NewsServiceProvider::class,
+        App\Providers\SlidersServiceProvider::class,
+        App\Providers\PostServiceProvider::class,
 
         /*
          * Package Service Providers...
@@ -176,6 +184,7 @@ return [
         App\Providers\RouteServiceProvider::class,
         Davmixcool\MetaManager\MetaServiceProvider::class,
         UxWeb\SweetAlert\SweetAlertServiceProvider::class,
+        Spatie\Permission\PermissionServiceProvider::class,
         
 
     ],
@@ -229,6 +238,9 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'Alert' => UxWeb\SweetAlert\SweetAlert::class,
+        'Image' => Intervention\Image\Facades\Image::class,
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
 
     ],
 
