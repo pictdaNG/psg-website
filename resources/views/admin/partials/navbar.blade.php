@@ -15,7 +15,7 @@
             </div>
             <div class="navbar-container container-fluid">
                 <ul class="nav-left">
-                    <li class="header-search">
+                    <!-- <li class="header-search">
                         <div class="main-search morphsearch-search">
                             <div class="input-group">
                                 <span class="input-group-prepend search-close">
@@ -33,7 +33,7 @@
                             class="waves-effect waves-light" data-cf-modified-e146055bae333d7872d2c05f-="">
                             <i class="full-screen feather icon-maximize"></i>
                         </a>
-                    </li>
+                    </li> -->
                 </ul>
                 <ul class="nav-right">
 

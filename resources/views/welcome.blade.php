@@ -253,7 +253,7 @@
                         </a>                        
                         <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">{{ $new->created_at->format('F d, Y h:ia') }}</time></p>
                         <p>
-                        {!!  str_limit($new->body, 100) !!}
+                        {!!  str_limit($new->body, 150) !!}
                         </p>
                     </div>
                     <div class="uk-width-1-3@m uk-flex-first">
