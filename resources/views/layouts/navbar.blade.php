@@ -73,6 +73,7 @@
                                       <!-- <li class="uk-active"><a href="{{ route('commerce.industry') }}">Commerce &amp; Industries</a></li> -->
                                       <li><a href="{{ route('min.environment') }}">Environment</a></li>
                                       <li><a href="{{ route('health') }}">Ministry of Health</a></li>
+                                      <li><a href="https://finance.plateaustate.gov.ng" target="_blank">Ministry of Finance</a></li>
                                       <li><a href="{{ route('min.information') }}">Min. of Information</a></li>
                                       <li><a href="{{ route('mineral.development') }}">Mineral Development</a></li>
                                       <li><a href="{{ route('min.science') }}">Science &amp; Technology</a></li>
@@ -91,6 +92,7 @@
                                   <a href="#">Departments</a>
                                   <ul>
                                       <li><a href="{{ route('departments.auditor') }}">State Audit Department</a></li>
+                                      <li><a href="https://debtmanagement.plateaustate.gov.ng" target="_blank">Debt Management Department</a></li>
                                       <li><a href="{{ route('departments.printing') }}">Plateau Printing Press</a></li>
                                       <li><a href="{{ route('departments.agricmechanic') }}">Plateau Agricultural Mechanization Service</a></li>
                                       <li><a href="{{ route('departments.mineraldev') }}">Plateau Mineral Development Company</a></li>
@@ -127,6 +129,11 @@
                                       <li>
                                           <a href="http://psbs.plateaustate.gov.ng/" target="_blank">
                                               Plateau State Bureau of Statistics
+                                          </a>
+                                      </li>
+                                      <li>
+                                          <a href="https://www.plbpp.plateaustate.gov.ng" target="_blank">
+                                              Plateau State Bureau of Public Procurement
                                           </a>
                                       </li>
                                       <li>
