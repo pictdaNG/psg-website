@@ -117,10 +117,10 @@
                 </div>
                 <div>
                     <div class="uk-background-secondary uk-light">
-                        <a href="{{ route('taxation') }}">
+                        <a href="{{ route('audit.report') }}">
                             <img src="./assets/img/interest.png" alt="">
                             <div class="uk-text-left">
-                                <h3>Treasury Reports </h3>
+                                <h3>Audit Reports </h3>
                                 <p>Download the comprehensive treasury reports. </p>
                             </div>
                         </a>

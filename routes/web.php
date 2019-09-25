@@ -193,6 +193,12 @@ Route::group(['prefix' => 'commerce'], function() {
   })->name('resources');
 });
 
+Route::group(['prefix' => 'reports'], function() {
+  Route::get('/audit-report', function() {
+    return view('pages.auditReport');
+  })->name('audit.report');
+});
+
 // PROJECTS ROUTE GROUP
 Route::group(['prefix' => 'projects'], function() {
 
