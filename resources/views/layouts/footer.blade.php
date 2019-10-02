@@ -25,10 +25,10 @@
             <span>Developed & maintained by the Plateau State ICT Development Agency. © 2019</span>
             <div class="uk-navbar-right">
                 <ul class="uk-navbar-nav uk-iconnav uk-light">
-                    <li><a href="#" uk-icon="icon: google-plus"></a></li>
-                    <li><a href="#" uk-icon="icon: facebook"></a></li>
-                    <li><a href="#" uk-icon="icon: twitter"></a></li>
-                    <li><a href="#" uk-icon="icon: instagram"></a></li>
+                    {{-- <li><a href="#" uk-icon="icon: google-plus"></a></li> --}}
+                    <li><a href="https://www.facebook.com/PLStateGovt/" uk-icon="icon: facebook"></a></li>
+                    <li><a href="https://twitter.com/PlateauStateGov?s=08" uk-icon="icon: twitter"></a></li>
+                    <li><a href="https://instagram.com/plsgovt?igshid=4wrlu56jik9z" uk-icon="icon: instagram"></a></li>
                 </ul>
             </div>
         </div>
