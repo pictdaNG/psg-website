@@ -16,15 +16,18 @@ class AuthController extends Controller
     	$this->validate($request, [
     		'email' => 'email|required',
     		'password' => 'required|min:4'
-    	]);
-        
-        if(Auth::attempt([ 'email' => $request->input('email'), 'password' => $request->input('password')]))
-        {
-    		return redirect()->route('dashboard');
-        }else {
-            return back()->with('unsuccess','Your Email / Password Combination is Wrong');
+        ]);
+        // dd($request->all());
+        try{
+            if(Auth::attempt([ 'email' => $request->input('email'), 'password' => $request->input('password')]))
+            {
+                return redirect()->route('dashboard');
+            }else {
+                return back()->with('unsuccess','Your Email / Password Combination is Wrong');
+            }
+        }catch(\Exception $e) {
+            return back()->with('danger', $e->getMessage());
         }
-       
     }
 
     public function logout()
