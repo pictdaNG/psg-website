@@ -162,6 +162,7 @@
       <strong>Executive Governor.</strong>
     </p>
 
+<<<<<<< HEAD
 		<div class="uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid="masonry: true" style="margin-top: 20px; margin-bottom: 20px;">
 			{{-- <img class="object-fit" src="{{ URL::asset('./assets/img/news8/1.jpeg') }}" width="200px" alt=""> --}}
 			<img class="object-fit" src="{{ URL::asset('./assets/img/news9/2.jpeg') }}" width="200px" alt="">
@@ -176,4 +177,20 @@
 		<div class="sharethis-inline-share-buttons"></div>
 						
 	</div>
+=======
+    <div class="uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid="masonry: true" style="margin-top: 20px; margin-bottom: 20px;">
+      {{-- <img class="object-fit" src="{{ URL::asset('./assets/img/news8/1.jpeg') }}" width="200px" alt=""> --}}
+      <img class="object-fit" src="{{ URL::asset('./assets/img/news9/2.jpeg') }}" width="200px" alt="">
+      <img class="object-fit" src="{{ URL::asset('./assets/img/news9/3.jpeg') }}" width="200px" alt="">
+      <img class="object-fit" src="{{ URL::asset('./assets/img/news9/4.jpeg') }}" width="200px" alt="">
+      <img class="object-fit" src="{{ URL::asset('./assets/img/news9/5.jpeg') }}" width="200px" alt="">
+      <img class="object-fit" src="{{ URL::asset('./assets/img/news9/6.jpeg') }}" width="200px" alt="">
+      <img class="object-fit" src="{{ URL::asset('./assets/img/news9/7.jpeg') }}" width="200px" alt="">
+      {{-- <img class="object-fit" src="{{ URL::asset('./assets/img/news9/8.jpeg') }}" width="200px" alt=""> --}}
+    </div>
+
+    <div class="sharethis-inline-share-buttons"></div>
+            
+  </div>
+>>>>>>> bak
 @endsection
