@@ -11,11 +11,19 @@
 |
 */
 
+<<<<<<< HEAD
 Route::get('/', 'PagesController@index')->name('home');
 
 // Route::get('/', function () {
 //   return view('welcome');
 // })->name('home');
+=======
+if (env('APP_ENV') === 'production') {
+  \URL::forceScheme('https');
+}
+
+Route::get('/', 'HomeController@index')->name('home');
+>>>>>>> 69c9b70ca42c505ee05edbc15754765eb3bb9a5e
 
 Route::get('/contact-us', function() {
   return view('contact.contact');
@@ -24,9 +32,7 @@ Route::get('/contact-us', function() {
 Route::post('/contact-us', 'ContactController@postContactUs')->name('send_contact_us');
 
 Route::group(['prefix' => 'budget'], function() {
-  Route::get('/', function() {
-    return view('budget.index');
-  })->name('budget');
+  Route::get('/', 'DocumentController@budgetReport')->name('budget');
 
   Route::get('2019-approved', function() {
     return view('budget.2019');
@@ -36,9 +42,10 @@ Route::group(['prefix' => 'budget'], function() {
     return view('budget.citizens2019');
   })->name('citizens2019approved');
 });
-Route::get('/download-quarterly-reports', function() {
-  return view('pages.quaterlyreport');
-})->name('quaterlyreport');
+
+Route::group(['prefix' => 'download'], function() {
+  Route::get('/download-quarterly-reports', 'DocumentController@allQuaterlyReports')->name('quaterlyreport');
+});
 
 // PLATEAU ROUTE GROUP
 Route::group(['prefix' => 'plateau'], function() {
@@ -192,6 +199,12 @@ Route::group(['prefix' => 'commerce'], function() {
   Route::get('/natural-resources', function() {
     return view('commerce.naturalresources');
   })->name('resources');
+});
+
+Route::group(['prefix' => 'reports'], function() {
+  Route::get('/audit-report', function() {
+    return view('pages.auditReport');
+  })->name('audit.report');
 });
 
 // PROJECTS ROUTE GROUP
@@ -391,9 +404,15 @@ Route::group(['prefix' => 'five-points-policy'], function() {
   //   return view('fivepoints.peacesecurity');
   // })->name('fivepoints.peacesecurity');
 
+<<<<<<< HEAD
   // Route::get('/physical-infrastructure-environment', function() {
   //   return view('fivepoints.physical');
   // })->name('fivepoints.physical');
+=======
+  Route::get('/physical-infrastructural-development', function() {
+    return view('fivepoints.physical');
+  })->name('fivepoints.physical');
+>>>>>>> 69c9b70ca42c505ee05edbc15754765eb3bb9a5e
 
   // Route::get('/agriculture-rural-development', function() {
   //   return view('fivepoints.agric');
@@ -427,6 +446,7 @@ Route::group(['prefix' => 'news-&-events'], function() {
 Route::get('/login',['uses' => 'AuthController@index', 'as' => 'login']);
 Route::post('/signin',['uses' => 'AuthController@login', 'as' => 'login.post']);
 
+<<<<<<< HEAD
 
 Route::group( ['middleware' => ['auth']], function() {
   
@@ -483,4 +503,54 @@ Route::group( ['middleware' => ['auth']], function() {
       Route::get('/{slug}/delete', 'PostsController@delete')->name('posts.delete');
     });
  
+=======
+  Route::get('/massive-turnout-in-tudun-wada-as-plateau-votes-to-determine-governor', function() {
+    return view('news.news3');
+  })->name('news.news3');
+
+  Route::get('/press-briefing-by-the-chairman-of-the-committee-for-the-inauguration-of-the-second-term-in-office-of-the-lalong-adminstration', function() {
+    return view('news.news4');
+  })->name('news.news4');
+
+  Route::get('/SPEECH-BY-HIS-EXCELLENCY-RT-HON-SIMON-BAKO-LALONG-THE-EXECUTIVE-GOVERNOR-OF-PLATEAU-STATE-ON-THE-OCCASION-OF-DEMOCRACY-DAY-AND-UNVEILING-OF-THE-VISION-PLATEAU-STATE-IN-THE-NEXT-LEVEL-POLICIES-AND-PROGRAMMES-OF-THE-RESCUE-TEAM-PHAS-2-AT-THE-BANQUET-HALL-NEW-GOVERNMENT-HOUSE-LITTLE-RAYFIELD-JOS-WEDNESDAY-12TH-JUNE-2019', function() {
+    return view('news.news5');
+  })->name('news.news5');
+
+  Route::get('/SPEECH-BY-THE-EXECUTIVE-GOVERNOR-OF-PLATEAU-STATE-ON-THE-OCCASION-OF-A-ONE-DAY-STATE-LEVEL-ACTIVITY-BY-THE-PRESIDENTIAL-ADVISORY-COMMITTEE', function() {
+    return view('news.news6');
+  })->name('news.news6');
+
+  Route::get('/SPEECH-BY-THE-EXECUTIVE-GOVERNOR-OF-PLATEAU-STATE-AT-THE-2019-NIGERIAN-INSTITUTE-OF-PUBLIC-RELATIONS-(NIPR)-GOVERNING-COUNCIL-RETREAT', function() {
+    return view('news.news7');
+  })->name('news.news7');
+
+  Route::get('/news/emergency-meeting-of-the-northern-governors-forum', function() {
+    return view('news.news8');
+  })->name('news.news8');
+  
+});
+
+Route::get('/auth/login', 'LoginController@index')->name('get_login');
+Route::post('/auth/login', 'LoginController@doLogin')->name('do_login');
+Route::get('/logout', 'LoginController@logout')->name('logout');
+
+Route::group(['prefix' => 'admin'], function() {
+  
+  Route::get('/', 'DashboardController@index')->name('admin_dash');
+
+  Route::group(['prefix' => 'documents'], function() {
+    Route::get('/', 'DocumentController@index')->name('doccument.index');
+    Route::get('/uploads/budget', 'DocumentController@create')->name('document.upload');
+    Route::post('/uploads/budget', 'DocumentController@store')->name('document.budget.store');
+
+    Route::get('/uploads/quarterly-report', 'DocumentController@quarterlyReport')->name('document.quarterly.report');
+    Route::post('/uploads/quarterly-report', 'DocumentController@storeQuarterlyReport')->name('document.quarterly.store');
+  });
+
+  Route::group(['prefix' => 'news-events'], function() {
+    Route::get('/', 'BlogController@index')->name('blog.index');
+    Route::get('/create', 'BlogController@create')->name('blog.create');
+    Route::post('/create', 'BlogController@store')->name('blog.store');
+  });
+>>>>>>> 69c9b70ca42c505ee05edbc15754765eb3bb9a5e
 });

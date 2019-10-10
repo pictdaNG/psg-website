@@ -5,9 +5,8 @@ namespace App;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Spatie\Permission\Traits\HasRoles;
 
-class User extends Authenticatable
+class User extends EloquentUser
 {
     use Notifiable;
     use HasRoles;
@@ -18,7 +17,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password', 'role',
     ];
 
     /**
@@ -38,4 +37,12 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public static function byEmail($email) {
+        return static::whereEmail($email)->first();
+    }
+
+    public function blogs() {
+        return $this->hasMany('App\Blog');
+    }
 }

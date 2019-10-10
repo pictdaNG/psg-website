@@ -20,24 +20,24 @@
         </div>
         
         <p>
-            <ol class="uk-list uk-list-bullet uk-list-striped">
-                <li>Barkin Ladi</li>
-                <li>Bassa </li>
-                <li>Bokkos </li>
-                <li>Jos-East </li>
-                <li>Jos-North </li>
-                <li>Jos-South </li>
-                <li>Kanam </li>
-                <li>Kanke </li>
-                <li>Langtang North </li>
-                <li>Langtang South </li>
-                <li>Mangu </li>
-                <li>Mikang </li>
-                <li>Pankshin </li>
-                <li>Qua'an Pan </li>
-                <li>Riyom </li>
-                <li>Shendam </li>
-                <li>Wase</li>
+            <ol class="uk-list uk-list-striped">
+                <li><a href="{{ route('barkinladi') }}">Barkin Ladi</a></li>
+                <li><a href="{{ route('bassa') }}">Bassa </a></li>
+                <li><a href="{{ route('bokkos') }}">Bokkos </a></li>
+                <li><a href="{{ route('joseast') }}">Jos-East </a></li>
+                <li><a href="{{ route('josnorth') }}">Jos-North </a></li>
+                <li><a href="{{ route('jossouth') }}">Jos-South </a></li>
+                <li><a href="{{ route('kanam') }}">Kanam </a></li>
+                <li><a href="{{ route('kanke') }}">Kanke </a></li>
+                <li><a href="{{ route('langtangnorth') }}">Langtang North </a></li>
+                <li><a href="{{ route('langtangsouth') }}">Langtang South </a></li>
+                <li><a href="{{ route('mangu') }}">Mangu </a></li>
+                <li><a href="{{ route('mikang') }}">Mikang </a></li>
+                <li><a href="{{ route('pankshin') }}">Pankshin </a></li>
+                <li><a href="{{ route('quaanpan') }}">Qua'an Pan </a></li>
+                <li><a href="{{ route('riyom') }}">Riyom </a></li>
+                <li><a href="{{ route('shendam') }}">Shendam </a></li>
+                <li><a href="{{ route('wase') }}">Wase</a></li>
             </ol>
         </p>        
     </div>

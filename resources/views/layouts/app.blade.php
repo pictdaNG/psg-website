@@ -11,7 +11,7 @@
       gtag('config', 'UA-65978169-6');
     </script>
 
-    
+    <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5cecd95a5676af001119e9ee&product=inline-share-buttons" async="async"></script>
 
     
     <meta charset="utf-8" />
@@ -22,7 +22,7 @@
     <meta name="twitter:site" content="@PLSGovt">
     <meta name="twitter:creator" content="@PLSGovt">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Plateau State Government">
+    <meta name="twitter:title" content="@yield('title')">
     <meta name="twitter:description" content="Official Plateau State Government Page">
     <meta name="twitter:image" content="{{ URL::asset('./assets/img/platStet.png') }}">
 
@@ -30,7 +30,7 @@
 
     <meta property="og:url" content="https://plateaustate.gov.ng" />
     <!-- Facebook Meta -->
-    <meta property="og:title" content="Plateau State Government">
+    <meta property="og:title" content="@yield('title')">
     <meta property="og:description" content="Official Plateau State Government Page">
     <meta property="og:type" content="website">
     <meta property="og:image" content="{{ URL::asset('./assets/img/platStet.png') }}">
@@ -94,24 +94,24 @@
             </div>
             <div class="list uk-margin-top">
                 <h4>Local Government Area</h4>
-                <ul class="uk-list uk-list-bullet">
-                    <li>Barkin Ladi</li>
-                    <li>Bassa</li>
-                    <li>Bokkos</li>
-                    <li>Jos-East</li>
-                    <li>Jos-North</li>
-                    <li>Jos-South</li>
-                    <li>Kanam</li>
-                    <li>Kanke</li>
-                    <li>Langtang-North</li>
-                    <li>Langtang-South</li>
-                    <li>Mangu</li>
-                    <li>Mikang</li>
-                    <li>Pankshin</li>
-                    <li>Qua'an Pan</li>
-                    <li>Riyom</li>
-                    <li>Shendam</li>
-                    <li>Wase</li>
+                <ul class="uk-list uk-list-striped" style="padding-left: 0 !important">
+                    <li><a href="{{ route('barkinladi') }}">Barkin Ladi</a></li>
+                    <li><a href="{{ route('bassa') }}">Bassa </a></li>
+                    <li><a href="{{ route('bokkos') }}">Bokkos </a></li>
+                    <li><a href="{{ route('joseast') }}">Jos-East </a></li>
+                    <li><a href="{{ route('josnorth') }}">Jos-North </a></li>
+                    <li><a href="{{ route('jossouth') }}">Jos-South </a></li>
+                    <li><a href="{{ route('kanam') }}">Kanam </a></li>
+                    <li><a href="{{ route('kanke') }}">Kanke </a></li>
+                    <li><a href="{{ route('langtangnorth') }}">Langtang North </a></li>
+                    <li><a href="{{ route('langtangsouth') }}">Langtang South </a></li>
+                    <li><a href="{{ route('mangu') }}">Mangu </a></li>
+                    <li><a href="{{ route('mikang') }}">Mikang </a></li>
+                    <li><a href="{{ route('pankshin') }}">Pankshin </a></li>
+                    <li><a href="{{ route('quaanpan') }}">Qua'an Pan </a></li>
+                    <li><a href="{{ route('riyom') }}">Riyom </a></li>
+                    <li><a href="{{ route('shendam') }}">Shendam </a></li>
+                    <li><a href="{{ route('wase') }}">Wase</a></li>
                 </ul>
             </div>
         </div>    
@@ -127,12 +127,12 @@
                 <div class="uk-child-width-1-2@m uk-grid-small" uk-grid uk-lightbox="animation: fade">
                     <div>
                         <a class="uk-inline" href="{{ URL::asset('./assets/img/pstr1.jpg') }}" >
-                            <img src="{{ URL::asset('./assets/img/pstr1.jpg') }}" alt="">
+                            <img src="{{ URL::asset('./assets/img/pstr1.jpg') }}" alt="ddf" width="800" height="600">
                         </a>
                     </div>
                     <div>
                         <a class="uk-inline" href="{{ URL::asset('./assets/img/pstr2.jpg') }}" >
-                            <img src="{{ URL::asset('./assets/img/pstr2.jpg') }}" alt="">
+                            <img src="{{ URL::asset('./assets/img/pstr2.jpg') }}" alt="dfd" width="800" height="600">
                         </a>
                     </div>
                     <div>
@@ -170,9 +170,69 @@
         </div>
     </div>
     
+<<<<<<< HEAD
    
+=======
+    <section class="policy" uk-toggle="cls: hide-pointIMG; mode: hover;">
+        <div class="pointIMG uk-text-center">
+            <!-- <img src="./assets/img/fiveStar.png" alt=""> --> 
+            <div class="uk-padding-small uk-background-secondary uk-light">
+                <h3 class="uk-margin-remove">THREE POINT POLICY</h3>
+            </div>
+        </div>
+        <div class="uk-grid-collapse policy---cards uk-child-width-1-3@m" uk-grid
+             uk-height-match="target: > div > div">
+            <!-- <a class="uk-inline active" uk-toggle="cls: active; mode: hover;" href="{{ route('fivepoints.humancapital') }}">
+                <div>
+                    <img src="./assets/img/pol-1.jpg" alt="">
+                    <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-flex uk-flex-middle">
+                        <h1>1</h1>
+                        <p>Human Capital Development & Social Welfare </p>
+                    </div>
+                </div>
+            </a> -->
+            <a class="uk-inline" uk-toggle="cls: active; mode: hover;" href="{{ route('fivepoints.peacesecurity') }}">
+                <div>
+                    <img src="./assets/img/pol-2.jpg" alt="">
+                    <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-flex uk-flex-middle">
+                        <h1>1</h1>
+                        <p>Peace, Security &  Good Governance</p>
+                    </div>
+                </div>
+            </a>
+            <a class="uk-inline" uk-toggle="cls: active; mode: hover;" href="{{ route('fivepoints.physical') }}">
+                <div>
+                    <img src="./assets/img/pol-3.jpg" alt="">
+                    <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-flex uk-flex-middle">
+                        <h1>2</h1>
+                        <p>Physical Infrastructural  Development</p>
+                    </div>
+                </div>
+            </a>
+            <!-- <a class="uk-inline" uk-toggle="cls: active; mode: hover;" href="{{ route('fivepoints.agriculture') }}">
+                <div>
+                    <img src="./assets/img/pol-4.jpg" alt="">
+                    <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-flex uk-flex-middle">
+                        <h1>4</h1>
+                        <p>Agriculture &  Rural Development </p>
+                    </div>
+                </div>
+            </a> -->
+            <a class="uk-inline" uk-toggle="cls: active; mode: hover;" href="{{ route('fivepoints.entrepreneur') }}">
+                <div>
+                    <img src="./assets/img/pol-4.jpg" alt="">
+                    <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-flex uk-flex-middle">
+                        <h1>3</h1>
+                        <p>Sustainable Economic Rebirth </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>    
+>>>>>>> 69c9b70ca42c505ee05edbc15754765eb3bb9a5e
     @include('layouts.footer')
     <script src="{{ URL::asset('assets/js/app.js') }}"></script>
+    <!-- <script src="{{ asset('js/share.js') }}"></script> -->
     @yield('scripts')
 </body>
 </html>

@@ -15,6 +15,7 @@
 @section('content')
     <div class="content uk-width-1-2@m">
         <!-- <h2 class="bold">NATURAL ENDOWMENTS</h2> -->
+        <div class="sharethis-inline-share-buttons"></div>
         <p>
             Tudun Wada polling unit 027, in Jos North Local Government of Plateau, has witnessed a large turnout of voters in the on-going rerun election to determine the state’s governor.
         </p>
@@ -42,6 +43,8 @@
         <p>
             A voter, Mike Ekong, told NAN that the security arrangement was stringent and intense to avoid any form of distraction.
         </p>
+        <div class="sharethis-inline-share-buttons"></div>
+                        
 
     </div>
 @endsection

@@ -18,7 +18,7 @@
         <p>Langtang North is a Local Government Area in Plateau State, Nigeria. Its headquarters are in the town of Langtang at 9°08′00″N 9°47′00″E.</p>        
 
         <div class="uk-child-width-1-1@m uk-grid-small" uk-grid>
-            <img class="object-fit" src="{{ URL::asset('/assets/img/image_03.png') }}" alt="">
+            <img src="{{ URL::asset('/assets/img/LGAS-langtannorth.jpg') }}" alt="" style="height: 60%">
         </div>
         
         <p>

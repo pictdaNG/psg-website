@@ -182,10 +182,15 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+ 		App\Providers\BlogServiceProvider::class,
+ 		App\Providers\DocumentServiceProvider::class,
+        App\Providers\DashboardServiceProvider::class,
+ 		App\Providers\LoginServiceProvider::class,
         Davmixcool\MetaManager\MetaServiceProvider::class,
         UxWeb\SweetAlert\SweetAlertServiceProvider::class,
         Spatie\Permission\PermissionServiceProvider::class,
-        
+        'JD\Cloudder\CloudderServiceProvider', 
+        Cartalyst\Sentinel\Laravel\SentinelServiceProvider::class,       
 
     ],
 
@@ -241,6 +246,10 @@ return [
         'Image' => Intervention\Image\Facades\Image::class,
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
+        'Cloudder' => 'JD\Cloudder\Facades\Cloudder',
+        'Activation' => Cartalyst\Sentinel\Laravel\Facades\Activation::class,
+        'Reminder'   => Cartalyst\Sentinel\Laravel\Facades\Reminder::class,
+        'Sentinel'   => Cartalyst\Sentinel\Laravel\Facades\Sentinel::class,
 
     ],
 

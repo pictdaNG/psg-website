@@ -95,11 +95,11 @@
                  uk-height-match="target: > div > div">
                 <div>
                     <div class="uk-background-muted uk-light">
-                        <a href="">
+                        <a href="/assets/documents/2019/ACCT-Sign.pdf" download="ACCT-Sign">
                             <img src="./assets/img/government.png" alt="">
                             <div class="uk-text-left">
-                                <h3>The Arms of Government</h3>
-                                <p>Meet the Arms of Government of the Rescue Administration</p>
+                                <h3>Report of the Accountant General</h3>
+                                <p>Download Report from the Accountant General.</p>
                             </div>    
                         </a>                        
                     </div>
@@ -110,18 +110,18 @@
                             <img src="./assets/img/newspaper.png" alt="">
                             <div class="uk-text-left">
                                 <h3>Quarterly  Reports</h3>
-                                <p>Download the comprehensive quarterly reports of the rescue administration. </p>
+                                <p>Download the comprehensive quarterly reports. </p>
                             </div>
                         </a>
                     </div>
                 </div>
                 <div>
                     <div class="uk-background-secondary uk-light">
-                        <a href="{{ route('taxation') }}">
+                        <a href="{{ route('audit.report') }}">
                             <img src="./assets/img/interest.png" alt="">
                             <div class="uk-text-left">
-                                <h3>Tax & Taxation </h3>
-                                <p>Geared towards enhancing tax collection and administration with minimal enforcement cost. </p>
+                                <h3>Audit Reports </h3>
+                                <p>Download the comprehensive treasury reports. </p>
                             </div>
                         </a>
                     </div>
@@ -131,8 +131,8 @@
                         <a href="{{ route('budget') }}">
                             <img src="./assets/img/analysis.png" alt="">
                             <div class="uk-text-left">
-                                <h3>2019  Budget </h3>
-                                <p>The Approved 2019 Budget of the Rescue Administration. </p>
+                                <h3>Budget Report</h3>
+                                <p>The Approved 2019 Budget. </p>
                             </div>
                         </a>
                     </div>
@@ -203,13 +203,14 @@
     
     <section class="policy" uk-toggle="cls: hide-pointIMG; mode: hover;">
         <div class="pointIMG uk-text-center">
-            <img src="./assets/img/fiveStar.png" alt="">
+            <!-- <img src="./assets/img/fiveStar.png" alt=""> -->
             <div class="uk-padding-small uk-background-secondary uk-light">
                 <h3 class="uk-margin-remove">THREE POINT POLICY</h3>
             </div>
         </div>
         <div class="uk-grid-collapse policy---cards uk-child-width-1-3@m" uk-grid
              uk-height-match="target: > div > div">
+<<<<<<< HEAD
              @php
                 $i = 1;
              @endphp
@@ -221,6 +222,50 @@
                     <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-flex uk-flex-middle">
                         <h1>{{$i++}}</h1>
                         <p>{{ $post->title }} </p>
+=======
+            <!-- <a class="uk-inline active" uk-toggle="cls: active; mode: hover;" href="{{ route('fivepoints.humancapital') }}">
+                <div>
+                    <img src="./assets/img/pol-1.jpg" alt="">
+                    <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-flex uk-flex-middle">
+                        <h1>1</h1>
+                        <p>Human Capital Development & Social Welfare </p>
+                    </div>
+                </div>
+            </a> -->
+            <a class="uk-inline" uk-toggle="cls: active; mode: hover;" href="{{ route('fivepoints.peacesecurity') }}">
+                <div>
+                    <img src="./assets/img/pol-2.jpg" alt="">
+                    <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-flex uk-flex-middle">
+                        <h1>1</h1>
+                        <p>Peace, Security &  Good Governance</p>
+                    </div>
+                </div>
+            </a>
+            <a class="uk-inline" uk-toggle="cls: active; mode: hover;" href="{{ route('fivepoints.physical') }}">
+                <div>
+                    <img src="./assets/img/pol-3.jpg" alt="">
+                    <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-flex uk-flex-middle">
+                        <h1>2</h1>
+                        <p>Physical Infrastructural  Development </p>
+                    </div>
+                </div>
+            </a>
+            <!-- <a class="uk-inline" uk-toggle="cls: active; mode: hover;" href="{{ route('fivepoints.agriculture') }}">
+                <div>
+                    <img src="./assets/img/pol-4.jpg" alt="">
+                    <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-flex uk-flex-middle">
+                        <h1>4</h1>
+                        <p>Agriculture &  Rural Development </p>
+                    </div>
+                </div>
+            </a> -->
+            <a class="uk-inline" uk-toggle="cls: active; mode: hover;" href="{{ route('fivepoints.entrepreneur') }}">
+                <div>
+                    <img src="./assets/img/pol-4.jpg" alt="">
+                    <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-flex uk-flex-middle">
+                        <h1>3</h1>
+                        <p>Sustainable Economic Rebirth </p>
+>>>>>>> 69c9b70ca42c505ee05edbc15754765eb3bb9a5e
                     </div>
                 </div>
             </a>
@@ -248,15 +293,134 @@
                 @foreach($news as $new)
                 <div class="uk-flex-middle" uk-grid>
                     <div class="uk-width-2-3@m">
+<<<<<<< HEAD
                         <a href="{{route('news.news1', $new->slug)}}">
                             <h3 class="uk-card-title uk-margin-remove-bottom">{{ $new->title }}</h3>
                         </a>                        
                         <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">{{ $new->created_at->format('F d, Y h:ia') }}</time></p>
+=======
+                        <a href="{{ route('news.news8') }}">
+                            <h3 class="uk-card-title uk-margin-remove-bottom">EMMERGENCY METTING OF THE NORTHERN GOVERNORS FORUM HOLDS IN SIR KASHIM...</h3>
+                        </a>                        
+                        <p class="uk-text-meta uk-margin-remove-top">
+                            <time datetime="2016-04-01T19:00">
+                                Sept 11, 2019.
+                            </time>
+                        </p>
+                        <p>
+                            Emergency meeting of the Northern Governors Forum holds in Sir Kashim Ibrahim house Kaduna with Plateau State Governor and Chairman of the forum Rt. Hon. Simon Bako Lalong Presiding...
+
+                        </p>
+                    </div>
+                    <div class="uk-width-1-3@m uk-flex-first">
+                        <img src="./assets/img/news8/1.jpeg" alt="">
+                    </div>
+                </div>
+
+                <div class="uk-flex-middle" uk-grid>
+                    <div class="uk-width-2-3@m">
+                        <a href="{{ route('news.news7') }}">
+                            <h3 class="uk-card-title uk-margin-remove-bottom">SPEECH BY THE EXECUTIVE GOVERNOR OF PLATEAU STATE, RT. HON. (DR) SIMON BAKO LALONG, AT THE 2019 NIGERIAN INSTITUTE OF PUBLIC RELATIONS...</h3>
+                        </a>                        
+                        <p class="uk-text-meta uk-margin-remove-top">
+                            <time datetime="2016-04-01T19:00">
+                                July 3, 2019.
+                            </time>
+                        </p>
+                        <p>
+                            I am very delighted and honoured to host the 2019 NIPR Governing Council Retreat in Jos, the Plateau State capital. Indeed, hosting a professional group like the NIPR is not an easy task because each and every action you take in trying to be a good host would be put to test.
+
+                        </p>
+                    </div>
+                    <div class="uk-width-1-3@m uk-flex-first">
+                        <img src="./assets/img/news7.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="uk-flex-middle" uk-grid>
+                    <div class="uk-width-2-3@m">
+                        <a href="{{ route('news.news6') }}">
+                            <h3 class="uk-card-title uk-margin-remove-bottom">Speech by his Excellency, RT. HON. (DR) SIMON BAKO LALONG,...</h3>
+                        </a>                        
+                        <p class="uk-text-meta uk-margin-remove-top">
+                            <time datetime="2016-04-01T19:00">
+                                June 12, 2019.
+                            </time>
+                        </p>
+                        <p>
+                            It is indeed my pleasure to address you this morning and to welcome the Presidential Advisory Committee Against Corruption to Plateau State on the occasion of her state level activity against corruption in Nigeria.
+
+                        </p>
+                    </div>
+                    <div class="uk-width-1-3@m uk-flex-first">
+                        <img src="./assets/img/news6.jpeg" alt="">
+                    </div>
+                </div>
+
+               {{--  <div class="uk-flex-middle" uk-grid>
+                    <div class="uk-width-2-3@m">
+                        <a href="{{ route('news.news5') }}">
+                            <h3 class="uk-card-title uk-margin-remove-bottom">Speech by his Excellency, RT. HON. (DR) SIMON BAKO LALONG,...</h3>
+                        </a>                        
+                        <p class="uk-text-meta uk-margin-remove-top">
+                            <time datetime="2016-04-01T19:00">
+                                June 12, 2019.
+                            </time>
+                        </p>
+                        <p>
+                            Today, marks another memorable beginning in our Democratic Governance as a State and the Nation in general. We thank Almighty God that we are witnesses to the resuscitation of the June 12 Democracy ideals that had been in limbo for over 20 years.
+
+                        </p>
+                    </div>
+                    <div class="uk-width-1-3@m uk-flex-first">
+                        <img src="./assets/img/speech.jpg" alt="">
+                    </div>
+                </div> --}}
+
+                {{-- <div class="uk-flex-middle" uk-grid>
+                    <div class="uk-width-2-3@m">
+                        <a href="{{ route('news.news4') }}">
+                            <h3 class="uk-card-title uk-margin-remove-bottom">Press briefing by the chairman of the committee for the inauguration of ...</h3>
+                        </a>                        
+                        <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">May 24, 2019</time></p>
+                        <p>
+                            I Welcome you all to this Press briefing by the government to unveil the lineup of activities for the forthcoming Inauguration/swearing-in of the second term in office of Governor Simon Bako Lalong led administration.
+
+                        </p>
+                    </div>
+                    <div class="uk-width-1-3@m uk-flex-first">
+                        <img src="./assets/img/Tyoden.png" alt="">
+                    </div>
+                </div> --}}
+
+                <!-- <div class="uk-flex-middle" uk-grid>
+                    <div class="uk-width-2-3@m">
+                        <a href="{{ route('news.news1') }}">
+                            <h3 class="uk-card-title uk-margin-remove-bottom">Plateau State establishes agency for ICT development</h3>
+                        </a>                        
+                        <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 05, 2019</time></p>
+                        <p>
+                            The Plateau state government has established an ICT development agency with the mandate to develop ICT, as well as using it as a tool for social mobility in solving youth unemployment in the state.
+                        </p>
+                    </div>
+                    <div class="uk-width-1-3@m uk-flex-first">
+                        <img src="./assets/img/lally.png" alt="">
+                    </div>
+                </div> -->
+                <!-- <div class="uk-flex-middle" uk-grid>
+                    <div class="uk-width-2-3@m">
+                        <a href="{{ route('news.news2') }}">
+                            <h3 class="uk-card-title uk-margin-remove-bottom">APC’s Simon Lalong retains seat as Plateau governor</h3>
+                        </a>
+                        
+                        <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">March 24, 2019</time></p>
+>>>>>>> 69c9b70ca42c505ee05edbc15754765eb3bb9a5e
                         <p>
                         {!!  str_limit($new->body, 150) !!}
                         </p>
                     </div>
                     <div class="uk-width-1-3@m uk-flex-first">
+<<<<<<< HEAD
                         <img src="../uploads/thumbnail/{{$new->news_image}}" alt="">
                     </div>
                 </div>
@@ -265,6 +429,27 @@
                     <h3 class="uk-card-title uk-margin-remove-bottom">No News/Events Posted yet.</h3>
                 @endif
 
+=======
+                        <img src="./assets/img/lalong-2.jpeg" alt="">
+                    </div>
+                </div> -->
+                <!-- <div class="uk-flex-middle" uk-grid>
+                    <div class="uk-width-2-3@m">
+                        <a href="{{ route('news.news3') }}">
+                            <h3 class="uk-card-title uk-margin-remove-bottom">Massive turnout in Tudun Wada as Plateau votes to determine governor</h3>
+                        </a>                        
+                        <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">March 26, 2019</time></p>
+                        <p>
+                            Tudun Wada polling unit 027, in Jos North Local Government of Plateau, has witnessed a large turnout of voters in the on-going rerun election to determine the state’s governor.
+                        </p>
+                    </div>
+                    <div class="uk-width-1-3@m uk-flex-first">
+                        <img src="./assets/img/election.jpg" alt="">
+                    </div>
+                </div>
+ -->
+                
+>>>>>>> 69c9b70ca42c505ee05edbc15754765eb3bb9a5e
             </div>
             <img class="mobile-centered-img" src="./assets/img/platStet.png" alt="">
         </section>

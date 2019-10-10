@@ -17,11 +17,20 @@
 @section('content')
 <div class="content uk-width-1-2@m">
     <!-- <h2 class="bold">NATURAL ENDOWMENTS</h2> -->
+<<<<<<< HEAD
+=======
+    <div class="sharethis-inline-share-buttons"></div>
+    <p>
+        The Plateau state government has established an ICT development agency with the mandate to develop ICT, as well as using it as a tool for social mobility in solving youth unemployment in the state.
+    </p>
+>>>>>>> 69c9b70ca42c505ee05edbc15754765eb3bb9a5e
     <div class="uk-child-width-1-1@m uk-grid-small" uk-grid>
         <img class="object-fit" src="../uploads/images/{{$new->news_image}}" alt="">
     </div>
     <p>
     {!!  $new->body !!}
     </p>
+    <div class="sharethis-inline-share-buttons"></div>
+                        
 </div>
 @endsection
