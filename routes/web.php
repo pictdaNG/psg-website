@@ -11,19 +11,16 @@
 |
 */
 
-<<<<<<< HEAD
-Route::get('/', 'PagesController@index')->name('home');
+// Route::get('/', 'PagesController@index')->name('home');
 
 // Route::get('/', function () {
 //   return view('welcome');
 // })->name('home');
-=======
 if (env('APP_ENV') === 'production') {
   \URL::forceScheme('https');
 }
 
 Route::get('/', 'HomeController@index')->name('home');
->>>>>>> 69c9b70ca42c505ee05edbc15754765eb3bb9a5e
 
 Route::get('/contact-us', function() {
   return view('contact.contact');
@@ -404,15 +401,12 @@ Route::group(['prefix' => 'five-points-policy'], function() {
   //   return view('fivepoints.peacesecurity');
   // })->name('fivepoints.peacesecurity');
 
-<<<<<<< HEAD
   // Route::get('/physical-infrastructure-environment', function() {
   //   return view('fivepoints.physical');
   // })->name('fivepoints.physical');
-=======
   Route::get('/physical-infrastructural-development', function() {
     return view('fivepoints.physical');
   })->name('fivepoints.physical');
->>>>>>> 69c9b70ca42c505ee05edbc15754765eb3bb9a5e
 
   // Route::get('/agriculture-rural-development', function() {
   //   return view('fivepoints.agric');
@@ -446,7 +440,6 @@ Route::group(['prefix' => 'news-&-events'], function() {
 Route::get('/login',['uses' => 'AuthController@index', 'as' => 'login']);
 Route::post('/signin',['uses' => 'AuthController@login', 'as' => 'login.post']);
 
-<<<<<<< HEAD
 
 Route::group( ['middleware' => ['auth']], function() {
   
@@ -503,7 +496,6 @@ Route::group( ['middleware' => ['auth']], function() {
       Route::get('/{slug}/delete', 'PostsController@delete')->name('posts.delete');
     });
  
-=======
   Route::get('/massive-turnout-in-tudun-wada-as-plateau-votes-to-determine-governor', function() {
     return view('news.news3');
   })->name('news.news3');
@@ -552,5 +544,4 @@ Route::group(['prefix' => 'admin'], function() {
     Route::get('/create', 'BlogController@create')->name('blog.create');
     Route::post('/create', 'BlogController@store')->name('blog.store');
   });
->>>>>>> 69c9b70ca42c505ee05edbc15754765eb3bb9a5e
 });
