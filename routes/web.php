@@ -441,6 +441,10 @@ Route::group(['prefix' => 'news-&-events'], function() {
   Route::get('/news/emergency-meeting-of-the-northern-governors-forum', function() {
     return view('news.news8');
   })->name('news.news8');
+
+  Route::get('/news/SPEECH-BY-HIS-EXCELLENCY-RT-HON-(DR.)-SIMON-BAKO-LALONG-EXECUTIVE-GOVERNOR-OF-PLATEAU-STATE-AT-THE-SWEARING-IN-CEREMONY', function() {
+    return view('news.news9');
+  })->name('news.news9');
   
 });
 

@@ -244,6 +244,25 @@
                 <p class="title--base uk-margin-remove">Find out what's going on & stay up to date</p>
                 <div class="uk-flex-middle" uk-grid>
                     <div class="uk-width-2-3@m">
+                        <a href="{{ route('news.news9') }}">
+                            <h3 class="uk-card-title uk-margin-remove-bottom">SPEECH BY HIS EXCELLENCY, RT. HON. (DR.) SIMON BAKO LALONG, EXECUTIVE GOVERNOR OF PLATEAU STATE AT THE SWEARING-IN CEREMONY OF ...</h3>
+                        </a>                        
+                        <p class="uk-text-meta uk-margin-remove-top">
+                            <time datetime="2016-04-01T19:00">
+                                Monday 7th October, 2019.
+                            </time>
+                        </p>
+                        <p>
+                            Today marks another very important day in the history of Plateau State as the team of Commissioners that will assist in delivering on our second term mandate is being inaugurated.
+                        </p>
+                    </div>
+                    <div class="uk-width-1-3@m uk-flex-first">
+                        <img src="./assets/img/news9/1.jpeg" alt="">
+                    </div>
+                </div>
+
+                <div class="uk-flex-middle" uk-grid>
+                    <div class="uk-width-2-3@m">
                         <a href="{{ route('news.news8') }}">
                             <h3 class="uk-card-title uk-margin-remove-bottom">EMMERGENCY METTING OF THE NORTHERN GOVERNORS FORUM HOLDS IN SIR KASHIM...</h3>
                         </a>                        
@@ -282,7 +301,7 @@
                     </div>
                 </div>
 
-                <div class="uk-flex-middle" uk-grid>
+                {{-- <div class="uk-flex-middle" uk-grid>
                     <div class="uk-width-2-3@m">
                         <a href="{{ route('news.news6') }}">
                             <h3 class="uk-card-title uk-margin-remove-bottom">Speech by his Excellency, RT. HON. (DR) SIMON BAKO LALONG,...</h3>
@@ -300,7 +319,7 @@
                     <div class="uk-width-1-3@m uk-flex-first">
                         <img src="./assets/img/news6.jpeg" alt="">
                     </div>
-                </div>
+                </div> --}}
 
                {{--  <div class="uk-flex-middle" uk-grid>
                     <div class="uk-width-2-3@m">
