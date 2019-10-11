@@ -142,31 +142,59 @@
         <div class="little--slider">
             <div class="uk-position-relative" uk-slideshow="animation: fade; min-height: 350; autoplay: true">
                 <div class="uk-flex uk-flex-wrap wrapper show-for-landscape uk-flex-between">
+                @if(count($sliders) > 0)
+               
                     <ul class="uk-slideshow-items">
+                    @foreach($sliders as $slider)
+                    @php
+                    $styleValue = 1;
+                    if($loop->iteration%3 == 0){
+                        $styleValue = 3;
+                    }
+                    else if($loop->iteration%2 == 0){
+                        $styleValue = 2;
+                    }
+                    else{
+                        $styleValue = 1;
+                    }
+                    @endphp
+                    @if($styleValue == 1)
                         <li>
-                            <img src="./assets/img/img-1.jpg" alt="" uk-cover>
+                            <img src="../uploads/images/{{$slider->slider_image}}" alt="" uk-cover>
                         </li>
+                    @elseif($styleValue == 2)
                         <li>
-                            <img src="./assets/img/img-2.jpg" alt="" uk-cover>
+                            <img src="../uploads/images/{{$slider->slider_image}}" alt="" uk-cover>
                         </li>
+                    @endif
+                    @endforeach
                     </ul>
+                
                     <div class="slide-navigation">
                         <ul class="uk-thumbnav">
-                            <li uk-slideshow-item="0">
+                      
+                        @foreach($sliders as $key => $slider)
+                           @if($key == 0)
+                            <li uk-slideshow-item="{{ $key }}">
                                 <a href="#">
-                                    <h2>Thank you for allowing me to serve as your Governor.
-                                    Together, let's keep the momentum going.</h2>
-                                    <p class="uk-text-small">Simon Bako Lalong</p>
+                                    <h2>{{ $slider->description }}</h2>
+                                    <p class="uk-text-small">{{ $slider->title }}</p>
                                 </a>
                             </li>
-                            <li uk-slideshow-item="1">
+                            @elseif($key == 1)
+                             <li uk-slideshow-item="{{ $key }}">
                                 <a href="#">
-                                    <h2>We accept this mandate and equally solicit your cooperation and
-                                        partnership as we strive to sustain its execution.</h2>
-                                    <p class="uk-text-small">Sonni Tyoden</p>
+                                    <h2>{{ $slider->description }}</h2>
+                                    <p class="uk-text-small">{{ $slider->title }}</p>
                                 </a>
                             </li>
+                            @endif
+                        @endforeach
                         </ul>
+                        
+                    @else
+                        <h3 class="uk-card-title uk-margin-remove-bottom">No Slider yet.</h3>
+                    @endif
                     </div>
                 </div>
             </div>
@@ -182,51 +210,25 @@
         </div>
         <div class="uk-grid-collapse policy---cards uk-child-width-1-3@m" uk-grid
              uk-height-match="target: > div > div">
-            <!-- <a class="uk-inline active" uk-toggle="cls: active; mode: hover;" href="{{ route('fivepoints.humancapital') }}">
+             @php
+                $i = 1;
+             @endphp
+             @if(count($posts) > 0)
+                @foreach($posts as $post)
+            <a class="uk-inline active" uk-toggle="cls: active; mode: hover;" href="{{ route('fivepoints', $post->slug) }}">
                 <div>
-                    <img src="./assets/img/pol-1.jpg" alt="">
+                    <img src="../uploads/images/{{$post->feature_image}}" alt="">
                     <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-flex uk-flex-middle">
-                        <h1>1</h1>
-                        <p>Human Capital Development & Social Welfare </p>
-                    </div>
-                </div>
-            </a> -->
-            <a class="uk-inline" uk-toggle="cls: active; mode: hover;" href="{{ route('fivepoints.peacesecurity') }}">
-                <div>
-                    <img src="./assets/img/pol-2.jpg" alt="">
-                    <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-flex uk-flex-middle">
-                        <h1>1</h1>
-                        <p>Peace, Security &  Good Governance</p>
+                        <h1>{{$i++}}</h1>
+                        <p>{{ $post->title }} </p>
                     </div>
                 </div>
             </a>
-            <a class="uk-inline" uk-toggle="cls: active; mode: hover;" href="{{ route('fivepoints.physical') }}">
-                <div>
-                    <img src="./assets/img/pol-3.jpg" alt="">
-                    <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-flex uk-flex-middle">
-                        <h1>2</h1>
-                        <p>Physical Infrastructural  Development </p>
-                    </div>
-                </div>
-            </a>
-            <!-- <a class="uk-inline" uk-toggle="cls: active; mode: hover;" href="{{ route('fivepoints.agriculture') }}">
-                <div>
-                    <img src="./assets/img/pol-4.jpg" alt="">
-                    <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-flex uk-flex-middle">
-                        <h1>4</h1>
-                        <p>Agriculture &  Rural Development </p>
-                    </div>
-                </div>
-            </a> -->
-            <a class="uk-inline" uk-toggle="cls: active; mode: hover;" href="{{ route('fivepoints.entrepreneur') }}">
-                <div>
-                    <img src="./assets/img/pol-4.jpg" alt="">
-                    <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-flex uk-flex-middle">
-                        <h1>3</h1>
-                        <p>Sustainable Economic Rebirth </p>
-                    </div>
-                </div>
-            </a>
+            @endforeach
+            @else
+                <h3 class="uk-card-title uk-margin-remove-bottom">No Post yet.</h3>
+            @endif
+
         </div>
     </section>
     <section class="news--n--events uk-grid-collapse uk-child-width-1-3@m" uk-grid>
@@ -242,166 +244,27 @@
             <div class="uk-width-2-3@m news uk-padding">
                 <h2 class="n--title uk-margin-remove">News & Events</h2>
                 <p class="title--base uk-margin-remove">Find out what's going on & stay up to date</p>
+                @if(count($news) > 0)
+                @foreach($news as $new)
                 <div class="uk-flex-middle" uk-grid>
                     <div class="uk-width-2-3@m">
-                        <a href="{{ route('news.news9') }}">
-                            <h3 class="uk-card-title uk-margin-remove-bottom">SPEECH BY HIS EXCELLENCY, RT. HON. (DR.) SIMON BAKO LALONG, EXECUTIVE GOVERNOR OF PLATEAU STATE AT THE SWEARING-IN CEREMONY OF ...</h3>
+                        <a href="{{route('news.news1', $new->slug)}}">
+                            <h3 class="uk-card-title uk-margin-remove-bottom">{{ $new->title }}</h3>
                         </a>                        
-                        <p class="uk-text-meta uk-margin-remove-top">
-                            <time datetime="2016-04-01T19:00">
-                                Monday 7th October, 2019.
-                            </time>
-                        </p>
+                        <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">{{ $new->created_at->format('F d, Y h:ia') }}</time></p>
                         <p>
-                            Today marks another very important day in the history of Plateau State as the team of Commissioners that will assist in delivering on our second term mandate is being inaugurated.
+                        {!!  str_limit($new->body, 150) !!}
                         </p>
                     </div>
                     <div class="uk-width-1-3@m uk-flex-first">
-                        <img src="./assets/img/news9/1.jpeg" alt="">
+                        <img src="../uploads/thumbnail/{{$new->news_image}}" alt="">
                     </div>
                 </div>
+                @endforeach
+                @else
+                    <h3 class="uk-card-title uk-margin-remove-bottom">No News/Events Posted yet.</h3>
+                @endif
 
-                <div class="uk-flex-middle" uk-grid>
-                    <div class="uk-width-2-3@m">
-                        <a href="{{ route('news.news8') }}">
-                            <h3 class="uk-card-title uk-margin-remove-bottom">EMMERGENCY METTING OF THE NORTHERN GOVERNORS FORUM HOLDS IN SIR KASHIM...</h3>
-                        </a>                        
-                        <p class="uk-text-meta uk-margin-remove-top">
-                            <time datetime="2016-04-01T19:00">
-                                Sept 11, 2019.
-                            </time>
-                        </p>
-                        <p>
-                            Emergency meeting of the Northern Governors Forum holds in Sir Kashim Ibrahim house Kaduna with Plateau State Governor and Chairman of the forum Rt. Hon. Simon Bako Lalong Presiding...
-
-                        </p>
-                    </div>
-                    <div class="uk-width-1-3@m uk-flex-first">
-                        <img src="./assets/img/news8/1.jpeg" alt="">
-                    </div>
-                </div>
-
-                <div class="uk-flex-middle" uk-grid>
-                    <div class="uk-width-2-3@m">
-                        <a href="{{ route('news.news7') }}">
-                            <h3 class="uk-card-title uk-margin-remove-bottom">SPEECH BY THE EXECUTIVE GOVERNOR OF PLATEAU STATE, RT. HON. (DR) SIMON BAKO LALONG, AT THE 2019 NIGERIAN INSTITUTE OF PUBLIC RELATIONS...</h3>
-                        </a>                        
-                        <p class="uk-text-meta uk-margin-remove-top">
-                            <time datetime="2016-04-01T19:00">
-                                July 3, 2019.
-                            </time>
-                        </p>
-                        <p>
-                            I am very delighted and honoured to host the 2019 NIPR Governing Council Retreat in Jos, the Plateau State capital. Indeed, hosting a professional group like the NIPR is not an easy task because each and every action you take in trying to be a good host would be put to test.
-
-                        </p>
-                    </div>
-                    <div class="uk-width-1-3@m uk-flex-first">
-                        <img src="./assets/img/news7.jpg" alt="">
-                    </div>
-                </div>
-
-                {{-- <div class="uk-flex-middle" uk-grid>
-                    <div class="uk-width-2-3@m">
-                        <a href="{{ route('news.news6') }}">
-                            <h3 class="uk-card-title uk-margin-remove-bottom">Speech by his Excellency, RT. HON. (DR) SIMON BAKO LALONG,...</h3>
-                        </a>                        
-                        <p class="uk-text-meta uk-margin-remove-top">
-                            <time datetime="2016-04-01T19:00">
-                                June 12, 2019.
-                            </time>
-                        </p>
-                        <p>
-                            It is indeed my pleasure to address you this morning and to welcome the Presidential Advisory Committee Against Corruption to Plateau State on the occasion of her state level activity against corruption in Nigeria.
-
-                        </p>
-                    </div>
-                    <div class="uk-width-1-3@m uk-flex-first">
-                        <img src="./assets/img/news6.jpeg" alt="">
-                    </div>
-                </div> --}}
-
-               {{--  <div class="uk-flex-middle" uk-grid>
-                    <div class="uk-width-2-3@m">
-                        <a href="{{ route('news.news5') }}">
-                            <h3 class="uk-card-title uk-margin-remove-bottom">Speech by his Excellency, RT. HON. (DR) SIMON BAKO LALONG,...</h3>
-                        </a>                        
-                        <p class="uk-text-meta uk-margin-remove-top">
-                            <time datetime="2016-04-01T19:00">
-                                June 12, 2019.
-                            </time>
-                        </p>
-                        <p>
-                            Today, marks another memorable beginning in our Democratic Governance as a State and the Nation in general. We thank Almighty God that we are witnesses to the resuscitation of the June 12 Democracy ideals that had been in limbo for over 20 years.
-
-                        </p>
-                    </div>
-                    <div class="uk-width-1-3@m uk-flex-first">
-                        <img src="./assets/img/speech.jpg" alt="">
-                    </div>
-                </div> --}}
-
-                {{-- <div class="uk-flex-middle" uk-grid>
-                    <div class="uk-width-2-3@m">
-                        <a href="{{ route('news.news4') }}">
-                            <h3 class="uk-card-title uk-margin-remove-bottom">Press briefing by the chairman of the committee for the inauguration of ...</h3>
-                        </a>                        
-                        <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">May 24, 2019</time></p>
-                        <p>
-                            I Welcome you all to this Press briefing by the government to unveil the lineup of activities for the forthcoming Inauguration/swearing-in of the second term in office of Governor Simon Bako Lalong led administration.
-
-                        </p>
-                    </div>
-                    <div class="uk-width-1-3@m uk-flex-first">
-                        <img src="./assets/img/Tyoden.png" alt="">
-                    </div>
-                </div> --}}
-
-                <!-- <div class="uk-flex-middle" uk-grid>
-                    <div class="uk-width-2-3@m">
-                        <a href="{{ route('news.news1') }}">
-                            <h3 class="uk-card-title uk-margin-remove-bottom">Plateau State establishes agency for ICT development</h3>
-                        </a>                        
-                        <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 05, 2019</time></p>
-                        <p>
-                            The Plateau state government has established an ICT development agency with the mandate to develop ICT, as well as using it as a tool for social mobility in solving youth unemployment in the state.
-                        </p>
-                    </div>
-                    <div class="uk-width-1-3@m uk-flex-first">
-                        <img src="./assets/img/lally.png" alt="">
-                    </div>
-                </div> -->
-                <!-- <div class="uk-flex-middle" uk-grid>
-                    <div class="uk-width-2-3@m">
-                        <a href="{{ route('news.news2') }}">
-                            <h3 class="uk-card-title uk-margin-remove-bottom">APC’s Simon Lalong retains seat as Plateau governor</h3>
-                        </a>
-                        
-                        <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">March 24, 2019</time></p>
-                        <p>
-                            Incumbent Gov. Simon Lalong of Plateau, the gubernatorial candidate of the All Progressives Congress (APC) in Plateau, has been declared the winner of the rerun gubernatorial election in the state.
-                        </p>
-                    </div>
-                    <div class="uk-width-1-3@m uk-flex-first">
-                        <img src="./assets/img/lalong-2.jpeg" alt="">
-                    </div>
-                </div> -->
-                <!-- <div class="uk-flex-middle" uk-grid>
-                    <div class="uk-width-2-3@m">
-                        <a href="{{ route('news.news3') }}">
-                            <h3 class="uk-card-title uk-margin-remove-bottom">Massive turnout in Tudun Wada as Plateau votes to determine governor</h3>
-                        </a>                        
-                        <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">March 26, 2019</time></p>
-                        <p>
-                            Tudun Wada polling unit 027, in Jos North Local Government of Plateau, has witnessed a large turnout of voters in the on-going rerun election to determine the state’s governor.
-                        </p>
-                    </div>
-                    <div class="uk-width-1-3@m uk-flex-first">
-                        <img src="./assets/img/election.jpg" alt="">
-                    </div>
-                </div>
- -->
-                
             </div>
             <img class="mobile-centered-img" src="./assets/img/platStet.png" alt="">
         </section>

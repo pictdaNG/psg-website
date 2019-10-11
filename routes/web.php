@@ -11,6 +11,11 @@
 |
 */
 
+// Route::get('/', 'PagesController@index')->name('home');
+
+// Route::get('/', function () {
+//   return view('welcome');
+// })->name('home');
 if (env('APP_ENV') === 'production') {
   \URL::forceScheme('https');
 }
@@ -385,39 +390,112 @@ Route::group(['prefix' => 'others'], function() {
 
 // FIVE POINTS GROUP
 Route::group(['prefix' => 'five-points-policy'], function() {
+
+  Route::get('/{slug}', 'PagesController@showPosts')->name('fivepoints');
   
-  Route::get('/human-capital-development-social-welfare', function() {
-    return view('fivepoints.humancapital');
-  })->name('fivepoints.humancapital');
+  // Route::get('/human-capital-development-social-welfare', function() {
+  //   return view('fivepoints.humancapital');
+  // })->name('fivepoints.humancapital');
 
-  Route::get('/peace-security-good-governance', function() {
-    return view('fivepoints.peacesecurity');
-  })->name('fivepoints.peacesecurity');
+  // Route::get('/peace-security-good-governance', function() {
+  //   return view('fivepoints.peacesecurity');
+  // })->name('fivepoints.peacesecurity');
 
+  // Route::get('/physical-infrastructure-environment', function() {
+  //   return view('fivepoints.physical');
+  // })->name('fivepoints.physical');
   Route::get('/physical-infrastructural-development', function() {
     return view('fivepoints.physical');
   })->name('fivepoints.physical');
 
-  Route::get('/agriculture-rural-development', function() {
-    return view('fivepoints.agric');
-  })->name('fivepoints.agriculture');
+  // Route::get('/agriculture-rural-development', function() {
+  //   return view('fivepoints.agric');
+  // })->name('fivepoints.agriculture');
 
-  Route::get('/entrepreneurship-&-industralization', function() {
-    return view('fivepoints.entrepreneur');
-  })->name('fivepoints.entrepreneur');
+  // Route::get('/entrepreneurship-&-industralization', function() {
+  //   return view('fivepoints.entrepreneur');
+  // })->name('fivepoints.entrepreneur');
 });
 
 // NEWS GROUP ROUTE
 Route::group(['prefix' => 'news-&-events'], function() {
+
+  Route::get('/{slug}', 'PagesController@show')->name('news.news1');
   
-  Route::get('/plateau-state-establishes-agency-for-ict-development', function() {
-    return view('news.news1');
-  })->name('news.news1');
+  // Route::get('/plateau-state-establishes-agency-for-ict-development', function() {
+  //   return view('news.news1');
+  // })->name('news.news1');
 
-  Route::get('/apcs-simon-lalong-retains-seat-a-plateau-governor', function() {
-    return view('news.news2');
-  })->name('news.news2');
+  // Route::get('/apcs-simon-lalong-retains-seat-a-plateau-governor', function() {
+  //   return view('news.news2');
+  // })->name('news.news2');
 
+  // Route::get('/massive-turnout-in-tudun-wada-as-plateau-votes-to-determine-governor', function() {
+  //   return view('news.news3');
+  // })->name('news.news3');
+  
+});
+
+// auth
+Route::get('/login',['uses' => 'AuthController@index', 'as' => 'login']);
+Route::post('/signin',['uses' => 'AuthController@login', 'as' => 'login.post']);
+
+
+Route::group( ['middleware' => ['auth']], function() {
+  
+  // dashboard
+  Route::get('/dashboard',['uses' => 'DashbaordController@index', 'as' => 'dashboard']);
+  Route::get('/logout', ['uses' => 'AuthController@logout','as' => 'logout']);
+  Route::get('/users',['uses' => 'UserController@index', 'as' => 'users.index']);
+  Route::post('/user/store',['uses' => 'UserController@store', 'as' => 'users.store']);
+  Route::post('/user/update/{id}',['uses' => 'UserController@update', 'as' => 'users.update']);
+  Route::get('/user/delete/{id}',['uses' => 'UserController@destroy', 'as' => 'users.delete']);
+  
+  //roles
+  Route::get('/roles',['uses' => 'RoleController@index', 'as' => 'roles.index']);
+  Route::post('/roles/store',['uses' => 'RoleController@store', 'as' => 'roles.store']); 
+  Route::put('/roles/update/{id}', 'RoleController@update')->name('roles.update');
+  Route::get('/roles/delete/{id}', 'RoleController@delete')->name('roles.delete');
+
+  // permission
+  Route::get('/permissions',['uses' => 'PermissionController@index', 'as' => 'permissions.index']);
+  Route::post('/permissions/store',['uses' => 'PermissionController@store', 'as' => 'permissions.store']); 
+  Route::put('/permissionsupdate/{id}', 'PermissionController@update')->name('permissions.update');
+  Route::get('/permissions/delete/{id}', 'PermissionController@delete')->name('permissions.delete');
+
+  // newscategory
+  Route::group(['prefix' => 'category'], function () {
+    Route::get('/', 'NewsController@index')->name('newsCategory.index');
+    Route::post('/create', 'NewsController@store')->name('newsCategory.store');
+    Route::put('/{slug}/update', 'NewsController@update')->name('newsCategory.update');
+    Route::get('/{slug}/delete', 'NewsController@delete')->name('newsCategory.delete');
+  });
+  // News
+  Route::group(['prefix' => 'news'], function () {
+    Route::get('/', 'NewsController@newsIndex')->name('news.index');
+    Route::get('/add', 'NewsController@create')->name('news.add');
+    Route::post('/create', 'NewsController@newsStore')->name('news.store');
+    Route::put('/{slug}/update', 'NewsController@newsUpdate')->name('news.update');
+    Route::get('/{slug}/delete', 'NewsController@newsDelete')->name('news.delete');
+  });
+
+  Route::group(['prefix' => 'sliders'], function(){
+    Route::get('/{data}/edit', 'SliderController@edit')->name('slider.edit');
+    Route::post('/create', 'SliderController@store')->name('slider.store');
+    Route::get('/', 'SliderController@index')->name('slider.index');
+    Route::put('/{data}/update', 'SliderController@update')->name('slider.update');
+    Route::get('/{data}/delete', 'SliderController@delete')->name('slider.delete');
+  });
+
+    // Posts
+    Route::group(['prefix' => 'posts'], function () {
+      Route::get('/', 'PostsController@index')->name('posts.index');
+      Route::get('/add', 'PostsController@create')->name('posts.add');
+      Route::post('/create', 'PostsController@store')->name('posts.store');
+      Route::put('/{slug}/update', 'PostsController@update')->name('posts.update');
+      Route::get('/{slug}/delete', 'PostsController@delete')->name('posts.delete');
+    });
+ 
   Route::get('/massive-turnout-in-tudun-wada-as-plateau-votes-to-determine-governor', function() {
     return view('news.news3');
   })->name('news.news3');
