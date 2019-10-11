@@ -170,6 +170,9 @@
         </div>
     </div>
     
+<<<<<<< HEAD
+   
+=======
     <section class="policy" uk-toggle="cls: hide-pointIMG; mode: hover;">
         <div class="pointIMG uk-text-center">
             <!-- <img src="./assets/img/fiveStar.png" alt=""> --> 
@@ -226,6 +229,7 @@
             </a>
         </div>
     </section>    
+>>>>>>> 69c9b70ca42c505ee05edbc15754765eb3bb9a5e
     @include('layouts.footer')
     <script src="{{ URL::asset('assets/js/app.js') }}"></script>
     <!-- <script src="{{ asset('js/share.js') }}"></script> -->
