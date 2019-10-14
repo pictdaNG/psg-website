@@ -6,7 +6,7 @@
 	use App\Repositories\Dashboard\DashboardContract;
 	use Sentinel;
 
-	class DashboardController extends Controller {
+	class DashboardController1 extends Controller {
 
 		protected $repo;
 

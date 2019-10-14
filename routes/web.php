@@ -22,11 +22,17 @@ if (env('APP_ENV') === 'production') {
 
 Route::get('/', 'HomeController@index')->name('home');
 
-Route::get('/contact-us', function() {
-  return view('contact.contact');
-})->name('contact');
 
-Route::post('/contact-us', 'ContactController@postContactUs')->name('send_contact_us');
+
+Route::group(['prefix' => 'contact-us'], function() {
+  Route::get('/', function() {
+    return view('contact.contact');
+  })->name('contact');
+
+  Route::post('/contact-us', 'ContactController@postContactUs')->name('send_contact_us');
+});
+
+
 
 Route::group(['prefix' => 'budget'], function() {
   Route::get('/', 'DocumentController@budgetReport')->name('budget');
@@ -391,49 +397,32 @@ Route::group(['prefix' => 'others'], function() {
 // FIVE POINTS GROUP
 Route::group(['prefix' => 'five-points-policy'], function() {
 
-  Route::get('/{slug}', 'PagesController@showPosts')->name('fivepoints');
+  // Route::get('/{slug}', 'PagesController@showPosts')->name('fivepoints');
   
-  // Route::get('/human-capital-development-social-welfare', function() {
-  //   return view('fivepoints.humancapital');
-  // })->name('fivepoints.humancapital');
+  Route::get('/human-capital-development-social-welfare', function() {
+    return view('fivepoints.humancapital');
+  })->name('fivepoints.humancapital');
 
-  // Route::get('/peace-security-good-governance', function() {
-  //   return view('fivepoints.peacesecurity');
-  // })->name('fivepoints.peacesecurity');
+  Route::get('/peace-security-good-governance', function() {
+    return view('fivepoints.peacesecurity');
+  })->name('fivepoints.peacesecurity');
 
-  // Route::get('/physical-infrastructure-environment', function() {
-  //   return view('fivepoints.physical');
-  // })->name('fivepoints.physical');
   Route::get('/physical-infrastructural-development', function() {
     return view('fivepoints.physical');
   })->name('fivepoints.physical');
 
-  // Route::get('/agriculture-rural-development', function() {
-  //   return view('fivepoints.agric');
-  // })->name('fivepoints.agriculture');
+  Route::get('/agriculture-rural-development', function() {
+    return view('fivepoints.agric');
+  })->name('fivepoints.agriculture');
 
-  // Route::get('/entrepreneurship-&-industralization', function() {
-  //   return view('fivepoints.entrepreneur');
-  // })->name('fivepoints.entrepreneur');
+  Route::get('/entrepreneurship-&-industralization', function() {
+    return view('fivepoints.entrepreneur');
+  })->name('fivepoints.entrepreneur');
 });
 
 // NEWS GROUP ROUTE
 Route::group(['prefix' => 'news-&-events'], function() {
-
-  Route::get('/{slug}', 'PagesController@show')->name('news.news1');
-  
-  // Route::get('/plateau-state-establishes-agency-for-ict-development', function() {
-  //   return view('news.news1');
-  // })->name('news.news1');
-
-  // Route::get('/apcs-simon-lalong-retains-seat-a-plateau-governor', function() {
-  //   return view('news.news2');
-  // })->name('news.news2');
-
-  // Route::get('/massive-turnout-in-tudun-wada-as-plateau-votes-to-determine-governor', function() {
-  //   return view('news.news3');
-  // })->name('news.news3');
-  
+  Route::get('/{slug}', 'PagesController@show')->name('news.news1');  
 });
 
 // auth
@@ -487,65 +476,37 @@ Route::group( ['middleware' => ['auth']], function() {
     Route::get('/{data}/delete', 'SliderController@delete')->name('slider.delete');
   });
 
-    // Posts
-    Route::group(['prefix' => 'posts'], function () {
-      Route::get('/', 'PostsController@index')->name('posts.index');
-      Route::get('/add', 'PostsController@create')->name('posts.add');
-      Route::post('/create', 'PostsController@store')->name('posts.store');
-      Route::put('/{slug}/update', 'PostsController@update')->name('posts.update');
-      Route::get('/{slug}/delete', 'PostsController@delete')->name('posts.delete');
-    });
- 
-  Route::get('/massive-turnout-in-tudun-wada-as-plateau-votes-to-determine-governor', function() {
-    return view('news.news3');
-  })->name('news.news3');
-
-  Route::get('/press-briefing-by-the-chairman-of-the-committee-for-the-inauguration-of-the-second-term-in-office-of-the-lalong-adminstration', function() {
-    return view('news.news4');
-  })->name('news.news4');
-
-  Route::get('/SPEECH-BY-HIS-EXCELLENCY-RT-HON-SIMON-BAKO-LALONG-THE-EXECUTIVE-GOVERNOR-OF-PLATEAU-STATE-ON-THE-OCCASION-OF-DEMOCRACY-DAY-AND-UNVEILING-OF-THE-VISION-PLATEAU-STATE-IN-THE-NEXT-LEVEL-POLICIES-AND-PROGRAMMES-OF-THE-RESCUE-TEAM-PHAS-2-AT-THE-BANQUET-HALL-NEW-GOVERNMENT-HOUSE-LITTLE-RAYFIELD-JOS-WEDNESDAY-12TH-JUNE-2019', function() {
-    return view('news.news5');
-  })->name('news.news5');
-
-  Route::get('/SPEECH-BY-THE-EXECUTIVE-GOVERNOR-OF-PLATEAU-STATE-ON-THE-OCCASION-OF-A-ONE-DAY-STATE-LEVEL-ACTIVITY-BY-THE-PRESIDENTIAL-ADVISORY-COMMITTEE', function() {
-    return view('news.news6');
-  })->name('news.news6');
-
-  Route::get('/SPEECH-BY-THE-EXECUTIVE-GOVERNOR-OF-PLATEAU-STATE-AT-THE-2019-NIGERIAN-INSTITUTE-OF-PUBLIC-RELATIONS-(NIPR)-GOVERNING-COUNCIL-RETREAT', function() {
-    return view('news.news7');
-  })->name('news.news7');
-
-  Route::get('/news/emergency-meeting-of-the-northern-governors-forum', function() {
-    return view('news.news8');
-  })->name('news.news8');
-
-  Route::get('/news/SPEECH-BY-HIS-EXCELLENCY-RT-HON-(DR.)-SIMON-BAKO-LALONG-EXECUTIVE-GOVERNOR-OF-PLATEAU-STATE-AT-THE-SWEARING-IN-CEREMONY', function() {
-    return view('news.news9');
-  })->name('news.news9');
+  // Posts
+  Route::group(['prefix' => 'posts'], function () {
+    Route::get('/', 'PostsController@index')->name('posts.index');
+    Route::get('/add', 'PostsController@create')->name('posts.add');
+    Route::post('/create', 'PostsController@store')->name('posts.store');
+    Route::put('/{slug}/update', 'PostsController@update')->name('posts.update');
+    Route::get('/{slug}/delete', 'PostsController@delete')->name('posts.delete');
+  });
   
 });
 
-Route::get('/auth/login', 'LoginController@index')->name('get_login');
-Route::post('/auth/login', 'LoginController@doLogin')->name('do_login');
-Route::get('/logout', 'LoginController@logout')->name('logout');
+// Route::get('/auth/login', 'LoginController@index')->name('get_login');
+// Route::post('/auth/login', 'LoginController@doLogin')->name('do_login');
+// Route::get('/logout', 'LoginController@logout')->name('logout');
 
-Route::group(['prefix' => 'admin'], function() {
+// Route::group(['prefix' => 'admin'], function() {
   
-  Route::get('/', 'DashboardController@index')->name('admin_dash');
+//   Route::get('/', 'DashboardController@index')->name('admin_dash');
 
-  Route::group(['prefix' => 'documents'], function() {
-    Route::get('/', 'DocumentController@index')->name('doccument.index');
-    Route::get('/uploads/budget', 'DocumentController@create')->name('document.upload');
-    Route::post('/uploads/budget', 'DocumentController@store')->name('document.budget.store');
+//   Route::group(['prefix' => 'documents'], function() {
+//     Route::get('/', 'DocumentController@index')->name('doccument.index');
+//     Route::get('/uploads/budget', 'DocumentController@create')->name('document.upload');
+//     Route::post('/uploads/budget', 'DocumentController@store')->name('document.budget.store');
 
-    Route::get('/uploads/quarterly-report', 'DocumentController@quarterlyReport')->name('document.quarterly.report');
-    Route::post('/uploads/quarterly-report', 'DocumentController@storeQuarterlyReport')->name('document.quarterly.store');
-  });
+//     Route::get('/uploads/quarterly-report', 'DocumentController@quarterlyReport')->name('document.quarterly.report');
+//     Route::post('/uploads/quarterly-report', 'DocumentController@storeQuarterlyReport')->name('document.quarterly.store');
+//   });
 
-  Route::group(['prefix' => 'news-events'], function() {
-    Route::get('/', 'BlogController@index')->name('blog.index');
-    Route::get('/create', 'BlogController@create')->name('blog.create');
-    Route::post('/create', 'BlogController@store')->name('blog.store');
-  });
-});
+//   Route::group(['prefix' => 'news-events'], function() {
+//     Route::get('/', 'BlogController@index')->name('blog.index');
+//     Route::get('/create', 'BlogController@create')->name('blog.create');
+//     Route::post('/create', 'BlogController@store')->name('blog.store');
+//   });
+// });

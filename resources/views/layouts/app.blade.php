@@ -170,9 +170,7 @@
         </div>
     </div>
     
-<<<<<<< HEAD
    
-=======
     <section class="policy" uk-toggle="cls: hide-pointIMG; mode: hover;">
         <div class="pointIMG uk-text-center">
             <!-- <img src="./assets/img/fiveStar.png" alt=""> --> 
@@ -193,7 +191,7 @@
             </a> -->
             <a class="uk-inline" uk-toggle="cls: active; mode: hover;" href="{{ route('fivepoints.peacesecurity') }}">
                 <div>
-                    <img src="./assets/img/pol-2.jpg" alt="">
+                    <img src="{{ URL::asset('./assets/img/pol-2.jpg') }}" alt="">
                     <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-flex uk-flex-middle">
                         <h1>1</h1>
                         <p>Peace, Security &  Good Governance</p>
@@ -202,7 +200,7 @@
             </a>
             <a class="uk-inline" uk-toggle="cls: active; mode: hover;" href="{{ route('fivepoints.physical') }}">
                 <div>
-                    <img src="./assets/img/pol-3.jpg" alt="">
+                    <img src="{{ URL::asset('./assets/img/pol-3.jpg') }}" alt="">
                     <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-flex uk-flex-middle">
                         <h1>2</h1>
                         <p>Physical Infrastructural  Development</p>
@@ -220,7 +218,7 @@
             </a> -->
             <a class="uk-inline" uk-toggle="cls: active; mode: hover;" href="{{ route('fivepoints.entrepreneur') }}">
                 <div>
-                    <img src="./assets/img/pol-4.jpg" alt="">
+                    <img src="{{ URL::asset('./assets/img/pol-4.jpg') }}" alt="">
                     <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-flex uk-flex-middle">
                         <h1>3</h1>
                         <p>Sustainable Economic Rebirth </p>
@@ -229,7 +227,6 @@
             </a>
         </div>
     </section>    
->>>>>>> 69c9b70ca42c505ee05edbc15754765eb3bb9a5e
     @include('layouts.footer')
     <script src="{{ URL::asset('assets/js/app.js') }}"></script>
     <!-- <script src="{{ asset('js/share.js') }}"></script> -->

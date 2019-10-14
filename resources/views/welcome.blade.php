@@ -45,230 +45,211 @@
   </head>
 <body>
 
-    <div class="uk-background-secondary uk-height-viewport uk-width-1-1@l uk-position-absolute"></div>
-    <div class="headBG"></div>
-    <header>
-        <div class="uk-width-1-1@m" uk-sticky="show-on-up: true; animation: uk-animation-slide-top;">
-            <div class="wrapper uk-flex" style="z-index: 12000;">
-                <div class="logo mt:40px">
-                    <a class="logoLink uk-display-block" href="{{ route('home') }}">
-                        <img src="{{ URL::asset('./assets/img/platStet.png') }}" alt="">
-                    </a>
-                    <a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav-primary" href="#"></a>
-                </div>
-                <div id="nav">
-                    <nav id="top" class="uk-navbar-container mt:40px" style="position: relative; z-index: 980;">
-                        <div class="main-container">
-                            <div class="uk-navbar-right">
-                                <ul class="uk-navbar-nav uk-iconnav">
-                                    <li><a href="#" uk-icon="icon: google-plus"></a></li>
-                                    <li><a href="#" uk-icon="icon: facebook"></a></li>
-                                    <li><a href="#" uk-icon="icon: twitter"></a></li>
-                                    <li><a href="#" uk-icon="icon: instagram"></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </nav>
-                    @include('layouts.navbar')
-                </div>
-            </div>
+  <div class="uk-background-secondary uk-height-viewport uk-width-1-1@l uk-position-absolute"></div>
+  <div class="headBG"></div>
+  <header>
+    <div class="uk-width-1-1@m" uk-sticky="show-on-up: true; animation: uk-animation-slide-top;">
+      <div class="wrapper uk-flex" style="z-index: 12000;">
+        <div class="logo mt:40px">
+          <a class="logoLink uk-display-block" href="{{ route('home') }}">
+            <img src="{{ URL::asset('./assets/img/platStet.png') }}" alt="">
+          </a>
+          <a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav-primary" href="#"></a>
         </div>
-        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
-             uk-slideshow="min-height: 300; max-height: 300">
-            <div class="wrapper">
-                <ul class="uk-slideshow-items">
-                    <li>
-                        <div>
-                            <h1 class="uk-text-bold">Plateau State <br> Government House</h1>
-                            <p class="lined--p">The Governor's Office, Rayfield</p>
-                        </div>
-                    </li>
+        <div id="nav">
+          <nav id="top" class="uk-navbar-container mt:40px" style="position: relative; z-index: 980;">
+            <div class="main-container">
+              <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav uk-iconnav">
+                  <li><a href="#" uk-icon="icon: google-plus"></a></li>
+                  <li><a href="#" uk-icon="icon: facebook"></a></li>
+                  <li><a href="#" uk-icon="icon: twitter"></a></li>
+                  <li><a href="#" uk-icon="icon: instagram"></a></li>
                 </ul>
+              </div>
             </div>
-            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
-            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+          </nav>
+          @include('layouts.navbar')
         </div>
-    </header>    
-    <section class="body">
-        <div class="wrapper">
-            <div class="uk-grid-collapse uk-child-width-expand@m cards--with--colors uk-text-center" uk-grid
-                 uk-height-match="target: > div > div">
-                <div>
-                    <div class="uk-background-muted uk-light">
-                        <a href="/assets/documents/2019/ACCT-Sign.pdf" download="ACCT-Sign">
-                            <img src="./assets/img/government.png" alt="">
-                            <div class="uk-text-left">
-                                <h3>Report of the Accountant General</h3>
-                                <p>Download Report from the Accountant General.</p>
-                            </div>    
-                        </a>                        
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-background-primary uk-light">
-                        <a href="{{ route('quaterlyreport') }}">
-                            <img src="./assets/img/newspaper.png" alt="">
-                            <div class="uk-text-left">
-                                <h3>Quarterly  Reports</h3>
-                                <p>Download the comprehensive quarterly reports. </p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-background-secondary uk-light">
-                        <a href="{{ route('audit.report') }}">
-                            <img src="./assets/img/interest.png" alt="">
-                            <div class="uk-text-left">
-                                <h3>Audit Reports </h3>
-                                <p>Download the comprehensive treasury reports. </p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-background-muted uk-light">
-                        <a href="{{ route('budget') }}">
-                            <img src="./assets/img/analysis.png" alt="">
-                            <div class="uk-text-left">
-                                <h3>Budget Report</h3>
-                                <p>The Approved 2019 Budget. </p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+      </div>
+    </div>
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1"
+       uk-slideshow="min-height: 300; max-height: 300">
+      <div class="wrapper">
+        <ul class="uk-slideshow-items">
+          <li>
+            <div>
+              <h1 class="uk-text-bold">Plateau State <br> Government House</h1>
+              <p class="lined--p">The Governor's Office, Rayfield</p>
             </div>
+          </li>
+        </ul>
+      </div>
+      <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+      <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+    </div>
+  </header>    
+  <section class="body">
+    <div class="wrapper">
+      <div class="uk-grid-collapse uk-child-width-expand@m cards--with--colors uk-text-center" uk-grid
+         uk-height-match="target: > div > div">
+        <div>
+          <div class="uk-background-muted uk-light">
+            <a href="/assets/documents/2019/ACCT-Sign.pdf" download="ACCT-Sign">
+              <img src="./assets/img/government.png" alt="">
+              <div class="uk-text-left">
+                <h3>Report of the Accountant General</h3>
+                <p>Download Report from the Accountant General.</p>
+              </div>    
+            </a>                        
+          </div>
         </div>
-        <div class="little--slider">
-            <div class="uk-position-relative" uk-slideshow="animation: fade; min-height: 350; autoplay: true">
-                <div class="uk-flex uk-flex-wrap wrapper show-for-landscape uk-flex-between">
-                @if(count($sliders) > 0)
-               
-                    <ul class="uk-slideshow-items">
-                    @foreach($sliders as $slider)
-                    @php
-                    $styleValue = 1;
-                    if($loop->iteration%3 == 0){
-                        $styleValue = 3;
-                    }
-                    else if($loop->iteration%2 == 0){
-                        $styleValue = 2;
-                    }
-                    else{
-                        $styleValue = 1;
-                    }
-                    @endphp
-                    @if($styleValue == 1)
-                        <li>
-                            <img src="../uploads/images/{{$slider->slider_image}}" alt="" uk-cover>
-                        </li>
-                    @elseif($styleValue == 2)
-                        <li>
-                            <img src="../uploads/images/{{$slider->slider_image}}" alt="" uk-cover>
-                        </li>
-                    @endif
-                    @endforeach
-                    </ul>
-                
-                    <div class="slide-navigation">
-                        <ul class="uk-thumbnav">
-                      
-                        @foreach($sliders as $key => $slider)
-                           @if($key == 0)
-                            <li uk-slideshow-item="{{ $key }}">
-                                <a href="#">
-                                    <h2>{{ $slider->description }}</h2>
-                                    <p class="uk-text-small">{{ $slider->title }}</p>
-                                </a>
-                            </li>
-                            @elseif($key == 1)
-                             <li uk-slideshow-item="{{ $key }}">
-                                <a href="#">
-                                    <h2>{{ $slider->description }}</h2>
-                                    <p class="uk-text-small">{{ $slider->title }}</p>
-                                </a>
-                            </li>
-                            @endif
-                        @endforeach
-                        </ul>
-                        
-                    @else
-                        <h3 class="uk-card-title uk-margin-remove-bottom">No Slider yet.</h3>
-                    @endif
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section class="policy" uk-toggle="cls: hide-pointIMG; mode: hover;">
-        <div class="pointIMG uk-text-center">
-            <!-- <img src="./assets/img/fiveStar.png" alt=""> -->
-            <div class="uk-padding-small uk-background-secondary uk-light">
-                <h3 class="uk-margin-remove">THREE POINT POLICY</h3>
-            </div>
-        </div>
-        <div class="uk-grid-collapse policy---cards uk-child-width-1-3@m" uk-grid
-             uk-height-match="target: > div > div">
-             @php
-                $i = 1;
-             @endphp
-             @if(count($posts) > 0)
-                @foreach($posts as $post)
-            <a class="uk-inline active" uk-toggle="cls: active; mode: hover;" href="{{ route('fivepoints', $post->slug) }}">
-                <div>
-                    <img src="../uploads/images/{{$post->feature_image}}" alt="">
-                    <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-flex uk-flex-middle">
-                        <h1>{{$i++}}</h1>
-                        <p>{{ $post->title }} </p>
-                    </div>
-                </div>
+        <div>
+          <div class="uk-background-primary uk-light">
+            <a href="{{ route('quaterlyreport') }}">
+              <img src="./assets/img/newspaper.png" alt="">
+              <div class="uk-text-left">
+                <h3>Quarterly  Reports</h3>
+                <p>Download the comprehensive quarterly reports. </p>
+              </div>
             </a>
-            @endforeach
-            @else
-                <h3 class="uk-card-title uk-margin-remove-bottom">No Post yet.</h3>
-            @endif
-
+          </div>
         </div>
-    </section>
-    <section class="news--n--events uk-grid-collapse uk-child-width-1-3@m" uk-grid>
-            <div class="img--holder">
-                <img src="./assets/img/kids.jpg" alt="">
-                <div class="uk-position-center bordered">
-                    <h3>
-                        Children are the future leaders of tomorrow. Courtesy visit from the Governor
-                    </h3>
-                </div>
-                <img class="centeredImg" src="./assets/img/platStet.png" alt="">
-            </div>
-            <div class="uk-width-2-3@m news uk-padding">
-                <h2 class="n--title uk-margin-remove">News & Events</h2>
-                <p class="title--base uk-margin-remove">Find out what's going on & stay up to date</p>
-                @if(count($news) > 0)
-                @foreach($news as $new)
-                <div class="uk-flex-middle" uk-grid>
-                    <div class="uk-width-2-3@m">
-                        <a href="{{route('news.news1', $new->slug)}}">
-                            <h3 class="uk-card-title uk-margin-remove-bottom">{{ $new->title }}</h3>
-                        </a>                        
-                        <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">{{ $new->created_at->format('F d, Y h:ia') }}</time></p>
-                        <p>
-                        {!!  str_limit($new->body, 150) !!}
-                        </p>
-                    </div>
-                    <div class="uk-width-1-3@m uk-flex-first">
-                        <img src="../uploads/thumbnail/{{$new->news_image}}" alt="">
-                    </div>
-                </div>
-                @endforeach
-                @else
-                    <h3 class="uk-card-title uk-margin-remove-bottom">No News/Events Posted yet.</h3>
-                @endif
-
-            </div>
-            <img class="mobile-centered-img" src="./assets/img/platStet.png" alt="">
-        </section>
-        @include('layouts.footer')
-        <script src="assets/js/app.js"></script>
-    </body>
+        <div>
+          <div class="uk-background-secondary uk-light">
+            <a href="{{ route('audit.report') }}">
+              <img src="./assets/img/interest.png" alt="">
+              <div class="uk-text-left">
+                <h3>Audit Reports </h3>
+                <p>Download the comprehensive treasury reports. </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div>
+          <div class="uk-background-muted uk-light">
+            <a href="{{ route('budget') }}">
+              <img src="./assets/img/analysis.png" alt="">
+              <div class="uk-text-left">
+                <h3>Budget Report</h3>
+                <p>The Approved 2019 Budget. </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="little--slider">
+      <div class="uk-position-relative" uk-slideshow="animation: fade; min-height: 350; autoplay: true">
+        <div class="uk-flex uk-flex-wrap wrapper show-for-landscape uk-flex-between">
+          <ul class="uk-slideshow-items">
+            <li>
+              <img src="./assets/img/img-1.jpg" alt="" uk-cover>
+            </li>
+            <li>
+              <img src="./assets/img/img-2.jpg" alt="" uk-cover>
+            </li>
+          </ul>
+          <div class="slide-navigation">
+            <ul class="uk-thumbnav">
+              <li uk-slideshow-item="0">
+                <a href="#">
+                  <h2>Thank you for allowing me to serve as your Governor.
+                  Together, let's keep the momentum going.</h2>
+                  <p class="uk-text-small">Simon Bako Lalong</p>
+                </a>
+              </li>
+              <li uk-slideshow-item="1">
+                <a href="#">
+                  <h2>We accept this mandate and equally solicit your cooperation and
+                    partnership as we strive to sustain its execution.</h2>
+                  <p class="uk-text-small">Sonni Tyoden</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="policy" uk-toggle="cls: hide-pointIMG; mode: hover;">
+    <div class="pointIMG uk-text-center">
+      <!-- <img src="./assets/img/fiveStar.png" alt=""> -->
+      <div class="uk-padding-small uk-background-secondary uk-light">
+        <h3 class="uk-margin-remove">THREE POINT POLICY</h3>
+      </div>
+    </div>
+    <div class="uk-grid-collapse policy---cards uk-child-width-1-3@m" uk-grid
+       uk-height-match="target: > div > div">
+      
+      <a class="uk-inline" uk-toggle="cls: active; mode: hover;" href="{{ route('fivepoints.peacesecurity') }}">
+        <div>
+          <img src="./assets/img/pol-2.jpg" alt="">
+          <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-flex uk-flex-middle">
+            <h1>1</h1>
+            <p>Peace, Security &  Good Governance</p>
+          </div>
+        </div>
+      </a>
+      <a class="uk-inline" uk-toggle="cls: active; mode: hover;" href="{{ route('fivepoints.physical') }}">
+        <div>
+          <img src="./assets/img/pol-3.jpg" alt="">
+          <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-flex uk-flex-middle">
+            <h1>2</h1>
+            <p>Physical Infrastructural  Development </p>
+          </div>
+        </div>
+      </a>
+      
+      <a class="uk-inline" uk-toggle="cls: active; mode: hover;" href="{{ route('fivepoints.entrepreneur') }}">
+        <div>
+          <img src="./assets/img/pol-4.jpg" alt="">
+          <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-flex uk-flex-middle">
+            <h1>3</h1>
+            <p>Sustainable Economic Rebirth </p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
+  <section class="news--n--events uk-grid-collapse uk-child-width-1-3@m" uk-grid>
+    <div class="img--holder">
+      <img src="./assets/img/kids.jpg" alt="">
+      <div class="uk-position-center bordered">
+        <h3>
+          Children are the future leaders of tomorrow. Courtesy visit from the Governor
+        </h3>
+      </div>
+      <img class="centeredImg" src="./assets/img/platStet.png" alt="">
+    </div>
+    <div class="uk-width-2-3@m news uk-padding">
+      <h2 class="n--title uk-margin-remove">News & Events</h2>
+      <p class="title--base uk-margin-remove">Find out what's going on & stay up to date</p>
+      @if(count($news) > 0)
+        @foreach($news as $new)
+        <div class="uk-flex-middle" uk-grid>
+          <div class="uk-width-2-3@m">
+            <a href="{{route('news.news1', $new->slug)}}">
+              <h3 class="uk-card-title uk-margin-remove-bottom">{{ $new->title }}</h3>
+            </a>                        
+            <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">{{ $new->created_at->format('F d, Y h:ia') }}</time></p>
+            <p>
+            	{!!  str_limit($new->body, 150) !!}
+            </p>
+          </div>
+          <div class="uk-width-1-3@m uk-flex-first">
+            <img src="../uploads/thumbnail/{{$new->news_image}}" alt="">
+          </div>
+        </div>
+        @endforeach
+      @else
+        <h3 class="uk-card-title uk-margin-remove-bottom">No News/Events Posted yet.</h3>
+      @endif        
+    </div>
+    <img class="mobile-centered-img" src="./assets/img/platStet.png" alt="">
+  </section>
+  @include('layouts.footer')
+  <script src="assets/js/app.js"></script>
+</body>
 </html>
