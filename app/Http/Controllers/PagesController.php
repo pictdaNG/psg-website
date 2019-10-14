@@ -25,8 +25,8 @@ class PagesController extends Controller
     }
 
     public function show($slug) {
-        $new = $this->repo->findBySlug($slug);
-        return view('news.news1')->with('new', $new);
+        $news = $this->repo->findBySlug($slug);
+        return view('news.news1')->with('new', $news);
     }
 
     public function showPosts($slug) {

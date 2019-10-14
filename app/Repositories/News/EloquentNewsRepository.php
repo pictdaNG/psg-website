@@ -123,7 +123,7 @@ class EloquentNewsRepository implements NewsContract {
       $filename = time().$originalImage->getClientOriginalName();
       $thumbnailImage->insert($watermark, 'bottom-right', 1, 1);
       $thumbnailImage->save($originalPath.$filename);
-      $thumbnailImage->resize(150,150);
+      $thumbnailImage->resize(100,100);
 
       // $thumbnail = time().$originalImage->getClientOriginalName();
       $thumbnailImage->save($thumbnailPath.$filename); 
@@ -131,8 +131,6 @@ class EloquentNewsRepository implements NewsContract {
       $news->news_image = $filename;
     }
     $news->news_category = $request->news_category;
-    $str = strtolower($request->title);
-    $news->slug = preg_replace('/\s+/', '-', $str);
     $news->tags = $request->tags;
     $news->save();
     return $news;
