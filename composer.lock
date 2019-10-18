@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "2990fa4a5fe9acf5cd68d7b4e9e13613",
+    "content-hash": "e102253679330ceb70100c68421fb206",
     "packages": [
         {
             "name": "cartalyst/sentinel",
@@ -197,16 +197,16 @@
         },
         {
             "name": "davmixcool/laravel-meta-manager",
-            "version": "1.0",
+            "version": "1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/davmixcool/laravel-meta-manager.git",
-                "reference": "63ad53d50f7172d5f4dfe3b387b8b0e9d92dd46a"
+                "reference": "447a09ee7a71cc1b5388374dcba29b84859709fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davmixcool/laravel-meta-manager/zipball/63ad53d50f7172d5f4dfe3b387b8b0e9d92dd46a",
-                "reference": "63ad53d50f7172d5f4dfe3b387b8b0e9d92dd46a",
+                "url": "https://api.github.com/repos/davmixcool/laravel-meta-manager/zipball/447a09ee7a71cc1b5388374dcba29b84859709fd",
+                "reference": "447a09ee7a71cc1b5388374dcba29b84859709fd",
                 "shasum": ""
             },
             "require": {
@@ -242,7 +242,7 @@
                 "social",
                 "tags"
             ],
-            "time": "2018-10-07T23:49:09+00:00"
+            "time": "2019-10-11T20:54:49+00:00"
         },
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -727,16 +727,16 @@
         },
         {
             "name": "google/apiclient-services",
-            "version": "v0.117",
+            "version": "v0.118",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-api-php-client-services.git",
-                "reference": "ae2f0f6f626db67d83ea0a0cd15100b9d083874b"
+                "reference": "3db3c3097dcfb2e2cd578053f28be20fe4ad8e01"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-api-php-client-services/zipball/ae2f0f6f626db67d83ea0a0cd15100b9d083874b",
-                "reference": "ae2f0f6f626db67d83ea0a0cd15100b9d083874b",
+                "url": "https://api.github.com/repos/googleapis/google-api-php-client-services/zipball/3db3c3097dcfb2e2cd578053f28be20fe4ad8e01",
+                "reference": "3db3c3097dcfb2e2cd578053f28be20fe4ad8e01",
                 "shasum": ""
             },
             "require": {
@@ -760,7 +760,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2019-10-07T00:23:24+00:00"
+            "time": "2019-10-14T00:24:06+00:00"
         },
         {
             "name": "google/auth",
@@ -1500,16 +1500,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "1.0.55",
+            "version": "1.0.57",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "33c91155537c6dc899eacdc54a13ac6303f156e6"
+                "reference": "0e9db7f0b96b9f12dcf6f65bc34b72b1a30ea55a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/33c91155537c6dc899eacdc54a13ac6303f156e6",
-                "reference": "33c91155537c6dc899eacdc54a13ac6303f156e6",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/0e9db7f0b96b9f12dcf6f65bc34b72b1a30ea55a",
+                "reference": "0e9db7f0b96b9f12dcf6f65bc34b72b1a30ea55a",
                 "shasum": ""
             },
             "require": {
@@ -1580,7 +1580,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2019-08-24T11:17:19+00:00"
+            "time": "2019-10-16T21:01:05+00:00"
         },
         {
             "name": "madewithlove/illuminate-psr-cache-bridge",
@@ -1710,16 +1710,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.25.1",
+            "version": "2.25.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "d59c6cea9c4a3547bb6c0dfec451319abdaa4fb1"
+                "reference": "443fe5f1498147e0fbc792142b5dc43e2e8a533f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/d59c6cea9c4a3547bb6c0dfec451319abdaa4fb1",
-                "reference": "d59c6cea9c4a3547bb6c0dfec451319abdaa4fb1",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/443fe5f1498147e0fbc792142b5dc43e2e8a533f",
+                "reference": "443fe5f1498147e0fbc792142b5dc43e2e8a533f",
                 "shasum": ""
             },
             "require": {
@@ -1773,7 +1773,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2019-10-05T15:52:23+00:00"
+            "time": "2019-10-14T14:18:59+00:00"
         },
         {
             "name": "nikic/php-parser",
@@ -2579,16 +2579,16 @@
         },
         {
             "name": "spatie/laravel-permission",
-            "version": "3.0",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-permission.git",
-                "reference": "5bac2326fe73c7da9a3ae07dcf5fb44224e45f6f"
+                "reference": "e3821559c69b2b1ea8fdd967fa89ba13a01ead78"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-permission/zipball/5bac2326fe73c7da9a3ae07dcf5fb44224e45f6f",
-                "reference": "5bac2326fe73c7da9a3ae07dcf5fb44224e45f6f",
+                "url": "https://api.github.com/repos/spatie/laravel-permission/zipball/e3821559c69b2b1ea8fdd967fa89ba13a01ead78",
+                "reference": "e3821559c69b2b1ea8fdd967fa89ba13a01ead78",
                 "shasum": ""
             },
             "require": {
@@ -2599,7 +2599,7 @@
                 "php": "^7.2"
             },
             "require-dev": {
-                "orchestra/testbench": "^3.8",
+                "orchestra/testbench": "^3.8|^4.0",
                 "phpunit/phpunit": "^8.0",
                 "predis/predis": "^1.1"
             },
@@ -2643,7 +2643,7 @@
                 "security",
                 "spatie"
             ],
-            "time": "2019-09-02T14:57:53+00:00"
+            "time": "2019-10-16T19:25:56+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -5951,7 +5951,8 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.1.3"
+        "php": "^7.1.3",
+        "ext-gd": "*"
     },
     "platform-dev": []
 }
