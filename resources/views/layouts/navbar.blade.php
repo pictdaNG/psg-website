@@ -27,7 +27,11 @@
                                 <li class="uk-active"><a href="{{ route('governor') }}">The Governor</a></li>
                                 <li><a href="{{ route('deputy-governor') }}">The Deputy Governor</a></li>
                                 <li><a href="{{ route('executive') }}">The Executive</a></li>
-                                <li><a href="{{ route('secretary')}}">Sec. to the State Gov.</a></li>
+                                <li>
+                                  <a href="{{ route('secretary')}}">
+                                    Sec. to the govt. of the state
+                                  </a>
+                                </li>
                                 <li><a href="#">Head of Service</a></li>           
                                 <li>
                                     <a href="#">LGA's</a>
