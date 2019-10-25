@@ -50,9 +50,6 @@
         </p>
         <p>
             Prof. Atu is widely travelled, he is married and the union is blessed with four children.
-        </p>
-
-        
-        
+        </p>        
     </div>
 @endsection

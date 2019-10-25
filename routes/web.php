@@ -90,7 +90,7 @@ Route::group(['prefix' => 'government'], function() {
     return view('government.executive');
   })->name('executive');
 
-  Route::get('/the-secretary-to-the-state-gov', function () {
+  Route::get('/the-secretary-to-the-government-of-the-state', function () {
     return view('government.secretary');
   })->name('secretary');
 
