@@ -20,7 +20,7 @@ class CreateBlogsTable extends Migration
             $table->string('slug');
             $table->string('feature_image')->nullable();
             $table->integer('user_id')->unsigned()->nullable();
-            $table->foreign('user_id')->references('id')->on('users');
+            // $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
             $table->softDeletes();
         });

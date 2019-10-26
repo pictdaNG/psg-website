@@ -11,17 +11,28 @@
 |
 */
 
+// Route::get('/', 'PagesController@index')->name('home');
+
+// Route::get('/', function () {
+//   return view('welcome');
+// })->name('home');
 if (env('APP_ENV') === 'production') {
   \URL::forceScheme('https');
 }
 
 Route::get('/', 'HomeController@index')->name('home');
 
-Route::get('/contact-us', function() {
-  return view('contact.contact');
-})->name('contact');
 
-Route::post('/contact-us', 'ContactController@postContactUs')->name('send_contact_us');
+
+Route::group(['prefix' => 'contact-us'], function() {
+  Route::get('/', function() {
+    return view('contact.contact');
+  })->name('contact');
+
+  Route::post('/contact-us', 'ContactController@postContactUs')->name('send_contact_us');
+});
+
+
 
 Route::group(['prefix' => 'budget'], function() {
   Route::get('/', 'DocumentController@budgetReport')->name('budget');
@@ -385,6 +396,8 @@ Route::group(['prefix' => 'others'], function() {
 
 // FIVE POINTS GROUP
 Route::group(['prefix' => 'five-points-policy'], function() {
+
+  // Route::get('/{slug}', 'PagesController@showPosts')->name('fivepoints');
   
   Route::get('/human-capital-development-social-welfare', function() {
     return view('fivepoints.humancapital');
@@ -409,65 +422,91 @@ Route::group(['prefix' => 'five-points-policy'], function() {
 
 // NEWS GROUP ROUTE
 Route::group(['prefix' => 'news-&-events'], function() {
+  Route::get('/{slug}', 'PagesController@show')->name('news.news1');  
+});
+
+// auth
+Route::get('/login',['uses' => 'AuthController@index', 'as' => 'login']);
+Route::post('/signin',['uses' => 'AuthController@login', 'as' => 'login.post']);
+
+
+Route::group( ['middleware' => ['auth']], function() {
   
-  Route::get('/plateau-state-establishes-agency-for-ict-development', function() {
-    return view('news.news1');
-  })->name('news.news1');
+  // dashboard
+  Route::get('/dashboard',['uses' => 'DashbaordController@index', 'as' => 'dashboard']);
+  Route::get('/logout', ['uses' => 'AuthController@logout','as' => 'logout']);
+  Route::get('/users',['uses' => 'UserController@index', 'as' => 'users.index']);
+  Route::post('/user/store',['uses' => 'UserController@store', 'as' => 'users.store']);
+  Route::post('/user/update/{id}',['uses' => 'UserController@update', 'as' => 'users.update']);
+  Route::get('/user/delete/{id}',['uses' => 'UserController@destroy', 'as' => 'users.delete']);
+  
+  //roles
+  Route::get('/roles',['uses' => 'RoleController@index', 'as' => 'roles.index']);
+  Route::post('/roles/store',['uses' => 'RoleController@store', 'as' => 'roles.store']); 
+  Route::put('/roles/update/{id}', 'RoleController@update')->name('roles.update');
+  Route::get('/roles/delete/{id}', 'RoleController@delete')->name('roles.delete');
 
-  Route::get('/apcs-simon-lalong-retains-seat-a-plateau-governor', function() {
-    return view('news.news2');
-  })->name('news.news2');
+  // permission
+  Route::get('/permissions',['uses' => 'PermissionController@index', 'as' => 'permissions.index']);
+  Route::post('/permissions/store',['uses' => 'PermissionController@store', 'as' => 'permissions.store']); 
+  Route::put('/permissionsupdate/{id}', 'PermissionController@update')->name('permissions.update');
+  Route::get('/permissions/delete/{id}', 'PermissionController@delete')->name('permissions.delete');
 
-  Route::get('/massive-turnout-in-tudun-wada-as-plateau-votes-to-determine-governor', function() {
-    return view('news.news3');
-  })->name('news.news3');
+  // newscategory
+  Route::group(['prefix' => 'category'], function () {
+    Route::get('/', 'NewsController@index')->name('newsCategory.index');
+    Route::post('/create', 'NewsController@store')->name('newsCategory.store');
+    Route::put('/{slug}/update', 'NewsController@update')->name('newsCategory.update');
+    Route::get('/{slug}/delete', 'NewsController@delete')->name('newsCategory.delete');
+  });
+  // News
+  Route::group(['prefix' => 'news'], function () {
+    Route::get('/', 'NewsController@newsIndex')->name('news.index');
+    Route::get('/add', 'NewsController@create')->name('news.add');
+    Route::post('/create', 'NewsController@newsStore')->name('news.store');
+    Route::put('/{slug}/update', 'NewsController@newsUpdate')->name('news.update');
+    Route::get('/{slug}/delete', 'NewsController@newsDelete')->name('news.delete');
+  });
 
-  Route::get('/press-briefing-by-the-chairman-of-the-committee-for-the-inauguration-of-the-second-term-in-office-of-the-lalong-adminstration', function() {
-    return view('news.news4');
-  })->name('news.news4');
+  Route::group(['prefix' => 'sliders'], function(){
+    Route::get('/{data}/edit', 'SliderController@edit')->name('slider.edit');
+    Route::post('/create', 'SliderController@store')->name('slider.store');
+    Route::get('/', 'SliderController@index')->name('slider.index');
+    Route::put('/{data}/update', 'SliderController@update')->name('slider.update');
+    Route::get('/{data}/delete', 'SliderController@delete')->name('slider.delete');
+  });
 
-  Route::get('/SPEECH-BY-HIS-EXCELLENCY-RT-HON-SIMON-BAKO-LALONG-THE-EXECUTIVE-GOVERNOR-OF-PLATEAU-STATE-ON-THE-OCCASION-OF-DEMOCRACY-DAY-AND-UNVEILING-OF-THE-VISION-PLATEAU-STATE-IN-THE-NEXT-LEVEL-POLICIES-AND-PROGRAMMES-OF-THE-RESCUE-TEAM-PHAS-2-AT-THE-BANQUET-HALL-NEW-GOVERNMENT-HOUSE-LITTLE-RAYFIELD-JOS-WEDNESDAY-12TH-JUNE-2019', function() {
-    return view('news.news5');
-  })->name('news.news5');
-
-  Route::get('/SPEECH-BY-THE-EXECUTIVE-GOVERNOR-OF-PLATEAU-STATE-ON-THE-OCCASION-OF-A-ONE-DAY-STATE-LEVEL-ACTIVITY-BY-THE-PRESIDENTIAL-ADVISORY-COMMITTEE', function() {
-    return view('news.news6');
-  })->name('news.news6');
-
-  Route::get('/SPEECH-BY-THE-EXECUTIVE-GOVERNOR-OF-PLATEAU-STATE-AT-THE-2019-NIGERIAN-INSTITUTE-OF-PUBLIC-RELATIONS-(NIPR)-GOVERNING-COUNCIL-RETREAT', function() {
-    return view('news.news7');
-  })->name('news.news7');
-
-  Route::get('/news/emergency-meeting-of-the-northern-governors-forum', function() {
-    return view('news.news8');
-  })->name('news.news8');
-
-  Route::get('/news/SPEECH-BY-HIS-EXCELLENCY-RT-HON-(DR.)-SIMON-BAKO-LALONG-EXECUTIVE-GOVERNOR-OF-PLATEAU-STATE-AT-THE-SWEARING-IN-CEREMONY', function() {
-    return view('news.news9');
-  })->name('news.news9');
+  // Posts
+  Route::group(['prefix' => 'posts'], function () {
+    Route::get('/', 'PostsController@index')->name('posts.index');
+    Route::get('/add', 'PostsController@create')->name('posts.add');
+    Route::post('/create', 'PostsController@store')->name('posts.store');
+    Route::put('/{slug}/update', 'PostsController@update')->name('posts.update');
+    Route::get('/{slug}/delete', 'PostsController@delete')->name('posts.delete');
+  });
   
 });
 
-Route::get('/auth/login', 'LoginController@index')->name('get_login');
-Route::post('/auth/login', 'LoginController@doLogin')->name('do_login');
-Route::get('/logout', 'LoginController@logout')->name('logout');
+// Route::get('/auth/login', 'LoginController@index')->name('get_login');
+// Route::post('/auth/login', 'LoginController@doLogin')->name('do_login');
+// Route::get('/logout', 'LoginController@logout')->name('logout');
 
-Route::group(['prefix' => 'admin'], function() {
+// Route::group(['prefix' => 'admin'], function() {
   
-  Route::get('/', 'DashboardController@index')->name('admin_dash');
+//   Route::get('/', 'DashboardController@index')->name('admin_dash');
 
-  Route::group(['prefix' => 'documents'], function() {
-    Route::get('/', 'DocumentController@index')->name('doccument.index');
-    Route::get('/uploads/budget', 'DocumentController@create')->name('document.upload');
-    Route::post('/uploads/budget', 'DocumentController@store')->name('document.budget.store');
+//   Route::group(['prefix' => 'documents'], function() {
+//     Route::get('/', 'DocumentController@index')->name('doccument.index');
+//     Route::get('/uploads/budget', 'DocumentController@create')->name('document.upload');
+//     Route::post('/uploads/budget', 'DocumentController@store')->name('document.budget.store');
 
-    Route::get('/uploads/quarterly-report', 'DocumentController@quarterlyReport')->name('document.quarterly.report');
-    Route::post('/uploads/quarterly-report', 'DocumentController@storeQuarterlyReport')->name('document.quarterly.store');
-  });
+//     Route::get('/uploads/quarterly-report', 'DocumentController@quarterlyReport')->name('document.quarterly.report');
+//     Route::post('/uploads/quarterly-report', 'DocumentController@storeQuarterlyReport')->name('document.quarterly.store');
+//   });
 
-  Route::group(['prefix' => 'news-events'], function() {
-    Route::get('/', 'BlogController@index')->name('blog.index');
-    Route::get('/create', 'BlogController@create')->name('blog.create');
-    Route::post('/create', 'BlogController@store')->name('blog.store');
-  });
-});
+//   Route::group(['prefix' => 'news-events'], function() {
+//     Route::get('/', 'BlogController@index')->name('blog.index');
+//     Route::get('/create', 'BlogController@create')->name('blog.create');
+//     Route::post('/create', 'BlogController@store')->name('blog.store');
+//   });
+// });
