@@ -3,19 +3,19 @@
     <div class="main-container">
       <div class="uk-navbar-left">
         <ul class="uk-navbar-nav">
-            <li class="uk-active">
-                <a href="#">PLATEAU STATE <span>HISTORY & PEOPLE</span></a>
-                <div class="uk-navbar-dropdown">
-                    <ul class="uk-nav uk-navbar-dropdown-nav">
-                    <li class="uk-active"><a href="{{ route('home') }}">Home</a></li>
-                    <li><a href="{{ route('glance') }}">At a Glance</a></li>
-                    <li><a href="{{ route('people') }}">The People</a></li>
-                    <li><a href="{{ route('history') }}">History</a></li>
-                    <li><a href="{{ route('endowment') }}">Endowments</a></li>
-                    <li><a href="{{ route('past-admins') }}">Past Administrators</a></li>
-                </ul>
-                </div>
-            </li>
+          <li class="uk-active">
+            <a href="#">PLATEAU STATE <span>HISTORY & PEOPLE</span></a>
+            <div class="uk-navbar-dropdown">
+              <ul class="uk-nav uk-navbar-dropdown-nav">
+                <li class="uk-active"><a href="{{ route('home') }}">Home</a></li>
+                <li><a href="{{ route('glance') }}">At a Glance</a></li>
+                <li><a href="{{ route('people') }}">The People</a></li>
+                <li><a href="{{ route('history') }}">History</a></li>
+                <li><a href="{{ route('endowment') }}">Endowments</a></li>
+                <li><a href="{{ route('past-admins') }}">Past Administrators</a></li>
+              </ul>
+            </div>
+          </li>
 
             <li>
                 <a href="#">Government <span>Seats & Positions</span></a>
@@ -271,6 +271,11 @@
                 <li><a href="{{ route('business') }}">Doing Business in Plateau</a></li>
                 <li><a href="{{ route('taxation') }}">Tax and Taxation</a></li>
                 <li><a href="{{ route('resources') }}">Natural Resources</a></li>
+                <li>
+                  <a href="assets/documents/2019/tourism policy completed file.pdf" target="_blank">
+                    Plateau State Tourism Policy
+                  </a>
+                </li>
               </ul>
             </div>
           </li>
