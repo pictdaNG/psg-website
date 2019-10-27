@@ -357,8 +357,6 @@ Route::group(['prefix' => 'boards'], function() {
   Route::get('plateau-local-gov-staff-pension-board', function() {
     return view('mda.boards.penshion');
   })->name('boards.pension');
-
-
 });
 
 // COMMISSION GROUP
