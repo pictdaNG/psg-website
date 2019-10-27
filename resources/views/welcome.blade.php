@@ -239,7 +239,7 @@
             </p>
           </div>
           <div class="uk-width-1-3@m uk-flex-first">
-            <img src="../uploads/thumbnail/{{$new->news_image}}" alt="">
+            <img src="{{$new->news_image}}" alt="">
           </div>
         </div>
         @endforeach

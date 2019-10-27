@@ -1,6 +1,8 @@
 <?php
 namespace App\Repositories\News;
 use App\Repositories\News\NewsContract;
+use Illuminate\Support\Facades\Storage;
+
 use App\News;
 use Image;
 
@@ -16,19 +18,19 @@ class EloquentNewsRepository implements NewsContract {
     $images = $dom->getelementsbytagname('img');
 
     foreach($images as $k => $img){
-        $data = $img->getattribute('src');
+      $data = $img->getattribute('src');
 
-        list($type, $data) = explode(';', $data);
-        list(, $data)      = explode(',', $data);
+      list($type, $data) = explode(';', $data);
+      list(, $data)      = explode(',', $data);
 
-        $data = base64_decode($data);
-        $image_name= time().$k.'.png';
-        $path = public_path() .'/'. $image_name;
+      $data = base64_decode($data);
+      $image_name= time().$k.'.png';
+      $path = public_path() .'/'. $image_name;
 
-        file_put_contents($path, $data);
+      file_put_contents($path, $data);
 
-        $img->removeattribute('src');
-        $img->setattribute('src', $image_name);
+      $img->removeattribute('src');
+      $img->setattribute('src', $image_name);
     }
 
     $detail = $dom->savehtml();
@@ -38,23 +40,28 @@ class EloquentNewsRepository implements NewsContract {
     // $news->body = $request->body; 
  
     if ($request->has('news_image')) {
-      $originalImage = $request->file('news_image');
-      $thumbnailImage = Image::make($originalImage);
-      $thumbnailPath = public_path('uploads/thumbnail/');
-      $originalPath = public_path('uploads/images/');
-      $watermark = public_path('uploads/watermark/logo.png');
-      // dd($originalPath);
+      // $originalImage = $request->file('news_image');
+      // $thumbnailImage = Image::make($originalImage);
+      // $thumbnailPath = public_path('uploads/thumbnail/');
+      // $originalPath = public_path('uploads/images/');
+      // $watermark = public_path('uploads/watermark/logo.png');
+      // // dd($originalPath);
 
-      $filename = time().$originalImage->getClientOriginalName();
-      $thumbnailImage->insert($watermark, 'bottom-right', 1, 1);
-      $thumbnailImage->save($originalPath.$filename);
-      $thumbnailImage->resize(150,150);
+      // $filename = time().$originalImage->getClientOriginalName();
+      // $thumbnailImage->insert($watermark, 'bottom-right', 1, 1);
+      // $thumbnailImage->save($originalPath.$filename);
+      // $thumbnailImage->resize(150,150);
 
-      // $thumbnail = time().$originalImage->getClientOriginalName();
-      $thumbnailImage->save($thumbnailPath.$filename); 
+      // // $thumbnail = time().$originalImage->getClientOriginalName();
+      // $thumbnailImage->save($thumbnailPath.$filename);
 
-      $news->news_image = $filename;
+      $imageName = time().'.'.$request->news_image->getClientOriginalExtension();
+      $image = $request->file('news_image');
+      $t = Storage::disk('s3')->put($imageName, file_get_contents($image), 'public');
+
+      $news->news_image = Storage::disk('s3')->url($imageName); 
     }
+
     $news->news_category = $request->news_category;
     $str = strtolower($request->title);
     $news->slug = preg_replace('/\s+/', '-', $str);

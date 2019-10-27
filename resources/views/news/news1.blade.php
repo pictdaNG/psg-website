@@ -14,11 +14,10 @@
 
 @section('content')
   <div class="content uk-width-1-2@m">
-    <div class="sharethis-inline-share-buttons"></div>
-
-    <div class="uk-child-width-1-1@m uk-grid-small" uk-grid style="margin-top: 20px;">
-      <img class="object-fit" src="../uploads/images/{{$new->news_image}}" alt="{{ $new->title }}">
+    <div class="uk-child-width-1-1@m uk-grid-small" uk-grid >
+      <img class="object-fit" src="{{$new->news_image}}" alt="{{ $new->title }}">
     </div>
+    <div class="sharethis-inline-share-buttons" style="margin-top: 20px;"></div>
     <p>
       {!! $new->body !!}
     </p>
