@@ -179,7 +179,7 @@
                             </a>
                         </div>
                         <div>
-                            <a href="https://debtmanagement.plateaustate.gov.ng" target="_blank">
+                            <a href="https://financedm.herokuapp.com/" target="_blank">
                                 <img src="./assets/img/debt.png" alt="">
                                 <span class="uk-width-1-1@m d-block">Debt Management</span>
                             </a>
