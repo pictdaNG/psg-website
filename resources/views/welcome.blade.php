@@ -42,28 +42,36 @@
     <title>Welcome! Home| Plateau State Government Website</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/app.css">
+    
     <style>
-      .little--slider .slide-navigation {
-        background: #378349;
-      }
-      @media (max-width: 992px) {
         .little--slider .slide-navigation {
-          height: auto!important;
+            background: #378349;
+        }
+        @media (max-width: 992px) {
+            .little--slider .slide-navigation {
+                height: auto!important;
+            }
+            .uk-thumbnav img{
+                margin-top: 10px;
+            }
+        }
+        .uk-thumbnav > * > *::after{
+            background: transparent;
         }
         .uk-thumbnav img{
-          margin-top: 10px;
+            height: 80px;
+            margin-bottom: 10px;
         }
-      }
-      .uk-thumbnav > * > *::after{
-        background: transparent;
-      }
-      .uk-thumbnav img{
-        height: 80px;
-        margin-bottom: 10px;
-      }
-      .uk-thumbnav a{
-        color: white
-      }
+        .uk-thumbnav a{
+            color: white
+        }
+        .little--slider .slide-navigation{
+            width: 50%;
+            border: 0;
+        }
+        .little--slider{
+            padding-top: 0;
+        }
     </style>
   </head>
 <body>
@@ -173,26 +181,24 @@
                 <div class="slide-navigation">
                     <div class="uk-thumbnav uk-flex-middle uk-padding-small uk-text-center uk-child-width-1-2@m uk-height-1-1 uk-flex flex-wrap">
                         <div>
-                            <a href="http://15.188.63.156/login" target="_blank">
+                            <a href="#">
                                 <img src="./assets/img/eproc.png" alt="">
                                 <span class="uk-width-1-1@m d-block">E-Procurement</span>
                             </a>
                         </div>
                         <div>
-                            <a href="https://financedm.herokuapp.com/" target="_blank">
+                            <a href="#">
                                 <img src="./assets/img/debt.png" alt="">
-                                <span class="uk-width-1-1@m d-block">Debt Management</span>
+                                <span class="uk-width-1-1@m d-block"> Debt Management portal</span>
                             </a>
                         </div>
-                        <div><a href="assets/documents/2019/tourism policy completed file.pdf" target="_blank">
+                        <div><a href="#">
                             <img src="./assets/img/tourism.png" alt="">
                             <span class="uk-width-1-1@m d-block">Tourism Policy</span></a></div>
-                        <div>
-                          <a href="#">
+                        <div><a href="#">
                             <img src="./assets/img/strt-debt.png" alt="">
                             <span class="uk-width-1-1@m d-block">Strategic Debt Policy</span>
-                        </a>
-                      </div>
+                        </a></div>
                     </div>
                 </div>
             </div>
