@@ -188,7 +188,7 @@
                             <img src="./assets/img/tourism.png" alt="">
                             <span class="uk-width-1-1@m d-block">Tourism Policy</span></a></div>
                         <div>
-                          <a href="#" target="_blank">
+                          <a href="#">
                             <img src="./assets/img/strt-debt.png" alt="">
                             <span class="uk-width-1-1@m d-block">Strategic Debt Policy</span>
                         </a>
