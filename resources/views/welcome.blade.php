@@ -44,7 +44,7 @@
     <link rel="stylesheet" href="assets/css/app.css">
     <style>
       .little--slider .slide-navigation {
-        background: #2e6c4e;
+        background: #378349;
       }
       @media (max-width: 992px) {
         .little--slider .slide-navigation {
