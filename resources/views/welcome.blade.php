@@ -181,23 +181,23 @@
                 <div class="slide-navigation">
                     <div class="uk-thumbnav uk-flex-middle uk-padding-small uk-text-center uk-child-width-1-2@m uk-height-1-1 uk-flex flex-wrap">
                         <div>
-                            <a href="#">
+                            <a href="http://15.188.63.156/login">
                                 <img src="./assets/img/eproc.png" alt="">
                                 <span class="uk-width-1-1@m d-block">E-Procurement</span>
                             </a>
                         </div>
                         <div>
-                            <a href="#">
+                            <a href="https://financedm.herokuapp.com/">
                                 <img src="./assets/img/debt.png" alt="">
                                 <span class="uk-width-1-1@m d-block"> Debt Management portal</span>
                             </a>
                         </div>
-                        <div><a href="#">
+                        <div><a href="assets/documents/2019/tourism policy completed file.pdf">
                             <img src="./assets/img/tourism.png" alt="">
                             <span class="uk-width-1-1@m d-block">Tourism Policy</span></a></div>
                         <div><a href="#">
                             <img src="./assets/img/strt-debt.png" alt="">
-                            <span class="uk-width-1-1@m d-block">Strategic Debt Policy</span>
+                            <span class="uk-width-1-1@m d-block">Strategic Development Plan</span>
                         </a></div>
                     </div>
                 </div>
