@@ -42,6 +42,29 @@
     <title>Welcome! Home| Plateau State Government Website</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/app.css">
+    <style>
+      .little--slider .slide-navigation {
+        background: #2e6c4e;
+      }
+      @media (max-width: 992px) {
+        .little--slider .slide-navigation {
+          height: auto!important;
+        }
+        .uk-thumbnav img{
+          margin-top: 10px;
+        }
+      }
+      .uk-thumbnav > * > *::after{
+        background: transparent;
+      }
+      .uk-thumbnav img{
+        height: 80px;
+        margin-bottom: 10px;
+      }
+      .uk-thumbnav a{
+        color: white
+      }
+    </style>
   </head>
 <body>
 
@@ -140,36 +163,40 @@
       </div>
     </div>
     <div class="little--slider">
-      <div class="uk-position-relative" uk-slideshow="animation: fade; min-height: 350; autoplay: true">
-        <div class="uk-flex uk-flex-wrap wrapper show-for-landscape uk-flex-between">
-          <ul class="uk-slideshow-items">
-            <li>
-              <img src="./assets/img/img-1.jpg" alt="" uk-cover>
-            </li>
-            <li>
-              <img src="./assets/img/img-2.jpg" alt="" uk-cover>
-            </li>
-          </ul>
-          <div class="slide-navigation">
-            <ul class="uk-thumbnav">
-              <li uk-slideshow-item="0">
-                <a href="#">
-                  <h2>Thank you for allowing me to serve as your Governor.
-                  Together, let's keep the momentum going.</h2>
-                  <p class="uk-text-small">Simon Bako Lalong</p>
-                </a>
-              </li>
-              <li uk-slideshow-item="1">
-                <a href="#">
-                  <h2>We accept this mandate and equally solicit your cooperation and
-                    partnership as we strive to sustain its execution.</h2>
-                  <p class="uk-text-small">Sonni Tyoden</p>
-                </a>
-              </li>
-            </ul>
-          </div>
+        <div class="uk-position-relative" uk-slideshow="animation: fade; min-height: 350; autoplay: true">
+            <div class="uk-flex uk-flex-wrap wrapper show-for-landscape uk-flex-between">
+                <ul class="uk-slideshow-items">
+                    <li>
+                        <img src="./assets/img/img-1.jpg" alt="" uk-cover>
+                    </li>
+                </ul>
+                <div class="slide-navigation">
+                    <div class="uk-thumbnav uk-flex-middle uk-padding-small uk-text-center uk-child-width-1-2@m uk-height-1-1 uk-flex flex-wrap">
+                        <div>
+                            <a href="http://15.188.63.156/login" target="_blank">
+                                <img src="./assets/img/eproc.png" alt="">
+                                <span class="uk-width-1-1@m d-block">E-Procurement</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://debtmanagement.plateaustate.gov.ng" target="_blank">
+                                <img src="./assets/img/debt.png" alt="">
+                                <span class="uk-width-1-1@m d-block">Debt Management</span>
+                            </a>
+                        </div>
+                        <div><a href="assets/documents/2019/tourism policy completed file.pdf" target="_blank">
+                            <img src="./assets/img/tourism.png" alt="">
+                            <span class="uk-width-1-1@m d-block">Tourism Policy</span></a></div>
+                        <div>
+                          <a href="#" target="_blank">
+                            <img src="./assets/img/strt-debt.png" alt="">
+                            <span class="uk-width-1-1@m d-block">Strategic Debt Policy</span>
+                        </a>
+                      </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
   </section>
   
