@@ -48,7 +48,7 @@
         .little--slider .slide-navigation {
             background: #378349;
         }
-        @media (max-width: 992px) {
+         @media (max-width: 992px) {
             .little--slider .slide-navigation {
                 height: auto!important;
             }
@@ -78,6 +78,18 @@
         }
         .wrapper{
             max-width: 100%;
+        }
+        @media (max-width: 1024px) {
+            .little--slider .uk-slideshow-items{
+                min-height: 240px!important;
+            }
+            .little--slider .slide-navigation{
+                margin: 0!important;
+                width: 100%;
+            }
+            .cards--with--colors > div:not(:first-child){
+                margin: 0!important;
+            }
         }
     </style>
   </head>
