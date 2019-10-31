@@ -26,9 +26,9 @@
 			<div class="uk-navbar-right">
 				<ul class="uk-navbar-nav uk-iconnav uk-light">
 					<li><a href="#" uk-icon="icon: google-plus"></a></li>
-					<li><a href="#" uk-icon="icon: facebook"></a></li>
-					<li><a href="#" uk-icon="icon: twitter"></a></li>
-					<li><a href="#" uk-icon="icon: instagram"></a></li>
+					<li><a href="https://www.facebook.com/PLStateGovt/" uk-icon="icon: facebook"></a></li>
+					<li><a href="https://twitter.com/PlateauStateGov?s=09" uk-icon="icon: twitter"></a></li>
+					<li><a href="https://instagram.com/plsgovt?igshid=1w0ehvmgvssgt" uk-icon="icon: instagram"></a></li>
 				</ul>
 			</div>
 		</div>

@@ -43,6 +43,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/app.css">
     
+    
     <style>
         .little--slider .slide-navigation {
             background: #378349;
@@ -72,6 +73,12 @@
         .little--slider{
             padding-top: 0;
         }
+        .body{
+            padding: 0;
+        }
+        .wrapper{
+            max-width: 100%;
+        }
     </style>
   </head>
 <body>
@@ -93,9 +100,9 @@
               <div class="uk-navbar-right">
                 <ul class="uk-navbar-nav uk-iconnav">
                   <li><a href="#" uk-icon="icon: google-plus"></a></li>
-                  <li><a href="#" uk-icon="icon: facebook"></a></li>
-                  <li><a href="#" uk-icon="icon: twitter"></a></li>
-                  <li><a href="#" uk-icon="icon: instagram"></a></li>
+                  <li><a href="https://www.facebook.com/PLStateGovt/" uk-icon="icon: facebook"></a></li>
+                  <li><a href="https://twitter.com/PlateauStateGov?s=09" uk-icon="icon: twitter"></a></li>
+                  <li><a href="https://instagram.com/plsgovt?igshid=1w0ehvmgvssgt" uk-icon="icon: instagram"></a></li>
                 </ul>
               </div>
             </div>
@@ -172,7 +179,7 @@
     </div>
     <div class="little--slider">
         <div class="uk-position-relative" uk-slideshow="animation: fade; min-height: 350; autoplay: true">
-            <div class="uk-flex uk-flex-wrap wrapper show-for-landscape uk-flex-between">
+            <div class="uk-flex uk-flex-wrap wrapper show-for-landscape uk-flex-between" uk-height-match="target: > *">
                 <ul class="uk-slideshow-items">
                     <li>
                         <img src="./assets/img/img-1.jpg" alt="" uk-cover>
