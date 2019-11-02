@@ -16,51 +16,43 @@ class NewsController extends Controller
       $this->middleware('auth');
     }
 
+    
+
     public function index() {
-        $news_categories = $this->repo->findAll();
-        return view('admin.news_category.index')->with('news_categories', $news_categories);
+      $news_categories = $this->repo->findAll();
+      return view('admin.news_category.index')->with('news_categories', $news_categories);
     }
 
     public function store(Request $request) {
-        $this->validate($request, [
-            'name' => 'required',
-            'description' => 'required',
-          ]);
+      $this->validate($request, [
+        'name' => 'required',
+        'description' => 'required',
+      ]);
 
-        $news_category = $this->repo->create($request);
+      $news_category = $this->repo->create($request);
 
-        if($news_category->id) {
-            return redirect()->back()->with('success',
-            'News Category successfully Created.');
-        } else {
-            return back()->withInput()->with('error', 'Could not create news category. Try again!');
-        }
+      if($news_category->id) {
+        return redirect()->back()->with('success', 'News Category successfully Created.');
+      } else {
+        return back()->withInput()->with('error', 'Could not create news category. Try again!');
+      }
     }
 
-    public function update(Request $request, $slug) {
-       
-        $news_category = $this->repo->update($request, $slug);
-    
-        if($news_category->id) {
-        return redirect()->route('newsCategory.index')->with('success',
-        'News Category successfully updated.');
-        }
-        
+    public function update(Request $request, $slug) {       
+      $news_category = $this->repo->update($request, $slug);    
+      if($news_category->id) {
+        return redirect()->route('newsCategory.index')->with('success', 'News Category successfully updated.');
+      }        
     }
 
-    public function delete($slug) {
-       
-        if ($this->repo->remove($slug)) {
-     
-        return redirect()->back()->with('success',
-        'News Category successfully deleted.');
-        }  
-      
+    public function delete($slug) {       
+      if ($this->repo->remove($slug)) {     
+        return redirect()->back()->with('success','News Category successfully deleted.');
+      }        
     }
 
     // news
-    public function newsIndex() {
-        
+    public function newsIndex() {        
         $news = $this->repos->findAll();
         $news_categories = $this->repo->findAll();
         return view('admin.news.index')->with('news', $news)->with('news_categories', $news_categories);

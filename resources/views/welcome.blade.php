@@ -285,9 +285,13 @@
             <a href="{{route('news.news1', $new->slug)}}">
               <h3 class="uk-card-title uk-margin-remove-bottom">{{ $new->title }}</h3>
             </a>                        
-            <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">{{ $new->created_at->format('F d, Y h:ia') }}</time></p>
+            <p class="uk-text-meta uk-margin-remove-top">
+              <time datetime="{{ \Carbon\Carbon::parse($new->published_date)->format('j F, Y') }}">
+                {{ \Carbon\Carbon::parse($new->published_date)->format('j F, Y') }}
+              </time>
+            </p>
             <p>
-            	{!!  str_limit($new->body, 150) !!}
+              {!! str_word_count($new->body) > 150 ? substr($new->body,0,150) : $new->body !!}...
             </p>
           </div>
           <div class="uk-width-1-3@m uk-flex-first">
@@ -297,7 +301,8 @@
         @endforeach
       @else
         <h3 class="uk-card-title uk-margin-remove-bottom">No News/Events Posted yet.</h3>
-      @endif        
+      @endif  
+      <a href="{{ route('news.allNews') }}" class="uk-button uk-margin-medium-top uk-button-default">View More</a>
     </div>
     <img class="mobile-centered-img" src="./assets/img/platStet.png" alt="">
   </section>

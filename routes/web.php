@@ -420,6 +420,7 @@ Route::group(['prefix' => 'five-points-policy'], function() {
 
 // NEWS GROUP ROUTE
 Route::group(['prefix' => 'news-&-events'], function() {
+  Route::get('/', 'PagesController@allNews')->name('news.allNews');
   Route::get('/{slug}', 'PagesController@show')->name('news.news1');  
 });
 

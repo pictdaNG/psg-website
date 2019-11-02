@@ -7,6 +7,7 @@ use Illuminate\Database\QueryException;
 use App\Repositories\News\NewsContract;
 use App\Repositories\Posts\PostContract;
 use App\Repositories\Slider\SliderContract;
+use App\News;
 
 class PagesController extends Controller
 {
@@ -22,6 +23,13 @@ class PagesController extends Controller
         $posts = $this->repos->getAll();
         $sliders = $this->reposi->getAll();
         return view('welcome')->with('news', $news)->with(compact('posts'))->with(compact('sliders'));
+    }
+
+    public function allNews() {
+      // $news = $this->repos->findAll();
+      $news = News::all();
+      // dd($news);
+      return view('news.index')->with('news', $news);
     }
 
     public function show($slug) {
