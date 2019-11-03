@@ -40,25 +40,9 @@ class EloquentNewsRepository implements NewsContract {
     // $news->body = $request->body; 
  
     if ($request->has('news_image')) {
-      // $originalImage = $request->file('news_image');
-      // $thumbnailImage = Image::make($originalImage);
-      // $thumbnailPath = public_path('uploads/thumbnail/');
-      // $originalPath = public_path('uploads/images/');
-      // $watermark = public_path('uploads/watermark/logo.png');
-      // // dd($originalPath);
-
-      // $filename = time().$originalImage->getClientOriginalName();
-      // $thumbnailImage->insert($watermark, 'bottom-right', 1, 1);
-      // $thumbnailImage->save($originalPath.$filename);
-      // $thumbnailImage->resize(150,150);
-
-      // // $thumbnail = time().$originalImage->getClientOriginalName();
-      // $thumbnailImage->save($thumbnailPath.$filename);
-
       $imageName = time().'.'.$request->news_image->getClientOriginalExtension();
       $image = $request->file('news_image');
       $t = Storage::disk('s3')->put($imageName, file_get_contents($image), 'public');
-
       $news->news_image = Storage::disk('s3')->url($imageName); 
     }
 

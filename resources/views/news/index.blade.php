@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title')
-	
+	News &amp; Events | Plateau State Government Website
 @endsection
 
 @section('header')
@@ -19,20 +19,25 @@
 				<div>
 					<a href="{{route('news.news1', $n->slug)}}" class="uk-card uk-display-block uk-card-default">
 						<div class="uk-card-media-top">
-							<img src="{{ $n->news_image }}" alt="">
+							<img src="{{ $n->news_image }}" alt="" height="300px">
 						</div>
 						<div class="uk-card-body">
-							<h3 class="uk-card-title">{{ $n->title }}</h3>
+							<h3 class="uk-card-title">
+								{!!strlen($n->title) > 50 ? substr($n->title,0,50) : $n->title!!}
+							</h3>
 							<div>
 								{!! str_word_count($n->body) > 150 ? substr($n->body,0,150) : $n->body !!}...
 							</div>
 						</div>
 					</a>
-					{{-- <a href="{{route('news.news1', $n->slug)}}" class="uk-button uk-margin-medium-top uk-button-default">Read News</a> --}}
 				</div>
-
 			@endforeach
-
+		</div>
+		<div>
+			<ul class="uk-pagination uk-flex-center" uk-margin>
+		    {{ $news->links() }}
+			</ul>
 		</div>
 	</div>
 @endsection
+

@@ -27,7 +27,7 @@ class PagesController extends Controller
 
     public function allNews() {
       // $news = $this->repos->findAll();
-      $news = News::all();
+      $news = News::paginate(2);
       // dd($news);
       return view('news.index')->with('news', $news);
     }

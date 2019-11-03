@@ -17,10 +17,10 @@
     <div class="uk-child-width-1-1@m uk-grid-small" uk-grid >
       <img class="object-fit" src="{{$new->news_image}}" alt="{{ $new->title }}">
     </div>
-    <div class="sharethis-inline-share-buttons" style="margin-top: 20px;"></div>
-    <p>
+    <div class="sharethis-inline-share-buttons" style="margin-top: 20px; margin-bottom: 20px;"></div>
+    <div>
       {!! $new->body !!}
-    </p>
-    <div class="sharethis-inline-share-buttons"></div>
+    </div>
+    <div class="sharethis-inline-share-buttons" style="margin-top: 20px;"></div>
   </div>
 @endsection
