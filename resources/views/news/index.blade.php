@@ -33,11 +33,11 @@
 				</div>
 			@endforeach
 		</div>
-		<div>
+		{{-- <div>
 			<ul class="uk-pagination uk-flex-center" uk-margin>
 		    {{ $news->links() }}
 			</ul>
-		</div>
+		</div> --}}
 	</div>
 @endsection
 
