@@ -23,10 +23,10 @@
 						</div>
 						<div class="uk-card-body">
 							<h3 class="uk-card-title">
-								{!!strlen($n->title) > 50 ? substr($n->title,0,50) : $n->title!!}
+								{!! str_word_count($n->title) > 20 ? substr($n->title,0,20) : $n->title !!} ...
 							</h3>
 							<div>
-								{!! str_word_count($n->body) > 150 ? substr($n->body,0,150) : $n->body !!}...
+								{!! str_word_count($n->body) > 150 ? substr($n->body,0,150) : $n->body !!} ...
 							</div>
 						</div>
 					</a>
