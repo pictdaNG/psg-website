@@ -283,7 +283,9 @@
         <div class="uk-flex-middle" uk-grid>
           <div class="uk-width-2-3@m">
             <a href="{{route('news.news1', $new->slug)}}">
-              <h3 class="uk-card-title uk-margin-remove-bottom">{{ $new->title }}</h3>
+              <h3 class="uk-card-title uk-margin-remove-bottom">
+                {!! str_word_count($new->title) > 20 ? substr($new->title,0,20) : $new->title !!} ...
+              </h3>
             </a>                        
             <p class="uk-text-meta uk-margin-remove-top">
               <time datetime="{{ \Carbon\Carbon::parse($new->published_date)->format('j F, Y') }}">
@@ -291,7 +293,7 @@
               </time>
             </p>
             <p>
-              {!! str_word_count($new->body) > 150 ? substr($new->body,0,150) : $new->body !!}...
+              {!! str_word_count($new->body) > 150 ? substr($new->body,0,150) : $new->body !!} ...
             </p>
           </div>
           <div class="uk-width-1-3@m uk-flex-first">
