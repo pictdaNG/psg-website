@@ -14789,7 +14789,7 @@ header .uk-slideshow-items {
   width: 100%;
   position: fixed;
   z-index: 0;
-  top: 0; 
+  top: 0;
 }
 
 .headBG.agric {
@@ -14800,14 +14800,14 @@ header .uk-slideshow-items {
   width: 100%;
   position: fixed;
   z-index: 0;
-  top: 0; 
+  top: 0;
 }
 
 .headBG div {
   background: #000;
   height: 100vh;
   width: 100%;
-  z-index: -2; 
+  z-index: -2;
 }
 
 header.hero {
@@ -15531,7 +15531,7 @@ html, .body {
       .news--n--events .img--holder .centeredImg {
         display: none; } }
   .news--n--events .news {
-    padding: 60px 50px 60px 50px; }
+    padding: 20px; }
     .news--n--events .news .n--title {
       font-weight: bold; }
     .news--n--events .news .title--base {
@@ -15704,6 +15704,9 @@ footer {
 .mt\:40px {
   margin-top: 40px; }
 
+.t\:40px {
+  top: 40px; }
+
 .bold-green {
   color: #306c49;
   font-weight: bold; }
@@ -15861,4 +15864,96 @@ ul.navbar li > ul {padding: 25px}
   color: #ffffff;
   font-size: 1.5rem;
 }
+}
+
+.welcome-message{
+    right: 20px;
+    top: 0;
+}
+
+.welcome-message h4{
+    line-height: 40px;
+    color: #ffffff;
+}
+
+.height-50\%{
+    height: 50%;
+}
+
+.height-49\%{
+    height: 49%;
+}
+
+.a-box{
+    width: 49%;
+}
+@media (min-width: 993px) {
+    .a-box:nth-child(1) {
+        align-self: flex-start;
+    }
+    .a-box:nth-child(2) {
+        align-self: flex-start;
+    }
+    .a-box:nth-child(3) {
+        align-self: flex-end;
+    }
+    .a-box:nth-child(4) {
+        align-self: flex-end;
+    }
+}
+
+@media (max-width: 992px) {
+    .little--slider .slide-navigation {
+        height: auto!important;
+    }
+    .uk-thumbnav img{
+        margin-top: 10px;
+    }
+}
+.uk-thumbnav > * > *::after{
+    background: transparent;
+}
+.uk-thumbnav img{
+    height: 80px;
+    margin-bottom: 10px;
+}
+.uk-thumbnav a{
+    color: white
+}
+.little--slider .slide-navigation{
+    width: 50%;
+    border: 0;
+}
+.little--slider{
+    padding-top: 0;
+}
+.body{
+    padding: 0;
+}
+.wrapper{
+    max-width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .little--slider .uk-slideshow-items{
+        min-height: 240px!important;
+    }
+    .little--slider .slide-navigation{
+        margin: 0!important;
+        width: 100%;
+    }
+    .cards--with--colors > div:not(:first-child){
+        margin: 0!important;
+    }
+}
+.pointIMG{
+    top: 0;
+}
+
+.padding-small{
+    padding: 10px;
+}
+
+.pointIMG .uk-background-secondary{
+    background: rgba(36, 43, 48, 0.8);
 }

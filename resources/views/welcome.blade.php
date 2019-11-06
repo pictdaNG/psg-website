@@ -14,7 +14,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="shortcut icon" href="./assets/favicon.ico" />
-    
+
     <!-- Twitter Meta -->
     <meta name="twitter:site" content="@PLSGovt">
     <meta name="twitter:creator" content="@PLSGovt">
@@ -42,8 +42,8 @@
     <title>Welcome! Home| Plateau State Government Website</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/app.css">
-    
-    
+
+
     <style>
         .little--slider .slide-navigation {
             background: #378349;
@@ -96,18 +96,29 @@
 <body>
 
   <div class="uk-background-secondary uk-height-viewport uk-width-1-1@l uk-position-absolute"></div>
-  <div class="headBG"></div>
+  <div class="headBG" uk-slideshow>
+      <ul class="uk-slideshow-items">
+          <li>
+              <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
+                  <img src="assets/img/bg.jpg" alt="" uk-cover>
+              </div>
+          </li>
+      </ul>
+  </div>
   <header>
     <div class="uk-width-1-1@m" uk-sticky="show-on-up: true; animation: uk-animation-slide-top;">
       <div class="wrapper uk-flex" style="z-index: 12000;">
-        <div class="logo mt:40px">
+        <div class="logo t:40px">
           <a class="logoLink uk-display-block" href="{{ route('home') }}">
             <img src="{{ URL::asset('./assets/img/platStet.png') }}" alt="">
           </a>
           <a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav-primary" href="#"></a>
         </div>
-        <div id="nav">
-          <nav id="top" class="uk-navbar-container mt:40px" style="position: relative; z-index: 980;">
+          <div class="uk-position-absolute welcome-message">
+              <h4 class="uk-margin-remove">Welcome To The Home Of Peace & Tourism</h4>
+          </div>
+        <div id="nav" class=" t:40px">
+          <nav id="top" class="uk-navbar-container" style="position: relative; z-index: 980;">
             <div class="main-container">
               <div class="uk-navbar-right">
                 <ul class="uk-navbar-nav uk-iconnav">
@@ -135,10 +146,8 @@
           </li>
         </ul>
       </div>
-      <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
-      <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
     </div>
-  </header>    
+  </header>
   <section class="body">
     <div class="wrapper">
       <div class="uk-grid-collapse uk-child-width-expand@m cards--with--colors uk-text-center" uk-grid
@@ -150,8 +159,8 @@
               <div class="uk-text-left">
                 <h3>Report of the Accountant General</h3>
                 <p>Download Report from the Accountant General.</p>
-              </div>    
-            </a>                        
+              </div>
+            </a>
           </div>
         </div>
         <div>
@@ -198,23 +207,23 @@
                     </li>
                 </ul>
                 <div class="slide-navigation">
-                    <div class="uk-thumbnav uk-flex-middle uk-padding-small uk-text-center uk-child-width-1-2@m uk-height-1-1 uk-flex flex-wrap">
-                        <div>
+                    <div class="uk-thumbnav uk-flex-middle uk-text-center uk-child-width-1-2@m uk-height-1-1 uk-flex flex-wrap">
+                        <div class="uk-box-shadow-hover-large a-box uk-box-shadow-small uk-flex-middle uk-flex-center uk-flex height-49%">
                             <a href="http://15.188.63.156/login" target="_blank">
                                 <img src="./assets/img/eproc.png" alt="">
                                 <span class="uk-width-1-1@m d-block">E-Procurement</span>
                             </a>
                         </div>
-                        <div>
+                        <div class="uk-box-shadow-hover-large a-box uk-box-shadow-small uk-flex-middle uk-flex-center uk-flex height-49%">
                             <a href="https://financedm.herokuapp.com/" target="_blank">
                                 <img src="./assets/img/debt.png" alt="">
                                 <span class="uk-width-1-1@m d-block"> Debt Management portal</span>
                             </a>
                         </div>
-                        <div><a href="assets/documents/2019/tourism policy completed file.pdf" target="_blank">
+                        <div class="uk-box-shadow-hover-large a-box uk-box-shadow-small uk-flex-middle uk-flex-center uk-flex height-49%"><a href="assets/documents/2019/tourism policy completed file.pdf" target="_blank">
                             <img src="./assets/img/tourism.png" alt="">
                             <span class="uk-width-1-1@m d-block">Tourism Policy</span></a></div>
-                        <div><a href="#">
+                        <div class="uk-box-shadow-hover-large a-box uk-box-shadow-small uk-flex-middle uk-flex-center uk-flex height-49%"><a href="#">
                             <img src="./assets/img/strt-debt.png" alt="">
                             <span class="uk-width-1-1@m d-block">Strategic Development Plan</span>
                         </a></div>
@@ -224,17 +233,17 @@
         </div>
     </div>
   </section>
-  
+
   <section class="policy" uk-toggle="cls: hide-pointIMG; mode: hover;">
-    <div class="pointIMG uk-text-center">
+    <div class="pointIMG uk-width-1-3@m uk-text-center">
       <!-- <img src="./assets/img/fiveStar.png" alt=""> -->
-      <div class="uk-padding-small uk-background-secondary uk-light">
+      <div class="padding-small uk-background-secondary uk-light">
         <h3 class="uk-margin-remove">THREE POINT POLICY</h3>
       </div>
     </div>
     <div class="uk-grid-collapse policy---cards uk-child-width-1-3@m" uk-grid
        uk-height-match="target: > div > div">
-      
+
       <a class="uk-inline" uk-toggle="cls: active; mode: hover;" href="{{ route('fivepoints.peacesecurity') }}">
         <div>
           <img src="./assets/img/pol-2.jpg" alt="">
@@ -253,7 +262,7 @@
           </div>
         </div>
       </a>
-      
+
       <a class="uk-inline" uk-toggle="cls: active; mode: hover;" href="{{ route('fivepoints.entrepreneur') }}">
         <div>
           <img src="./assets/img/pol-4.jpg" alt="">
@@ -275,7 +284,7 @@
       </div>
       <img class="centeredImg" src="./assets/img/platStet.png" alt="">
     </div>
-    <div class="uk-width-2-3@m news uk-padding">
+    <div class="uk-width-2-3@m news uk-padding-small">
       <h2 class="n--title uk-margin-remove">News & Events</h2>
       <p class="title--base uk-margin-remove">Find out what's going on & stay up to date</p>
       @if(count($news) > 0)
@@ -284,7 +293,7 @@
           <div class="uk-width-2-3@m">
             <a href="{{route('news.news1', $new->slug)}}">
               <h3 class="uk-card-title uk-margin-remove-bottom">{{ $new->title }}</h3>
-            </a>                        
+            </a>
             <p class="uk-text-meta uk-margin-remove-top">
               <time datetime="{{ \Carbon\Carbon::parse($new->published_date)->format('j F, Y') }}">
                 {{ \Carbon\Carbon::parse($new->published_date)->format('j F, Y') }}
@@ -301,7 +310,7 @@
         @endforeach
       @else
         <h3 class="uk-card-title uk-margin-remove-bottom">No News/Events Posted yet.</h3>
-      @endif  
+      @endif
       <a href="{{ route('news.allNews') }}" class="uk-button uk-margin-medium-top uk-button-default">View More</a>
     </div>
     <img class="mobile-centered-img" src="./assets/img/platStet.png" alt="">
