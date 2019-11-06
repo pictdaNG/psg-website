@@ -228,6 +228,7 @@
         </div>
     </section>    
     @include('layouts.footer')
+    <script id="gs-sdk" src='//www.buildquickbots.com/botwidget/v3/demo/static/js/sdk.js?v=3' key="cab5c6b8-cac8-4844-acdb-03cfce81bb53" ></script>
     <script src="{{ URL::asset('assets/js/app.js') }}"></script>
     <!-- <script src="{{ asset('js/share.js') }}"></script> -->
     @yield('scripts')
