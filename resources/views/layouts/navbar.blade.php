@@ -4,8 +4,8 @@
       <div class="uk-navbar-left">
         <ul class="uk-navbar-nav">
           <li class="uk-active">
-            <a href="#">PLATEAU STATE <span>HISTORY & PEOPLE</span></a>
-            <div class="uk-navbar-dropdown">
+            <a href="#">Plateau State <span>History & People</span></a>
+            <div class="uk-navbar-dropdown" uk-dropdown="animation: uk-animation-slide-right-small; duration: 300">
               <ul class="uk-nav uk-navbar-dropdown-nav">
                 <li class="uk-active"><a href="{{ route('home') }}">Home</a></li>
                 <li><a href="{{ route('glance') }}">At a Glance</a></li>
@@ -19,7 +19,7 @@
 
             <li>
                 <a href="#">Government <span>Seats & Positions</span></a>
-                <div class="uk-navbar-dropdown">
+                <div class="uk-navbar-dropdown" uk-dropdown="animation: uk-animation-slide-right-small; duration: 300">
                     <!--Multiple Dropdown-->
                     <ul class="uk-nav uk-navbar-dropdown-nav">
                         <li>
@@ -32,7 +32,7 @@
                                     Sec. to the govt. of the state
                                   </a>
                                 </li>
-                                <li><a href="#">Head of Service</a></li>           
+                                <li><a href="#">Head of Service</a></li>
                                 <li>
                                     <a href="#">LGA's</a>
                                     <ul>
@@ -64,7 +64,7 @@
             </li>
             <li>
               <a href="#">MDAs <span>Ministries & dept</span></a>
-              <div class="uk-navbar-dropdown">
+              <div class="uk-navbar-dropdown" uk-dropdown="animation: uk-animation-slide-right-small; duration: 300">
                   <!--Multiple Dropdown-->
                   <ul class="uk-nav uk-navbar-dropdown-nav">
                       <li>
@@ -184,7 +184,7 @@
 
                         <li>
                           <a href="{{ route('boards.muslimpilgrim') }}">
-                            Muslim Pilgrims' Welfare Board 
+                            Muslim Pilgrims' Welfare Board
                           </a>
                         </li>
 
@@ -192,7 +192,7 @@
                           <a href="{{ route('boards.pension') }}">
                             Plateau Local Government Staff Pension Board
                           </a>
-                        </li>                          
+                        </li>
                       </ul>
                     </li>
                   </ul>
@@ -220,7 +220,7 @@
                           <a href="{{ route('commission.teachers') }}">
                             Teachers Service Commission
                           </a>
-                        </li>                
+                        </li>
                       </ul>
                     </li>
                   </ul>
@@ -250,7 +250,7 @@
           </li>
           <li>
             <a href="#">Projects <span>Status & more</span></a>
-            <div class="uk-navbar-dropdown">
+            <div class="uk-navbar-dropdown" uk-dropdown="animation: uk-animation-slide-right-small; duration: 300">
               <div class="uk-navbar-dropdown-nav">
                 <div>
                   <ul class="uk-nav uk-navbar-dropdown-nav">
@@ -265,7 +265,7 @@
           </li>
           <li>
             <a href="#">Commerce <span>Investments & more</span></a>
-            <div class="uk-navbar-dropdown">
+            <div class="uk-navbar-dropdown" uk-dropdown="animation: uk-animation-slide-right-small; duration: 300">
               <ul class="uk-nav uk-navbar-dropdown-nav">
                 <li class="uk-active"><a href="{{ route('investment') }}">Investment Oppurtunities</a></li>
                 <li><a href="{{ route('business') }}">Doing Business in Plateau</a></li>

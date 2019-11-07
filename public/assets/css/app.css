@@ -14789,7 +14789,7 @@ header .uk-slideshow-items {
   width: 100%;
   position: fixed;
   z-index: 0;
-  top: 0; 
+  top: 0;
 }
 
 .headBG.agric {
@@ -14800,14 +14800,14 @@ header .uk-slideshow-items {
   width: 100%;
   position: fixed;
   z-index: 0;
-  top: 0; 
+  top: 0;
 }
 
 .headBG div {
   background: #000;
   height: 100vh;
   width: 100%;
-  z-index: -2; 
+  z-index: -2;
 }
 
 header.hero {
@@ -14876,7 +14876,7 @@ header.hero {
 
 .uk-navbar-nav > li > a, .uk-navbar-item, .uk-navbar-toggle {
   min-height: 60px;
-  color: #000000;
+  color: #bbbbbb;
   text-transform: capitalize;
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
@@ -14911,11 +14911,11 @@ header.hero {
           flex-wrap: wrap;
   display: block;
   min-height: 40px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600; }
   #main .uk-navbar-nav > li > a span {
     display: block;
-    color: grey;
+    color: #e9e9e9;
     font-weight: 100; }
 
 #top {
@@ -15001,7 +15001,8 @@ header.hero {
 #nav {
   -webkit-flex-basis: calc((100% - (150px)));
       -ms-flex-preferred-size: calc((100% - (150px)));
-          flex-basis: calc((100% - (150px))); }
+          flex-basis: calc((100% - (150px)));
+}
   @media (max-width: 1024px) {
     #nav {
       display: none; } }
@@ -15531,7 +15532,7 @@ html, .body {
       .news--n--events .img--holder .centeredImg {
         display: none; } }
   .news--n--events .news {
-    padding: 60px 50px 60px 50px; }
+    padding: 20px; }
     .news--n--events .news .n--title {
       font-weight: bold; }
     .news--n--events .news .title--base {
@@ -15704,6 +15705,12 @@ footer {
 .mt\:40px {
   margin-top: 40px; }
 
+.t\:40px {
+  top: 40px; }
+
+.uk-sticky-fixed .t\:40px {
+  top: 0; }
+
 .bold-green {
   color: #306c49;
   font-weight: bold; }
@@ -15861,4 +15868,183 @@ ul.navbar li > ul {padding: 25px}
   color: #ffffff;
   font-size: 1.5rem;
 }
+}
+
+.welcome-message{
+    right: 20px;
+    top: 0;
+}
+
+.welcome-message h4{
+    line-height: 40px;
+    color: #ffffff;
+}
+
+.height-50\%{
+    height: 50%;
+}
+
+.height-49\%{
+    height: 49%;
+}
+
+.a-box{
+    width: 49%;
+}
+@media (min-width: 993px) {
+    .a-box:nth-child(1) {
+        align-self: flex-start;
+    }
+    .a-box:nth-child(2) {
+        align-self: flex-start;
+    }
+    .a-box:nth-child(3) {
+        align-self: flex-end;
+    }
+    .a-box:nth-child(4) {
+        align-self: flex-end;
+    }
+}
+
+@media (max-width: 992px) {
+    .little--slider .slide-navigation {
+        height: auto!important;
+    }
+    .uk-thumbnav img{
+        margin-top: 10px;
+    }
+}
+.uk-thumbnav > * > *::after{
+    background: transparent;
+}
+.uk-thumbnav img{
+    height: 80px;
+    margin-bottom: 10px;
+}
+.uk-thumbnav a{
+    color: white
+}
+.little--slider .slide-navigation{
+    width: 50%;
+    border: 0;
+}
+.little--slider{
+    padding-top: 0;
+}
+.body{
+    padding: 0;
+}
+.wrapper{
+    max-width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .little--slider .uk-slideshow-items{
+        min-height: 240px!important;
+    }
+    .little--slider .slide-navigation{
+        margin: 0!important;
+        width: 100%;
+    }
+    .cards--with--colors > div:not(:first-child){
+        margin: 0!important;
+    }
+}
+.pointIMG{
+    top: 0;
+}
+
+.padding-small{
+    padding: 10px;
+}
+
+.pointIMG .uk-background-secondary{
+    background: rgba(36, 43, 48, 0.8);
+}
+
+#nav,.logo{
+    z-index: 400;
+}
+
+
+@media (max-width: 992px) {
+    .welcome-message h4{
+        font-size: 1rem;
+    }
+}
+
+.fb-page, #twitter-widget-0{
+    display: inline-block;
+    width: 50%!important;
+}
+
+.img--holder{
+    display: flex;
+    flex-wrap: wrap;
+    background: #434955;
+}
+
+.img--holder h3{
+    color: #ffffff;
+}
+
+.img--holder .weatherwidget-io{
+    width: 100%;
+    height: 40vh!important;
+    background: #1e7b49;
+    display: flex!important;
+    align-items: center;
+}
+
+#main .uk-navbar-container:not(.uk-navbar-transparent) {
+    background: #434955;
+}
+.logo{
+    background: rgba(0, 191, 128, 0.33);
+}
+.uk-navbar-dropdown-nav > li> a{
+    position: relative;
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.92)!important;
+}
+
+.uk-navbar-dropdown, ul.navbar li ul{
+    background: #434955;
+}
+
+ul.navbar li a{
+    color: rgba(255, 255, 255, 0.92)!important;
+}
+
+.uk-navbar-dropdown-nav > li.uk-active > a, .uk-navbar-dropdown-nav > li:hover > a{
+    color: rgba(0, 255, 173, 0.74) !important;
+}
+ul.navbar li a:hover, ul.navbar li:hover > a{
+    color: rgba(0, 255, 170, 0.73) !important;
+}
+.card-top{
+    height: 250px;
+    width: 100%;
+}
+
+.card-top img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.uk-card .date{
+    line-height: 30px;
+}
+
+.card-base-content{
+    padding: 5px 20px 20px 20px;
+}
+#map {
+    height: 40vh;
+}
+
+p{
+    margin-top: 0!important;
 }
