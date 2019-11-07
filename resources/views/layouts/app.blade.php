@@ -60,8 +60,8 @@
             </a>
             <a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav-primary" href="#"></a>
         </div>
-        <div id="nav">
-        <nav id="top" class="uk-navbar-container t:40px" style="position: relative; z-index: 980;">
+        <div id="nav" class=" t:40px">
+        <nav id="top" class="uk-navbar-container" style="position: relative; z-index: 980;">
             <div class="main-container">
                 <div class="uk-navbar-right">
                     <ul class="uk-navbar-nav uk-iconnav">
