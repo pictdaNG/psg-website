@@ -19,7 +19,7 @@ class PagesController extends Controller
     }
 
     public function index() {
-        $news = $this->repo->getAll();
+        $news = News::paginate(4);
         $posts = $this->repos->getAll();
         $sliders = $this->reposi->getAll();
         return view('welcome')->with('news', $news)->with(compact('posts'))->with(compact('sliders'));

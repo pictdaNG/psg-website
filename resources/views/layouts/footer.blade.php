@@ -1,6 +1,35 @@
 <footer>
 	<div class="footer-nav">
-		<img src="{{ URL::asset('./assets/img/map.jpg') }}" alt="">
+        <div id="map"></div>
+        <script>
+            var map;
+            function initMap() {
+                var myLatLng = {lat: 9.8294943, lng: 8.8764021};
+                map = new google.maps.Map(document.getElementById('map'), {
+                    center: myLatLng,
+                    zoom: 14
+                });
+
+                var marker = new google.maps.Marker({
+                    position: myLatLng,
+                    map: map,
+                    draggable: true,
+                    animation: google.maps.Animation.DROP,
+                    title: 'New Government House, Jos, Plateau State'
+                });
+                marker.addListener('click', toggleBounce);
+            }
+
+            function toggleBounce() {
+                if (marker.getAnimation() !== null) {
+                    marker.setAnimation(null);
+                } else {
+                    marker.setAnimation(google.maps.Animation.BOUNCE);
+                }
+            }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqK5I0729LNMrZUzZtojKm3ll2sLzFnuM&callback=initMap"
+                async defer></script>
 	</div>
 	<div class="footer-nav">
 	  <h5 class="footer-title">Jos City</h5>
@@ -33,7 +62,7 @@
 			</div>
 		</div>
 	</div>
-</footer>    
+</footer>
 <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
 	<div class="uk-offcanvas-bar uk-flex uk-flex-center uk-flex-column">
 		<ul class="uk-nav-default uk-nav-parent-icon" uk-nav>

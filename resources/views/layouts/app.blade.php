@@ -13,7 +13,7 @@
 
     <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5cecd95a5676af001119e9ee&product=inline-share-buttons" async="async"></script>
 
-    
+
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="shortcut icon" href="{{ URL::asset('./assets/favicon.ico') }}" />
@@ -42,25 +42,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     @include('meta::manager')
-    
+
     <title>@yield('title')</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="{{ URL::asset('assets/css/app.css') }}">
-    
+    <link rel="stylesheet" href="{{ URL::asset('css/app.css') }}">
+
     @yield('styles')
   </head>
 <body>
 
     <div class="uk-width-1-1@m" uk-sticky="show-on-up: true; animation: uk-animation-slide-top;">
     <div class="wrapper uk-flex" style="z-index: 12000;">
-        <div class="logo mt:40px">
+        <div class="logo t:40px">
             <a class="logoLink uk-display-block" href="{{ route('home') }}">
                 <img src="{{ URL::asset('./assets/img/platStet.png') }}" alt="">
             </a>
             <a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav-primary" href="#"></a>
         </div>
-        <div id="nav">
-        <nav id="top" class="uk-navbar-container mt:40px" style="position: relative; z-index: 980;">
+        <div id="nav" class=" t:40px">
+        <nav id="top" class="uk-navbar-container" style="position: relative; z-index: 980;">
             <div class="main-container">
                 <div class="uk-navbar-right">
                     <ul class="uk-navbar-nav uk-iconnav">
@@ -114,7 +115,7 @@
                     <li><a href="{{ route('wase') }}">Wase</a></li>
                 </ul>
             </div>
-        </div>    
+        </div>
 
         @yield('content')
 
@@ -169,11 +170,11 @@
             </div>
         </div>
     </div>
-    
-   
+
+
     <section class="policy" uk-toggle="cls: hide-pointIMG; mode: hover;">
         <div class="pointIMG uk-text-center">
-            <!-- <img src="./assets/img/fiveStar.png" alt=""> --> 
+            <!-- <img src="./assets/img/fiveStar.png" alt=""> -->
             <div class="uk-padding-small uk-background-secondary uk-light">
                 <h3 class="uk-margin-remove">THREE POINT POLICY</h3>
             </div>
@@ -226,7 +227,7 @@
                 </div>
             </a>
         </div>
-    </section>    
+    </section>
     @include('layouts.footer')
     <script id="gs-sdk" src='//www.buildquickbots.com/botwidget/v3/demo/static/js/sdk.js?v=3' key="cab5c6b8-cac8-4844-acdb-03cfce81bb53" ></script>
     <script src="{{ URL::asset('assets/js/app.js') }}"></script>
