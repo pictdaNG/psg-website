@@ -190,38 +190,43 @@
       </div>
     </div>
     <div class="little--slider">
-        <div class="uk-position-relative" uk-slideshow="animation: fade; min-height: 350; autoplay: true">
-            <div class="uk-flex uk-flex-wrap wrapper show-for-landscape uk-flex-between" uk-height-match="target: > *">
-                <ul class="uk-slideshow-items">
-                    <li>
-                        <img src="./assets/img/img-1.jpg" alt="" uk-cover>
-                    </li>
-                </ul>
-                <div class="slide-navigation">
-                    <div class="uk-thumbnav uk-flex-middle uk-padding-small uk-text-center uk-child-width-1-2@m uk-height-1-1 uk-flex flex-wrap">
-                        <div>
-                            <a href="http://15.188.63.156/login" target="_blank">
-                                <img src="./assets/img/eproc.png" alt="">
-                                <span class="uk-width-1-1@m d-block">E-Procurement</span>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://financedm.herokuapp.com/" target="_blank">
-                                <img src="./assets/img/debt.png" alt="">
-                                <span class="uk-width-1-1@m d-block"> Debt Management portal</span>
-                            </a>
-                        </div>
-                        <div><a href="assets/documents/2019/tourism policy completed file.pdf" target="_blank">
-                            <img src="./assets/img/tourism.png" alt="">
-                            <span class="uk-width-1-1@m d-block">Tourism Policy</span></a></div>
-                        <div><a href="#">
-                            <img src="./assets/img/strt-debt.png" alt="">
-                            <span class="uk-width-1-1@m d-block">Strategic Development Plan</span>
-                        </a></div>
-                    </div>
-                </div>
+      <div class="uk-position-relative" uk-slideshow="animation: fade; min-height: 350; autoplay: true">
+        <div class="uk-flex uk-flex-wrap wrapper show-for-landscape uk-flex-between" uk-height-match="target: > *">
+          <ul class="uk-slideshow-items">
+            <li>
+              <img src="./assets/img/img-1.jpg" alt="" uk-cover>
+            </li>
+          </ul>
+          <div class="slide-navigation">
+            <div class="uk-thumbnav uk-flex-middle uk-padding-small uk-text-center uk-child-width-1-2@m uk-height-1-1 uk-flex flex-wrap">
+              <div>
+                <a href="http://15.188.63.156/login" target="_blank">
+                  <img src="./assets/img/eproc.png" alt="" />
+                  <span class="uk-width-1-1@m d-block">E-Procurement</span>
+                </a>
+              </div>
+              <div>
+                <a href="https://financedm.herokuapp.com/" target="_blank">
+                  <img src="./assets/img/debt.png" alt="" />
+                  <span class="uk-width-1-1@m d-block"> Debt Management portal</span>
+                </a>
+              </div>
+              <div>
+                <a href="assets/documents/2019/tourism policy completed file.pdf" target="_blank">
+                  <img src="./assets/img/tourism.png" alt="" />
+                  <span class="uk-width-1-1@m d-block">Tourism Policy</span>
+                </a>
+              </div>
+              <div>
+                <a href="#">
+                  <img src="./assets/img/strt-debt.png" alt="" />
+                  <span class="uk-width-1-1@m d-block">Strategic Development Plan</span>
+                </a>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
   </section>
   
@@ -304,15 +309,14 @@
       @else
         <h3 class="uk-card-title uk-margin-remove-bottom">No News/Events Posted yet.</h3>
       @endif  
-      <a href="{{ route('news.allNews') }}" class="uk-button uk-margin-medium-top uk-button-default">View More</a>
+      @if(count($news) > 0)
+        <a href="{{ route('news.allNews') }}" class="uk-button uk-margin-medium-top uk-button-default">View More</a>
+      @endif
     </div>
     <img class="mobile-centered-img" src="./assets/img/platStet.png" alt="">
   </section>
   @include('layouts.footer')
-  <script id="gs-sdk" src='//www.buildquickbots.com/botwidget/v3/demo/static/js/sdk.js?v=3' key="cab5c6b8-cac8-4844-acdb-03cfce81bb53" ></script>
-
+  <script id="gs-sdk" src='//www.buildquickbots.com/botwidget/v3/demo/static/js/sdk.js?v=3' key="cab5c6b8-cac8-4844-acdb-03cfce81bb53"></script>
   <script src="assets/js/app.js"></script>
-  
-
 </body>
 </html>
