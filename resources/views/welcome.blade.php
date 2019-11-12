@@ -270,7 +270,7 @@
     </div>
 </section>
 
-<section class="policy" uk-toggle="cls: hide-pointIMG; mode: hover;">
+<section class="policy">
     <div class="pointIMG uk-width-1-3@m uk-text-center">
         <!-- <img src="./assets/img/fiveStar.png" alt=""> -->
         <div class="padding-small uk-background-secondary uk-light">
