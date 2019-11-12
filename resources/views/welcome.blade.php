@@ -266,7 +266,9 @@
                     </div>
                 </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
 </section>
 
@@ -350,25 +352,27 @@
         @if(count($news) > 0)
             <div class="uk-child-width-1-2@m" uk-grid>
             @foreach($news as $new)
-                    <div>
-                        <a href="{{route('news.news1', $new->slug)}}" class="uk-card uk-display-block uk-card-default uk-link-reset">
-                            <div class="card-top">
-                                <img src="{{$new->news_image}}" alt="{!! str_word_count($new->title) > 20 ? substr($new->title,0,20) : $new->title !!} ...">
-                            </div>
-                            <div class="card-base-content uk-card-hover uk-text-right">
-                                <time datetime="{{ \Carbon\Carbon::parse($new->published_date)->format('j F, Y') }}" class="date uk-text-small uk-text-right">{{ \Carbon\Carbon::parse($new->published_date)->format('j F, Y') }}</time>
-                                <div class="uk-text-left">
-                                    <h4 class="uk-margin-remove card-title uk-text-bold">{!! str_word_count($new->title) > 20 ? substr($new->title,0,20) : $new->title !!} ...</h4>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+              <div>
+                <a href="{{route('news.news1', $new->slug)}}" class="uk-card uk-display-block uk-card-default uk-link-reset">
+                  <div class="card-top">
+                    <img src="{{$new->news_image}}" alt="{!! str_word_count($new->title) > 20 ? substr($new->title,0,20) : $new->title !!} ...">
+                  </div>
+                  <div class="card-base-content uk-card-hover uk-text-right">
+                    <time datetime="{{ \Carbon\Carbon::parse($new->published_date)->format('j F, Y') }}" class="date uk-text-small uk-text-right">{{ \Carbon\Carbon::parse($new->published_date)->format('j F, Y') }}</time>
+                      <div class="uk-text-left">
+                          <h4 class="uk-margin-remove card-title uk-text-bold">{!! str_word_count($new->title) > 20 ? substr($new->title,0,20) : $new->title !!} ...</h4>
+                      </div>
+                  </div>
+                </a>
+              </div>
             @endforeach
         </div>
         @else
             <h3 class="uk-card-title uk-margin-remove-bottom">No News/Events Posted yet.</h3>
         @endif
-        <a href="{{ route('news.allNews') }}" class="uk-button uk-margin-medium-top uk-button-default">View More</a>
+        @if(count($news) > 0)
+            <a href="{{ route('news.allNews') }}" class="uk-button uk-margin-medium-top uk-button-default">View More</a>
+        @endif
     </div>
     <img class="mobile-centered-img" src="./assets/img/platStet.png" alt="">
 </section>
@@ -377,15 +381,6 @@
         key="cab5c6b8-cac8-4844-acdb-03cfce81bb53"></script>
 
 <script src="assets/js/app.js"></script>
-
-{{--
-<script>
-    document.addEventListener("DOMContentLoaded", function(){
-        var css = '[ng-app="iApp"], body  { height: 100vh; }',
-            head = document.head || document.getElementsByTagName('head')[0],
-            style = document.createElement('style');
-    });
-</script>--}}
 
 </body>
 </html>
