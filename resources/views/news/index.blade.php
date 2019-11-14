@@ -14,7 +14,7 @@
 
 @section('content')
 	<div class="content uk-width-1-2@m">
-		<div class="uk-child-width-1-2@m" uk-grid>
+		<div class="uk-child-width-1-2@m" uk-grid uk-height-match="target: > div > .uk-card-default > .card-base-content">
 			@foreach($news as $n)
                 <div>
                     <a href="{{route('news.news1', $n->slug)}}" class="uk-card uk-display-block uk-card-default uk-link-reset">

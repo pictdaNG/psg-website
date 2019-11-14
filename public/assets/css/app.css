@@ -7020,7 +7020,7 @@ ul.uk-nav-sub {
   /* 3 */
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  min-width: 200px;
+  min-width: 350px;
   /* 4 */
   padding: 25px;
   background: #fff;
@@ -14855,7 +14855,7 @@ header.hero {
   .smart--container .content {
     padding: 0 0 0 20px;
     margin-top: 30px; }
-  .smart--container h4 {
+  .smart--container .list h4 {
     padding: 10px 20px;
     background: #0c5738;
     color: #ffffff; }
@@ -15814,6 +15814,7 @@ ul.navbar li {
     margin: 0;
     width: 100%;
     position: relative;
+    min-width: 320px
 }
 
 ul.navbar li a {
@@ -15850,7 +15851,7 @@ ul.navbar li:hover > ul { opacity: 1; visibility: visible; left: 100%;
     top: 0; }
 ul.navbar li > ul  ul { top: 0; left: 90%; box-shadow: 0 5px 10px rgba(0,0,0,.6);}
 ul.navbar li > ul li:hover ul { left: 100%; }
-ul.navbar li > ul {padding: 25px}
+ul.navbar li > ul {padding: 15px}
 .uk-lightbox-items > .uk-active{
     height: 100vh;
 }
@@ -16040,7 +16041,11 @@ ul.navbar li a:hover, ul.navbar li:hover > a{
 
 .card-base-content{
     padding: 5px 20px 20px 20px;
+    background: #0c5738;
+    color: #ffffff;
 }
+
+
 #map {
     height: 40vh;
 }
