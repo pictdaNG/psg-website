@@ -5,15 +5,22 @@
 @endsection
 
 @section('header')
-    2019 Budget
+    Plateat State Budgets
 @endsection
 
 @section('subheader')
-    2019 Budget
+    Budget Reports
 @endsection
 
 @section('content')
     <div class="content uk-width-1-2@m">
+        <h4>2020 Budget</h4>
+        <ul class="uk-list uk-list-striped">
+            <li>
+                <a href="https://plug-storage.s3.eu-west-3.amazonaws.com/2020_budget_speech.pdf" target="_blank">2020 Budget Speech</a>
+            </li>
+            
+        </ul>
         <h4>2019 Budget</h4>
         
         <ul class="uk-list uk-list-striped">
