@@ -216,7 +216,7 @@
                         <img src="./assets/img/analysis.png" alt="">
                         <div class="uk-text-left">
                             <h3>Budget Report</h3>
-                            <p>The Approved 2019 Budget. </p>
+                            <p>The Approved Yearly Budget. </p>
                         </div>
                     </a>
                 </div>

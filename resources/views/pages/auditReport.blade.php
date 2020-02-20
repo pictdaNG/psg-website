@@ -17,14 +17,25 @@
 		<h2 class="bold">Download Audit Reports</h2>
 
 		<h4> 2018 Quarterly Reports </h4>
-		<ul class="uk-list uk-list-striped">
-			
-			<li>
+
+		<table class="uk-table uk-table-hover uk-table-divider">
+		  <th>
+			<tr>
+				<td>Document title</td>
+			  	<td>Date of entry</td>
+			</tr>
+		  </th>
+		  <tbody>
+			<tr>
+			  <td>
 				<a href="{{ URL::asset('assets/documents/2019/AUDIT REPORT (2018).pdf') }}">
 					<span style="text-transform: uppercase;"></span>
 					AUDIT REPORT (2018)
 				</a>
-			</li>
-		</ul>
+			  </td>
+			  <td>05 January, 2019</td>
+			</tr>
+		  </tbody>
+		</table>
 	</div>
 @endsection

@@ -13,62 +13,62 @@ class DocumentController extends Controller {
   }
     
   public function index() {
-    if(!Sentinel::check()) {
-      return redirect()->route('get_login');
-    }
-    else {
+    // if(!Sentinel::check()) {
+    //   return redirect()->route('get_login');
+    // }
+    // else {
       $documents = Document::all();
       return view('admin.document.index')->with('documents', $documents);
-    }
+    // }
   }
     
   public function create() {
-    if(!Sentinel::check()) {
-      return redirect()->route('get_login');
-    }
-    else {
+    // if(!Sentinel::check()) {
+      // return redirect()->route('get_login');
+    // }
+    // else {
       return view('admin.document.create');
-    }
+    // }
   }
     
   public function store(Request $request) {
     // dd($request->all());
-    if(!Sentinel::check()) {
-      return redirect()->route('get_login');
-    }
-    else {
+    // if(!Sentinel::check()) {
+      // return redirect()->route('get_login');
+    // }
+    // else {
       $doc = $this->repo->create($request);
       if ($doc->id) {
         return redirect()->back()->with('success', 'Created Successfully');
       } else {
-        return redirect()->back()->with('error', 'Error Creating Record');
+        return redirect()->back()->withInput('error', 'Error Creating Record');
       }        
-    }        
+    // }        
   }
 
 
   public function storeQuarterlyReport(Request $request) {
     // dd($request->all());
-    if(!Sentinel::check()) {
-      return redirect()->route('get_login');
-    }
-    else {
+    // if(!Sentinel::check()) {
+    //   return redirect()->route('get_login');
+    // }
+    // else {
       $doc = $this->repo->create($request);
       if ($doc->id) {
         return redirect()->back()->with('success', 'Created Successfully');
       } else {
         return redirect()->back()->with('error', 'Error Creating Record');
       }        
-    }
+    // }
   }
 
   public function quarterlyReport() {
-    if(!Sentinel::check()) {
-      return redirect()->route('get_login');
-    }
-    else {
+    // if(!Sentinel::check()) {
+    //   return redirect()->route('get_login');
+    // }
+    // else {
       return view('admin.document.quarterly');
-    }
+    // }
   }
     
   public function allQuaterlyReports() {

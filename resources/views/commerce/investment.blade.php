@@ -32,5 +32,14 @@
             <img class="object-fit" src="{{ URL::asset('/assets/img/investment.jpg') }}" alt="" />
         </div>
         
+        <ul class="uk-list uk-list-striped">
+            <li>
+                <a href="{{ URL::asset('/assets/documents/2 (25).pdf') }}">2 (25)</a>
+            </li>
+            <li>
+                <a href="https://plug-storage.s3.eu-west-3.amazonaws.com/2+(25).pdf">2 (25)</a>
+            </li>
+        </ul>
+        
     </div>
 @endsection
