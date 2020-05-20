@@ -46,6 +46,10 @@ Route::group(['prefix' => 'budget'], function() {
   })->name('citizens2019approved');
 });
 
+Route::group(['prefix' => 'feedback'], function() {
+  Route::get('/', 'PagesController@feedback')->name('feedback');
+});
+
 Route::group(['prefix' => 'download'], function() {
   Route::get('/download-quarterly-reports', 'DocumentController@allQuaterlyReports')->name('quaterlyreport');
 });
