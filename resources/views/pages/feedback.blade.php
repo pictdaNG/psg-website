@@ -12,6 +12,14 @@
   PLATEAU CITIZENS BUDGET FEEDBACK FORM
 @endsection
 
+@section('styles')
+  <style>
+    .hide-feedback {
+      display: none
+    }
+  </style>
+@endsection
+
 @section('content')
   <div class="content uk-width-1-2@m">
     <h2 class="bold">PLATEAU CITIZENS BUDGET FEEDBACK FORM </h2>

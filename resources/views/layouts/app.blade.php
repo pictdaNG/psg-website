@@ -93,7 +93,7 @@
             <div>
                 <img src="{{ URL::asset('./assets/img/sidebar-img.png') }}" alt="">
             </div>
-            <div class="list uk-margin-top">
+            <div class="list uk-margin-top hide-feedback">
                 <h4>Local Government Area</h4>
                 <ul class="uk-list uk-list-striped" style="padding-left: 0 !important">
                     <li><a href="{{ route('barkinladi') }}">Barkin Ladi</a></li>
