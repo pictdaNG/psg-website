@@ -41,4 +41,8 @@ class PagesController extends Controller
         $post = $this->repos->findBySlug($slug);
         return view('fivepoints.humancapital')->with('post', $post);
     }
+
+    public function feedback() {
+        return view('pages.feedback');
+    }
 }
