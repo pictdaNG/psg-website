@@ -14715,7 +14715,9 @@ header .uk-slideshow-items {
     padding: 30px 40px;
     background: #b49537; }
     .cards--with--colors > div:nth-child(3) > div img {
-      height: 45px; }
+      height: 45px;
+        filter: contrast(100%) invert(100%);
+    }
     .cards--with--colors > div:nth-child(3) > div p {
       margin-top: 10px;
       font-size: 14px;
@@ -14724,16 +14726,32 @@ header .uk-slideshow-items {
       margin-top: 5px;
       margin-bottom: 10px;
       line-height: 1; }
+
   .cards--with--colors > div:nth-child(4) > div {
     padding: 30px 40px;
     background: #943d3d; }
     .cards--with--colors > div:nth-child(4) > div img {
-      height: 45px; }
+      height: 45px;
+    }
     .cards--with--colors > div:nth-child(4) > div p {
       margin-top: 10px;
       font-size: 14px;
       font-weight: 100; }
     .cards--with--colors > div:nth-child(4) > div h3 {
+      margin-top: 5px;
+      margin-bottom: 10px;
+      line-height: 1; }
+
+  .cards--with--colors > div:nth-child(5) > div {
+    padding: 30px 40px;
+    background: #0f858d; }
+    .cards--with--colors > div:nth-child(5) > div img {
+      height: 45px; }
+    .cards--with--colors > div:nth-child(5) > div p {
+      margin-top: 10px;
+      font-size: 14px;
+      font-weight: 100; }
+    .cards--with--colors > div:nth-child(5) > div h3 {
       margin-top: 5px;
       margin-bottom: 10px;
       line-height: 1; }
