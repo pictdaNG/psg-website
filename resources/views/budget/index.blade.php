@@ -19,7 +19,7 @@
 		  <th>
 			<tr>
 				<td>Approved Yearly Budget</td>
-			  <td><a href="{{ route('feedback') }}">Feedback</a></td>
+			  <td><a href="{{ route('feedback') }}">Submit Feedback</a></td>
 			</tr>
 		  </th>
 		  <tbody>				
