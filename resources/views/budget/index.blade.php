@@ -19,17 +19,19 @@
 		  <th>
 			<tr>
 				<td>Approved Yearly Budget</td>
-			  <!--<td>Date of entry</td>-->
+			  <td><a href="{{ route('feedback') }}">Feedback</a></td>
 			</tr>
 		  </th>
-		  <tbody>
-				
+		  <tbody>				
 				<tr>
 					<td>
 						<a href="https://plug-storage.s3.amazonaws.com/APPROVED%202020%20BUDGET%20V2-02%20lamba-edited.pdf">
 							2020 APPROVED BUDGET
 						</a>
+						
 					</td>
+
+					<td></td>
 				</tr>
 				<tr>
 					<td>
@@ -37,6 +39,7 @@
 							2020 PROPOSED BUDGET
 						</a>
 					</td>
+					<td></td>
 				</tr>
 				<tr>
 					<td>
@@ -44,6 +47,7 @@
 							SUMMARY OF APPROVED 2020 BUDGET PLATEAU STATE (APPROPRIATION BILL 2020)
 						</a>
 					</td>
+					<td></td>
 				</tr>
 				
 		  </tbody>
