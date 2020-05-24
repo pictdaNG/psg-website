@@ -21,6 +21,7 @@ if (env('APP_ENV') === 'production') {
 }
 
 Route::get('/', 'HomeController@index')->name('home');
+Route::get('/feedback', 'HomeController@feedback')->name('feedback');
 
 
 
@@ -76,12 +77,12 @@ Route::group(['prefix' => 'plateau'], function() {
   Route::get('/past-administrators', function () {
     return view('plateau.pastAdmins');
   })->name('past-admins');
-  
+
 });
 
 // GOVERNMENT ROUTE GROUP
 Route::group(['prefix' => 'government'], function() {
-  
+
   Route::get('/the-governor', function () {
     return view('government.governor');
   })->name('governor');
@@ -190,7 +191,7 @@ Route::group(['prefix' => 'government'], function() {
 
 // COMMERCE ROUTE GROUP
 Route::group(['prefix' => 'commerce'], function() {
-  
+
   Route::get('/trade-and-investment', function () {
     return view('commerce.investment');
   })->name('investment');
@@ -232,7 +233,7 @@ Route::group(['prefix' => 'projects'], function() {
   Route::get('/planned-project', function() {
     return view('projects.planned');
   })->name('planned.project');
-  
+
 });
 
 // MINISTRIES ROUTE GROUP
@@ -277,7 +278,7 @@ Route::group(['prefix' => 'ministries'], function() {
   Route::get('/min-housing-and-urban-dev', function() {
     return view('mda.ministries.housing');
   })->name('min.housing');
-  
+
   Route::get('/min-of-youth-development', function() {
     return view('mda.ministries.youth');
   })->name('min.youth');
@@ -296,11 +297,11 @@ Route::group(['prefix' => 'departments'], function() {
 
   Route::get('/plateau-agric-mech-services-corp', function() {
     return view('mda.departments.agricmechanic');
-  })->name('departments.agricmechanic');  
+  })->name('departments.agricmechanic');
 
   Route::get('/min-of-mineral-development', function() {
     return view('mda.departments.mineraldev');
-  })->name('departments.mineraldev');   
+  })->name('departments.mineraldev');
 
   Route::get('/plateau-state-afforestation-programme', function() {
     return view('mda.departments.afforestation');
@@ -365,7 +366,7 @@ Route::group(['prefix' => 'boards'], function() {
 
 // COMMISSION GROUP
 Route::group(['prefix' => 'commissions'], function() {
-  
+
   Route::get('/plateau-boundary-commission', function() {
     return view('mda.commission.boundary');
   })->name('commission.boundary');
@@ -385,7 +386,7 @@ Route::group(['prefix' => 'commissions'], function() {
 
 // OTHERS GROUP
 Route::group(['prefix' => 'others'], function() {
-  
+
   Route::get('/plateau-state-specialist-hospital', function() {
     return view('mda.others.pssh');
   })->name('others.pssh');
@@ -400,7 +401,7 @@ Route::group(['prefix' => 'others'], function() {
 Route::group(['prefix' => 'five-points-policy'], function() {
 
   // Route::get('/{slug}', 'PagesController@showPosts')->name('fivepoints');
-  
+
   Route::get('/human-capital-development-social-welfare', function() {
     return view('fivepoints.humancapital');
   })->name('fivepoints.humancapital');
@@ -425,7 +426,7 @@ Route::group(['prefix' => 'five-points-policy'], function() {
 // NEWS GROUP ROUTE
 Route::group(['prefix' => 'news-&-events'], function() {
   Route::get('/', 'PagesController@allNews')->name('news.allNews');
-  Route::get('/{slug}', 'PagesController@show')->name('news.news1');  
+  Route::get('/{slug}', 'PagesController@show')->name('news.news1');
 });
 
 // auth
@@ -434,7 +435,7 @@ Route::post('/signin',['uses' => 'AuthController@login', 'as' => 'login.post']);
 
 
 Route::group( ['middleware' => ['auth']], function() {
-  
+
   // dashboard
   Route::get('/dashboard',['uses' => 'DashbaordController@index', 'as' => 'dashboard']);
   Route::get('/logout', ['uses' => 'AuthController@logout','as' => 'logout']);
@@ -442,16 +443,16 @@ Route::group( ['middleware' => ['auth']], function() {
   Route::post('/user/store',['uses' => 'UserController@store', 'as' => 'users.store']);
   Route::post('/user/update/{id}',['uses' => 'UserController@update', 'as' => 'users.update']);
   Route::get('/user/delete/{id}',['uses' => 'UserController@destroy', 'as' => 'users.delete']);
-  
+
   //roles
   Route::get('/roles',['uses' => 'RoleController@index', 'as' => 'roles.index']);
-  Route::post('/roles/store',['uses' => 'RoleController@store', 'as' => 'roles.store']); 
+  Route::post('/roles/store',['uses' => 'RoleController@store', 'as' => 'roles.store']);
   Route::put('/roles/update/{id}', 'RoleController@update')->name('roles.update');
   Route::get('/roles/delete/{id}', 'RoleController@delete')->name('roles.delete');
 
   // permission
   Route::get('/permissions',['uses' => 'PermissionController@index', 'as' => 'permissions.index']);
-  Route::post('/permissions/store',['uses' => 'PermissionController@store', 'as' => 'permissions.store']); 
+  Route::post('/permissions/store',['uses' => 'PermissionController@store', 'as' => 'permissions.store']);
   Route::put('/permissionsupdate/{id}', 'PermissionController@update')->name('permissions.update');
   Route::get('/permissions/delete/{id}', 'PermissionController@delete')->name('permissions.delete');
 
@@ -487,7 +488,7 @@ Route::group( ['middleware' => ['auth']], function() {
     Route::put('/{slug}/update', 'PostsController@update')->name('posts.update');
     Route::get('/{slug}/delete', 'PostsController@delete')->name('posts.delete');
   });
-  
+
 });
 
 // Route::get('/auth/login', 'LoginController@index')->name('get_login');
@@ -495,7 +496,7 @@ Route::group( ['middleware' => ['auth']], function() {
 // Route::get('/logout', 'LoginController@logout')->name('logout');
 
 // Route::group(['prefix' => 'admin'], function() {
-  
+
 //   Route::get('/', 'DashboardController@index')->name('admin_dash');
 
 //   Route::group(['prefix' => 'documents'], function() {
