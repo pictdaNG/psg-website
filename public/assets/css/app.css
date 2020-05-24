@@ -16045,6 +16045,10 @@ ul.navbar li a:hover, ul.navbar li:hover > a{
     color: #ffffff;
 }
 
+.card-base-content h4{
+    color: #ffffff;
+}
+
 
 #map {
     height: 40vh;
@@ -16052,4 +16056,21 @@ ul.navbar li a:hover, ul.navbar li:hover > a{
 
 p{
     margin-top: 0!important;
+}
+
+
+.uk-feedback-btn{
+    padding: 10px 30px;
+    background: #0c5738;
+    color: #eeeeee;
+    transition: all .3s;
+}
+
+.uk-feedback-btn:hover{
+    background: #0a4b30;
+    color: #ffffff;
+}
+
+.uk-card-hover:not(.uk-card-default):not(.uk-card-primary):not(.uk-card-secondary):hover h4{
+    color: #151515;
 }
