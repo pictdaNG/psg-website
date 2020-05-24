@@ -77,6 +77,8 @@
                                       <!-- <li class="uk-active"><a href="{{ route('commerce.industry') }}">Commerce &amp; Industries</a></li> -->
                                       <li><a href="{{ route('min.environment') }}">Environment</a></li>
                                       <li><a href="{{ route('health') }}">Ministry of Health</a></li>
+                                      <li><a href="http://minoflands.plateaustate.gov.ng/" target="_blank">Ministry of Lands, Survey & Town Planning</a></li>
+                                      
                                       <li><a href="https://finance.plateaustate.gov.ng" target="_blank">Ministry of Finance</a></li>
                                       <li><a href="{{ route('min.information') }}">Min. of Information</a></li>
                                       <li><a href="{{ route('mineral.development') }}">Mineral Development</a></li>

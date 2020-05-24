@@ -35,10 +35,23 @@
     <div class="content uk-width-1-2@m">
         <h4>2019 Approved Budget</h4>
         <table class="uk-table uk-table-hover uk-table-divider">
+          <thead>
+            <tr>
+              <td>
+                Document Title
+              </td>
+              <td>
+                Date of Entry
+              </td>
+              <td>
+                Action
+              </td>
+            </tr>
+          </thead>
             <tbody>
                 <tr>
                     <td>2019 Approved Budget</td>
-
+                    <td>05 April, 2019</td>
                     <td>
                         <a href="{{ URL::asset('assets/documents/PLATEAU-STATE-2019-APPROVED-BUDGET.pdf') }}" target="_blank">Download Budget</a>
                     </td>

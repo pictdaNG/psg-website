@@ -2,14 +2,14 @@
 <html class="no-js" lang="en">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-65978169-6"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-152045149-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-      gtag('config', 'UA-65978169-6');
-    </script>
+  gtag('config', 'UA-152045149-1');
+</script>
 
     <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5cecd95a5676af001119e9ee&product=inline-share-buttons" async="async"></script>
 
@@ -93,7 +93,7 @@
             <div>
                 <img src="{{ URL::asset('./assets/img/sidebar-img.png') }}" alt="">
             </div>
-            <div class="list uk-margin-top">
+            <div class="list uk-margin-top hide-feedback">
                 <h4>Local Government Area</h4>
                 <ul class="uk-list uk-list-striped" style="padding-left: 0 !important">
                     <li><a href="{{ route('barkinladi') }}">Barkin Ladi</a></li>

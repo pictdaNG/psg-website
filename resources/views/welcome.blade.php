@@ -2,18 +2,14 @@
 <html class="no-js" lang="en">
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-65978169-6"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-152045149-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
-        gtag('js', new Date());
-
-        gtag('config', 'UA-65978169-6');
-    </script>
+  gtag('config', 'UA-152045149-1');
+</script>
 
     <meta charset="utf-8"/>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -205,17 +201,6 @@
             </div>
             <div>
                 <div class="uk-background-secondary uk-light">
-                    <a href="{{ route('feedback') }}">
-                        <img src="./assets/img/feedback.png" alt="">
-                        <div class="uk-text-left">
-                            <h3>Feedback </h3>
-                            <p>Communicate with Us </p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div>
-                <div class="uk-background-secondary uk-light">
                     <a href="{{ route('audit.report') }}">
                         <img src="./assets/img/interest.png" alt="">
                         <div class="uk-text-left">
@@ -231,7 +216,7 @@
                         <img src="./assets/img/analysis.png" alt="">
                         <div class="uk-text-left">
                             <h3>Budget Report</h3>
-                            <p>The Approved 2019 Budget. </p>
+                            <p>The Approved Yearly Budget. </p>
                         </div>
                     </a>
                 </div>
@@ -270,7 +255,7 @@
                                 <span class="uk-width-1-1@m d-block">Tourism Policy</span></a></div>
                         <div
                             class="uk-box-shadow-hover-large a-box uk-box-shadow-small uk-flex-middle uk-flex-center uk-flex height-49%">
-                            <a href="#">
+                            <a href="https://plug-storage.s3.eu-west-3.amazonaws.com/20190828+-+Plateau+State+Strategy+-+Final.pdf">
                                 <img src="./assets/img/strt-debt.png" alt="">
                                 <span class="uk-width-1-1@m d-block">Strategic Development Plan</span>
                             </a></div>

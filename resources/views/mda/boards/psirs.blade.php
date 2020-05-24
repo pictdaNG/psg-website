@@ -73,5 +73,9 @@
       </ul>
     </p>
     
+    
+        <a href="https://plug-storage.s3.eu-west-3.amazonaws.com/psirs_tax_law.pdf"><h4>PSIRS Tax Law</h4></a>
+    
+    
   </div>
 @endsection
