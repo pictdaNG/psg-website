@@ -201,6 +201,16 @@
             </div>
             <div>
                 <div class="uk-background-secondary uk-light">
+                    <a href="{{ route('feedback') }}">
+                        <img src="./assets/img/feedback.png" alt="">
+                        <div class="uk-text-left">
+                            <h3>Submit Feedback</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div class="uk-background-secondary uk-light">
                     <a href="{{ route('audit.report') }}">
                         <img src="./assets/img/interest.png" alt="">
                         <div class="uk-text-left">
