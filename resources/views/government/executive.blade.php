@@ -26,13 +26,13 @@
         <p>The Governor is both the head of government and the Chief Security officer of the State. Under Article 5 Part II, second schedule of the Constitution, the executive powers is vested in the Governor of the State and, may subject as to the provisions of any law made by the House of Assembly, be exercised by him or through the Deputy Governor and Commissioners of the Government of the State or officers in the Public Service of the State. Ministries, each led by an appointed member of the Governor's Cabinet carry out the day-to-day administration of the state government. The Governor also appoints the heads of more than 38 extra-ministerial agencies, departments, Boards, parastatals etc.</p>        
 
         <p>
-            Barr. Simon Lalong is the 17th Head of Government and the 5th elected Governor of Plateau State. . The Governor is limited to two four-year terms by the Constitution of the Federal Republic.  By tradition, the Governor and the First Family live in the Government House, also the location of the Office and the offices of the Deputy Governor and his senior staff. 
+            The Governor is limited to two four-year terms by the Constitution of the Federal Republic.  By tradition, the Governor and the First Family live in the Government House, also the location of the Office and the offices of the Deputy Governor and his senior staff. 
         </p>
 
         <h3>THE DEPUTY GOVERNOR</h3>
 
         <p>
-            The primary responsibility of the Deputy Governor is to be ready at a moment's notice to assume the Governorship if the Governor is unable to perform his duties. This can be because of the Governor's death, resignation, or permanent incapacitation, or if the Governor is removed from Office by the State House of Assembly.  Prof. Sonni Tyoden is the 5th Deputy Governor of Plateau State. The duties of the Deputy Governor, outside of those enumerated in the Constitution, are at the discretion of the Governor. The Deputy Governor has an office and an official lodge attached to him.
+            The primary responsibility of the Deputy Governor is to be ready at a moment's notice to assume the Governorship if the Governor is unable to perform his duties. This can be because of the Governor's death, resignation, or permanent incapacitation, or if the Governor is removed from Office by the State House of Assembly. The duties of the Deputy Governor, outside of those enumerated in the Constitution, are at the discretion of the Governor. The Deputy Governor has an office and an official lodge attached to him.
         </p>
 
         <h3>OFFICE OF THE GOVERNOR</h3>

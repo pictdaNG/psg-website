@@ -14,13 +14,15 @@
 
 @section('content')
     <div class="content uk-width-1-2@m">
-        <h2 class="bold">Professor Sonni Gwanle Tyoden</h2>
-        <p>Born on the 22nd September 1950, Professor Sonni Gwanle Tyoden was educated at the famous Boys Secondary School, Gindiri, Plateau State, and proceeded to the Premier University of Ibadan in 1972,  where he read and obtained a B.Sc degree in Political Science with Second Class Honors Upper Division. Following his completion of the National Youth Service program in Kwara state, his zeal for personal advancement led him to embark on post-graduate studies at the University of Lancaster in the United Kingdom in 1978, where he obtained both the Masters and Doctoral degrees from the same University in record time of three years in 1980, specializing in International Relations and Political Economy.</p>
+        
+         <h2 class="bold">NGO CHUNDUNG JOSEPHINE PIYO</h2>
+         <!-- 
+        <p>Born on the 22nd September 1950, Professor Sonni Gwanle Tyoden was educated at the famous Boys Secondary School, Gindiri, Plateau State, and proceeded to the Premier University of Ibadan in 1972,  where he read and obtained a B.Sc degree in Political Science with Second Class Honors Upper Division. Following his completion of the National Youth Service program in Kwara state, his zeal for personal advancement led him to embark on post-graduate studies at the University of Lancaster in the United Kingdom in 1978, where he obtained both the Masters and Doctoral degrees from the same University in record time of three years in 1980, specializing in International Relations and Political Economy.</p> -->
 
         <div class="uk-child-width-1-1@m uk-grid-small" uk-grid>
-            <img class="object-fit" src="{{ URL::asset('/assets/img/tyeoden.jpg') }}" alt="Professor Sonni Gwanle Tyoden">
+            <img class="object-fit" src="{{ URL::asset('/assets/img/piyo-1.jpg') }}" alt="">
         </div>
-
+        <!-- 
         <p>A man of vision, from the very beginning he believed in education as a tool not only for elevating the downtrodden as well as the wealthy, but also a veritable means of advancing development, hence he chose the humble beginning of first becoming a primary school teacher and later at the post-primary level when he taught at Oke Ode Grammar school in Kwara state, before joining the Plateau State civil service in 1978 as an Assistant Secretary in the Ministry of Establishments. In keeping with his dream of glorifying education, he opted for an academic career by taking up a teaching post at the University of Jos in 1980 as Lecturer II and became Lecturer I subsequently in 1982, Senior Lecturer in 1985, Associate Professor in 1988 and Full Professor in 1990, all by dint of hard work. </p>        
 
         <p>
@@ -56,6 +58,6 @@
 
         <p>
             He is married and blessed with four children. 
-        </p>
+        </p> -->
     </div>
 @endsection

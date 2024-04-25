@@ -25,6 +25,8 @@
 
     <meta name="google-site-verification" content="UAD6KPgApxuFKVgBYXwnUpZuM79LNYROXw0n4YI53_A"/>
 
+
+
     <meta property="og:url" content="https://plateaustate.gov.ng"/>
     <!-- Facebook Meta -->
     <meta property="og:title" content="Plateau State Government">
@@ -88,6 +90,13 @@
         .wrapper {
             max-width: 100%;
         }
+        .nani {
+            color: #fff;
+        }
+        
+        .nani:hover{
+            color:#000;
+        }
 
         @media (max-width: 1024px) {
             .little--slider .uk-slideshow-items {
@@ -104,6 +113,7 @@
             }
         }
     </style>
+    <meta name="norton-safeweb-site-verification" content="8ekqmks5j1b4rype-xkq674pn0z4prhcewxg88rqdln-cjue0n5ac7kg6j-znal5l0qo67xqlkg7un3arr7k8arijsncxz4jj8rcthdzbfnnw403qez1tn3wrdpqbm42" />
 </head>
 <body>
 <div id="fb-root"></div>
@@ -146,6 +156,7 @@
                     <div class="main-container">
                         <div class="uk-navbar-right">
                             <ul class="uk-navbar-nav uk-iconnav">
+                                <li><a href="{{ route('feedback') }}"><font color="red"><b>[ CLICK HERE TO SUBMIT BUDGET FEEDBACK ]</b></font></a></li>
                                 <li><a href="#" uk-icon="icon: google-plus"></a></li>
                                 <li><a href="https://www.facebook.com/PLStateGovt/" uk-icon="icon: facebook"></a></li>
                                 <li><a href="https://twitter.com/PlateauStateGov?s=09" uk-icon="icon: twitter"></a></li>
@@ -178,45 +189,47 @@
         <div class="uk-grid-collapse uk-child-width-expand@m cards--with--colors uk-text-center" uk-grid
              uk-height-match="target: > div > div">
             <div>
+            	
                 <div class="uk-background-muted uk-light">
-                    <a href="/assets/documents/2019/ACCT-Sign.pdf" download="ACCT-Sign">
-                        <img src="./assets/img/government.png" alt="">
+                	<a href="https:\\advocate.ng/gov-mutfwang-promises-transparent-incorruptible-governance/" target="_blank">Governor Mutfwang Promises Transparent incorruptible governance</a>
+                    <a href="{{ route('incentives') }}">
+                        <img src="./assets/img/plaschema-logo.png" alt="">
                         <div class="uk-text-left">
-                            <h3>Report of the Accountant General</h3>
-                            <p>Download Report from the Accountant General.</p>
+                            <h3>Health Scheme</h3>
+                            <p>Affordable, equitable, timely and quality healthcare, with financial security for all residents of Plateau State</p>
                         </div>
                     </a>
                 </div>
             </div>
             <div>
                 <div class="uk-background-primary uk-light">
-                    <a href="{{ route('quaterlyreport') }}">
-                        <img src="./assets/img/newspaper.png" alt="">
+                    <a href="https://plagis.plateaustate.gov.ng" target="_blank">
+                        <img src="./assets/img/plagis.png" alt="">
                         <div class="uk-text-left">
-                            <h3>Quarterly Reports</h3>
-                            <p>Download the comprehensive quarterly reports. </p>
+                            <h3>Land administration in Plateau State</h3>
+                            <p>Plateau State Geographic Information Service</p>
                         </div>
                     </a>
                 </div>
             </div>
             <div>
-                <div class="uk-background-secondary uk-light">
-                    <a href="{{ route('audit.report') }}">
-                        <img src="./assets/img/interest.png" alt="">
+            <div class="uk-background-secondary uk-light">
+                    <a href="https://investinplateau.ng" target="_blank">
+                        <img src="./assets/img/ppp.png" alt="">
                         <div class="uk-text-left">
-                            <h3>Audit Reports </h3>
-                            <p>Download the comprehensive treasury reports. </p>
+                            <h3>Public Private Partnership</h3>
+                            <p>Visit the Plateau State Infrastructure Promotion and Regulatory Agency</p>
                         </div>
                     </a>
                 </div>
             </div>
             <div>
                 <div class="uk-background-muted uk-light">
-                    <a href="{{ route('budget') }}">
-                        <img src="./assets/img/analysis.png" alt="">
+                    <a href="{{ route('easesaber') }}">
+                        <img src="./assets/img/osic.png" alt="">
                         <div class="uk-text-left">
-                            <h3>Budget Report</h3>
-                            <p>The Approved Yearly Budget. </p>
+                            <h3>Ease Of Doing Business in Plateau State</h3>
+                            <p>Investment on the Plateau</p>
                         </div>
                     </a>
                 </div>
@@ -224,41 +237,71 @@
         </div>
     </div>
     <div class="little--slider">
-        <div class="uk-position-relative" uk-slideshow="animation: fade; min-height: 350; autoplay: true">
-            <div class="uk-flex uk-flex-wrap wrapper show-for-landscape uk-flex-between" uk-height-match="target: > *">
+        <div class="uk-position-relative" uk-slideshow="animation: fade; min-height: 450; autoplay: true">
+            <div class="uk-flex uk-flex-wrap wrapper show-for-landscape uk-flex-between" uk-height-match="target: > *; row:false">
                 <ul class="uk-slideshow-items">
                     <li>
-                        <img src="./assets/img/img-1.jpg" alt="" uk-cover>
+                        <img src="./assets/img/img-green.jpg" alt="" uk-cover>
                     </li>
                 </ul>
                 <div class="slide-navigation">
                     <div
-                        class="uk-thumbnav uk-flex-middle uk-text-center uk-child-width-1-2@m uk-height-1-1 uk-flex flex-wrap">
+                        class="uk-thumbnav uk-flex-middle uk-text-center uk-child-width-1-2@m  uk-flex flex-wrap">
                         <div
                             class="uk-box-shadow-hover-large a-box uk-box-shadow-small uk-flex-middle uk-flex-center uk-flex height-49%">
-                            <a href="http://15.188.63.156/login" target="_blank">
+                            <a href="https://plateaustatebpp.com/ocds" target="_blank" style="padding: 5px">
+                                <!--<a href="http://portal.plateaustatebpp.com" target="_blank">-->
                                 <img src="./assets/img/eproc.png" alt="">
                                 <span class="uk-width-1-1@m d-block">E-Procurement</span>
                             </a>
                         </div>
-                        <div
+                       
+
+ 
+   <div
                             class="uk-box-shadow-hover-large a-box uk-box-shadow-small uk-flex-middle uk-flex-center uk-flex height-49%">
-                            <a href="https://financedm.herokuapp.com/" target="_blank">
+                            <a href="https://egov.plateaustate.gov.ng/" target="_blank" style="padding: 5px">
+                                <!--<a href="http://portal.plateaustatebpp.com" target="_blank">-->
+                                <img src="./assets/img/egov-logo.png" alt="">
+                                <span class="uk-width-1-1@m d-block">My Platea State-Online Citizens Portal</span>
+                            </a>
+                        </div>
+                                            <div
+                            class="uk-box-shadow-hover-large a-box uk-box-shadow-small uk-flex-middle uk-flex-center uk-flex height-49%">
+                            <a href="http://plateaudmo.com.ng/" target="_blank" style="padding: 5px">
                                 <img src="./assets/img/debt.png" alt="">
                                 <span class="uk-width-1-1@m d-block"> Debt Management portal</span>
                             </a>
                         </div>
                         <div
                             class="uk-box-shadow-hover-large a-box uk-box-shadow-small uk-flex-middle uk-flex-center uk-flex height-49%">
-                            <a href="assets/documents/2019/tourism policy completed file.pdf" target="_blank">
+                            <a href="assets/documents/2019/tourism policy completed file.pdf" target="_blank" style="padding: 5px">
                                 <img src="./assets/img/tourism.png" alt="">
-                                <span class="uk-width-1-1@m d-block">Tourism Policy</span></a></div>
+                                <span class="uk-width-1-1@m d-block">Tourism Policy</span>
+                            </a>
+                        </div>
+                        
                         <div
                             class="uk-box-shadow-hover-large a-box uk-box-shadow-small uk-flex-middle uk-flex-center uk-flex height-49%">
-                            <a href="https://plug-storage.s3.eu-west-3.amazonaws.com/20190828+-+Plateau+State+Strategy+-+Final.pdf">
+                            <a href="http://plateaudatadump.com.ng/pdf_files/20190828%20-%20Plateau%20State%20Strategy%20-%20Final.pdf" style="padding: 5px" target="_blank">
                                 <img src="./assets/img/strt-debt.png" alt="">
                                 <span class="uk-width-1-1@m d-block">Strategic Development Plan</span>
-                            </a></div>
+                            </a>
+                        </div>
+                        <div
+                            class="uk-box-shadow-hover-large a-box uk-box-shadow-small uk-flex-middle uk-flex-center uk-flex height-49%">
+                            <a href="https://piras.psirs.gov.ng" target="_blank">
+                                <img src="./assets/img/paytax.png" alt="" height="20px">
+                            </a>
+                        </div>
+                        <div
+                            class="uk-box-shadow-hover-large a-box uk-box-shadow-small uk-flex-middle uk-flex-center uk-flex height-49%" style="padding: 10px">
+                            <a href="" target="_blank">
+                                <img src="./assets/img/invest.png" alt="">
+                                <span class="uk-width-1-1@m d-block">Investing in Plateau</span>
+                            </a>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -266,6 +309,8 @@
         </div>
       </div>
     </div>
+    
+    
 </section>
 
 <section class="policy">
@@ -280,7 +325,7 @@
 
         <a class="uk-inline" uk-toggle="cls: active; mode: hover;" href="{{ route('fivepoints.peacesecurity') }}">
             <div>
-                <img src="./assets/img/pol-2.jpg" alt="">
+                <img src="./assets/img/piyo-1.jpg" alt="">
                 <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-flex uk-flex-middle">
                     <h1>1</h1>
                     <p>Peace, Security & Good Governance</p>
@@ -307,7 +352,24 @@
             </div>
         </a>
     </div>
+    
+    
+    
+    
+    
+   
+    
+
+</div>
+
 </section>
+
+
+   
+    
+   
+    
+    
 <section class="news--n--events uk-grid-collapse" uk-grid uk-height-match="target: > div">
     <div class="img--holder uk-width-2-5@m">
         <h3 class="uk-margin-remove uk-padding-small">The Weather in Jos This Week</h3>
@@ -342,6 +404,11 @@
         </div>
         <img class="centeredImg" src="./assets/img/platStet.png" alt="">
     </div>
+    
+    
+    
+    
+
     <div class="uk-width-3-5@m news uk-padding-small">
         <h2 class="n--title uk-margin-remove">News & Events</h2>
         <p class="title--base uk-margin-remove">Find out what's going on & stay up to date</p>
@@ -354,9 +421,9 @@
                     <img src="{{$new->news_image}}" alt="{!! str_word_count($new->title) > 20 ? substr($new->title,0,20) : $new->title !!} ...">
                   </div>
                   <div class="card-base-content uk-card-hover uk-text-right">
-                    <time datetime="{{ \Carbon\Carbon::parse($new->published_date)->format('j F, Y') }}" class="date uk-text-small uk-text-right">{{ \Carbon\Carbon::parse($new->published_date)->format('j F, Y') }}</time>
+                    <time class="uk-text-small uk-text-right nani">{{ \Carbon\Carbon::parse($new->created_at)->format('l, F j, Y') }}</time>
                       <div class="uk-text-left">
-                          <h4 class="uk-margin-remove card-title uk-text-bold">{!! str_word_count($new->title) > 20 ? substr($new->title,0,20) : $new->title !!} ...</h4>
+                          <h4 class="uk-margin-remove card-title uk-text-bold nani">{!! str_word_count($new->title) > 10 ? substr($new->title,0, 60) : $new->title !!} ...</h4>
                       </div>
                   </div>
                 </a>
@@ -366,16 +433,32 @@
         @else
             <h3 class="uk-card-title uk-margin-remove-bottom">No News/Events Posted yet.</h3>
         @endif
-        @if(count($news) > 0)
+        @if(count($news) > 3)
             <a href="{{ route('news.allNews') }}" class="uk-button uk-margin-medium-top uk-button-default">View More</a>
         @endif
     </div>
     <img class="mobile-centered-img" src="./assets/img/platStet.png" alt="">
 </section>
 @include('layouts.footer')
-<script id="gs-sdk" src='//www.buildquickbots.com/botwidget/v3/demo/static/js/sdk.js?v=3'
+<!-- <script id="gs-sdk" src='//www.buildquickbots.com/botwidget/v3/demo/static/js/sdk.js?v=3'
         key="cab5c6b8-cac8-4844-acdb-03cfce81bb53"></script>
+-->
 
+
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/63ad817bc2f1ac1e202ab45c/1gles3jmb';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
 <script src="assets/js/app.js"></script>
 
 </body>

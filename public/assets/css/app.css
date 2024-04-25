@@ -4836,7 +4836,7 @@ select.uk-form-width-xsmall {
 /* Hover modifier
  ========================================================================== */
 .uk-card-hover:not(.uk-card-default):not(.uk-card-primary):not(.uk-card-secondary):hover {
-  background: #fff;
+  background: #22F511;
   -webkit-box-shadow: 0 14px 25px rgba(0, 0, 0, 0.16);
           box-shadow: 0 14px 25px rgba(0, 0, 0, 0.16); }
 
@@ -15491,7 +15491,8 @@ html, .body {
       display: none; } }
   .pointIMG img {
     height: 100px;
-    margin-bottom: 20px; }
+      border:3px solid red;
+    margin-bottom: 0px; }
 
 .policy.hide-pointIMG .pointIMG {
   visibility: hidden;

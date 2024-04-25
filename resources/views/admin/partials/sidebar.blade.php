@@ -60,7 +60,12 @@
                     <ul class="pcoded-submenu">
                         <li class=" pcoded-hasmenu">
                             <a href="{{ route('news.index')}}" class="waves-effect waves-dark">
-                                <span class="pcoded-mtext">Create News</span>
+                                <span class="pcoded-mtext">All News</span>
+                            </a>
+                        </li>
+                        <li class=" pcoded-hasmenu">
+                            <a href="{{ route('news.add')}}" class="waves-effect waves-dark">
+                                <span class="pcoded-mtext">Add News</span>
                             </a>
                         </li>
                     
@@ -96,6 +101,7 @@
                     
                     </ul>
                 </li>
+                @if(auth()->user()->email  === 'superadmin@pictda.com')
                 <li class="pcoded-hasmenu">
                     <a href="#" class="waves-effect waves-dark">
                         <span class="pcoded-micon"><i class="feather icon-sidebar"></i></span>
@@ -111,6 +117,7 @@
                     
                     </ul>
                 </li>
+                @endif
             </ul>
         </div>
     </div>

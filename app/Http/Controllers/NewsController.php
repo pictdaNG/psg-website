@@ -67,7 +67,7 @@ class NewsController extends Controller
         $this->validate($request, [
           'title' => 'required',
           'body' => 'required',
-          'news_image' => 'image|required|mimes:jpeg,png,jpg,gif,svg|max:2048',
+          //'news_image' => 'image|required|mimes:jpeg,png,jpg,gif,svg|max:2048',
           'tags' => 'required',
         ]);
           $news = $this->repos->create($request);		

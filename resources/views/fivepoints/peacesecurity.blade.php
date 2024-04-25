@@ -16,7 +16,7 @@
     <div class="content uk-width-1-2@m">        
 
         <div class="uk-child-width-1-1@m uk-grid-small" uk-grid>
-            <img class="object-fit" src="{{ URL::asset('/assets/img/pol-2.jpg') }}" alt="" />
+            <img class="object-fit" src="{{ URL::asset('/assets/img/mutfwang1.jpeg') }}" alt="" />
         </div>
         
         <p>

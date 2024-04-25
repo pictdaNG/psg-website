@@ -39,6 +39,8 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
 
+<meta name="norton-safeweb-site-verification" content="8ekqmks5j1b4rype-xkq674pn0z4prhcewxg88rqdln-cjue0n5ac7kg6j-znal5l0qo67xqlkg7un3arr7k8arijsncxz4jj8rcthdzbfnnw403qez1tn3wrdpqbm42" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     @include('meta::manager')
@@ -192,7 +194,7 @@
             </a> -->
             <a class="uk-inline" uk-toggle="cls: active; mode: hover;" href="{{ route('fivepoints.peacesecurity') }}">
                 <div>
-                    <img src="{{ URL::asset('./assets/img/pol-2.jpg') }}" alt="">
+                    <img src="{{ URL::asset('./assets/img/img-green-2.jpg') }}" alt="">
                     <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-flex uk-flex-middle">
                         <h1>1</h1>
                         <p>Peace, Security &  Good Governance</p>
@@ -229,9 +231,23 @@
         </div>
     </section>
     @include('layouts.footer')
-    <script id="gs-sdk" src='//www.buildquickbots.com/botwidget/v3/demo/static/js/sdk.js?v=3' key="cab5c6b8-cac8-4844-acdb-03cfce81bb53" ></script>
+    <!--<script id="gs-sdk" src='//www.buildquickbots.com/botwidget/v3/demo/static/js/sdk.js?v=3' key="cab5c6b8-cac8-4844-acdb-03cfce81bb53" ></script>-->
     <script src="{{ URL::asset('assets/js/app.js') }}"></script>
     <!-- <script src="{{ asset('js/share.js') }}"></script> -->
     @yield('scripts')
+    
+    <!--Start of Tawk.to Script-->
+<!-- <script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/63ad817bc2f1ac1e202ab45c/1gles3jmb';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script> -->
+<!--End of Tawk.to Script-->
 </body>
 </html>

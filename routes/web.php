@@ -25,11 +25,19 @@ Route::get('/', 'HomeController@index')->name('home');
 
 
 Route::group(['prefix' => 'contact-us'], function() {
-  Route::get('/', function() {
-    return view('contact.contact');
-  })->name('contact');
+  Route::get('/', 'ContactController@getContactUs')->name('contact');
 
-  Route::post('/contact-us', 'ContactController@postContactUs')->name('send_contact_us');
+  Route::post('/contact', 'ContactController@postContactUs')->name('send_contact_us');
+
+});
+
+
+Route::group(['prefix' => 'feed-back'], function() {
+
+  Route::get('/', 'ContactController@getFeedBack')->name('get_feed_back');
+
+
+  Route::post('/feed', 'ContactController@postFeedBack')->name('send_feed_back');
 });
 
 
@@ -46,11 +54,73 @@ Route::group(['prefix' => 'budget'], function() {
   })->name('citizens2019approved');
 });
 
+
+Route::group(['prefix' => 'debt'], function() {
+  Route::get('/', 'DocumentController@debtReport')->name('debt');
+});
+
+
+Route::group(['prefix' => 'saber'], function() {
+
+  Route::get('/', function() {
+    return view('saber.saber-dli');
+  })->name('saber-dli.get');
+});
+
+Route::group(['prefix' => 'plateau-laws'], function() {
+
+  Route::get('/', function() {
+    return view('laws.plateau-laws');
+  })->name('law-get-plateau-laws');
+});
+
+Route::group(['prefix' => 'grm'], function() {
+
+  Route::get('/', function() {
+    return view('grm.grm-form');
+  })->name('grm.get');
+  
+   Route::get('/business-premises', function() {
+    return view('grm.business-premises');
+  })->name('grm.get-business-premises');
+  
+   Route::get('/internal-revenue-service', function() {
+    return view('grm.revenue-service');
+  })->name('grm.get-revenue-service');
+  
+   Route::get('/signage', function() {
+    return view('grm.signage');
+  })->name('grm.get-signage');
+  
+   Route::get('/vehicle-inspection-office', function() {
+    return view('grm.vio');
+  })->name('grm.get-vio');
+  
+   Route::get('/trade-export', function() {
+    return view('grm.trade-export');
+  })->name('grm.get');
+  
+   Route::get('/water-board', function() {
+    return view('grm.water-board');
+  })->name('grm.get-water-board');
+  
+   Route::get('/crisra', function() {
+    return view('grm.crisra');
+  })->name('grm.get-crisra');
+});
+
+Route::group(['prefix' => 'infrastructure'], function() {
+  Route::get('/', 'DocumentController@infrastrutureReport')->name('infrastructure');
+});
+
 Route::group(['prefix' => 'feedback'], function() {
   Route::get('/', 'PagesController@feedback')->name('feedback');
 });
 
 Route::group(['prefix' => 'download'], function() {
+    Route::get('/', function() {
+        return view('pages.auditReport');
+    })->name('all-downloads');
   Route::get('/download-quarterly-reports', 'DocumentController@allQuaterlyReports')->name('quaterlyreport');
 });
 
@@ -68,6 +138,76 @@ Route::group(['prefix' => 'plateau'], function() {
   Route::get('/at-a-glance', function () {
     return view('plateau.glance');
   })->name('glance');
+
+
+Route::get('/business-incentives', function () {
+    return view('plateau.incentives');
+  })->name('incentives');
+  
+
+Route::get('/easesaber', function () {
+    return view('plateau.ease');
+  })->name('easesaber');
+  
+ Route::get('/pit-incentives', function () {
+    return view('plateau.pitincentives');
+  })->name('pitincentives');
+  
+  Route::get('/cit-incentives', function () {
+    return view('plateau.citincentives');
+  })->name('citincentives');
+  
+   Route::get('/approvals', function () {
+    return view('plateau.approvals');
+  })->name('approvals');
+  
+  
+  Route::get('/infrapermit', function () {
+    return view('plateau.infrapermit');
+  })->name('infrapermit');
+  
+  
+  Route::get('/eiapermit', function () {
+    return view('plateau.eiapermit');
+  })->name('eiapermit');
+  
+  
+ Route::get('/socialpermit', function () {
+    return view('plateau.socialpermit');
+  })->name('socialpermit');
+  
+
+  Route::get('/billboard', function () {
+    return view('plateau.billboard');
+  })->name('billboard');
+  
+  Route::get('/planpermit', function () {
+    return view('plateau.planpermit');
+  })->name('planpermit');
+  Route::get('/businesses', function () {
+    return view('plateau.business');
+  })->name('businesses');
+  Route::get('/healthesta', function () {
+    return view('plateau.healthesta');
+  })->name('healthesta');
+  Route::get('/vehicleinsp', function () {
+    return view('plateau.vehicleinsp');
+  })->name('vehicleinsp');
+ 
+  
+  Route::get('/gbf-incentives', function () {
+    return view('plateau.gbfincentives');
+  })->name('gbfincentives');
+  Route::get('/lbf-incentives', function () {
+    return view('plateau.lbfincentives');
+  })->name('lbfincentives');
+  Route::get('/land-incentives', function () {
+    return view('plateau.landincentives');
+  })->name('landincentives');
+  Route::get('/ts-incentives', function () {
+    return view('plateau.tsincentives');
+  })->name('tsincentives');
+  
 
   Route::get('/endowments', function () {
     return view('plateau.endowment');
@@ -203,6 +343,7 @@ Route::group(['prefix' => 'commerce'], function() {
     return view('commerce.tax');
   })->name('taxation');
 
+  
   Route::get('/natural-resources', function() {
     return view('commerce.naturalresources');
   })->name('resources');
@@ -212,7 +353,12 @@ Route::group(['prefix' => 'reports'], function() {
   Route::get('/audit-report', function() {
     return view('pages.auditReport');
   })->name('audit.report');
+  
+  Route::get('/accountreport', function() {
+    return view('pages.accountreport');
+  })->name('accountantgeneral.report');
 });
+    
 
 // PROJECTS ROUTE GROUP
 Route::group(['prefix' => 'projects'], function() {
@@ -281,6 +427,7 @@ Route::group(['prefix' => 'ministries'], function() {
   Route::get('/min-of-youth-development', function() {
     return view('mda.ministries.youth');
   })->name('min.youth');
+  
 });
 
 // DEPARTMENTS ROUTE
@@ -361,6 +508,10 @@ Route::group(['prefix' => 'boards'], function() {
   Route::get('plateau-local-gov-staff-pension-board', function() {
     return view('mda.boards.penshion');
   })->name('boards.pension');
+  
+//   Route::get('/ps-irs', function() {
+//     return view('ps.irs');
+//   })->name('psirs.docs');
 });
 
 // COMMISSION GROUP

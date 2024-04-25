@@ -34,6 +34,7 @@ class PagesController extends Controller
 
     public function show($slug) {
         $news = $this->repo->findBySlug($slug);
+        //dd($news);
         return view('news.news1')->with('new', $news);
     }
 
@@ -44,5 +45,9 @@ class PagesController extends Controller
 
     public function feedback() {
         return view('pages.feedback');
+    }
+    
+    public function downloads() {
+        return view('pages.download');
     }
 }

@@ -16,11 +16,26 @@ class EloquentNewsRepository implements NewsContract {
     $news->body =  $detail;  
     // $news->body = $request->body; 
  
-    if ($request->has('news_image')) {
-      $imageName = time().'.'.$request->news_image->getClientOriginalExtension();
-      $image = $request->file('news_image');
-      $t = Storage::disk('s3')->put($imageName, file_get_contents($image), 'public');
-      $news->news_image = Storage::disk('s3')->url($imageName); 
+    //if ($request->file('news_image')) {
+    //  $imageName = time().'.'.$request->news_image->getClientOriginalExtension();
+    //  $image = $request->file('news_image');
+    //  $t = Storage::disk('s3')->put($imageName, file_get_contents($image), //'public');
+   //   $news->news_image = Storage::disk('s3')->url($imageName); 
+   // }
+    
+    if($request->file('news_image')){  
+      $file = $request->file('news_image');
+      $filename = $file->getClientOriginalName();    
+
+      $name = $request->file('news_image')->getClientOriginalName();
+
+      $doc_to_upload = $request->file('news_image')->getRealPath();
+
+      \Cloudder::upload($doc_to_upload, null);
+      // \Cloudder::upload_large($doc_to_upload, null);
+
+      $uploaded = \Cloudder::getResult();  
+      $news->news_image = $uploaded['secure_url'];
     }
 
     $news->news_category = $request->news_category;
@@ -33,12 +48,17 @@ class EloquentNewsRepository implements NewsContract {
 
   // return all news category
   public function findAll() {
-    return News::latest()->get();
+    return News::with('user')->latest()->get();
   }
 
   public function getAll() {
     return News::latest()->paginate(3);
   }
+  
+   public function getAllFour() {
+    return News::orderBy('created_at','DESC')->take(4)->get();
+  }
+  
 
   // return a news category by ID
   public function findById($id) {

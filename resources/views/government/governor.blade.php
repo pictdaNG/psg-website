@@ -14,14 +14,15 @@
 
 @section('content')
     <div class="content uk-width-1-2@m">
-        <h2 class="bold">HON. SIMON BAKO LALONG</h2>
-        <p><strong>BIRTH:</strong><br /> Rt. Hon. Simon Bako Lalong, the quiet, gentle and unassuming personality, was born in Ajikamai Village, Shendam Local Government Area of Plateau State on Sunday 5th May 1963.</p>
+        <h2 class="bold">BARR. CALEB MANASSEH MUTFWANG</h2>
+
+        <!-- <p><strong>BIRTH:</strong><br /> Rt. Hon. Simon Bako Lalong, the quiet, gentle and unassuming personality, was born in Ajikamai Village, Shendam Local Government Area of Plateau State on Sunday 5th May 1963.</p> -->
 
         <div class="uk-child-width-1-1@m govImg uk-grid-small" uk-grid>
-            <img class="object-fit" src="{{ URL::asset('/assets/img/lalong-banner.jpg') }}" alt="">
+            <img class="object-fit" src="{{ URL::asset('/assets/img/mutfwang.jpeg') }}" alt="">
         </div>
 
-        <p><strong>EDUCATION:</strong><br /> He attended Roman Catholic Mission (RCM) Primary School, Shendam (1977); Government Secondary School Shendam (1982); School of Preliminary Studies Keffi (1986); Ahmadu Bello University, Zaria (1990); The Nigerian Law School Lagos (1991) and University of Jos (2006) and obtained the qualifications of Elementary School Certificate, GCE O’Level, IJMB A’ Level, Bachelor of Law (LL.B), Barrister at Law (BL) and Master in Law (LL.M) respectively.</p>
+        <!-- <p><strong>EDUCATION:</strong><br /> He attended Roman Catholic Mission (RCM) Primary School, Shendam (1977); Government Secondary School Shendam (1982); School of Preliminary Studies Keffi (1986); Ahmadu Bello University, Zaria (1990); The Nigerian Law School Lagos (1991) and University of Jos (2006) and obtained the qualifications of Elementary School Certificate, GCE O’Level, IJMB A’ Level, Bachelor of Law (LL.B), Barrister at Law (BL) and Master in Law (LL.M) respectively.</p>
         
         <p><strong>PROFESSIONAL AND PUBLIC SERVICE EXPERIENCES:</strong> <br /> After the mandatory National Youth Service Corp (NYSC) in the Legal Unit of FCDA Abuja, he started professional career in 1992 with the prestigious T- Obot & Co. Legal Practitioners, Jos. He also Worked with Victor Fomwul & Co. Jos from 1997-1999 as a Managing Partner, before establishing his Firm, Simon B. Lalong & Co. Legal Practitioners as the Principal Partner. He held several positions of responsibility, which included Assistant Secretary, Nigeria Bar Association, Plateau State Chapter from 1992 to 1994 and the National President of Goemai Youth Movement that same period.</p>
         
@@ -75,7 +76,16 @@
         <p>All these efforts have further boosted the image and integrity of the government within the context of its 3-E- Dimensional Strategies of Employment, Empowerment and Engagement in the 17 LGAs.</p>
         <p>On succinct note of personal integrity, in all his services to humanity, Governor Lalong has been religiously guided by fear of God, without discrimination of religious sects. He has the Vincentian spirit as a committed member of St. Vincent de Paul; National Patron of Pious Union of St. Rita of Cascia, Nigeria, amongst others, which are embodiment of humility, patience, and kindness and indeed essential ingredients in service to humanity. He is a recipient of many national and international awards, including Paul Harris Fellow of the Rotary Club; Doctorate Degree in Law (Honoris Causa) from Achievers University (AU), Owo, Ondo State and Doctorate Degree (Honoris Causa) in Political Science and Social Development, Institute Superieur de Management (ISM) Adonai University, (Affiliate of The American University of Leadership, Florida, USA), Cotonou, Republic of Benin; Honourary Fellow of the Nigeria Academy of Education; Honourary Fellow of the College of Animal Health and Production Technology  (FCAHT), Vom, amongst others.</p>
         <p><strong>HOBBIES:</strong> His Excellency, Governor Lalong is a passionate Golfer (Two-time Captain of Rayfield Golf Club; Footballer and Active Rotarian. He is married to Regina Lalong and blessed with three Children: Stephanie (Daughter), Naanshak (Son) and Tiopsan (Daughter). </p>
+        <br /> 
         
-        <a class="uk-button uk-button-default" style="background: #0c5738; color: #fff;" href="{{ URL::asset('assets/documents/CV-LALONG-2020.pdf') }}">Download CV</a>
+             <a href="https://twitter.com/LalongBako">
+            <img src="https://cdn.cms-twdigitalassets.com/content/dam/help-twitter/twitter_logo_blue.png.twimg.768.png" alt="" width="50" height="50"> Follow Governor Lalong on Twitter
+            </a>
+
+               <br />
+ 
+        <a class="uk-button uk-button-default" style="background: #0c5738; color: #fff;" href="{{ URL::asset('assets/documents/CV-LALONG-2020.pdf') }}">Download CV</a> -->
+        
+        
     </div>
 @endsection
