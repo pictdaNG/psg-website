@@ -1,4 +1,4 @@
-@extends('layouts.app')  
+@extends('layouts.app')
 
 @section('title')
     The Executive| Plateau State Government Website
@@ -23,10 +23,10 @@
 
         <h3>THE GOVERNOR</h3>
 
-        <p>The Governor is both the head of government and the Chief Security officer of the State. Under Article 5 Part II, second schedule of the Constitution, the executive powers is vested in the Governor of the State and, may subject as to the provisions of any law made by the House of Assembly, be exercised by him or through the Deputy Governor and Commissioners of the Government of the State or officers in the Public Service of the State. Ministries, each led by an appointed member of the Governor's Cabinet carry out the day-to-day administration of the state government. The Governor also appoints the heads of more than 38 extra-ministerial agencies, departments, Boards, parastatals etc.</p>        
+        <p>The Governor is both the head of government and the Chief Security officer of the State. Under Article 5 Part II, second schedule of the Constitution, the executive powers is vested in the Governor of the State and, may subject as to the provisions of any law made by the House of Assembly, be exercised by him or through the Deputy Governor and Commissioners of the Government of the State or officers in the Public Service of the State. Ministries, each led by an appointed member of the Governor's Cabinet carry out the day-to-day administration of the state government. The Governor also appoints the heads of more than 38 extra-ministerial agencies, departments, Boards, parastatals etc.</p>
 
         <p>
-            Barr. Simon Lalong is the 17th Head of Government and the 5th elected Governor of Plateau State. . The Governor is limited to two four-year terms by the Constitution of the Federal Republic.  By tradition, the Governor and the First Family live in the Government House, also the location of the Office and the offices of the Deputy Governor and his senior staff. 
+            Barr. Simon Lalong is the 17th Head of Government and the 5th elected Governor of Plateau State. . The Governor is limited to two four-year terms by the Constitution of the Federal Republic.  By tradition, the Governor and the First Family live in the Government House, also the location of the Office and the offices of the Deputy Governor and his senior staff.
         </p>
 
         <h3>THE DEPUTY GOVERNOR</h3>
@@ -44,5 +44,6 @@
         <p>
             The Cabinet is an advisory body made up of the Commissioners of the State Ministries in Plateau State. Appointed by the Governor and confirmed by the House of Assembly, members of the Cabinet are the Governor's members of the State Executive Council. In addition to running the Ministries, the Commissioners represent the Governor at different fora as he mandates them. All the members of the Cabinet are Commissioner except for the Secretary to the State Government whose Office provides secretariat services and the Chief of Staff to the Governor who is also a member of cabinet and a few others who are in attendance as observers.
         </p>
+        #test
     </div>
 @endsection
