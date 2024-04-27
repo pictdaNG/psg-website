@@ -4,6 +4,7 @@ interface NewsContract {
   public function create($request);
   public function findAll();
   public function getAll();
+  public function getAllFour();
   public function findById($id);
   public function findBySlug($slug);
   public function update($request, $id);

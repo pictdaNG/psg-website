@@ -156,7 +156,7 @@
                             <td>Simon Bako Lalong</td>
                             <td>Governor </td>
                             <td>29 May 2015 </td>
-                            <td>      </td>
+                            <td>29 May 2023 </td>
                             <td>APC</td>
                         </tr>
                         </tbody>

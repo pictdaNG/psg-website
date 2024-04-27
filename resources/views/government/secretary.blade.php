@@ -14,11 +14,15 @@
 
 @section('content')
     <div class="content uk-width-1-2@m">
-        <h2 class="bold">PROFESSOR ATU ABOK DANLADI</h2>
+        <h2 class="bold">ARCH SAMUEL JATAU</h2>
+        <<!-- h2 class="bold"></h2>
         <div class="uk-child-width-1-1@m uk-grid-small" uk-grid>
             <img class="object-fit" src="{{ URL::asset('/assets/img/secretary.jpg') }}" alt="">
-        </div>
-        <p>
+        </div> -->
+
+        <h3>Loading .....</h3>
+        
+        <!-- <p>
             Professor Atu Abok Danladi, Ph.D. is currently the Director and Professor of Peace Education and Social Rehabilitation University of Abuja, Institute for Peace Studies and Social Rehabilitation.
         </p>
         <p>
@@ -50,6 +54,6 @@
         </p>
         <p>
             Prof. Atu is widely travelled, he is married and the union is blessed with four children.
-        </p>        
+        </p>         -->
     </div>
 @endsection

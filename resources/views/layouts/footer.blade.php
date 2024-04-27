@@ -34,7 +34,7 @@
 	<div class="footer-nav">
 	  <h5 class="footer-title">Jos City</h5>
 	  <p>
-		Jos is a city in the Middle Belt of Nigeria. The city has a population of about 900,000 residents based on the 2006 census. Popularly called "J-town"
+		Plateau State is the twelfth largest state of Nigeria, and is roughly located in the center of the country. It is geographically unique in Nigeria because its boundaries totally surround the Jos Plateau, having the Jos Plateau totally in its central and northern part. Its capital is Jos. Plateau State is celebrated as "The Home of Peace and Tourism". Plateau State gets its name from the Jos Plateau. It has a population of around 3.5 million people.
 	  </p>
 	</div>
 	<div class="footer-nav">
@@ -42,21 +42,24 @@
 		<ul class="uk-list">
 			<li><a href="{{ route('governor') }}">The Governor</a></li>
 			<li><a href="{{ route('executive') }}">The Executive</a></li>
-			<li><a href="#">Ministries, Departments & Agencies</a></li>
+			<li><a href="http://plateaudatadump.com.ng">Documents Repository</a></li>
 			<li><a href="#">Local Government Areas</a></li>
 			<li><a href="{{ route('investment') }}">Trade and Investments</a></li>
 			<li><a href="#">Citizen Services</a></li>
+			<li><a href="{{ route('all-downloads') }}">Other Downloads</a></li>
+			<li><a href="">Investments on Plateau</a></li>
 			<li><a href="http://webmail.plateaustate.gov.ng/login.php" target="_blank">Webmail</a></li>
+			
 		</ul>
 	</div>
 	<div class="subfooter">
 		<div class="wrapper">
-			<span>Developed & maintained by the Plateau State ICT Development Agency. © 2019</span>
+			<span>Developed & maintained by the Plateau State ICT Development Agency. © 2021</span>
 			<div class="uk-navbar-right">
 				<ul class="uk-navbar-nav uk-iconnav uk-light">
 					<li><a href="#" uk-icon="icon: google-plus"></a></li>
-					<li><a href="https://www.facebook.com/PLStateGovt/" uk-icon="icon: facebook"></a></li>
-					<li><a href="https://twitter.com/PlateauStateGov?s=09" uk-icon="icon: twitter"></a></li>
+					<li><a href="https://web.facebook.com/PLSGov" uk-icon="icon: facebook"></a></li>
+					<li><a href="https://twitter.com/PLSGov" uk-icon="icon: twitter"></a></li>
 					<li><a href="https://instagram.com/plsgovt?igshid=1w0ehvmgvssgt" uk-icon="icon: instagram"></a></li>
 				</ul>
 			</div>
@@ -259,17 +262,17 @@
 				</ul>
 			</li>
 			<li class="uk-parent">
-				<a href="#">Projects</a>
+				<a href="#">Documents</a>
 				<ul class="uk-nav-sub">
-					<li class="uk-active"><a href="{{ route('planned.project') }}">Planned</a></li>
-					<li><a href="{{ route('ongoing.project') }}">On Going</a></li>
-					<li><a href="{{ route('completed.project') }}">Completed</a></li>
+					<li><a href="{{ route('budget') }}">All Downloads</a></li>
+					<li><a href="{{ route('audit.report') }}">Auditor General's Desks</a></li>
 					<li><a href="{{ route('donor.project') }}">Donor Projects</a></li>
 				</ul>
 			</li>
 			<li class="uk-parent">
 				<a href="#">Commerce</a>
 				<ul class="uk-nav-sub">
+				    <li><a href="{{ route('easesaber') }}">Ease of Doing Business</a></li>
 					<li class="uk-active"><a href="{{ route('investment') }}">Investment Oppurtunities</a></li>
 					<li><a href="{{ route('business') }}">Doing Business in Plateau</a></li>
 					<li><a href="{{ route('taxation') }}">Tax and Taxation</a></li>

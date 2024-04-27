@@ -18,7 +18,9 @@ class HomeController extends Controller
         // $this->middleware('auth');
     }
     public function index(){
-        $news = $this->repo->getAll();
+        //dd("We are fixing some technical challenges. We would be back shortly");
+        $news = $this->repo->getAllFour();
+
         $posts = $this->repos->getAll();
         $sliders = $this->reposi->getAll();
         $users = User::all();

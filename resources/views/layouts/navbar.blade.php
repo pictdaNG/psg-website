@@ -101,7 +101,6 @@
                                       <li><a href="https://debtmanagement.plateaustate.gov.ng" target="_blank">Debt Management Department</a></li>
                                       <li><a href="{{ route('departments.printing') }}">Plateau Printing Press</a></li>
                                       <li><a href="{{ route('departments.agricmechanic') }}">Plateau Agricultural Mechanization Service</a></li>
-                                      <li><a href="{{ route('departments.mineraldev') }}">Plateau Mineral Development Company</a></li>
                                       <li><a href="{{ route('departments.afforestation') }}">Plateau State Afforestation Project</a></li>
                                       <!-- <li><a href="#">item a little longer</a></li>
                                       <li><a href="#">item a little longer</a></li>
@@ -138,7 +137,7 @@
                                           </a>
                                       </li>
                                       <li>
-                                          <a href="https://www.plbpp.plateaustate.gov.ng" target="_blank">
+                                          <a href="https://plateaustatebpp.com" target="_blank">
                                               Plateau State Bureau of Public Procurement
                                           </a>
                                       </li>
@@ -153,10 +152,26 @@
                                           </a>
                                       </li>
                                       <li>
+                                          <a href="https://pmdcltd.plateaustate.gov.ng">Plateau Mineral Development Company</a>
+                                        </li>
+                                      <li>
                                           <a href="{{ route('agencies.tourism') }}">
                                               Plateau State Tourism Corporation
                                           </a>
                                       </li>
+                                      <li>
+                                          <a href=" https://www.plateaupeacebuilding.org/">Plateau Peace Building Agency (PPBA)
+</a>
+                                        </li>
+                                      
+                                      
+                                     
+                                     <li>
+                                          <a href="https://plaschema.pl.gov.ng/">
+                                                Plateau State Contributory Healthcare Management Agency
+                                          </a>
+                                      </li>                                     
+                                      
                                       <li>
                                           <a href="{{ route('agencies.socialdev') }}">
                                               Plateau State Community Development Management Agency
@@ -250,29 +265,76 @@
               </ul>
             </div>
           </li>
+          
           <li>
-            <a href="#">Projects <span>Status & more</span></a>
+            <a href="#">Downloads<span>Media & Documents</span></a>
             <div class="uk-navbar-dropdown" uk-dropdown="animation: uk-animation-slide-right-small; duration: 300">
               <div class="uk-navbar-dropdown-nav">
                 <div>
                   <ul class="uk-nav uk-navbar-dropdown-nav">
-                    <li class="uk-active"><a href="{{ route('planned.project') }}">Planned</a></li>
-                    <li><a href="{{ route('ongoing.project') }}">On Going</a></li>
-                    <li><a href="{{ route('completed.project') }}">Completed</a></li>
-                    <li><a href="{{ route('donor.project') }}">Donor Projects</a></li>
+                    	<li><a href="{{ route('budget') }}">All Downloads</a></li>
+                      <li><a href="{{ route('debt') }}">Debt Mgt Reports</a></li><li><a href="{{ route('infrastructure') }}">PLS DLIs</a></li>
+
+					    <li><a href="{{ route('audit.report') }}">Auditor General's Desks</a></li>
                   </ul>
                 </div>
               </div>
             </div>
           </li>
+
+          <li>
+                <a href="#">GRM <span>Grievance Redress Mechanism</span></a>
+                <div class="uk-navbar-dropdown" uk-dropdown="animation: uk-animation-slide-right-small; duration: 300">
+                    <!--Multiple Dropdown-->
+                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li>
+                            <ul class="uk-nav navbar cf uk-navbar-dropdown-nav">
+                                <li class="uk-active"><a href="/grm/crisra">GRM for Infrastructure, Safety and Regulatory Agency</a></li>
+                                <li><a href="/grm/internal-revenue-service">GRM for Internal Revenue Service</a></li>
+                                <li><a href="/grm/signage">GRM for Signage and Advertisement Agency</a></li>
+                                <li>
+                                  <a href="/grm/vehicle-inspection-office">
+                                    GRM for Venicle Inspection Office
+                                  </a>
+                                </li>
+                                <li><a href="/grm/water-board">GRM for Plateau State Water Board</a></li>
+                                <li><a href="/grm/business-premises">GRM for Business Premises</a></li>
+                                <li><a href="/grm/trade-export">GRM for Trade Export</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+           <li>
+            <a href="/plateau-laws">Plateau State Laws<span></span></a>
+            
+          </li>
+          
+           <li>
+            <a href="/saber">SABER<span></span></a>
+            
+          </li>
+          
+          <li>
+            <a href="https://plagis.plateaustate.gov.ng">PLAGIS<span></span></a>
+            
+          </li>
+
+          
           <li>
             <a href="#">Commerce <span>Investments & more</span></a>
             <div class="uk-navbar-dropdown" uk-dropdown="animation: uk-animation-slide-right-small; duration: 300">
               <ul class="uk-nav uk-navbar-dropdown-nav">
-                <li class="uk-active"><a href="{{ route('investment') }}">Investment Oppurtunities</a></li>
+                <li><a href="{{ route('easesaber') }}">Ease of Doing Business</a></li>
                 <li><a href="{{ route('business') }}">Doing Business in Plateau</a></li>
+                <li class="uk-active"><a href="{{ route('investment') }}">Investment Oppurtunities</a></li>
                 <li><a href="{{ route('taxation') }}">Tax and Taxation</a></li>
                 <li><a href="{{ route('resources') }}">Natural Resources</a></li>
+                
+                
+                <li><a href="{{ route('incentives') }}">Investment And Business Incentives</a></li>
+                <li><a href="{{ route('approvals') }}">Permits, Approvals and Licenses</a></li>
                 <li>
                   <a href="assets/documents/2019/tourism policy completed file.pdf" target="_blank">
                     Plateau State Tourism Policy

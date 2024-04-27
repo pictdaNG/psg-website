@@ -14,4 +14,5 @@ class Post extends Model
         'category',
         'tags' 
 	];
+	
 }

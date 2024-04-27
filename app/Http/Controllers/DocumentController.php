@@ -82,6 +82,16 @@ class DocumentController extends Controller {
     $documents = DB::table('documents')->where('type', 'budget')->orderBy('created_at', 'desc')->get();
     return view('budget.index')->with('documents', $documents);
   }
+
+  public function debtReport() {
+    $documents = DB::table('documents')->where('type', 'budget')->orderBy('created_at', 'desc')->get();
+    return view('debt.index')->with('documents', $documents);
+  }
+
+  public function infrastrutureReport() {
+    $documents = DB::table('documents')->where('type', 'budget')->orderBy('created_at', 'desc')->get();
+    return view('infrastructure.index')->with('documents', $documents);
+  }
   
   public function edit($id) {
     //

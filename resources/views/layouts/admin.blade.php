@@ -5,6 +5,9 @@
     <meta charset="utf-8">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <meta content="width=device-width, initial-scale=1" name="viewport">
+    
+    <meta name="norton-safeweb-site-verification" content="8ekqmks5j1b4rype-xkq674pn0z4prhcewxg88rqdln-cjue0n5ac7kg6j-znal5l0qo67xqlkg7un3arr7k8arijsncxz4jj8rcthdzbfnnw403qez1tn3wrdpqbm42" />
+    
     <link href="favicon.png" rel="shortcut icon">
     <link href="apple-touch-icon.png" rel="apple-touch-icon">
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet" type="text/css">

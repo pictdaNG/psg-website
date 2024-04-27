@@ -8,6 +8,12 @@ use Mail;
 
 class ContactController extends Controller {
 
+
+  public function getContactUs(){
+
+    return view('contact.contact-us');
+  }
+
   public function postContactUs(Request $request) {
           
     // $this->validate($request, [
@@ -19,12 +25,12 @@ class ContactController extends Controller {
 
         // dd($request->all());
 
-    $data = array(
+      $data = array(
       'username' => $request->username,
       'email' => $request->email,
       'subject' => $request->subject,
       'phone' => $request->phone,
-      'bodyMessage' => $request->bodyMessage,
+      'bodyMessage' => $request->bodyMessage
     );
 
     // dd($data);
@@ -43,5 +49,31 @@ class ContactController extends Controller {
     Session::flash('success', 'Message Sent Successfully. Someone will contact you soon via Email.');
 
     return redirect()->back()->with($notification);
+  
+  }
+
+
+  public function getFeedBack(){
+
+
+    return view('contact.feed-back-form');
+  }
+
+  public function postFeedBack(Request $request){
+
+    $this->validate($request, [
+
+    'fname' => 'required',
+    'email' => 'required',
+    'phone'=>'required',
+    'mda' => 'required',
+    'bodyMessage' => 'required'
+
+    ]);
+
+
+
+    return back()->with('success', 'Message Sent Successfully. Someone will contact you soon via Email');
+    
   }
 }

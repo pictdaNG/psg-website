@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'host' => env('MAIL_HOST', 'smtp.sendgrid.net'),
+    'host' => env('MAIL_HOST', 'mail.plateaustate.gov.ng'),
 
     /*
     |--------------------------------------------------------------------------
@@ -42,7 +42,7 @@ return [
     |
     */
 
-    'port' => env('MAIL_PORT', 587),
+    'port' => env('MAIL_PORT', 465),
 
     /*
     |--------------------------------------------------------------------------
@@ -56,7 +56,7 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'no_reply@plateaustate.gov.ng'),
+        'address' => env('MAIL_FROM_ADDRESS', 'feedback@plateaustate.gov.ng'),
         'name' => env('MAIL_FROM_NAME', 'Plateau State Government'),
     ],
 
@@ -71,7 +71,7 @@ return [
     |
     */
 
-    'encryption' => env('MAIL_ENCRYPTION', 'tls'),
+    'encryption' => env('MAIL_ENCRYPTION', 'tsl'),
 
     /*
     |--------------------------------------------------------------------------
@@ -84,9 +84,9 @@ return [
     |
     */
 
-    'username' => env('MAIL_USERNAME', 'apikey'),
+    'username' => env('MAIL_USERNAME', 'feedback@plateaustate.gov.ng'),
 
-    'password' => env('MAIL_PASSWORD'),
+    'password' => env('Pictd@14?~'),
 
     /*
     |--------------------------------------------------------------------------

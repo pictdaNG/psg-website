@@ -37,6 +37,106 @@
                 <!-- <td>{{ $document->created_at }}</td> -->
                 </tr>
             @endforeach
+ 
+                <tr>
+					<td>
+						<a href="https://plug-storage.s3.amazonaws.com/PLATEAU_STATE_THIRD_QUARTER_DEVIATION_REPORT_JULY_TO_SEPT_2020.pdf">
+							Plateau State 3RD Quater Deviation Report July - Sept 2020
+						</a>
+					</td>
+                </tr>
+                               <tr>
+					<td>
+						<a href="https://plug-storage.s3.amazonaws.com/PLATEAU_STATE_SECOND_QUARTER_DEVIATION_REPORT_APRIL_TO_JUNE_2020.pdf">
+							Plateau State 2nd quarter deviation report April to June 2020
+						</a>
+					</td>
+                </tr>
+                               <tr>
+					<td>
+						<a href="https://plug-storage.s3.amazonaws.com/PLATEAU_STATE_FOURTH_QUARTER_DEVIATION_REPORT_OCT_TO_DEC_2020.pdf">
+							Plateau State 4th quarter deviation report October to December 2020
+						</a>
+					</td>
+                </tr>
+                               <tr>
+					<td>
+						<a href="https://plug-storage.s3.amazonaws.com/PLATEAU_STATE_4TH_QUARTER_BUDGET_MPLEMENTATION_REPORT_OCTOBER_TO_DECEMBER_2020.xlsx">
+							Plateau State 4th Quarter Budget Implementation report October to December 2020 (xlsl)
+						</a>
+					</td>
+                </tr>
+                               <tr>
+					<td>
+						<a href="https://plug-storage.s3.amazonaws.com/PLATEAU_STATE_4TH_QUARTER_BUDGET_IMPLEMENTATION_REPORT_OCTOBER_TO_DECEMBER_2020.pdf
+">
+							Plateau State 4th Quarter Budget Implementation Report October to December 2020 (pdf)
+						</a>
+					</td>
+                </tr>
+                
+                
+   <tr>
+					<td>
+						<a href="https://plug-storage.s3.amazonaws.com/PLATEAU_STAT_%20FIRST_SECOND_THIRD_AND_FOURTH_QUARTER_DEVIATION_EXCEL_REPORTS_JANUARY_TO_DECEMBER_2020.xlsx
+">
+							Plateau State First, Second, Third and Fourth Quarter Deviation Reports January - December 2020 (xlsx)
+						</a>
+					</td>
+                </tr>             
+                
+                
+                
+                               <tr>
+					<td>
+						<a href="https://plug-storage.s3.amazonaws.com/PLATEAU_STAT_%20FIRST_SECOND_THIRD_AND_FOURTH_QUARTER_DEVIATION_EXCEL_REPORTS_JANUARY_TO_DECEMBER_2020.xlsx">
+							Plateau State First Second Third and Fourth Quarter Deviation Excel Reports January-December 2020 (xlsx)
+						</a>
+					</td>
+                </tr>
+                               <tr>
+					<td>
+						<a href="https://plug-storage.s3.amazonaws.com/EXECUTIVE_SUMMARY_FOURTH_QUARTER_OCTOMBER_TO_DECEMBER_2020.docx">
+							Executive Summary Fourth Quarter October - December 2020
+						</a>
+					</td>
+                </tr>
+             
+                <tr>
+					<td>
+						<a href="https://plug-storage.s3.amazonaws.com/PLATEAU%20STATE%20THIRD%20QUARTER%20REPORT%20JULY%20TO%20SEPTEMBER%202020.xlsx">
+							Plateau State 3RD Quater Report July - Sept 2020
+						</a>
+					</td>
+                </tr>
+                <tr>
+					<td>
+						<a href="https://plug-storage.s3.amazonaws.com/PLATEAU_STATE_THIRD_QUARTER_REPORT_JULY_TO_SEPTEMBER_2020.pdf">
+							Plateau State Third Quater Report July - Sept 2020
+						</a>
+					</td>
+                </tr>
+                <tr>
+					<td>
+						<a href="https://plug-storage.s3.amazonaws.com/EXECUTIVE%20SUMMARY%20THIRD%20QUARTER%20JULY%20TO%20SEPTEMBER%202020.docx">
+							Executive Summary 3RD Quater July - Sept 2020
+						</a>
+					</td>
+				</tr>
+                <tr>
+					<td>
+						<a href="https://plug-storage.s3.amazonaws.com/SECOND_QUARTER_BUDGET_REPORT_APRIL_JUNE_2020.pdf">
+							2020 Second Quarter Budget Report April - Jun
+						</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="https://plug-storage.s3.amazonaws.com/ADDENDUM_TO_2020_FIRST_QUARTER_BUDGET_SUMMARY_REPORT_JANUARY_TO_MARCH.pdf">
+							2020 First Quarter Budget Summary Report Jan - Mar 
+						</a>
+					</td>
+				</tr>
             <tr>
                 <td>
                     <a href="https://plug-storage.s3.amazonaws.com/FORTH_QUARTER_REVENUE_REPORT_2019.pdf">

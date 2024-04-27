@@ -102,6 +102,7 @@
 														<td><img src="{{$new->news_image}}" width="50px" heigth="50x" alt="heloo"></td>              
 														<td>{{ $new->tags }}</td>             
 														<!-- <td>{{ $new->slug }}</td>   -->
+
 														<td className="text-right">
 															<button class="btn btn-info btn-sm" data-toggle="modal" data-target="#editModal{{ $new->slug }}">
 																<span class="glyphicon glyphicon-edit"></span> Edit
@@ -112,6 +113,7 @@
 															</button>
 															</a>
 														</td>
+
 													</tr>
 													@endforeach
 													@else

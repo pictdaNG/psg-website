@@ -3,6 +3,7 @@ namespace App;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Spatie\Permission\Traits\HasRoles;
 
 class User extends Authenticatable
@@ -15,13 +16,13 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'first_name', 
+        'name', 
         'password',
-        'username',
+        'email',
         // 'user_role',
         'slug',
     ];
-    protected $loginNames = ['email', 'username'];
+    protected $loginNames = ['email', 'name'];
     /**
      *
      * @var array
@@ -39,5 +40,10 @@ class User extends Authenticatable
     ];
     public static function byEmail($email) {
         return static::whereEmail($email)->first();
+    }
+    
+    public  function news(): HasMany
+    {
+        return $this->hasMany(News::class);
     }
 }

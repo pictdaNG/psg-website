@@ -73,9 +73,30 @@
       </ul>
     </p>
     
+        <h4>PLATEAU STATE INTERNAL REVENUE SERVICE DOCUMENTS</h4>
+        <table class="uk-table uk-table-hover uk-table-divider>
+            <tbody>
+                <tr>
+                
+                    <td>
+                        <a href="https://plug-storage.s3.eu-west-3.amazonaws.com/psirs_tax_law.pdf"><h6>PSIRS Tax Law</h6></a>
+                        <a href="https://plug-storage.s3.amazonaws.com/Business_and_individuals_that_have_not_filed_annual_tax_return.pdf"><h6>Business & individuals That Have Not Filed Annual Tax Return</h6></a>
+                        <a href="https://plug-storage.s3.amazonaws.com/Business_and_individuals_that_have_not_filed_annual_returns.pdf><h6>Business & individuals That Have Not Filed Annual Returns</h6></a>
+                        <a href="https://plug-storage.s3.amazonaws.com/Business_Individual_not_remitted_tax_outstanding_Tax_Liabilitiy.pdf"><h6>Business Individual Not Remitted Tax Outstanding Tax Liability</h6></a>
+                        <a href="https://plug-storage.s3.amazonaws.com/Business_and_individual_that_have_not_remitted_email.pdf"><h6>Business & Individual That Have Not Remitted Email</h6></a>
+                        <a href="https://plug-storage.s3.amazonaws.com/All_PAYE_organisations_that_have_not_filed_annual_tax_returns.pdf"><h6>All PAYE Organisations That Have Not Filed Annual Tax Returns</h6></a>
+                        <a href="https://plug-storage.s3.amazonaws.com/All_PAYE_organisation_with_payment_up_to_Date_SMS.pdf"><h6>All PAYE Organisation With Payment Up To Date SMS</h6></a>
+                        <a href="https://plug-storage.s3.amazonaws.com/All_PAYE_organisation_with_partial_payment.pdf"><h6>All PAYE Organisation With Partial Payment</h6></a>
+                        <a href="https://plug-storage.s3.amazonaws.com/All_PAYE_organisation_with_partial_payment_email.pdf"><h6>All PAYE Organisation With Partial Payment Email</h6></a>
+                        <a href="https://plug-storage.s3.amazonaws.com/All_PAYE_organisation_up_to_date_payment.pdf"><h6>All PAYE Organisation Up To Date Payment</h6></a>
+                        <a href="https://plug-storage.s3.amazonaws.com/All_PAYE_organisation_that_have_filed_annual_returns_and_assessment.pdf"><h6>All PAYE Organisation That Have Filed Annual Returns & Assessment</h6></a>
+                        <a href="https://plug-storage.s3.amazonaws.com/All_PAYE_organisation_that_have_filed_and_annual_returns.pdf"><h6>All PAYE Organisation That Have Filed & Annual Returns</h6></a>
+                        <a href="https://plug-storage.s3.amazonaws.com/All_PAYE_Organisation_that_have_not_filed_Annual_tax_returns.pdf"><h6>All PAYE Organisation That Have Not Filed Annual Tax Returns</h6></a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+      
+    </div>
     
-        <a href="https://plug-storage.s3.eu-west-3.amazonaws.com/psirs_tax_law.pdf"><h4>PSIRS Tax Law</h4></a>
-    
-    
-  </div>
 @endsection
