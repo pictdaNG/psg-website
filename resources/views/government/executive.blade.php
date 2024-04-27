@@ -27,6 +27,7 @@
 
         <p>
             The Governor is limited to two four-year terms by the Constitution of the Federal Republic.  By tradition, the Governor and the First Family live in the Government House, also the location of the Office and the offices of the Deputy Governor and his senior staff.
+
         </p>
 
         <h3>THE DEPUTY GOVERNOR</h3>
@@ -44,5 +45,6 @@
         <p>
             The Cabinet is an advisory body made up of the Commissioners of the State Ministries in Plateau State. Appointed by the Governor and confirmed by the House of Assembly, members of the Cabinet are the Governor's members of the State Executive Council. In addition to running the Ministries, the Commissioners represent the Governor at different fora as he mandates them. All the members of the Cabinet are Commissioner except for the Secretary to the State Government whose Office provides secretariat services and the Chief of Staff to the Governor who is also a member of cabinet and a few others who are in attendance as observers.
         </p>
+        #test
     </div>
 @endsection
