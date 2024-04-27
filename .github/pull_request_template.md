@@ -24,8 +24,6 @@ This PR [adds/removes/fixes/replaces] a [feature/bug/etc].
 For Github Issues Please use this format link (issue numbers): Fixes #123
 https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword 
 
-For Linear Issues Please use this format link (Linear ticket URL): Fixes IT-123
-https://linear.app/docs/github?tabs=206cad22125a
 -->
 
 ## Mobile & Desktop Screenshots/Recordings
@@ -44,7 +42,6 @@ Please provide some steps for the reviewer to test your change. If you have wrot
 ## Added to documentation?
 
 - [ ] 📜 README.md
-- [ ] 📓 notion
 - [ ] 🍕 GitHub `docs` type issue
 - [ ] 🙅 no documentation needed
 
@@ -80,6 +77,6 @@ Please provide some steps for the reviewer to test your change. If you have wrot
 	https://console.cloud.google.com/logs/query;query=resource.labels.namespace_name%3D%22freebank-crm%22;duration=PT5M?project=bank-dev-compute
 -->
 
-- ⛏️ [Builds on Google Cloud](https://console.cloud.google.com/cloud-build/builds;region=europe-west1?project=bank-cicd-general)
-- 🪵 [Logs on Google Cloud](https://console.cloud.google.com/logs/query;query=resource.labels.namespace_name%3D%22nextjs-template%22;cursorTimestamp=2024-01-28T14:17:06.727505Z;duration=PT5M?project=bank-dev-compute)
-- 🧑‍🔧 [Deployments on Google Cloud](https://console.cloud.google.com/deploy/delivery-pipelines/europe-west2/nextjstemplate?project=bank-cicd-general)
+- ⛏️ [Github Actions Quickstart](https://docs.github.com/en/actions/quickstart)
+- 🪵 [State Website](https://plateaustate.gov.ng/)
+
